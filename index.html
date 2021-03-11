@@ -5,30 +5,6 @@
 	<meta charset="utf-8" />
 	<title>Council Website Emissions</title>
 	<link rel="StyleSheet" href="resources/style.css" type="text/css" />
-	<style>
-	.grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
-	.grid img, .grid svg { width: 100%; height: auto; }
-	svg path.active { stroke: black; stroke-width: 2px; }
-	.map { position: relative; }
-	figure h2 { margin-top: 0; }
-	figure a, figure a:visited { color: inherit; }
-	table { width: 100%; }
-	table th { background: #ddd; color: black; }
-	table td, table th { border: 1px solid #222; padding: 0.25em 0.5em; color: black; }
-	table tr:hover td { background: rgba(249, 188, 38,0.4); }
-	td.num { text-align: center; }
-	.sorted-dn::after { content: "▼"; }
-	.sorted-up::after { content: "▲"; }
-	header a, header a:visited { color: inherit; }
-	.cen { text-align: center; }
-	table td a { display: block; }
-	@media only screen and (max-width: 1080px) {
-		.grid { grid-template-columns: repeat(2, 1fr); }
-	}
-	@media only screen and (max-width: 700px) {
-		.grid { grid-template-columns: repeat(1, 1fr); }
-	}
-	</style>
 	<script src="resources/table-sort.js"></script>
 	<script src="resources/vaccines.js"></script>
 </head>
@@ -39,7 +15,7 @@
 		<div class="b1-bg padded">
 			<div class="holder" style="text-align:center;">
 				<a href="https://odileeds.org/"><img src="https://odileeds.org/resources/images/odileeds.svg" /></a>
-				<h1>Council Website Emissions</h1>
+				<h1>UK Council Website Emissions</h1>
 			</div>
 		</div>
 	</header>
@@ -47,12 +23,12 @@
 	<div class="b6-bg">
 		<div class="padded">
 			<div class="holder">
-				<p class="updated">A visualisation of <a href="https://www.england.nhs.uk/statistics/statistical-work-areas/covid-19-vaccinations/">NHS England vaccine data</a> released on <strong><!-- Start update -->4th March 2021<!-- End update --></strong> (covering <!-- Start period -->8th December 2020 to 28th February 2021<!-- End period -->). Please <a href="#notes">see notes</a>. We also have <a href="https://mapper.odileeds.org/?7/53.17970/-2.02148/covid-19-vaccine-nhs-msoa">vaccine data shown by MSOA on the ODI Leeds Data Mapper</a>.</p>
+				<p class="updated">How are council websites impacting the planet? You may not think of websites as sources of carbon emissions but they are. Data centres, transmission networks, and the devices we use to access them all use electricity which, in turn, produces carbon emissions. The average web page produces around 1.76g CO2 per page view. When your website has lots of visitors that can easily add up. We've used the <a href="https://www.websitecarbon.com/">Website Carbon Calculator</a> (created by <a href="https://www.wholegraindigital.com/">Wholegrain Digital</a>) to assess UK local authority websites and the results are below.</p>
 			</div>
 		</div>
 		<div class="padded">
 			<div class="holder">
-			<p>Here is the same data presented as a table. Click on any column heading to sort the table by that column.</p>
+			<p>The full list of local authorities and their carbon emissions.</p>
 <!-- Start table -->
 			<table class="table-sort">
 				<tr><th>Rank</th><th>Council</th><th>ONS Code</th><th>CO2 emissions (grams)</th><th>Last checked</th></tr>
@@ -483,6 +459,7 @@
 	<footer class="b1-bg">
 		<div class="holder">
 			<h2 id="notes">Notes</h2>
+			<p>We compiled Local Authorities and County Councils from the <a href="https://www.local.gov.uk/our-support/guidance-and-resources/communications-support/digital-councils/social-media/go-further/a-z-councils-online">Local Government Association</a> (England &amp; Wales), <a href="https://www.cosla.gov.uk/councils">COSLA</a> (Scotland), and via manual searches for Northern Ireland. We have updated broken links. For Welsh council websites with a language-selection splash page, the Welsh language version of the home page has been chosen as the URL to test.</p>
 
 			<h2>Credits</h2>
 			<p>Visualisation &copy; 2021 <a href="https://odileeds.org/">ODI Leeds</a>. Code released under an MIT license. <a href="https://github.com/odileeds/council-website-emissions/">Source on Github</a>.</p>
