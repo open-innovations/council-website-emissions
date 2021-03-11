@@ -66,7 +66,7 @@ for($i = 0; $i < @order; $i++){
 		}
 		push(@best,$tr2);
 		$n = @best;
-		if($n >= 10){
+		if($n > 10){
 			shift(@best);
 		}
 	}
