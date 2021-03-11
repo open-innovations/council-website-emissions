@@ -120,7 +120,7 @@ blockquote cite:before { content: "-- "; }
 blockquote a { color: inherit; }
 blockquote:last-child { margin-bottom: 0; }
 figure { margin: 2em 0; }
-img { width: 100%; }
+figure img { width: 100%; }
 figcaption {
 	font-size: 0.8em;
 	color: #999999;
