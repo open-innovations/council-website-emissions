@@ -33,8 +33,8 @@ for($i = 1; $i < @lines; $i++){
 
 $idt = "				";
 $table = "\n$idt<table class=\"table-sort\">\n$idt\t<tr><th>Rank</th><th>Council</th><th>ONS Code</th><th>CO2 / grams</th><th>Last checked</th></tr>\n";
-$tablebest = "\n$idt<table class=\"table-sort top\">\n$idt\t<tr><th>Council</th><th>CO2 / grams</th></tr>\n";
-$tableworst = "\n$idt<table class=\"table-sort top\">\n$idt\t<tr><th>Council</th><th>CO2 / grams</th></tr>\n";
+$tablebest = "\n$idt<table class=\"top top-best\">\n$idt\t<tr><th>Council</th><th>CO2 / grams</th></tr>\n";
+$tableworst = "\n$idt<table class=\"top top-worst\">\n$idt\t<tr><th>Council</th><th>CO2 / grams</th></tr>\n";
 $rank = 1;
 $av = 0;
 $tot = @order;

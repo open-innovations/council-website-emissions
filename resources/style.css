@@ -111,6 +111,8 @@ header a, header a:visited { color: inherit; }
 .cen { text-align: center; }
 table td a { display: block; color: inherit; }
 table.top td:last-child { width: 20%; }
+table.top-best th { background-color: #1DD3A7; color: black; }
+table.top-worst th { background-color: #F9BC26; color: black; }
 
 blockquote { min-height: auto!important; background: #efefef; padding: 1em 3em; margin-bottom: 1em; position: relative; quotes: "\201C""\201D""\2018""\2019"; }
 blockquote:before { content: open-quote; left: 0.25em; }
