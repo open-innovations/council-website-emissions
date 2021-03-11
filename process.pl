@@ -33,8 +33,8 @@ for($i = 1; $i < @lines; $i++){
 
 $idt = "				";
 $table = "\n$idt<table class=\"table-sort\">\n$idt\t<tr><th>Rank</th><th>Council</th><th>ONS Code</th><th>CO2 / grams</th><th>Last checked</th></tr>\n";
-$tablebest = $table;
-$tableworst = $table;
+$tablebest = "\n$idt<table class=\"table-sort top\">\n$idt\t<tr><th>Council</th><th>CO2 / grams</th></tr>\n";
+$tableworst = "\n$idt<table class=\"table-sort top\">\n$idt\t<tr><th>Council</th><th>CO2 / grams</th></tr>\n";
 $rank = 1;
 $av = 0;
 $tot = @order;
@@ -42,6 +42,8 @@ $lastco2 = 1e100;
 $half = int($tot/2);
 $median = 0;
 $missing = 0;
+@best = ();
+@worst = ();
 for($i = 0; $i < @order; $i++){
 	$id = $order[$i];
 	if($council{$id}{'CO2'} < $lastco2){
@@ -54,10 +56,32 @@ for($i = 0; $i < @order; $i++){
 	if(!$council{$id}{'CO2'}){
 		$missing++;
 	}
-	$table .= "$idt\t<tr><td class=\"cen\">$rank</td><td>".($council{$id}{'url'} ? "<a href=\"$council{$id}{'url'}\">":"").$council{$id}{'name'}.($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">$id</td><td class=\"cen\">".($council{$id}{'link'} ? "<a href=\"$council{$id}{'link'}\">":"").($council{$id}{'CO2'}||"?").($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">$council{$id}{'date'}</td></tr>\n";
+	$tr = "$idt\t<tr><td class=\"cen\">$rank</td><td>".($council{$id}{'url'} ? "<a href=\"$council{$id}{'url'}\">":"").$council{$id}{'name'}.($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">$id</td><td class=\"cen\">".($council{$id}{'link'} ? "<a href=\"$council{$id}{'link'}\">":"").($council{$id}{'CO2'}||"?").($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">$council{$id}{'date'}</td></tr>\n";
+	$tr2 = "$idt\t<tr><td>".($council{$id}{'url'} ? "<a href=\"$council{$id}{'url'}\">":"").$council{$id}{'name'}.($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">".($council{$id}{'link'} ? "<a href=\"$council{$id}{'link'}\">":"").($council{$id}{'CO2'}||"?").($council{$id}{'link'} ? "</a>":"")."</td></tr>\n";
+	$table .= $tr;
+	if($council{$id}{'CO2'} > 0){
+		$n = @worst;
+		if($n < 10){
+			push(@worst,$tr2);
+		}
+		push(@best,$tr2);
+		$n = @best;
+		if($n >= 10){
+			shift(@best);
+		}
+	}
 	$lastco2 = $council{$id}{'CO2'};
 }
+@best = reverse(@best);
+for($i = 0; $i < @best; $i++){
+	$tablebest .= $best[$i];
+}
+for($i = 0; $i < @worst; $i++){
+	$tableworst .= $worst[$i];
+}
 $table .= "$idt</table>\n";
+$tablebest .= "$idt</table>\n";
+$tableworst .= "$idt</table>\n";
 
 $av /= $tot;
 
@@ -78,6 +102,8 @@ $str = join("",@lines);
 # Replace newlines
 $str =~ s/\n/=NEWLINE=/g;
 # Update parts of the page
+$str =~ s/(<\!-- Start best -->).*(<\!-- End best -->)/$1$tablebest$2/;
+$str =~ s/(<\!-- Start worst -->).*(<\!-- End worst -->)/$1$tableworst$2/;
 $str =~ s/(<\!-- Start table -->).*(<\!-- End table -->)/$1$table$2/;
 $str =~ s/(<\!-- Start results -->).*(<\!-- End results -->)/$1$results$2/;
 # Replace our temporary newlines
