@@ -86,7 +86,12 @@ $tableworst .= "$idt</table>\n";
 $av /= $tot;
 
 $better = ($av < $avco2);
-$results = "The average emissions from a UK council homepage are <strong class=\"bold\">".sprintf("%.2f",$av)."g</strong> (median of <strong class=\"bold\">".sprintf("%.2f",$median)."g</strong>) which is ".($better ? "better than":"worse than")." an average website (".$avco2."g).";
+$howwell = "much better";
+if($av > 0.5*$avco2){ $howwell = "well"; }
+if($av > 0.75*$avco2){ $howwell = "better"; }
+if($av > 1*$avco2){ $howwell = "OK"; }
+if($av > 1.25*$avco2){ $howwell = "badly"; }
+$results = "The average emissions from a UK council homepage are <strong class=\"bold\">".sprintf("%.2f",$av)."g</strong> (median of <strong class=\"bold\">".sprintf("%.2f",$median)."g</strong>) which is ".($better ? "better than":"worse than")." an average website (".$avco2."g). So, overall, councils are doing <strong class=\"bold\">$howwell</strong>.";
 if($missing > 0){
 	$results .= " We were unable to calculate emissions for <strong class=\"bold\">$missing out of $tot</strong> councils possibly due to their sites blocking automated requests.";
 }
