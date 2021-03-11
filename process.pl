@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-open(FILE,"data/website-carbon.tsv");
+open(FILE,"data/website-carbon.csv");
 @lines = <FILE>;
 close(FILE);
 
@@ -14,13 +14,15 @@ for($i = 1; $i < @lines; $i++){
 	$lines[$i] =~ s/[\n\r]//g;
 
 	# ONS code	Local authority name	Website	Status	CO2 emissions (g)	Website carbon link	Date last checked
-	(@cols) = split(/\t/,$lines[$i]);
+	(@cols) = split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/,$lines[$i]);
 	$id = $cols[0];
 	$nm = $cols[1];
 	$url = $cols[2];
 	$co2 = $cols[4];
 	$lnk = $cols[5];
 	$dat = $cols[6];
+	
+	$nm =~ s/(^\"|\"$)//g;
 
 	if(!$council{$id}){
 		$council{$id} = {'name'=>$nm,'url'=>$url,'CO2'=>$co2,'link'=>$lnk,'date'=>$dat};
