@@ -4,6 +4,9 @@ open(FILE,"data/website-carbon.tsv");
 @lines = <FILE>;
 close(FILE);
 
+$avco2 = 1.76;
+
+
 %council;
 
 for($i = 1; $i < @lines; $i++){
@@ -28,29 +31,59 @@ for($i = 1; $i < @lines; $i++){
 
 @order = reverse(sort{$council{$a}{'CO2'} <=> $council{$b}{'CO2'} || $council{$a}{'name'} cmp $council{$b}{'name'}}(keys(%council)));
 
-$idt = "			";
-$table = "\n$idt<table class=\"table-sort\">\n$idt\t<tr><th>Rank</th><th>Council</th><th>ONS Code</th><th>CO2 emissions (grams)</th><th>Last checked</th></tr>\n";
-$j = 0;
+$idt = "				";
+$table = "\n$idt<table class=\"table-sort\">\n$idt\t<tr><th>Rank</th><th>Council</th><th>ONS Code</th><th>CO2 / grams</th><th>Last checked</th></tr>\n";
+$tablebest = $table;
+$tableworst = $table;
+$rank = 1;
+$av = 0;
+$tot = @order;
 $lastco2 = 1e100;
+$half = int($tot/2);
+$median = 0;
+$missing = 0;
 for($i = 0; $i < @order; $i++){
 	$id = $order[$i];
 	if($council{$id}{'CO2'} < $lastco2){
-		$j = $i;
+		$rank = $i+1;
 	}
-	print "$i - $j - $council{$id}{'CO2'}\n";
-	$table .= "$idt\t<tr><td class=\"cen\">".($j+1)."</td><td>".($council{$id}{'url'} ? "<a href=\"$council{$id}{'url'}\">":"").$council{$id}{'name'}.($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">$id</td><td class=\"cen\">".($council{$id}{'link'} ? "<a href=\"$council{$id}{'link'}\">":"").($council{$id}{'CO2'}||"?").($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">$council{$id}{'date'}</td></tr>\n";
+	$av += $council{$id}{'CO2'};
+	if($i==$half){
+		$median = $council{$id}{'CO2'};
+	}
+	if(!$council{$id}{'CO2'}){
+		$missing++;
+	}
+	$table .= "$idt\t<tr><td class=\"cen\">$rank</td><td>".($council{$id}{'url'} ? "<a href=\"$council{$id}{'url'}\">":"").$council{$id}{'name'}.($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">$id</td><td class=\"cen\">".($council{$id}{'link'} ? "<a href=\"$council{$id}{'link'}\">":"").($council{$id}{'CO2'}||"?").($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">$council{$id}{'date'}</td></tr>\n";
 	$lastco2 = $council{$id}{'CO2'};
 }
 $table .= "$idt</table>\n";
 
+$av /= $tot;
+
+$better = ($av < $avco2);
+$results = "The average emissions from a UK council homepage are <strong class=\"bold\">".sprintf("%.2f",$av)."g</strong> (median of <strong class=\"bold\">".sprintf("%.2f",$median)."g</strong>) which is ".($better ? "better than":"worse than")." an average website (".$avco2."g).";
+if($missing > 0){
+	$results .= " We were unable to calculate emissions for <strong class=\"bold\">$missing out of $tot</strong> councils possibly due to their sites blocking automated requests.";
+}
+$results .= " The top and bottom 10 websites are given here with the <a href=\"#full-list\">full list below</a>.";
+
+$results = "\n$idt<p>$results</p>\n";
+
+# Read in the index.html page
 open(FILE,"index.html");
 @lines = <FILE>;
 close(FILE);
 $str = join("",@lines);
+# Replace newlines
 $str =~ s/\n/=NEWLINE=/g;
+# Update parts of the page
 $str =~ s/(<\!-- Start table -->).*(<\!-- End table -->)/$1$table$2/;
+$str =~ s/(<\!-- Start results -->).*(<\!-- End results -->)/$1$results$2/;
+# Replace our temporary newlines
 $str =~ s/=NEWLINE=/\n/g;
 
+# Save the result
 open(FILE,">","index.html");
 print FILE $str;
 close(FILE);
