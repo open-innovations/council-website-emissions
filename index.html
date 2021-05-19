@@ -540,7 +540,8 @@
 		tr = document.getElementById('full-list').querySelectorAll('tr');
 		search = document.getElementById('search');
 		function limitTable(v){
-			for(r = 1; r < tr.length; r++) tr[r].style.display = (tr[r].innerHTML.indexOf(v)>=0) ? '' : 'none';
+			v = v.toLowerCase();
+			for(r = 1; r < tr.length; r++) tr[r].style.display = (tr[r].textContent.toLowerCase().indexOf(v)>=0) ? '' : 'none';
 		}
 		search.addEventListener('keyup',function(e){ limitTable(e.target.value); });
 		limitTable(search.value);
