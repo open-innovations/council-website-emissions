@@ -21,11 +21,14 @@ for($i = 1; $i < @lines; $i++){
 	$co2 = $cols[4];
 	$lnk = $cols[5];
 	$dat = $cols[6];
+	$def = $cols[7];
 	
 	$nm =~ s/(^\"|\"$)//g;
 
 	if(!$council{$id}){
-		$council{$id} = {'name'=>$nm,'url'=>$url,'CO2'=>$co2,'link'=>$lnk,'date'=>$dat};
+		if(!$def){
+			$council{$id} = {'name'=>$nm,'url'=>$url,'CO2'=>$co2,'link'=>$lnk,'date'=>$dat};
+		}
 	}else{
 		print "We already have $nm ($id)\n";
 	}	
