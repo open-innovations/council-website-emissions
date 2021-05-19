@@ -91,6 +91,7 @@
 				<section id="full-list">
 					<h2>The full list</h2>
 					<p>Here is the full list of councils with their CO2 emissions but you can also get this as <a href="data/website-carbon.csv">a CSV file</a>. Note that council websites often change with new featured items and this can affect their CO2 emissions so this table is a snapshot.</p>
+					<input type="text" id="search" placeholder="Start typing to search table..." style="width: 300px;max-width:100%;font-size:1em;line-height:2em;padding: 0 0.25em;" />
 <!-- Start table -->
 				<table class="table-sort">
 					<tr><th>Rank</th><th>Council</th><th>ONS Code</th><th>CO2 / grams</th><th>Last checked</th></tr>
@@ -530,6 +531,21 @@
 			<p>Emissions data calculated by the <a href="https://www.websitecarbon.com/">Website Carbon Calculator</a> created by <a href="https://www.wholegraindigital.com/">Wholegrain Digital</a>.</p>
 		</div>
 	</footer>
+	<script>
+	function ready(fn){
+		if(document.readyState != 'loading') fn();
+		else document.addEventListener('DOMContentLoaded', fn);
+	};
+	ready(function(){
+		tr = document.getElementById('full-list').querySelectorAll('tr');
+		search = document.getElementById('search');
+		function limitTable(v){
+			for(r = 1; r < tr.length; r++) tr[r].style.display = (tr[r].innerHTML.indexOf(v)>=0) ? '' : 'none';
+		}
+		search.addEventListener('keyup',function(e){ limitTable(e.target.value); });
+		limitTable(search.value);
+	});
+	</script>
 
 	<script src="https://odileeds.org/resources/odi.log.js"></script>
 	<script>
