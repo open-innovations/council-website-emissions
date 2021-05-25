@@ -30,7 +30,7 @@ E07000033	Bolsover District Council	http://www.bolsover.gov.uk/		0.98	https://ww
 E08000001	Bolton Metropolitan Borough Council	https://www.bolton.gov.uk/		1.25	https://www.websitecarbon.com/website/bolton-gov-uk/	2021-03-09
 E07000095	Borough of Broxbourne	http://www.broxbourne.gov.uk/		3.57	https://www.websitecarbon.com/website/broxbourne-gov-uk/	2021-05-25
 E06000029	Borough of Poole	https://www.poole.gov.uk/		1.10	https://www.websitecarbon.com/website/poole-gov-uk/	2021-03-04
-E07000136	Boston Borough Council	https://www.mybostonuk.com/		2.27	https://www.websitecarbon.com/website/mybostonuk-com/	2021-03-04
+E07000136	Boston Borough Council	https://www.mybostonuk.com/		2.41	https://www.websitecarbon.com/website/mybostonuk-com/	2021-05-25
 E06000058	Bournemouth, Christchurch and Poole	https://www.bcpcouncil.gov.uk/Home.aspx		2.14	https://www.websitecarbon.com/website/bcpcouncil-gov-uk-home-aspx/	2021-05-19
 E06000036	Bracknell Forest Council	http://www.bracknell-forest.gov.uk/		0.46	https://www.websitecarbon.com/website/bracknell-forest-gov-uk/	2021-03-04
 E08000032	Bradford Metropolitan District Council	http://www.bradford.gov.uk/		2.16	https://www.websitecarbon.com/website/bradford-gov-uk/	2021-05-25
@@ -43,7 +43,7 @@ E06000023	Bristol City Council	http://www.bristol.gov.uk/		1.18	https://www.webs
 E07000144	Broadland District Council	http://www.broadland.gov.uk/		0.47	https://www.websitecarbon.com/website/broadland-gov-uk/	2021-03-09
 E07000234	Bromsgrove District Council	http://www.bromsgrove.gov.uk/		0.69	https://www.websitecarbon.com/website/bromsgrove-gov-uk/	2021-03-09
 E07000172	Broxtowe Borough Council	https://www.broxtowe.gov.uk/		0.86	https://www.websitecarbon.com/website/broxtowe-gov-uk/	2021-03-09
-E06000060	Buckinghamshire County Council	http://www.buckscc.gov.uk/		0.17	https://www.websitecarbon.com/website/buckscc-gov-uk/	2021-03-09
+E06000060	Buckinghamshire County Council	http://www.buckscc.gov.uk/		0.16	https://www.websitecarbon.com/website/buckscc-gov-uk/	2021-05-25
 E07000117	Burnley Borough Council	http://www.burnley.gov.uk/		0.79	https://www.websitecarbon.com/website/burnley-gov-uk/	2021-03-09
 E08000002	Bury Metropolitan Borough Council	https://www.bury.gov.uk/		0.15	https://www.websitecarbon.com/website/bury-gov-uk/	2021-05-19
 W06000018	Caerphilly County Borough Council	https://www.caerffili.gov.uk/main.aspx?lang=cy-GB		2.11	https://www.websitecarbon.com/website/caerffili-gov-uk-main-aspxlangcy-gb/	2021-03-09
@@ -52,9 +52,9 @@ E07000008	Cambridge City Council	https://www.cambridge.gov.uk/		1.58	https://www
 E10000003	Cambridgeshire County Council	https://www.cambridgeshire.gov.uk/		0.47	https://www.websitecarbon.com/website/cambridgeshire-gov-uk/	2021-03-09
 E07000192	Cannock Chase District Council	http://www.cannockchasedc.gov.uk/		0.42	https://www.websitecarbon.com/website/cannockchasedc-gov-uk/	2021-03-09
 E07000106	Canterbury City Council	https://www.canterbury.gov.uk/		0.29	https://www.websitecarbon.com/website/canterbury-gov-uk/	2021-03-09
-W06000015	Cardiff Council	https://www.cardiff.gov.uk/CYM/Hafan/Pages/default.aspx		3.70	https://www.websitecarbon.com/website/cardiff-gov-uk-cym-hafan-pages-default-aspx/	2021-03-09
+W06000015	Cardiff Council	https://www.cardiff.gov.uk/CYM/Hafan/Pages/default.aspx		5.28	https://www.websitecarbon.com/website/cardiff-gov-uk-cym-hafan-pages-default-aspx/	2021-05-25
 E07000028	Carlisle City Council	https://www.carlisle.gov.uk/		1.25	https://www.websitecarbon.com/website/carlisle-gov-uk/	2021-05-25
-W06000010	Carmarthenshire County Council	https://www.carmarthenshire.gov.wales/		0.17	https://www.websitecarbon.com/website/carmarthenshire-gov-wales/	2021-03-09
+W06000010	Carmarthenshire County Council	https://www.carmarthenshire.gov.wales/		0.18	https://www.websitecarbon.com/website/carmarthenshire-gov-wales/	2021-05-25
 E07000069	Castle Point Borough Council	https://www.castlepoint.gov.uk/		1.65	https://www.websitecarbon.com/website/castlepoint-gov-uk/	2021-03-09
 N09000004	Causeway Coast and Glens	https://www.causewaycoastandglens.gov.uk/		2.02	https://www.websitecarbon.com/website/causewaycoastandglens-gov-uk/	2021-03-11
 E06000056	Central Bedfordshire Council	https://www.centralbedfordshire.gov.uk/		1.54	https://www.websitecarbon.com/website/centralbedfordshire-gov-uk/	2021-03-09
@@ -111,7 +111,7 @@ S12000011	East Renfrewshire Council	https://www.eastrenfrewshire.gov.uk/		1.11	h
 E06000011	East Riding of Yorkshire Council	https://www.eastriding.gov.uk/		1.97	https://www.websitecarbon.com/website/eastriding-gov-uk/	2021-03-10
 E07000193	East Staffordshire Borough Council	https://www.eaststaffsbc.gov.uk/		0.84	https://www.websitecarbon.com/website/eaststaffsbc-gov-uk/	2021-03-10
 E07000244	East Suffolk Council	https://www.eastsuffolk.gov.uk/		1.31	https://www.websitecarbon.com/website/eastsuffolk-gov-uk/	2021-03-10
-E10000011	East Sussex County Council	https://www.eastsussex.gov.uk/		0.18	https://www.websitecarbon.com/website/eastsussex-gov-uk/	2021-03-10
+E10000011	East Sussex County Council	https://www.eastsussex.gov.uk/		0.17	https://www.websitecarbon.com/website/eastsussex-gov-uk/	2021-05-25
 E07000061	Eastbourne Borough Council	https://www.lewes-eastbourne.gov.uk/		0.54	https://www.websitecarbon.com/website/lewes-eastbourne-gov-uk/	2021-03-09
 E07000086	Eastleigh Borough Council	https://www.eastleigh.gov.uk/		0.36	https://www.websitecarbon.com/website/eastleigh-gov-uk/	2021-03-10
 E07000030	Eden District Council	https://www.eden.gov.uk/		0.27	https://www.websitecarbon.com/website/eden-gov-uk/	2021-03-10
@@ -134,8 +134,8 @@ E08000037	Gateshead Metropolitan Borough Council	https://www.gateshead.gov.uk/		
 E07000173	Gedling Borough Council	https://www.gedling.gov.uk/		0.42	https://www.websitecarbon.com/website/gedling-gov-uk/	2021-03-10
 S12000046	Glasgow City Council	https://www.glasgow.gov.uk		0.32	https://www.websitecarbon.com/website/glasgow-gov-uk/	2021-03-10
 E07000081	Gloucester City Council	https://www.gloucester.gov.uk/		1.31	https://www.websitecarbon.com/website/gloucester-gov-uk/	2021-03-10
-E10000013	Gloucestershire County Council	https://www.gloucestershire.gov.uk/		2.24	https://www.websitecarbon.com/website/gloucestershire-gov-uk/	2021-03-10
-E07000088	Gosport Borough Council	https://www.gosport.gov.uk/		2.11	https://www.websitecarbon.com/website/gosport-gov-uk/	2021-03-09
+E10000013	Gloucestershire County Council	https://www.gloucestershire.gov.uk/		1.95	https://www.websitecarbon.com/website/gloucestershire-gov-uk/	2021-05-25
+E07000088	Gosport Borough Council	https://www.gosport.gov.uk/		1.11	https://www.websitecarbon.com/website/gosport-gov-uk/	2021-05-25
 E07000109	Gravesham Borough Council	https://www.gravesham.gov.uk/		0.42	https://www.websitecarbon.com/website/gravesham-gov-uk/	2021-03-10
 E07000145	Great Yarmouth Borough Council	https://www.great-yarmouth.gov.uk/		1.29	https://www.websitecarbon.com/website/great-yarmouth-gov-uk/	2021-03-10
 E07000209	Guildford Borough Council	https://www.guildford.gov.uk/		1.13	https://www.websitecarbon.com/website/guildford-gov-uk/	2021-03-10
@@ -163,7 +163,7 @@ E07000202	Ipswich Borough Council	https://www.ipswich.gov.uk/		0.29	https://www.
 W06000001	Isle of Anglesey County Council	https://www.ynysmon.gov.uk/cy/Trigolion/Trigolion.aspx		1.07	https://www.websitecarbon.com/website/ynysmon-gov-uk-cy-trigolion-trigolion-aspx/	2021-03-10
 E06000046	Isle of Wight Council	https://www.iow.gov.uk/		0.81	https://www.websitecarbon.com/website/iow-gov-uk/	2021-03-10
 E06000053	Isles of Scilly	https://www.scilly.gov.uk/		0.69	https://www.websitecarbon.com/website/scilly-gov-uk/	2021-03-10
-E10000016	Kent County Council	https://www.kent.gov.uk/		0.19	https://www.websitecarbon.com/website/kent-gov-uk/	2021-03-10
+E10000016	Kent County Council	https://www.kent.gov.uk/		0.14	https://www.websitecarbon.com/website/kent-gov-uk/	2021-05-25
 E07000146	King's Lynn and West Norfolk Borough Council	https://www.west-norfolk.gov.uk/		0.63	https://www.websitecarbon.com/website/west-norfolk-gov-uk/	2021-03-10
 E06000010	Kingston-upon-Hull City Council	http://www.hullcc.gov.uk/		1.47	https://www.websitecarbon.com/website/hull-gov-uk/	2021-03-11
 E08000034	Kirklees Council	https://www.kirklees.gov.uk/		0.56	https://www.websitecarbon.com/website/kirklees-gov-uk/	2021-03-10
@@ -178,7 +178,7 @@ E07000194	Lichfield District Council	https://www.lichfielddc.gov.uk/		0.30	https
 E10000019	Lincolnshire County Council	https://www.lincolnshire.gov.uk/		0.60	https://www.websitecarbon.com/website/lincolnshire-gov-uk/	2021-03-09
 N09000007	Lisburn and Castlereagh	https://www.lisburncastlereagh.gov.uk/		0.53	https://www.websitecarbon.com/website/lisburncastlereagh-gov-uk/	2021-03-10
 E08000012	Liverpool City Council	https://liverpool.gov.uk/		1.66	https://www.websitecarbon.com/website/liverpool-gov-uk/	2021-05-25
-E09000002	London Borough of Barking and Dagenham	https://www.lbbd.gov.uk/		5.19	https://www.websitecarbon.com/website/lbbd-gov-uk/	2021-03-11
+E09000002	London Borough of Barking and Dagenham	https://www.lbbd.gov.uk/		5.68	https://www.websitecarbon.com/website/lbbd-gov-uk/	2021-05-25
 E09000003	London Borough of Barnet	https://www.barnet.gov.uk/		1.23	https://www.websitecarbon.com/website/barnet-gov-uk/	2021-03-09
 E09000004	London Borough of Bexley	https://www.bexley.gov.uk/		2.68	https://www.websitecarbon.com/website/bexley-gov-uk/	2021-05-25
 E09000005	London Borough of Brent	https://www.brent.gov.uk/		1.44	https://www.websitecarbon.com/website/brent-gov-uk/	2021-05-25
@@ -188,7 +188,7 @@ E09000008	London Borough of Croydon	https://new.croydon.gov.uk/		0.72	https://ww
 E09000009	London Borough of Ealing	https://www.ealing.gov.uk/		0.64	https://www.websitecarbon.com/website/ealing-gov-uk/	2021-03-10
 E09000010	London Borough of Enfield	https://new.enfield.gov.uk/		1.79	https://www.websitecarbon.com/website/new-enfield-gov-uk/	2021-03-10
 E09000012	London Borough of Hackney	https://hackney.gov.uk/		2.21	https://www.websitecarbon.com/website/hackney-gov-uk/	2021-05-25
-E09000013	London Borough of Hammersmith & Fulham	https://www.lbhf.gov.uk/		2.23	https://www.websitecarbon.com/website/lbhf-gov-uk/	2021-03-10
+E09000013	London Borough of Hammersmith & Fulham	https://www.lbhf.gov.uk/		1.79	https://www.websitecarbon.com/website/lbhf-gov-uk/	2021-05-25
 E09000014	London Borough of Haringey	https://www.haringey.gov.uk/		1.71	https://www.websitecarbon.com/website/haringey-gov-uk/	2021-03-10
 E09000015	London Borough of Harrow	https://www.harrow.gov.uk/		0.87	https://www.websitecarbon.com/website/harrow-gov-uk/	2021-03-10
 E09000016	London Borough of Havering	https://www.havering.gov.uk/		1.23	https://www.websitecarbon.com/website/havering-gov-uk/	2021-03-10
@@ -206,7 +206,7 @@ E09000029	London Borough of Sutton	https://www.sutton.gov.uk/		0.54	https://www.
 E09000030	London Borough of Tower Hamlets	https://www.towerhamlets.gov.uk/		0.72	https://www.websitecarbon.com/website/towerhamlets-gov-uk/	2021-03-10
 E09000031	London Borough of Waltham Forest	https://www.walthamforest.gov.uk/		0.80	https://www.websitecarbon.com/website/walthamforest-gov-uk/	2021-03-09
 E09000032	London Borough of Wandsworth	https://www.wandsworth.gov.uk/		0.57	https://www.websitecarbon.com/website/wandsworth-gov-uk/	2021-03-10
-E06000032	Luton Borough Council	https://m.luton.gov.uk/		0.17	https://www.websitecarbon.com/website/m-luton-gov-uk/	2021-03-10
+E06000032	Luton Borough Council	https://m.luton.gov.uk/		0.17	https://www.websitecarbon.com/website/m-luton-gov-uk/	2021-05-25
 E07000110	Maidstone Borough Council	https://maidstone.gov.uk/		4.47	https://www.websitecarbon.com/website/maidstone-gov-uk/	2021-05-25
 E07000074	Maldon District Council	https://www.maldon.gov.uk/		4.73	https://www.websitecarbon.com/website/maldon-gov-uk/	2021-05-25
 E07000235	Malvern Hills District Council	https://www.malvernhills.gov.uk/		0.39	https://www.websitecarbon.com/website/malvernhills-gov-uk/	2021-03-10
@@ -258,7 +258,7 @@ E10000024	Nottinghamshire County Council	https://www.nottinghamshire.gov.uk/		0.
 E07000219	Nuneaton and Bedworth Borough Council	https://www.nuneatonandbedworth.gov.uk/		0.63	https://www.websitecarbon.com/website/nuneatonandbedworth-gov-uk/	2021-03-09
 E07000135	Oadby and Wigston District Council	https://www.oadby-wigston.gov.uk/		1.21	https://www.websitecarbon.com/website/oadby-wigston-gov-uk/	2021-03-09
 E08000004	Oldham Metropolitan Borough Council	https://www.oldham.gov.uk/		0.56	https://www.websitecarbon.com/website/oldham-gov-uk/	2021-03-09
-S12000023	Orkney Islands Council	https://www.orkney.gov.uk		2.28	https://www.websitecarbon.com/website/orkney-gov-uk/	2021-03-09
+S12000023	Orkney Islands Council	https://www.orkney.gov.uk		1.04	https://www.websitecarbon.com/website/orkney-gov-uk/	2021-05-25
 E07000178	Oxford City Council	https://www.oxford.gov.uk/		0.42	https://www.websitecarbon.com/website/oxford-gov-uk-2/	2021-03-11
 E10000025	Oxfordshire County Council	https://www.oxfordshire.gov.uk/		0.33	https://www.websitecarbon.com/website/oxfordshire-gov-uk-2/	2021-03-11
 W06000009	Pembrokeshire County Council	http://www.pembrokeshire.gov.uk/		0.38	https://www.websitecarbon.com/website/pembrokeshire-gov-uk/	2021-03-09
@@ -279,7 +279,7 @@ E07000124	Ribble Valley Borough Council	https://www.ribblevalley.gov.uk/		0.42	h
 E07000166	Richmondshire District Council	https://www.richmondshire.gov.uk/		0.72	https://www.websitecarbon.com/website/richmondshire-gov-uk/	2021-03-09
 E08000005	Rochdale Metropolitan Borough Council	http://www.rochdale.gov.uk/		2.01	https://www.websitecarbon.com/website/rochdale-gov-uk/	2021-03-11
 E07000075	Rochford District Council	http://www.rochford.gov.uk/		0.74	https://www.websitecarbon.com/website/rochford-gov-uk/	2021-03-09
-E07000125	Rossendale Borough Council	http://www.rossendale.gov.uk/		0.18	https://www.websitecarbon.com/website/rossendale-gov-uk/	2021-03-09
+E07000125	Rossendale Borough Council	http://www.rossendale.gov.uk/		0.18	https://www.websitecarbon.com/website/rossendale-gov-uk/	2021-05-25
 E07000064	Rother District Council	http://www.rother.gov.uk/		0.33	https://www.websitecarbon.com/website/rother-gov-uk/	2021-03-09
 E08000018	Rotherham Metropolitan Borough Council	http://www.rotherham.gov.uk/		0.66	https://www.websitecarbon.com/website/rotherham-gov-uk/	2021-03-09
 E09000011	Royal Borough of Greenwich	http://www.royalgreenwich.gov.uk/		2.91	https://www.websitecarbon.com/website/royalgreenwich-gov-uk/	2021-05-25
@@ -295,7 +295,7 @@ E07000167	Ryedale District Council	http://www.ryedale.gov.uk/		0.74	https://www.
 E08000006	Salford City Council	http://www.salford.gov.uk/		0.27	https://www.websitecarbon.com/website/salford-gov-uk/	2021-03-09
 E08000028	Sandwell Metropolitan Borough Council	http://www.sandwell.gov.uk/		0.70	https://www.websitecarbon.com/website/sandwell-gov-uk/	2021-03-09
 E07000168	Scarborough Borough Council	https://www.scarborough.gov.uk/		1.71	https://www.websitecarbon.com/website/scarborough-gov-uk/	2021-05-25
-S12000026	Scottish Borders Council	https://www.scotborders.gov.uk		0.13	https://www.websitecarbon.com/website/scotborders-gov-uk/	2021-03-09
+S12000026	Scottish Borders Council	https://www.scotborders.gov.uk		0.13	https://www.websitecarbon.com/website/scotborders-gov-uk/	2021-05-25
 E07000188	Sedgemoor District Council	http://www.sedgemoor.gov.uk/		0.91	https://www.websitecarbon.com/website/sedgemoor-gov-uk/	2021-03-09
 E08000014	Sefton Metropolitan Borough Council	http://www.sefton.gov.uk/		4.27	https://www.websitecarbon.com/website/sefton-gov-uk/	2021-05-25
 E07000169	Selby District Council	http://www.selby.gov.uk/		0.90	https://www.websitecarbon.com/website/selby-gov-uk/	2021-03-09
@@ -308,7 +308,7 @@ E08000029	Solihull Metropolitan Borough Council	http://www.solihull.gov.uk/		1.4
 E10000027	Somerset County Council	http://www.somerset.gov.uk/		1.93	https://www.websitecarbon.com/website/somerset-gov-uk/	2021-03-09
 E07000246	Somerset West and Taunton	https://www.somersetwestandtaunton.gov.uk/		0.50	https://www.websitecarbon.com/website/somersetwestandtaunton-gov-uk/	2021-03-09
 S12000028	South Ayrshire Council	https://www.south-ayrshire.gov.uk		0.35	https://www.websitecarbon.com/website/south-ayrshire-gov-uk/	2021-03-09
-E07000012	South Cambridgeshire District Council	http://www.scambs.gov.uk/		6.12	https://www.websitecarbon.com/website/scambs-gov-uk/	2021-03-09
+E07000012	South Cambridgeshire District Council	http://www.scambs.gov.uk/		5.21	https://www.websitecarbon.com/website/scambs-gov-uk/	2021-05-25
 E07000039	South Derbyshire District Council	https://www.southderbyshire.gov.uk/		1.59	https://www.websitecarbon.com/website/southderbyshire-gov-uk/	2021-03-11
 E06000025	South Gloucestershire Council	http://www.southglos.gov.uk/		0.61	https://www.websitecarbon.com/website/southglos-gov-uk/	2021-03-09
 E07000044	South Hams District Council	http://www.southhams.gov.uk/		1.20	https://www.websitecarbon.com/website/southhams-gov-uk/	2021-03-09
@@ -325,7 +325,7 @@ E08000023	South Tyneside Council	https://www.southtyneside.gov.uk/		0.79	https:/
 E06000045	Southampton City Council	http://www.southampton.gov.uk/		0.70	https://www.websitecarbon.com/website/southampton-gov-uk/	2021-03-04
 E06000033	Southend-on-Sea Borough Council	http://www.southend.gov.uk/		1.89	https://www.websitecarbon.com/website/southend-gov-uk/	2021-03-04
 E07000213	Spelthorne Borough Council	http://www.spelthorne.gov.uk/		1.35	https://www.websitecarbon.com/website/spelthorne-gov-uk/	2021-03-04
-E07000240	St Albans City and District Council	http://www.stalbans.gov.uk/		2.19	https://www.websitecarbon.com/website/stalbans-gov-uk/	2021-03-04
+E07000240	St Albans City and District Council	http://www.stalbans.gov.uk/		2.40	https://www.websitecarbon.com/website/stalbans-gov-uk/	2021-05-25
 E08000013	St Helens Metropolitan Borough Council	http://www.sthelens.gov.uk/		0.45	https://www.websitecarbon.com/website/sthelens-gov-uk/	2021-03-04
 E07000197	Stafford Borough Council	http://www.staffordbc.gov.uk/		0.62	https://www.websitecarbon.com/website/staffordbc-gov-uk/	2021-03-04
 E10000028	Staffordshire County Council	http://www.staffordshire.gov.uk/		1.65	https://www.websitecarbon.com/website/staffordshire-gov-uk/	2021-03-04
@@ -356,7 +356,7 @@ E07000114	Thanet District Council	http://thanet.gov.uk/		0.82	https://www.websit
 E07000102	Three Rivers District Council	http://www.threerivers.gov.uk/		3.09	https://www.websitecarbon.com/website/threerivers-gov-uk/	2021-05-25
 E06000034	Thurrock Council	http://www.thurrock.gov.uk/		1.14	https://www.websitecarbon.com/website/thurrock-gov-uk/	2021-03-04
 E07000115	Tonbridge and Malling Borough Council	http://www.tmbc.gov.uk/		0.33	https://www.websitecarbon.com/website/tmbc-gov-uk/	2021-03-04
-E06000027	Torbay Council	http://www.torbay.gov.uk/		0.17	https://www.websitecarbon.com/website/torbay-gov-uk/	2021-03-04
+E06000027	Torbay Council	http://www.torbay.gov.uk/		0.17	https://www.websitecarbon.com/website/torbay-gov-uk/	2021-05-25
 W06000020	Torfaen County Borough Council	https://www.torfaen.gov.uk/cy/Home.aspx		0.86	https://www.websitecarbon.com/website/torfaen-gov-uk-cy-home-aspx/	2021-03-11
 E07000046	Torridge District Council	http://www.torridge.gov.uk/		0.86	https://www.websitecarbon.com/website/torridge-gov-uk/	2021-03-04
 E08000009	Trafford Metropolitan Borough Council	https://www.trafford.gov.uk/		1.14	https://www.websitecarbon.com/website/trafford-gov-uk/	2021-05-25
@@ -385,7 +385,7 @@ E07000245	West Suffolk	https://www.westsuffolk.gov.uk/		1.34	https://www.website
 E10000032	West Sussex County Council	http://www.westsussex.gov.uk/		0.74	https://www.websitecarbon.com/website/westsussex-gov-uk/	2021-03-04
 E09000033	Westminster City Council	http://www.westminster.gov.uk/		0.76	https://www.websitecarbon.com/website/westminster-gov-uk/	2021-03-04
 E08000010	Wigan Metropolitan Borough Council	http://www.wigan.gov.uk/		0.51	https://www.websitecarbon.com/website/wigan-gov-uk/	2021-03-04
-E06000054	Wiltshire Council	http://www.wiltshire.gov.uk/		0.19	https://www.websitecarbon.com/website/wiltshire-gov-uk/	2021-03-04
+E06000054	Wiltshire Council	http://www.wiltshire.gov.uk/		0.18	https://www.websitecarbon.com/website/wiltshire-gov-uk/	2021-05-25
 E07000094	Winchester City Council	http://www.winchester.gov.uk/		2.02	https://www.websitecarbon.com/website/winchester-gov-uk/	2021-03-04
 E08000015	Wirral Council	http://www.wirral.gov.uk/		1.11	https://www.websitecarbon.com/website/wirral-gov-uk/	2021-03-04
 E07000217	Woking Borough Council	http://www.woking.gov.uk/		2.42	https://www.websitecarbon.com/website/woking-gov-uk/	2021-05-25

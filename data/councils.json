@@ -309,7 +309,8 @@
 			"urls": {
 				"http://www.torbay.gov.uk/": {
 					"values": {
-						"2021-03-04": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/torbay-gov-uk/" }
+						"2021-03-04": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/torbay-gov-uk/" },
+						"2021-05-25": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/torbay-gov-uk/" }
 					}
 				}
 			}
@@ -365,7 +366,8 @@
 			"urls": {
 				"https://m.luton.gov.uk/": {
 					"values": {
-						"2021-03-10": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/m-luton-gov-uk/" }
+						"2021-03-10": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/m-luton-gov-uk/" },
+						"2021-05-25": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/m-luton-gov-uk/" }
 					}
 				}
 			}
@@ -597,7 +599,8 @@
 			"urls": {
 				"http://www.wiltshire.gov.uk/": {
 					"values": {
-						"2021-03-04": { "CO2": 0.19, "ref": "https://www.websitecarbon.com/website/wiltshire-gov-uk/" }
+						"2021-03-04": { "CO2": 0.19, "ref": "https://www.websitecarbon.com/website/wiltshire-gov-uk/" },
+						"2021-05-25": { "CO2": 0.18, "ref": "https://www.websitecarbon.com/website/wiltshire-gov-uk/" }
 					}
 				}
 			}
@@ -663,7 +666,8 @@
 			"urls": {
 				"http://www.buckscc.gov.uk/": {
 					"values": {
-						"2021-03-09": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/buckscc-gov-uk/" }
+						"2021-03-09": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/buckscc-gov-uk/" },
+						"2021-05-25": { "CO2": 0.16, "ref": "https://www.websitecarbon.com/website/buckscc-gov-uk/" }
 					}
 				}
 			}
@@ -788,7 +792,8 @@
 			"urls": {
 				"http://www.scambs.gov.uk/": {
 					"values": {
-						"2021-03-09": { "CO2": 6.12, "ref": "https://www.websitecarbon.com/website/scambs-gov-uk/" }
+						"2021-03-09": { "CO2": 6.12, "ref": "https://www.websitecarbon.com/website/scambs-gov-uk/" },
+						"2021-05-25": { "CO2": 5.21, "ref": "https://www.websitecarbon.com/website/scambs-gov-uk/" }
 					}
 				}
 			}
@@ -1419,7 +1424,8 @@
 			"urls": {
 				"https://www.gosport.gov.uk/": {
 					"values": {
-						"2021-03-09": { "CO2": 2.11, "ref": "https://www.websitecarbon.com/website/gosport-gov-uk/" }
+						"2021-03-09": { "CO2": 2.11, "ref": "https://www.websitecarbon.com/website/gosport-gov-uk/" },
+						"2021-05-25": { "CO2": 1.11, "ref": "https://www.websitecarbon.com/website/gosport-gov-uk/" }
 					}
 				}
 			}
@@ -1788,7 +1794,8 @@
 			"urls": {
 				"http://www.rossendale.gov.uk/": {
 					"values": {
-						"2021-03-09": { "CO2": 0.18, "ref": "https://www.websitecarbon.com/website/rossendale-gov-uk/" }
+						"2021-03-09": { "CO2": 0.18, "ref": "https://www.websitecarbon.com/website/rossendale-gov-uk/" },
+						"2021-05-25": { "CO2": 0.18, "ref": "https://www.websitecarbon.com/website/rossendale-gov-uk/" }
 					}
 				}
 			}
@@ -1909,7 +1916,8 @@
 			"urls": {
 				"https://www.mybostonuk.com/": {
 					"values": {
-						"2021-03-04": { "CO2": 2.27, "ref": "https://www.websitecarbon.com/website/mybostonuk-com/" }
+						"2021-03-04": { "CO2": 2.27, "ref": "https://www.websitecarbon.com/website/mybostonuk-com/" },
+						"2021-05-25": { "CO2": 2.41, "ref": "https://www.websitecarbon.com/website/mybostonuk-com/" }
 					}
 				}
 			}
@@ -2850,7 +2858,8 @@
 			"urls": {
 				"http://www.stalbans.gov.uk/": {
 					"values": {
-						"2021-03-04": { "CO2": 2.19, "ref": "https://www.websitecarbon.com/website/stalbans-gov-uk/" }
+						"2021-03-04": { "CO2": 2.19, "ref": "https://www.websitecarbon.com/website/stalbans-gov-uk/" },
+						"2021-05-25": { "CO2": 2.40, "ref": "https://www.websitecarbon.com/website/stalbans-gov-uk/" }
 					}
 				}
 			}
@@ -3343,7 +3352,8 @@
 			"urls": {
 				"https://www.lbbd.gov.uk/": {
 					"values": {
-						"2021-03-11": { "CO2": 5.19, "ref": "https://www.websitecarbon.com/website/lbbd-gov-uk/" }
+						"2021-03-11": { "CO2": 5.19, "ref": "https://www.websitecarbon.com/website/lbbd-gov-uk/" },
+						"2021-05-25": { "CO2": 5.68, "ref": "https://www.websitecarbon.com/website/lbbd-gov-uk/" }
 					}
 				}
 			}
@@ -3468,7 +3478,8 @@
 			"urls": {
 				"https://www.lbhf.gov.uk/": {
 					"values": {
-						"2021-03-10": { "CO2": 2.23, "ref": "https://www.websitecarbon.com/website/lbhf-gov-uk/" }
+						"2021-03-10": { "CO2": 2.23, "ref": "https://www.websitecarbon.com/website/lbhf-gov-uk/" },
+						"2021-05-25": { "CO2": 1.79, "ref": "https://www.websitecarbon.com/website/lbhf-gov-uk/" }
 					}
 				}
 			}
@@ -3743,7 +3754,8 @@
 			"urls": {
 				"https://www.eastsussex.gov.uk/": {
 					"values": {
-						"2021-03-10": { "CO2": 0.18, "ref": "https://www.websitecarbon.com/website/eastsussex-gov-uk/" }
+						"2021-03-10": { "CO2": 0.18, "ref": "https://www.websitecarbon.com/website/eastsussex-gov-uk/" },
+						"2021-05-25": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/eastsussex-gov-uk/" }
 					}
 				}
 			}
@@ -3765,7 +3777,8 @@
 			"urls": {
 				"https://www.gloucestershire.gov.uk/": {
 					"values": {
-						"2021-03-10": { "CO2": 2.24, "ref": "https://www.websitecarbon.com/website/gloucestershire-gov-uk/" }
+						"2021-03-10": { "CO2": 2.24, "ref": "https://www.websitecarbon.com/website/gloucestershire-gov-uk/" },
+						"2021-05-25": { "CO2": 1.95, "ref": "https://www.websitecarbon.com/website/gloucestershire-gov-uk/" }
 					}
 				}
 			}
@@ -3787,7 +3800,8 @@
 			"urls": {
 				"https://www.kent.gov.uk/": {
 					"values": {
-						"2021-03-10": { "CO2": 0.19, "ref": "https://www.websitecarbon.com/website/kent-gov-uk/" }
+						"2021-03-10": { "CO2": 0.19, "ref": "https://www.websitecarbon.com/website/kent-gov-uk/" },
+						"2021-05-25": { "CO2": 0.14, "ref": "https://www.websitecarbon.com/website/kent-gov-uk/" }
 					}
 				}
 			}
@@ -4230,7 +4244,8 @@
 			"urls": {
 				"https://www.orkney.gov.uk": {
 					"values": {
-						"2021-03-09": { "CO2": 2.28, "ref": "https://www.websitecarbon.com/website/orkney-gov-uk/" }
+						"2021-03-09": { "CO2": 2.28, "ref": "https://www.websitecarbon.com/website/orkney-gov-uk/" },
+						"2021-05-25": { "CO2": 1.04, "ref": "https://www.websitecarbon.com/website/orkney-gov-uk/" }
 					}
 				}
 			}
@@ -4252,7 +4267,8 @@
 			"urls": {
 				"https://www.scotborders.gov.uk": {
 					"values": {
-						"2021-03-09": { "CO2": 0.13, "ref": "https://www.websitecarbon.com/website/scotborders-gov-uk/" }
+						"2021-03-09": { "CO2": 0.13, "ref": "https://www.websitecarbon.com/website/scotborders-gov-uk/" },
+						"2021-05-25": { "CO2": 0.13, "ref": "https://www.websitecarbon.com/website/scotborders-gov-uk/" }
 					}
 				}
 			}
@@ -4528,7 +4544,8 @@
 			"urls": {
 				"https://www.carmarthenshire.gov.wales/": {
 					"values": {
-						"2021-03-09": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/carmarthenshire-gov-wales/" }
+						"2021-03-09": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/carmarthenshire-gov-wales/" },
+						"2021-05-25": { "CO2": 0.18, "ref": "https://www.websitecarbon.com/website/carmarthenshire-gov-wales/" }
 					}
 				}
 			}
@@ -4585,7 +4602,7 @@
 				"https://www.cardiff.gov.uk/CYM/Hafan/Pages/default.aspx": {
 					"values": {
 						"2021-03-09": { "CO2": 3.7, "ref": "https://www.websitecarbon.com/website/cardiff-gov-uk-cym-hafan-pages-default-aspx/" },
-						"2021-05-25": { "CO2": null }
+						"2021-05-25": { "CO2": 5.28, "ref": "https://www.websitecarbon.com/website/cardiff-gov-uk-cym-hafan-pages-default-aspx/" }
 					}
 				}
 			}
