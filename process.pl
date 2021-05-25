@@ -109,8 +109,8 @@ for($i = 0; $i < @order; $i++){
 	if(!$council{$id}{'CO2'}){
 		$missing++;
 	}
-	$tr = "$idt\t<tr><td class=\"cen\">$rank</td><td>".($council{$id}{'url'} ? "<a href=\"areas/$id.html\">":"").$council{$id}{'name'}.($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\"><a href=\"areas/$id.html\">$id</a></td><td class=\"cen\">".($council{$id}{'link'} ? "<a href=\"$council{$id}{'link'}\">":"").($council{$id}{'CO2'} ? sprintf("%0.2f",$council{$id}{'CO2'}) : "?").($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">$council{$id}{'date'}</td></tr>\n";
-	$tr2 = "$idt\t<tr><td>".($council{$id}{'url'} ? "<a href=\"$council{$id}{'url'}\">":"").$council{$id}{'name'}.($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">".($council{$id}{'CO2'} ? sprintf("%0.2f",$council{$id}{'CO2'}) : "?")."</td></tr>\n";
+	$tr = "$idt\t<tr><td class=\"cen\">$rank</td><td>".($council{$id}{'url'} ? "<a href=\"$council{$id}{'url'}\">":"").$council{$id}{'name'}.($council{$id}{'url'} ? "</a>":"")."</td><td class=\"cen\"><a href=\"areas/$id.html\">$id</a></td><td class=\"cen\">".($council{$id}{'link'} ? "<a href=\"$council{$id}{'link'}\">":"").($council{$id}{'CO2'} ? sprintf("%0.2f",$council{$id}{'CO2'}) : "?").($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">$council{$id}{'date'}</td></tr>\n";
+	$tr2 = "$idt\t<tr><td>".($council{$id}{'url'} ? "<a href=\"$council{$id}{'url'}\">":"").$council{$id}{'name'}.($council{$id}{'url'} ? "</a>":"")."</td><td class=\"cen\">".($council{$id}{'CO2'} ? sprintf("%0.2f",$council{$id}{'CO2'}) : "?")."</td></tr>\n";
 	$table .= $tr;
 	if($council{$id}{'CO2'} > 0){
 		$n = @worst;
