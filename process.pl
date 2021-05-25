@@ -48,9 +48,6 @@ for $id (sort{$data->{'councils'}{$a}{'name'} cmp $data->{'councils'}{$b}{'name'
 				$lastco = $data->{'councils'}{$id}{'urls'}{$url}{'values'}{$dates[$i]}{'CO2'};
 			}
 		}
-		if($id eq "W06000015"){
-			print "$id = $lastco = $recent\n";
-		}
 	}
 
 	if($data->{'councils'}{$id}{'active'}){
@@ -112,7 +109,7 @@ for($i = 0; $i < @order; $i++){
 	if(!$council{$id}{'CO2'}){
 		$missing++;
 	}
-	$tr = "$idt\t<tr><td class=\"cen\">$rank</td><td>".($council{$id}{'url'} ? "<a href=\"$council{$id}{'url'}\">":"").$council{$id}{'name'}.($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">$id</td><td class=\"cen\">".($council{$id}{'link'} ? "<a href=\"$council{$id}{'link'}\">":"").($council{$id}{'CO2'} ? sprintf("%0.2f",$council{$id}{'CO2'}) : "?").($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">$council{$id}{'date'}</td></tr>\n";
+	$tr = "$idt\t<tr><td class=\"cen\">$rank</td><td>".($council{$id}{'url'} ? "<a href=\"areas/$id.html\">":"").$council{$id}{'name'}.($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\"><a href=\"areas/$id.html\">$id</a></td><td class=\"cen\">".($council{$id}{'link'} ? "<a href=\"$council{$id}{'link'}\">":"").($council{$id}{'CO2'} ? sprintf("%0.2f",$council{$id}{'CO2'}) : "?").($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">$council{$id}{'date'}</td></tr>\n";
 	$tr2 = "$idt\t<tr><td>".($council{$id}{'url'} ? "<a href=\"$council{$id}{'url'}\">":"").$council{$id}{'name'}.($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">".($council{$id}{'CO2'} ? sprintf("%0.2f",$council{$id}{'CO2'}) : "?")."</td></tr>\n";
 	$table .= $tr;
 	if($council{$id}{'CO2'} > 0){
@@ -174,3 +171,54 @@ $str =~ s/=NEWLINE=/\n/g;
 open(FILE,">","index.html");
 print FILE $str;
 close(FILE);
+
+
+
+
+# Read the template
+open(FILE,"areas/template.html");
+@lines = <FILE>;
+close(FILE);
+$html = join("",@lines);
+
+$indent = "\t\t\t\t";
+
+# Make a page for each council
+for $id (sort{$data->{'councils'}{$a}{'name'} cmp $data->{'councils'}{$b}{'name'}}(keys(%{$data->{'councils'}}))){
+	$txt = $html;
+	$body = "<h1>$data->{'councils'}{$id}{'name'} - <code>$id</code>".($data->{'councils'}{$id}{'active'} ? "<span class=\"c5-bg code\">ACTIVE</span>":"<span class=\"c12-bg code\">INACTIVE</span>")."</h1>\n";
+	if($data->{'councils'}{$id}{'replacedBy'}){
+		$rid = $data->{'councils'}{$id}{'replacedBy'}{'id'};
+		$body .= "$indent<p>Replaced by <a href=\"$rid\.html\">$data->{'councils'}{$rid}{'name'}</a> on $data->{'councils'}{$id}{'replacedBy'}{'date'}.</p>";
+	}
+	$body .= "$indent<h2>Emissions</h2>\n";
+	$body .= "$indent<ul class=\"emissions\">\n";
+	@urls = keys(%{$data->{'councils'}{$id}{'urls'}});
+	for($i = 0; $i < @urls; $i++){
+		$url = $urls[$i];
+		$body .= "$indent\t<li>\n";
+		$body .= "$indent\t\t<p><strong>URL:</strong> <a href=\"$url\">$url</a></p>\n$indent\t\t<table>\n$indent\t\t\t<tr><th>Date checked</th><th>CO2 / grams</th></tr>\n";
+		@dates = reverse(sort(keys(%{$data->{'councils'}{$id}{'urls'}{$url}{'values'}})));
+		for($d = 0; $d < @dates; $d++){
+			$body .= "$indent\t\t\t<tr><td>$dates[$d]</td><td><a href=\"$data->{'councils'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'ref'}\">".sprintf("%0.2f",$data->{'councils'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'CO2'})."</a></td></tr>\n";
+		}
+		$body .= "$indent\t\t</table>\n";
+		$body .= "$indent\t</li>\n";
+	}
+	$body .= "$indent</ul>\n";
+
+	$body .= "$indent<h2>External links</h2>\n$indent<ul class=\"external\">\n";
+	$body .= "$indent\t<li><a href=\"https://findthatpostcode.uk/areas/$id.html\">Find that Postcode</a></li>\n";
+	$body .= "$indent\t<li><a href=\"http://statistics.data.gov.uk/doc/statistical-geography/$id\">ONS Linked Data</a></li>\n";
+	$body .= "$indent\t<li><a href=\"https://findthatpostcode.uk/areas/$id.geojson\">Boundary (GeoJSON)</a></li>\n";
+	$body .= "$indent</ul>\n";
+
+	$txt =~ s/\{\{ ID \}\}/$id/g;
+	$txt =~ s/\{\{ TITLE \}\}/$data->{'councils'}{$id}{'name'} website emissions/g;
+	$txt =~ s/\{\{ NAME \}\}/$data->{'councils'}{$id}{'name'}/g;
+	$txt =~ s/\{\{ BODY \}\}/$body/g;
+
+	open(FILE,">","areas/$id.html");
+	print FILE $txt;
+	close(FILE);
+}

@@ -1,0 +1,16 @@
+.title {
+	font-size: 1.7em;
+	font-weight: 600;
+}
+h1 { font-size: 1.4em; }
+h2 { font-size: 1.2em; margin-top: 2em; }
+code, .code { 
+	font-family: monospace;
+	padding: 0.125em 0.5em;
+}
+code {
+	color: #555555;
+	background-color: #efefef;
+}
+.emissions li { margin-top: 1em; }
+.external li { list-style: square inside; }
