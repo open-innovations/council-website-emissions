@@ -1,6 +1,7 @@
 .title {
 	font-size: 1.7em;
 	font-weight: 600;
+	display: block;
 }
 h1 { font-size: 1.4em; }
 h2 { font-size: 1.2em; margin-top: 2em; }
