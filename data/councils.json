@@ -1,0 +1,4666 @@
+{
+	"councils": {
+		"95ZZ": {
+			"active": false,
+			"name": "Strabane District Council",
+			"note": "Merged with Derry City Council on 2015-04-01",
+			"urls": {
+				"http://www.strabanedc.org.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.84, "ref": "https://www.websitecarbon.com/website/strabanedc-org-uk/" }
+					}
+				}
+			}
+		},
+		"E06000001": {
+			"active": true,
+			"name": "Hartlepool Borough Council",
+			"urls": {
+				"https://www.hartlepool.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.22, "ref": "https://www.websitecarbon.com/website/hartlepool-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000002": {
+			"active": true,
+			"name": "Middlesbrough Borough Council",
+			"urls": {
+				"https://www.middlesbrough.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.85, "ref": "https://www.websitecarbon.com/website/middlesbrough-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000003": {
+			"active": true,
+			"name": "Redcar and Cleveland Council",
+			"urls": {
+				"https://www.redcar-cleveland.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 7.28, "ref": "https://www.websitecarbon.com/website/redcar-cleveland-gov-uk/" },
+						"2021-05-25": { "CO2": 7.13, "ref": "https://www.websitecarbon.com/website/redcar-cleveland-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000004": {
+			"active": true,
+			"name": "Stockton-on-Tees Borough Council",
+			"urls": {
+				"http://www.stockton.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.37, "ref": "https://www.websitecarbon.com/website/stockton-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000005": {
+			"active": true,
+			"name": "Darlington Borough Council",
+			"urls": {
+				"https://www.darlington.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.39, "ref": "https://www.websitecarbon.com/website/darlington-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000006": {
+			"active": true,
+			"name": "Halton Borough Council",
+			"urls": {
+				"https://www3.halton.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.01, "ref": "https://www.websitecarbon.com/website/www3-halton-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000007": {
+			"active": true,
+			"name": "Warrington Borough Council",
+			"urls": {
+				"http://www.warrington.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.69, "ref": "https://www.websitecarbon.com/website/warrington-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000008": {
+			"active": true,
+			"name": "Blackburn with Darwen Borough Council",
+			"urls": {
+				"http://www.blackburn.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 3.17, "ref": "https://www.websitecarbon.com/website/blackburn-gov-uk/" },
+						"2021-05-25": { "CO2": 0.36, "ref": "https://www.websitecarbon.com/website/blackburn-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000009": {
+			"active": true,
+			"name": "Blackpool Borough Council",
+			"urls": {
+				"https://www.blackpool.gov.uk/": {
+					"values": {
+						"2021-05-25": { "CO2": 0.61, "ref": "https://www.websitecarbon.com/website/blackpool-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000010": {
+			"active": true,
+			"name": "Kingston-upon-Hull City Council",
+			"urls": {
+				"http://www.hullcc.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 1.47, "ref": "https://www.websitecarbon.com/website/hull-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000011": {
+			"active": true,
+			"name": "East Riding of Yorkshire Council",
+			"urls": {
+				"https://www.eastriding.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.97, "ref": "https://www.websitecarbon.com/website/eastriding-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000012": {
+			"active": true,
+			"name": "North East Lincolnshire Council",
+			"urls": {
+				"https://www.nelincs.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.62, "ref": "https://www.websitecarbon.com/website/nelincs-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000013": {
+			"active": true,
+			"name": "North Lincolnshire Council",
+			"urls": {
+				"https://www.northlincs.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.78, "ref": "https://www.websitecarbon.com/website/northlincs-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000014": {
+			"active": true,
+			"name": "City of York Council",
+			"urls": {
+				"https://www.york.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 1.07, "ref": "https://www.websitecarbon.com/website/york-gov-uk/" },
+						"2021-05-25": { "CO2": 1.28, "ref": "https://www.websitecarbon.com/website/york-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000015": {
+			"active": true,
+			"name": "Derby City Council",
+			"urls": {
+				"https://www.derby.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.84, "ref": "https://www.websitecarbon.com/website/derby-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000016": {
+			"active": true,
+			"name": "Leicester City Council",
+			"urls": {
+				"https://www.leicester.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.58, "ref": "https://www.websitecarbon.com/website/leicester-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000017": {
+			"active": true,
+			"name": "Rutland County Council",
+			"urls": {
+				"http://www.rutland.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.26, "ref": "https://www.websitecarbon.com/website/rutland-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000018": {
+			"active": true,
+			"name": "Nottingham City Council",
+			"urls": {
+				"http://www.nottinghamcity.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 12.01, "ref": "https://www.websitecarbon.com/website/nottinghamcity-gov-uk/" },
+						"2021-05-25": { "CO2": 12.02, "ref": "https://www.websitecarbon.com/website/nottinghamcity-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000019": {
+			"active": true,
+			"name": "Hertfordshire County Council",
+			"urls": {
+				"https://www.hertfordshire.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.89, "ref": "https://www.websitecarbon.com/website/hertfordshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000020": {
+			"active": true,
+			"name": "Telford & Wrekin Council",
+			"urls": {
+				"http://www.telford.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 4.07, "ref": "https://www.websitecarbon.com/website/telford-gov-uk/" },
+						"2021-05-25": { "CO2": 3.85, "ref": "https://www.websitecarbon.com/website/telford-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000021": {
+			"active": true,
+			"name": "Stoke-on-Trent City Council",
+			"urls": {
+				"http://www.stoke.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.93, "ref": "https://www.websitecarbon.com/website/stoke-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000022": {
+			"active": true,
+			"name": "Bath and North East Somerset Council",
+			"urls": {
+				"http://www.bathnes.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.2, "ref": "https://www.websitecarbon.com/website/bathnes-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000023": {
+			"active": true,
+			"name": "Bristol City Council",
+			"urls": {
+				"http://www.bristol.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.18, "ref": "https://www.websitecarbon.com/website/bristol-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000024": {
+			"active": true,
+			"name": "North Somerset Council",
+			"urls": {
+				"http://www.n-somerset.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 2.01, "ref": "https://www.websitecarbon.com/website/n-somerset-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000025": {
+			"active": true,
+			"name": "South Gloucestershire Council",
+			"urls": {
+				"http://www.southglos.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.61, "ref": "https://www.websitecarbon.com/website/southglos-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000026": {
+			"active": true,
+			"name": "Plymouth City Council",
+			"urls": {
+				"https://www.plymouth.gov.uk/": {
+					"values": {
+						"2021-05-25": { "CO2": 1.2, "ref": "https://www.websitecarbon.com/website/plymouth-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000027": {
+			"active": true,
+			"name": "Torbay Council",
+			"urls": {
+				"http://www.torbay.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/torbay-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000028": {
+			"active": false,
+			"name": "Bournemouth Borough Council",
+			"note": "\"Merged into Bournemouth, Christchurch and Poole 2019-04\"",
+			"urls": {
+				"http://www.bournemouth.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.51, "ref": "https://www.websitecarbon.com/website/bournemouth-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000029": {
+			"active": true,
+			"name": "Borough of Poole",
+			"urls": {
+				"https://www.poole.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.1, "ref": "https://www.websitecarbon.com/website/poole-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000030": {
+			"active": true,
+			"name": "Swindon Borough Council",
+			"urls": {
+				"http://www.swindon.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 2.1, "ref": "https://www.websitecarbon.com/website/swindon-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000031": {
+			"active": true,
+			"name": "Peterborough City Council",
+			"urls": {
+				"http://www.pkc.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.44, "ref": "https://www.websitecarbon.com/website/peterborough-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000032": {
+			"active": true,
+			"name": "Luton Borough Council",
+			"urls": {
+				"https://m.luton.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/m-luton-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000033": {
+			"active": true,
+			"name": "Southend-on-Sea Borough Council",
+			"urls": {
+				"http://www.southend.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.89, "ref": "https://www.websitecarbon.com/website/southend-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000034": {
+			"active": true,
+			"name": "Thurrock Council",
+			"urls": {
+				"http://www.thurrock.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.14, "ref": "https://www.websitecarbon.com/website/thurrock-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000035": {
+			"active": true,
+			"name": "Medway Council",
+			"urls": {
+				"https://www.medway.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.85, "ref": "https://www.websitecarbon.com/website/medway-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000036": {
+			"active": true,
+			"name": "Bracknell Forest Council",
+			"urls": {
+				"http://www.bracknell-forest.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.46, "ref": "https://www.websitecarbon.com/website/bracknell-forest-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000037": {
+			"active": true,
+			"name": "West Berkshire Council",
+			"urls": {
+				"http://www.westberks.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.93, "ref": "https://www.websitecarbon.com/website/westberks-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000038": {
+			"active": true,
+			"name": "Reading Borough Council",
+			"urls": {
+				"https://www.reading.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 3.45, "ref": "https://www.websitecarbon.com/website/reading-gov-uk/" },
+						"2021-05-25": { "CO2": 3.78, "ref": "https://www.websitecarbon.com/website/reading-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000039": {
+			"active": true,
+			"name": "Slough Borough Council",
+			"urls": {
+				"http://www.slough.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.57, "ref": "https://www.websitecarbon.com/website/slough-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000040": {
+			"active": true,
+			"name": "Royal Borough of Windsor and Maidenhead",
+			"urls": {
+				"http://www.rbwm.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.81, "ref": "https://www.websitecarbon.com/website/rbwm-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000041": {
+			"active": true,
+			"name": "Wokingham Borough Council",
+			"urls": {
+				"http://www.wokingham.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.49, "ref": "https://www.websitecarbon.com/website/wokingham-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000042": {
+			"active": true,
+			"name": "Milton Keynes",
+			"urls": {
+				"https://www.milton-keynes.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.97, "ref": "https://www.websitecarbon.com/website/milton-keynes-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000043": {
+			"active": true,
+			"name": "Brighton and Hove City Council",
+			"urls": {
+				"http://www.brighton-hove.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.52, "ref": "https://www.websitecarbon.com/website/brighton-hove-gov-uk-2/" }
+					}
+				}
+			}
+		},
+		"E06000044": {
+			"active": true,
+			"name": "Portsmouth City Council",
+			"urls": {
+				"https://www.portsmouth.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.65, "ref": "https://www.websitecarbon.com/website/portsmouth-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000045": {
+			"active": true,
+			"name": "Southampton City Council",
+			"urls": {
+				"http://www.southampton.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.7, "ref": "https://www.websitecarbon.com/website/southampton-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000046": {
+			"active": true,
+			"name": "Isle of Wight Council",
+			"urls": {
+				"https://www.iow.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.81, "ref": "https://www.websitecarbon.com/website/iow-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000047": {
+			"active": true,
+			"name": "Durham County Council",
+			"urls": {
+				"https://www.durham.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.73, "ref": "https://www.websitecarbon.com/website/durham-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000049": {
+			"active": true,
+			"name": "Cheshire East Council (Unitary)",
+			"urls": {
+				"https://www.cheshireeast.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.53, "ref": "https://www.websitecarbon.com/website/cheshireeast-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000050": {
+			"active": true,
+			"name": "Cheshire West and Chester Council",
+			"urls": {
+				"https://www.cheshirewestandchester.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.54, "ref": "https://www.websitecarbon.com/website/cheshirewestandchester-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000051": {
+			"active": true,
+			"name": "Shropshire Council - Unitary",
+			"urls": {
+				"https://www.shropshire.gov.uk/": {
+					"values": {
+						"2021-05-25": { "CO2": 0.49, "ref": "https://www.websitecarbon.com/website/shropshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000052": {
+			"active": true,
+			"name": "Cornwall Council",
+			"urls": {
+				"https://www.cornwall.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.71, "ref": "https://www.websitecarbon.com/website/cornwall-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000053": {
+			"active": true,
+			"name": "Isles of Scilly",
+			"urls": {
+				"https://www.scilly.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.69, "ref": "https://www.websitecarbon.com/website/scilly-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000054": {
+			"active": true,
+			"name": "Wiltshire Council",
+			"urls": {
+				"http://www.wiltshire.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.19, "ref": "https://www.websitecarbon.com/website/wiltshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000055": {
+			"active": true,
+			"name": "Bedford Borough Council",
+			"urls": {
+				"http://www.bedford.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.39, "ref": "https://www.websitecarbon.com/website/bedford-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000056": {
+			"active": true,
+			"name": "Central Bedfordshire Council",
+			"urls": {
+				"https://www.centralbedfordshire.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.54, "ref": "https://www.websitecarbon.com/website/centralbedfordshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000057": {
+			"active": true,
+			"name": "Northumberland Council",
+			"urls": {
+				"https://www.northumberland.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 1.07, "ref": "https://www.websitecarbon.com/website/northumberland-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000058": {
+			"active": true,
+			"name": "Bournemouth, Christchurch and Poole",
+			"urls": {
+				"https://www.bcpcouncil.gov.uk/Home.aspx": {
+					"values": {
+						"2021-05-19": { "CO2": 2.14, "ref": "https://www.websitecarbon.com/website/bcpcouncil-gov-uk-home-aspx/" }
+					}
+				}
+			}
+		},
+		"E06000059": {
+			"active": true,
+			"name": "Dorset Council",
+			"urls": {
+				"https://www.dorsetcouncil.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.85, "ref": "https://www.websitecarbon.com/website/dorsetcouncil-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000060": {
+			"active": true,
+			"name": "Buckinghamshire County Council",
+			"urls": {
+				"http://www.buckscc.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/buckscc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000061": {
+			"active": true,
+			"name": "North Northamptonshire",
+			"urls": {
+				"https://www.northnorthants.gov.uk/": {
+					"values": {
+						"2021-05-19": { "CO2": 0.63, "ref": "https://www.websitecarbon.com/website/northnorthants-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E06000062": {
+			"active": true,
+			"name": "West Northamptonshire",
+			"urls": {
+				"https://www.westnorthants.gov.uk/": {
+					"values": {
+						"2021-05-19": { "CO2": 0.62, "ref": "https://www.websitecarbon.com/website/westnorthants-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000004": {
+			"active": false,
+			"name": "Aylesbury Vale District Council",
+			"note": "Merged into Buckinghamshire Council 2020-04",
+			"urls": {
+				"http://www.aylesburyvaledc.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.01, "ref": "https://www.websitecarbon.com/website/aylesburyvaledc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000005": {
+			"active": false,
+			"name": "Chiltern District Council",
+			"note": "Merged into Buckinghamshire Council 2020-04",
+			"urls": {
+				"https://www.chiltern.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.62, "ref": "https://www.websitecarbon.com/website/chiltern-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000006": {
+			"active": false,
+			"name": "South Buckinghamshire District Council",
+			"note": "Merged into Buckinghamshire Council 2020-04",
+			"urls": {
+				"http://www.southbucks.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.92, "ref": "https://www.websitecarbon.com/website/southbucks-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000007": {
+			"active": false,
+			"name": "Wycombe District Council",
+			"note": "Merged into Buckinghamshire Council 2020-04",
+			"urls": {
+				"http://www.wycombe.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.48, "ref": "https://www.websitecarbon.com/website/wycombe-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000008": {
+			"active": true,
+			"name": "Cambridge City Council",
+			"urls": {
+				"https://www.cambridge.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.58, "ref": "https://www.websitecarbon.com/website/cambridge-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000009": {
+			"active": true,
+			"name": "East Cambridgeshire District Council",
+			"urls": {
+				"https://www.eastcambs.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.45, "ref": "https://www.websitecarbon.com/website/eastcambs-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000010": {
+			"active": true,
+			"name": "Fenland District Council",
+			"urls": {
+				"https://www.fenland.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.49, "ref": "https://www.websitecarbon.com/website/fenland-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000011": {
+			"active": true,
+			"name": "Huntingdonshire District Council",
+			"urls": {
+				"https://www.huntingdonshire.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.12, "ref": "https://www.websitecarbon.com/website/huntingdonshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000012": {
+			"active": true,
+			"name": "South Cambridgeshire District Council",
+			"urls": {
+				"http://www.scambs.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 6.12, "ref": "https://www.websitecarbon.com/website/scambs-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000026": {
+			"active": true,
+			"name": "Allerdale Borough Council",
+			"urls": {
+				"http://www.allerdale.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 2.55, "ref": "https://www.websitecarbon.com/website/allerdale-gov-uk/" },
+						"2021-05-25": { "CO2": 2.98, "ref": "https://www.websitecarbon.com/website/allerdale-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000027": {
+			"active": true,
+			"name": "Barrow-in-Furness Borough Council",
+			"urls": {
+				"http://www.barrowbc.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.1, "ref": "https://www.websitecarbon.com/website/barrowbc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000028": {
+			"active": true,
+			"name": "Carlisle City Council",
+			"urls": {
+				"https://www.carlisle.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 2.65, "ref": "https://www.websitecarbon.com/website/carlisle-gov-uk/" },
+						"2021-05-25": { "CO2": 1.25, "ref": "https://www.websitecarbon.com/website/carlisle-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000029": {
+			"active": true,
+			"name": "Copeland Borough Council",
+			"urls": {
+				"https://www.copeland.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.64, "ref": "https://www.websitecarbon.com/website/copeland-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000030": {
+			"active": true,
+			"name": "Eden District Council",
+			"urls": {
+				"https://www.eden.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.27, "ref": "https://www.websitecarbon.com/website/eden-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000031": {
+			"active": true,
+			"name": "South Lakeland District Council",
+			"urls": {
+				"https://www.southlakeland.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.37, "ref": "https://www.websitecarbon.com/website/southlakeland-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000032": {
+			"active": true,
+			"name": "Amber Valley Borough Council",
+			"urls": {
+				"http://www.ambervalley.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.38, "ref": "https://www.websitecarbon.com/website/ambervalley-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000033": {
+			"active": true,
+			"name": "Bolsover District Council",
+			"urls": {
+				"http://www.bolsover.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.98, "ref": "https://www.websitecarbon.com/website/bolsover-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000034": {
+			"active": true,
+			"name": "Chesterfield Borough Council",
+			"urls": {
+				"https://www.chesterfield.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 2.42, "ref": "https://www.websitecarbon.com/website/chesterfield-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000035": {
+			"active": true,
+			"name": "Derbyshire Dales District Council",
+			"urls": {
+				"https://www.derbyshiredales.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.26, "ref": "https://www.websitecarbon.com/website/derbyshiredales-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000036": {
+			"active": true,
+			"name": "Erewash Borough Council",
+			"urls": {
+				"https://www.erewash.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.64, "ref": "https://www.websitecarbon.com/website/erewash-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000037": {
+			"active": true,
+			"name": "High Peak Borough Council",
+			"urls": {
+				"https://www.highpeak.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.05, "ref": "https://www.websitecarbon.com/website/highpeak-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000038": {
+			"active": true,
+			"name": "North East Derbyshire District Council",
+			"urls": {
+				"https://www.ne-derbyshire.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.27, "ref": "https://www.websitecarbon.com/website/ne-derbyshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000039": {
+			"active": true,
+			"name": "South Derbyshire District Council",
+			"urls": {
+				"https://www.southderbyshire.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 1.59, "ref": "https://www.websitecarbon.com/website/southderbyshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000040": {
+			"active": true,
+			"name": "East Devon District Council",
+			"urls": {
+				"https://www.eastdevon.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 3.33, "ref": "https://www.websitecarbon.com/website/eastdevon-gov-uk/" },
+						"2021-05-25": { "CO2": 3.27, "ref": "https://www.websitecarbon.com/website/eastdevon-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000041": {
+			"active": true,
+			"name": "Exeter City Council",
+			"urls": {
+				"https://exeter.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.66, "ref": "https://www.websitecarbon.com/website/exeter-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000042": {
+			"active": true,
+			"name": "Mid Devon District Council",
+			"urls": {
+				"https://www.middevon.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.26, "ref": "https://www.websitecarbon.com/website/middevon-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000043": {
+			"active": true,
+			"name": "North Devon Council",
+			"urls": {
+				"https://www.northdevon.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.24, "ref": "https://www.websitecarbon.com/website/northdevon-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000044": {
+			"active": true,
+			"name": "South Hams District Council",
+			"urls": {
+				"http://www.southhams.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.2, "ref": "https://www.websitecarbon.com/website/southhams-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000045": {
+			"active": true,
+			"name": "Teignbridge District Council",
+			"urls": {
+				"http://www.teignbridge.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.6, "ref": "https://www.websitecarbon.com/website/teignbridge-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000046": {
+			"active": true,
+			"name": "Torridge District Council",
+			"urls": {
+				"http://www.torridge.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.86, "ref": "https://www.websitecarbon.com/website/torridge-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000047": {
+			"active": true,
+			"name": "West Devon Borough Council",
+			"urls": {
+				"http://www.westdevon.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.16, "ref": "https://www.websitecarbon.com/website/westdevon-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000048": {
+			"active": false,
+			"name": "Christchurch Borough Council",
+			"note": "\"Merged into Bournemouth, Christchurch and Poole 2019-04\"",
+			"urls": {
+				"https://www.dorsetcouncil.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.85, "ref": "https://www.websitecarbon.com/website/dorsetcouncil-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000049": {
+			"active": false,
+			"name": "East Dorset District Council",
+			"note": "Merged into Dorset Council 2019-04",
+			"urls": {
+				"https://www.dorsetcouncil.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.85, "ref": "https://www.websitecarbon.com/website/dorsetcouncil-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000050": {
+			"active": false,
+			"name": "North Dorset District Council",
+			"note": "Merged into Dorset Council 2019-04",
+			"urls": {
+				"https://www.dorsetcouncil.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.85, "ref": "https://www.websitecarbon.com/website/dorsetcouncil-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000051": {
+			"active": false,
+			"name": "Purbeck District Council",
+			"note": "Merged into Dorset Council 2019-04",
+			"urls": {
+				"https://www.dorsetcouncil.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.85, "ref": "https://www.websitecarbon.com/website/dorsetcouncil-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000052": {
+			"active": false,
+			"name": "West Dorset District Council",
+			"note": "Merged into Dorset Council 2019-04",
+			"urls": {
+				"http://www.dorsetforyou.com/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.84, "ref": "https://www.websitecarbon.com/website/dorsetforyou-com/" }
+					}
+				}
+			}
+		},
+		"E07000053": {
+			"active": false,
+			"name": "Weymouth and Portland Borough Council",
+			"note": "Merged into Dorset Council 2019-04",
+			"urls": {
+				"https://www.dorsetforyou.com/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.84, "ref": "https://www.websitecarbon.com/website/dorsetforyou-com/" }
+					}
+				}
+			}
+		},
+		"E07000061": {
+			"active": true,
+			"name": "Eastbourne Borough Council",
+			"urls": {
+				"https://www.lewes-eastbourne.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.54, "ref": "https://www.websitecarbon.com/website/lewes-eastbourne-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000062": {
+			"active": true,
+			"name": "Hastings Borough Council",
+			"urls": {
+				"https://www.hastings.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.52, "ref": "https://www.websitecarbon.com/website/hastings-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000063": {
+			"active": true,
+			"name": "Lewes District Council",
+			"urls": {
+				"https://www.lewes-eastbourne.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.54, "ref": "https://www.websitecarbon.com/website/lewes-eastbourne-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000064": {
+			"active": true,
+			"name": "Rother District Council",
+			"urls": {
+				"http://www.rother.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.33, "ref": "https://www.websitecarbon.com/website/rother-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000065": {
+			"active": true,
+			"name": "Wealden District Council",
+			"urls": {
+				"http://www.wealden.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.58, "ref": "https://www.websitecarbon.com/website/wealden-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000066": {
+			"active": true,
+			"name": "Basildon Borough Council",
+			"urls": {
+				"http://www.basildon.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.14, "ref": "https://www.websitecarbon.com/website/basildon-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000067": {
+			"active": true,
+			"name": "Braintree District Council",
+			"urls": {
+				"https://www.braintree.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 3.78, "ref": "https://www.websitecarbon.com/website/braintree-gov-uk/" },
+						"2021-05-25": { "CO2": 2.50, "ref": "https://www.websitecarbon.com/website/braintree-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000068": {
+			"active": true,
+			"name": "Brentwood Borough Council",
+			"urls": {
+				"https://www.brentwood.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.73, "ref": "https://www.websitecarbon.com/website/brentwood-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000069": {
+			"active": true,
+			"name": "Castle Point Borough Council",
+			"urls": {
+				"https://www.castlepoint.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.65, "ref": "https://www.websitecarbon.com/website/castlepoint-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000070": {
+			"active": true,
+			"name": "Chelmsford City Council",
+			"urls": {
+				"https://www.chelmsford.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.6, "ref": "https://www.websitecarbon.com/website/chelmsford-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000071": {
+			"active": true,
+			"name": "Colchester Borough Council",
+			"urls": {
+				"https://www.colchester.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.65, "ref": "https://www.websitecarbon.com/website/colchester-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000072": {
+			"active": true,
+			"name": "Epping Forest District Council",
+			"urls": {
+				"https://www.eppingforestdc.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.11, "ref": "https://www.websitecarbon.com/website/eppingforestdc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000073": {
+			"active": true,
+			"name": "Harlow Council",
+			"urls": {
+				"https://www.harlow.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.32, "ref": "https://www.websitecarbon.com/website/harlow-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000074": {
+			"active": true,
+			"name": "Maldon District Council",
+			"urls": {
+				"https://www.maldon.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 4.88, "ref": "https://www.websitecarbon.com/website/maldon-gov-uk/" },
+						"2021-05-25": { "CO2": 4.73, "ref": "https://www.websitecarbon.com/website/maldon-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000075": {
+			"active": true,
+			"name": "Rochford District Council",
+			"urls": {
+				"http://www.rochford.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.74, "ref": "https://www.websitecarbon.com/website/rochford-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000076": {
+			"active": true,
+			"name": "Tendring District Council",
+			"urls": {
+				"https://www.tendringdc.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.74, "ref": "https://www.websitecarbon.com/website/tendringdc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000077": {
+			"active": true,
+			"name": "Uttlesford District Council",
+			"urls": {
+				"http://www.uttlesford.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 3.34, "ref": "https://www.websitecarbon.com/website/uttlesford-gov-uk/" },
+						"2021-05-25": { "CO2": 2.85, "ref": "https://www.websitecarbon.com/website/uttlesford-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000078": {
+			"active": true,
+			"name": "Cheltenham Borough Council",
+			"urls": {
+				"https://www.cheltenham.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 2.68, "ref": "https://www.websitecarbon.com/website/cheltenham-gov-uk/" },
+						"2021-05-25": { "CO2": 0.60, "ref": "https://www.websitecarbon.com/website/cheltenham-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000079": {
+			"active": true,
+			"name": "Cotswold District Council",
+			"urls": {
+				"https://www.cotswold.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.47, "ref": "https://www.websitecarbon.com/website/cotswold-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000080": {
+			"active": true,
+			"name": "Forest of Dean District Council",
+			"urls": {
+				"https://www.fdean.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.5, "ref": "https://www.websitecarbon.com/website/fdean-gov-uk-2/" }
+					}
+				}
+			}
+		},
+		"E07000081": {
+			"active": true,
+			"name": "Gloucester City Council",
+			"urls": {
+				"https://www.gloucester.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.31, "ref": "https://www.websitecarbon.com/website/gloucester-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000082": {
+			"active": true,
+			"name": "Stroud District Council",
+			"urls": {
+				"https://www.stroud.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.37, "ref": "https://www.websitecarbon.com/website/stroud-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000083": {
+			"active": true,
+			"name": "Tewkesbury Borough Council",
+			"urls": {
+				"http://tewkesbury.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.74, "ref": "https://www.websitecarbon.com/website/tewkesbury-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000084": {
+			"active": true,
+			"name": "Basingstoke and Deane Borough Council",
+			"urls": {
+				"http://www.basingstoke.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 2.99, "ref": "https://www.websitecarbon.com/website/basingstoke-gov-uk/" },
+						"2021-05-25": { "CO2": 1.66, "ref": "https://www.websitecarbon.com/website/basingstoke-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000085": {
+			"active": true,
+			"name": "East Hampshire District Council",
+			"urls": {
+				"https://www.easthants.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.56, "ref": "https://www.websitecarbon.com/website/easthants-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000086": {
+			"active": true,
+			"name": "Eastleigh Borough Council",
+			"urls": {
+				"https://www.eastleigh.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.36, "ref": "https://www.websitecarbon.com/website/eastleigh-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000087": {
+			"active": true,
+			"name": "Fareham Borough Council",
+			"urls": {
+				"https://www.fareham.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.23, "ref": "https://www.websitecarbon.com/website/fareham-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000088": {
+			"active": true,
+			"name": "Gosport Borough Council",
+			"urls": {
+				"https://www.gosport.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 2.11, "ref": "https://www.websitecarbon.com/website/gosport-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000089": {
+			"active": true,
+			"name": "Hart District Council",
+			"urls": {
+				"https://www.hart.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.31, "ref": "https://www.websitecarbon.com/website/hart-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000090": {
+			"active": true,
+			"name": "Havant Borough Council",
+			"urls": {
+				"https://www.havant.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.42, "ref": "https://www.websitecarbon.com/website/havant-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000091": {
+			"active": true,
+			"name": "New Forest District Council",
+			"urls": {
+				"https://newforest.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.3, "ref": "https://www.websitecarbon.com/website/newforest-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000092": {
+			"active": true,
+			"name": "Rushmoor Borough Council",
+			"urls": {
+				"http://www.rushmoor.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.74, "ref": "https://www.websitecarbon.com/website/rushmoor-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000093": {
+			"active": true,
+			"name": "Test Valley Borough Council",
+			"urls": {
+				"http://www.testvalley.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.1, "ref": "https://www.websitecarbon.com/website/testvalley-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000094": {
+			"active": true,
+			"name": "Winchester City Council",
+			"urls": {
+				"http://www.winchester.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 2.02, "ref": "https://www.websitecarbon.com/website/winchester-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000095": {
+			"active": true,
+			"name": "Borough of Broxbourne",
+			"urls": {
+				"http://www.broxbourne.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 3.57, "ref": "https://www.websitecarbon.com/website/broxbourne-gov-uk/" },
+						"2021-05-25": { "CO2": 3.57, "ref": "https://www.websitecarbon.com/website/broxbourne-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000096": {
+			"active": true,
+			"name": "Dacorum Council",
+			"urls": {
+				"https://www.dacorum.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.3, "ref": "https://www.websitecarbon.com/website/dacorum-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000098": {
+			"active": true,
+			"name": "Hertsmere Borough Council",
+			"urls": {
+				"https://www.hertsmere.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.86, "ref": "https://www.websitecarbon.com/website/hertsmere-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000099": {
+			"active": true,
+			"name": "North Hertfordshire District Council",
+			"urls": {
+				"https://www.north-herts.gov.uk/": {
+					"values": {
+						"2021-05-19": { "CO2": 0.67, "ref": "https://www.websitecarbon.com/website/north-herts-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000102": {
+			"active": true,
+			"name": "Three Rivers District Council",
+			"urls": {
+				"http://www.threerivers.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 2.52, "ref": "https://www.websitecarbon.com/website/threerivers-gov-uk/" },
+						"2021-05-25": { "CO2": 3.09, "ref": "https://www.websitecarbon.com/website/threerivers-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000103": {
+			"active": true,
+			"name": "Watford Borough Council",
+			"urls": {
+				"http://www.watford.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 12.12, "ref": "https://www.websitecarbon.com/website/watford-gov-uk/" },
+						"2021-05-25": { "CO2": 6.30, "ref": "https://www.websitecarbon.com/website/watford-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000105": {
+			"active": true,
+			"name": "Ashford Borough Council",
+			"urls": {
+				"http://www.ashford.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 2.92, "ref": "https://www.websitecarbon.com/website/ashford-gov-uk/" },
+						"2021-05-25": { "CO2": 1.61, "ref": "https://www.websitecarbon.com/website/ashford-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000106": {
+			"active": true,
+			"name": "Canterbury City Council",
+			"urls": {
+				"https://www.canterbury.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.29, "ref": "https://www.websitecarbon.com/website/canterbury-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000107": {
+			"active": true,
+			"name": "Dartford Borough Council",
+			"urls": {
+				"https://www.dartford.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.21, "ref": "https://www.websitecarbon.com/website/dartford-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000108": {
+			"active": true,
+			"name": "Dover District Council",
+			"urls": {
+				"https://www.dover.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.35, "ref": "https://www.websitecarbon.com/website/dover-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000109": {
+			"active": true,
+			"name": "Gravesham Borough Council",
+			"urls": {
+				"https://www.gravesham.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.42, "ref": "https://www.websitecarbon.com/website/gravesham-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000110": {
+			"active": true,
+			"name": "Maidstone Borough Council",
+			"urls": {
+				"https://maidstone.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 2.64, "ref": "https://www.websitecarbon.com/website/maidstone-gov-uk/" },
+						"2021-05-25": { "CO2": 4.47, "ref": "https://www.websitecarbon.com/website/maidstone-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000111": {
+			"active": true,
+			"name": "Sevenoaks District Council",
+			"urls": {
+				"http://www.sevenoaks.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 1.11, "ref": "https://www.websitecarbon.com/website/sevenoaks-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000112": {
+			"active": true,
+			"name": "Folkestone and Hythe",
+			"urls": {
+				"https://www.folkestone-hythe.gov.uk/home": {
+					"values": {
+						"2021-03-11": { "CO2": 2.51, "ref": "https://www.websitecarbon.com/website/folkestone-hythe-gov-uk-home/" },
+						"2021-05-25": { "CO2": 2.45, "ref": "https://www.websitecarbon.com/website/folkestone-hythe-gov-uk-home/" }
+					}
+				}
+			}
+		},
+		"E07000113": {
+			"active": true,
+			"name": "Swale Borough Council",
+			"urls": {
+				"http://www.swale.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.2, "ref": "https://www.websitecarbon.com/website/swale-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000114": {
+			"active": true,
+			"name": "Thanet District Council",
+			"urls": {
+				"http://thanet.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.82, "ref": "https://www.websitecarbon.com/website/thanet-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000115": {
+			"active": true,
+			"name": "Tonbridge and Malling Borough Council",
+			"urls": {
+				"http://www.tmbc.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.33, "ref": "https://www.websitecarbon.com/website/tmbc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000116": {
+			"active": true,
+			"name": "Tunbridge Wells Borough Council",
+			"urls": {
+				"http://www.tunbridgewells.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.64, "ref": "https://www.websitecarbon.com/website/tunbridgewells-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000117": {
+			"active": true,
+			"name": "Burnley Borough Council",
+			"urls": {
+				"http://www.burnley.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.79, "ref": "https://www.websitecarbon.com/website/burnley-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000118": {
+			"active": true,
+			"name": "Chorley Council",
+			"urls": {
+				"https://www.chorley.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.79, "ref": "https://www.websitecarbon.com/website/chorley-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000119": {
+			"active": true,
+			"name": "Fylde Borough Council",
+			"urls": {
+				"https://new.fylde.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.43, "ref": "https://www.websitecarbon.com/website/new-fylde-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000120": {
+			"active": true,
+			"name": "Hyndburn Borough Council",
+			"urls": {
+				"https://www.hyndburnbc.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.66, "ref": "https://www.websitecarbon.com/website/hyndburnbc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000121": {
+			"active": true,
+			"name": "Lancaster City Council",
+			"urls": {
+				"https://www.lancaster.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.95, "ref": "https://www.websitecarbon.com/website/lancaster-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000122": {
+			"active": true,
+			"name": "Pendle Borough Council",
+			"urls": {
+				"https://www.pendle.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.78, "ref": "https://www.websitecarbon.com/website/pendle-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000123": {
+			"active": true,
+			"name": "Preston City Council",
+			"urls": {
+				"https://www.preston.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 1.85, "ref": "https://www.websitecarbon.com/website/preston-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000124": {
+			"active": true,
+			"name": "Ribble Valley Borough Council",
+			"urls": {
+				"https://www.ribblevalley.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.42, "ref": "https://www.websitecarbon.com/website/ribblevalley-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000125": {
+			"active": true,
+			"name": "Rossendale Borough Council",
+			"urls": {
+				"http://www.rossendale.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.18, "ref": "https://www.websitecarbon.com/website/rossendale-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000126": {
+			"active": true,
+			"name": "South Ribble Borough Council",
+			"urls": {
+				"http://www.southribble.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.44, "ref": "https://www.websitecarbon.com/website/southribble-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000127": {
+			"active": true,
+			"name": "West Lancashire Borough Council",
+			"urls": {
+				"http://www.westlancs.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.28, "ref": "https://www.websitecarbon.com/website/westlancs-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000128": {
+			"active": true,
+			"name": "Wyre Council",
+			"urls": {
+				"http://www.wyre.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.25, "ref": "https://www.websitecarbon.com/website/wyre-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000129": {
+			"active": true,
+			"name": "Blaby District Council",
+			"urls": {
+				"http://www.blaby.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.3, "ref": "https://www.websitecarbon.com/website/blaby-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000130": {
+			"active": true,
+			"name": "Charnwood Borough Council",
+			"urls": {
+				"https://www.charnwood.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.11, "ref": "https://www.websitecarbon.com/website/charnwood-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000131": {
+			"active": true,
+			"name": "Harborough District Council",
+			"urls": {
+				"https://www.harborough.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.05, "ref": "https://www.websitecarbon.com/website/harborough-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000132": {
+			"active": true,
+			"name": "Hinckley and Bosworth Borough Council",
+			"urls": {
+				"https://www.hinckley-bosworth.gov.uk": {
+					"values": {
+						"2021-03-10": { "CO2": 0.62, "ref": "https://www.websitecarbon.com/website/hinckley-bosworth-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000133": {
+			"active": true,
+			"name": "Melton Borough Council",
+			"urls": {
+				"https://www.melton.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.79, "ref": "https://www.websitecarbon.com/website/melton-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000134": {
+			"active": true,
+			"name": "North West Leicestershire District Council",
+			"urls": {
+				"https://www.nwleics.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.82, "ref": "https://www.websitecarbon.com/website/nwleics-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000135": {
+			"active": true,
+			"name": "Oadby and Wigston District Council",
+			"urls": {
+				"https://www.oadby-wigston.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.21, "ref": "https://www.websitecarbon.com/website/oadby-wigston-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000136": {
+			"active": true,
+			"name": "Boston Borough Council",
+			"urls": {
+				"https://www.mybostonuk.com/": {
+					"values": {
+						"2021-03-04": { "CO2": 2.27, "ref": "https://www.websitecarbon.com/website/mybostonuk-com/" }
+					}
+				}
+			}
+		},
+		"E07000137": {
+			"active": true,
+			"name": "East Lindsey District Council",
+			"urls": {
+				"https://www.e-lindsey.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.25, "ref": "https://www.websitecarbon.com/website/e-lindsey-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000138": {
+			"active": true,
+			"name": "City of Lincoln Council",
+			"urls": {
+				"https://www.lincoln.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.96, "ref": "https://www.websitecarbon.com/website/lincoln-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000139": {
+			"active": true,
+			"name": "North Kesteven District Council",
+			"urls": {
+				"https://www.n-kesteven.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 2.89, "ref": "https://www.websitecarbon.com/website/n-kesteven-gov-uk/" },
+						"2021-05-25": { "CO2": 2.47, "ref": "https://www.websitecarbon.com/website/n-kesteven-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000140": {
+			"active": true,
+			"name": "South Holland District Council",
+			"urls": {
+				"http://www.sholland.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.67, "ref": "https://www.websitecarbon.com/website/sholland-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000141": {
+			"active": true,
+			"name": "South Kesteven District Council",
+			"urls": {
+				"http://www.southkesteven.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.33, "ref": "https://www.websitecarbon.com/website/southkesteven-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000142": {
+			"active": true,
+			"name": "West Lindsey District Council",
+			"urls": {
+				"http://www.west-lindsey.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.32, "ref": "https://www.websitecarbon.com/website/west-lindsey-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000143": {
+			"active": true,
+			"name": "Breckland District Council",
+			"urls": {
+				"https://www.breckland.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.11, "ref": "https://www.websitecarbon.com/website/breckland-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000144": {
+			"active": true,
+			"name": "Broadland District Council",
+			"urls": {
+				"http://www.broadland.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.47, "ref": "https://www.websitecarbon.com/website/broadland-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000145": {
+			"active": true,
+			"name": "Great Yarmouth Borough Council",
+			"urls": {
+				"https://www.great-yarmouth.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.29, "ref": "https://www.websitecarbon.com/website/great-yarmouth-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000146": {
+			"active": true,
+			"name": "King's Lynn and West Norfolk Borough Council",
+			"urls": {
+				"https://www.west-norfolk.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.63, "ref": "https://www.websitecarbon.com/website/west-norfolk-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000147": {
+			"active": true,
+			"name": "North Norfolk District Council",
+			"urls": {
+				"https://www.north-norfolk.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 2.41, "ref": "https://www.websitecarbon.com/website/north-norfolk-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000148": {
+			"active": true,
+			"name": "Norwich City Council",
+			"urls": {
+				"https://www.norwich.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.32, "ref": "https://www.websitecarbon.com/website/norwich-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000149": {
+			"active": true,
+			"name": "South Norfolk District Council",
+			"urls": {
+				"http://www.south-norfolk.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.49, "ref": "https://www.websitecarbon.com/website/south-norfolk-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000150": {
+			"active": false,
+			"name": "Corby Borough Council",
+			"note": "Merged into North Northamptonshire 2021-04",
+			"urls": {
+				"https://www.corby.gov.uk/": {
+					"values": {
+						"2021-05-19": { "CO2": 0.62, "ref": "https://www.websitecarbon.com/website/corby-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000151": {
+			"active": false,
+			"name": "Daventry District Council",
+			"note": "Merged into West Northamptonshire 2021-04",
+			"urls": {
+				"https://www.daventrydc.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.49, "ref": "https://www.websitecarbon.com/website/daventrydc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000152": {
+			"active": false,
+			"name": "East Northamptonshire Council",
+			"note": "Merged into North Northamptonshire 2021-04",
+			"urls": {
+				"https://www.east-northamptonshire.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.91, "ref": "https://www.websitecarbon.com/website/east-northamptonshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000153": {
+			"active": false,
+			"name": "Kettering Borough Council",
+			"note": "Merged into North Northamptonshire 2021-04",
+			"urls": {
+				"https://www.kettering.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.37, "ref": "https://www.websitecarbon.com/website/kettering-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000154": {
+			"active": false,
+			"name": "Northampton Borough Council",
+			"note": "Merged into West Northamptonshire 2021-04",
+			"urls": {
+				"https://www.northampton.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 5.98, "ref": "https://www.websitecarbon.com/website/northampton-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000155": {
+			"active": false,
+			"name": "South Northamptonshire Council",
+			"note": "Merged into West Northamptonshire 2021-04",
+			"urls": {
+				"http://www.southnorthants.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.25, "ref": "https://www.websitecarbon.com/website/southnorthants-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000156": {
+			"active": false,
+			"name": "Wellingborough Borough Council",
+			"note": "Merged into North Northamptonshire 2021-04",
+			"urls": {
+				"http://www.wellingborough.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.44, "ref": "https://www.websitecarbon.com/website/wellingborough-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000163": {
+			"active": true,
+			"name": "Craven District Council",
+			"urls": {
+				"https://www.cravendc.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.57, "ref": "https://www.websitecarbon.com/website/cravendc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000164": {
+			"active": true,
+			"name": "Hambleton District Council",
+			"urls": {
+				"https://www.hambleton.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.03, "ref": "https://www.websitecarbon.com/website/hambleton-gov-uk-new/" }
+					}
+				}
+			}
+		},
+		"E07000165": {
+			"active": true,
+			"name": "Harrogate Borough Council",
+			"urls": {
+				"https://www.harrogate.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.95, "ref": "https://www.websitecarbon.com/website/harrogate-gov-uk/" },
+						"2021-05-25": { "CO2": 0.95, "ref": "https://www.websitecarbon.com/website/harrogate-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000166": {
+			"active": true,
+			"name": "Richmondshire District Council",
+			"urls": {
+				"https://www.richmondshire.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.72, "ref": "https://www.websitecarbon.com/website/richmondshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000167": {
+			"active": true,
+			"name": "Ryedale District Council",
+			"urls": {
+				"http://www.ryedale.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.74, "ref": "https://www.websitecarbon.com/website/ryedale-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000168": {
+			"active": true,
+			"name": "Scarborough Borough Council",
+			"urls": {
+				"https://www.scarborough.gov.uk/": {
+					"values": {
+						"2021-05-25": { "CO2": 1.71, "ref": "https://www.websitecarbon.com/website/scarborough-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000169": {
+			"active": true,
+			"name": "Selby District Council",
+			"urls": {
+				"http://www.selby.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.9, "ref": "https://www.websitecarbon.com/website/selby-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000170": {
+			"active": true,
+			"name": "Ashfield District Council",
+			"urls": {
+				"http://www.ashfield-dc.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.87, "ref": "https://www.websitecarbon.com/website/ashfield-dc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000171": {
+			"active": true,
+			"name": "Bassetlaw District Council",
+			"urls": {
+				"http://www.bassetlaw.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.46, "ref": "https://www.websitecarbon.com/website/bassetlaw-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000172": {
+			"active": true,
+			"name": "Broxtowe Borough Council",
+			"urls": {
+				"https://www.broxtowe.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.86, "ref": "https://www.websitecarbon.com/website/broxtowe-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000173": {
+			"active": true,
+			"name": "Gedling Borough Council",
+			"urls": {
+				"https://www.gedling.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.42, "ref": "https://www.websitecarbon.com/website/gedling-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000174": {
+			"active": true,
+			"name": "Mansfield District Council",
+			"urls": {
+				"https://www.mansfield.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.57, "ref": "https://www.websitecarbon.com/website/mansfield-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000175": {
+			"active": true,
+			"name": "Newark and Sherwood District Council",
+			"urls": {
+				"https://www.newark-sherwooddc.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.81, "ref": "https://www.websitecarbon.com/website/newark-sherwooddc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000176": {
+			"active": true,
+			"name": "Rushcliffe Borough Council",
+			"urls": {
+				"http://www.rushcliffe.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.43, "ref": "https://www.websitecarbon.com/website/rushcliffe-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000177": {
+			"active": true,
+			"name": "Cherwell District Council",
+			"urls": {
+				"https://www.cherwell.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.33, "ref": "https://www.websitecarbon.com/website/cherwell-gov-uk-2/" }
+					}
+				}
+			}
+		},
+		"E07000178": {
+			"active": true,
+			"name": "Oxford City Council",
+			"urls": {
+				"https://www.oxford.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.42, "ref": "https://www.websitecarbon.com/website/oxford-gov-uk-2/" }
+					}
+				}
+			}
+		},
+		"E07000179": {
+			"active": true,
+			"name": "South Oxfordshire District Council",
+			"urls": {
+				"http://www.southoxon.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.18, "ref": "https://www.websitecarbon.com/website/southoxon-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000180": {
+			"active": true,
+			"name": "Vale of White Horse District Council",
+			"urls": {
+				"http://www.whitehorsedc.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.17, "ref": "https://www.websitecarbon.com/website/whitehorsedc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000181": {
+			"active": true,
+			"name": "West Oxfordshire District Council",
+			"urls": {
+				"http://www.westoxon.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.51, "ref": "https://www.websitecarbon.com/website/westoxon-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000187": {
+			"active": true,
+			"name": "Mendip District Council",
+			"urls": {
+				"https://www.mendip.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.52, "ref": "https://www.websitecarbon.com/website/mendip-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000188": {
+			"active": true,
+			"name": "Sedgemoor District Council",
+			"urls": {
+				"http://www.sedgemoor.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.91, "ref": "https://www.websitecarbon.com/website/sedgemoor-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000189": {
+			"active": true,
+			"name": "South Somerset District Council",
+			"urls": {
+				"http://www.southsomerset.gov.uk": {
+					"values": {
+						"2021-03-04": { "CO2": 0.51, "ref": "https://www.websitecarbon.com/website/southsomerset-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000192": {
+			"active": true,
+			"name": "Cannock Chase District Council",
+			"urls": {
+				"http://www.cannockchasedc.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.42, "ref": "https://www.websitecarbon.com/website/cannockchasedc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000193": {
+			"active": true,
+			"name": "East Staffordshire Borough Council",
+			"urls": {
+				"https://www.eaststaffsbc.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.84, "ref": "https://www.websitecarbon.com/website/eaststaffsbc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000194": {
+			"active": true,
+			"name": "Lichfield District Council",
+			"urls": {
+				"https://www.lichfielddc.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.3, "ref": "https://www.websitecarbon.com/website/lichfielddc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000195": {
+			"active": true,
+			"name": "Newcastle-Under-Lyme District Council",
+			"urls": {
+				"https://www.newcastle-staffs.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.38, "ref": "https://www.websitecarbon.com/website/newcastle-staffs-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000196": {
+			"active": true,
+			"name": "South Staffordshire Council",
+			"urls": {
+				"https://www.sstaffs.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 1.92, "ref": "https://www.websitecarbon.com/website/sstaffs-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000197": {
+			"active": true,
+			"name": "Stafford Borough Council",
+			"urls": {
+				"http://www.staffordbc.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.62, "ref": "https://www.websitecarbon.com/website/staffordbc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000198": {
+			"active": true,
+			"name": "Staffordshire Moorlands District Council",
+			"urls": {
+				"http://www.staffsmoorlands.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 2.94, "ref": "https://www.websitecarbon.com/website/staffsmoorlands-gov-uk/" },
+						"2021-05-25": { "CO2": 2.87, "ref": "https://www.websitecarbon.com/website/staffsmoorlands-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000199": {
+			"active": true,
+			"name": "Tamworth Borough Council",
+			"urls": {
+				"http://www.tamworth.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.93, "ref": "https://www.websitecarbon.com/website/tamworth-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000200": {
+			"active": true,
+			"name": "Babergh District Council",
+			"urls": {
+				"http://www.babergh.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.51, "ref": "https://www.websitecarbon.com/website/babergh-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000201": {
+			"active": false,
+			"name": "Forest Heath District Council",
+			"note": "Merged into West Suffolk 2019-04",
+			"urls": {
+				"https://www.westsuffolk.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.35, "ref": "https://www.websitecarbon.com/website/westsuffolk-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000202": {
+			"active": true,
+			"name": "Ipswich Borough Council",
+			"urls": {
+				"https://www.ipswich.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.29, "ref": "https://www.websitecarbon.com/website/ipswich-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000203": {
+			"active": true,
+			"name": "Mid Suffolk District Council",
+			"urls": {
+				"https://www.midsuffolk.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.52, "ref": "https://www.websitecarbon.com/website/midsuffolk-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000204": {
+			"active": false,
+			"name": "St Edmundsbury Borough Council",
+			"note": "Merged into West Suffolk 2019-04",
+			"urls": {
+				"http://www.stedmundsbury.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.31, "ref": "https://www.websitecarbon.com/website/stedmundsbury-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000207": {
+			"active": true,
+			"name": "Elmbridge Borough Council",
+			"urls": {
+				"https://www.elmbridge.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.16, "ref": "https://www.websitecarbon.com/website/elmbridge-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000208": {
+			"active": true,
+			"name": "Epsom and Ewell Borough Council",
+			"urls": {
+				"https://www.epsom-ewell.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.39, "ref": "https://www.websitecarbon.com/website/epsom-ewell-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000209": {
+			"active": true,
+			"name": "Guildford Borough Council",
+			"urls": {
+				"https://www.guildford.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.13, "ref": "https://www.websitecarbon.com/website/guildford-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000210": {
+			"active": true,
+			"name": "Mole Valley District Council",
+			"urls": {
+				"https://www.molevalley.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.21, "ref": "https://www.websitecarbon.com/website/molevalley-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000211": {
+			"active": true,
+			"name": "Reigate & Banstead Borough Council",
+			"urls": {
+				"https://www.reigate-banstead.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 3.23, "ref": "https://www.websitecarbon.com/website/reigate-banstead-gov-uk/" },
+						"2021-05-25": { "CO2": 2.30, "ref": "https://www.websitecarbon.com/website/reigate-banstead-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000212": {
+			"active": true,
+			"name": "Runnymede Borough Council",
+			"urls": {
+				"http://www.runnymede.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.66, "ref": "https://www.websitecarbon.com/website/runnymede-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000213": {
+			"active": true,
+			"name": "Spelthorne Borough Council",
+			"urls": {
+				"http://www.spelthorne.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.35, "ref": "https://www.websitecarbon.com/website/spelthorne-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000214": {
+			"active": true,
+			"name": "Surrey Heath Borough Council",
+			"urls": {
+				"http://www.surreyheath.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.24, "ref": "https://www.websitecarbon.com/website/surreyheath-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000215": {
+			"active": true,
+			"name": "Tandridge District Council",
+			"urls": {
+				"http://www.tandridge.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.11, "ref": "https://www.websitecarbon.com/website/tandridge-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000216": {
+			"active": true,
+			"name": "Waverley Borough Council",
+			"urls": {
+				"http://www.waverley.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.64, "ref": "https://www.websitecarbon.com/website/waverley-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000217": {
+			"active": true,
+			"name": "Woking Borough Council",
+			"urls": {
+				"http://www.woking.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 2.39, "ref": "https://www.websitecarbon.com/website/woking-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000218": {
+			"active": true,
+			"name": "North Warwickshire Borough Council",
+			"urls": {
+				"https://www.northwarks.gov.uk/site/": {
+					"values": {
+						"2021-03-11": { "CO2": 0, "ref": "" }
+					}
+				}
+			}
+		},
+		"E07000219": {
+			"active": true,
+			"name": "Nuneaton and Bedworth Borough Council",
+			"urls": {
+				"https://www.nuneatonandbedworth.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.63, "ref": "https://www.websitecarbon.com/website/nuneatonandbedworth-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000220": {
+			"active": true,
+			"name": "Rugby Borough Council",
+			"urls": {
+				"http://www.rugby.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.58, "ref": "https://www.websitecarbon.com/website/rugby-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000221": {
+			"active": true,
+			"name": "Stratford-on-Avon District Council",
+			"urls": {
+				"http://www.stratford.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.82, "ref": "https://www.websitecarbon.com/website/stratford-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000222": {
+			"active": true,
+			"name": "Warwick District Council",
+			"urls": {
+				"http://www.warwickdc.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.36, "ref": "https://www.websitecarbon.com/website/warwickdc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000223": {
+			"active": true,
+			"name": "Adur and Worthing Borough Council",
+			"urls": {
+				"http://www.adur-worthing.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.17, "ref": "https://www.websitecarbon.com/website/adur-worthing-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000224": {
+			"active": true,
+			"name": "Arun District Council",
+			"urls": {
+				"http://www.arun.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.14, "ref": "https://www.websitecarbon.com/website/arun-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000225": {
+			"active": true,
+			"name": "Chichester District Council",
+			"urls": {
+				"https://www.chichester.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.14, "ref": "https://www.websitecarbon.com/website/chichester-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000226": {
+			"active": true,
+			"name": "Crawley Borough Council",
+			"urls": {
+				"https://crawley.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.31, "ref": "https://www.websitecarbon.com/website/crawley-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000227": {
+			"active": true,
+			"name": "Horsham District Council",
+			"urls": {
+				"https://www.horsham.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.19, "ref": "https://www.websitecarbon.com/website/horsham-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000228": {
+			"active": true,
+			"name": "Mid Sussex District Council",
+			"urls": {
+				"https://www.midsussex.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.47, "ref": "https://www.websitecarbon.com/website/midsussex-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000234": {
+			"active": true,
+			"name": "Bromsgrove District Council",
+			"urls": {
+				"http://www.bromsgrove.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.69, "ref": "https://www.websitecarbon.com/website/bromsgrove-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000235": {
+			"active": true,
+			"name": "Malvern Hills District Council",
+			"urls": {
+				"https://www.malvernhills.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.39, "ref": "https://www.websitecarbon.com/website/malvernhills-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000236": {
+			"active": true,
+			"name": "Redditch Borough Council",
+			"urls": {
+				"https://www.redditchbc.gov.uk/": {
+					"values": {
+						"2021-05-19": { "CO2": 1.21, "ref": "https://www.websitecarbon.com/website/redditchbc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000237": {
+			"active": true,
+			"name": "Worcester City Council",
+			"urls": {
+				"http://www.worcester.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.36, "ref": "https://www.websitecarbon.com/website/worcester-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000238": {
+			"active": true,
+			"name": "Wychavon District Council",
+			"urls": {
+				"http://www.wychavon.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.38, "ref": "https://www.websitecarbon.com/website/wychavon-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000239": {
+			"active": true,
+			"name": "Wyre Forest District Council",
+			"urls": {
+				"http://www.wyreforestdc.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 6.62, "ref": "https://www.websitecarbon.com/website/wyreforestdc-gov-uk/" },
+						"2021-05-25": { "CO2": 1.93, "ref": "https://www.websitecarbon.com/website/wyreforestdc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000240": {
+			"active": true,
+			"name": "St Albans City and District Council",
+			"urls": {
+				"http://www.stalbans.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 2.19, "ref": "https://www.websitecarbon.com/website/stalbans-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000241": {
+			"active": true,
+			"name": "Welwyn Hatfield Council",
+			"urls": {
+				"https://www.welhat.gov.uk/": {
+					"values": {
+						"2021-05-25": { "CO2": 1.12, "ref": "https://www.websitecarbon.com/website/welhat-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000242": {
+			"active": true,
+			"name": "East Hertfordshire District Council",
+			"urls": {
+				"https://www.eastherts.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.78, "ref": "https://www.websitecarbon.com/website/eastherts-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000243": {
+			"active": true,
+			"name": "Stevenage Borough Council",
+			"urls": {
+				"http://www.stevenage.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.89, "ref": "https://www.websitecarbon.com/website/stevenage-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000244": {
+			"active": true,
+			"name": "East Suffolk Council",
+			"urls": {
+				"https://www.eastsuffolk.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.31, "ref": "https://www.websitecarbon.com/website/eastsuffolk-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E07000246": {
+			"active": true,
+			"name": "Somerset West and Taunton",
+			"urls": {
+				"https://www.somersetwestandtaunton.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.5, "ref": "https://www.websitecarbon.com/website/somersetwestandtaunton-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000001": {
+			"active": true,
+			"name": "Bolton Metropolitan Borough Council",
+			"urls": {
+				"https://www.bolton.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.25, "ref": "https://www.websitecarbon.com/website/bolton-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000002": {
+			"active": true,
+			"name": "Bury Metropolitan Borough Council",
+			"urls": {
+				"https://www.bury.gov.uk/": {
+					"values": {
+						"2021-05-19": { "CO2": 0.15, "ref": "https://www.websitecarbon.com/website/bury-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000003": {
+			"active": true,
+			"name": "Manchester City Council",
+			"urls": {
+				"https://www.manchester.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.74, "ref": "https://www.websitecarbon.com/website/manchester-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000004": {
+			"active": true,
+			"name": "Oldham Metropolitan Borough Council",
+			"urls": {
+				"https://www.oldham.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.56, "ref": "https://www.websitecarbon.com/website/oldham-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000005": {
+			"active": true,
+			"name": "Rochdale Metropolitan Borough Council",
+			"urls": {
+				"http://www.rochdale.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 2.01, "ref": "https://www.websitecarbon.com/website/rochdale-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000006": {
+			"active": true,
+			"name": "Salford City Council",
+			"urls": {
+				"http://www.salford.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.27, "ref": "https://www.websitecarbon.com/website/salford-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000007": {
+			"active": true,
+			"name": "Stockport Metropolitan Borough Council",
+			"urls": {
+				"http://www.stockport.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.44, "ref": "https://www.websitecarbon.com/website/stockport-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000008": {
+			"active": true,
+			"name": "Tameside Metropolitan Borough Council",
+			"urls": {
+				"http://www.tameside.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.39, "ref": "https://www.websitecarbon.com/website/tameside-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000009": {
+			"active": true,
+			"name": "Trafford Metropolitan Borough Council",
+			"urls": {
+				"https://www.trafford.gov.uk/": {
+					"values": {
+						"2021-05-25": { "CO2": 1.14, "ref": "https://www.websitecarbon.com/website/trafford-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000010": {
+			"active": true,
+			"name": "Wigan Metropolitan Borough Council",
+			"urls": {
+				"http://www.wigan.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.51, "ref": "https://www.websitecarbon.com/website/wigan-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000011": {
+			"active": true,
+			"name": "Knowsley Metropolitan Borough Council",
+			"urls": {
+				"https://www.knowsley.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.95, "ref": "https://www.websitecarbon.com/website/knowsley-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000012": {
+			"active": true,
+			"name": "Liverpool City Council",
+			"urls": {
+				"https://liverpool.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 3.62, "ref": "https://www.websitecarbon.com/website/liverpool-gov-uk/" },
+						"2021-05-25": { "CO2": 1.66, "ref": "https://www.websitecarbon.com/website/liverpool-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000013": {
+			"active": true,
+			"name": "St Helens Metropolitan Borough Council",
+			"urls": {
+				"http://www.sthelens.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.45, "ref": "https://www.websitecarbon.com/website/sthelens-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000014": {
+			"active": true,
+			"name": "Sefton Metropolitan Borough Council",
+			"urls": {
+				"http://www.sefton.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 3.33, "ref": "https://www.websitecarbon.com/website/sefton-gov-uk/" },
+						"2021-05-25": { "CO2": 4.27, "ref": "https://www.websitecarbon.com/website/sefton-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000015": {
+			"active": true,
+			"name": "Wirral Council",
+			"urls": {
+				"http://www.wirral.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.11, "ref": "https://www.websitecarbon.com/website/wirral-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000016": {
+			"active": true,
+			"name": "Barnsley Metropolitan Borough Council",
+			"urls": {
+				"http://www.barnsley.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.68, "ref": "https://www.websitecarbon.com/website/barnsley-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000017": {
+			"active": true,
+			"name": "Doncaster Metropolitan Borough Council",
+			"urls": {
+				"https://www.doncaster.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.96, "ref": "https://www.websitecarbon.com/website/doncaster-gov-uk-2/" }
+					}
+				}
+			}
+		},
+		"E08000018": {
+			"active": true,
+			"name": "Rotherham Metropolitan Borough Council",
+			"urls": {
+				"http://www.rotherham.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.66, "ref": "https://www.websitecarbon.com/website/rotherham-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000019": {
+			"active": true,
+			"name": "Sheffield City Council",
+			"urls": {
+				"http://www.sheffield.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.06, "ref": "https://www.websitecarbon.com/website/sheffield-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000021": {
+			"active": true,
+			"name": "Newcastle-upon-Tyne City Council",
+			"urls": {
+				"https://www.newcastle.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.74, "ref": "https://www.websitecarbon.com/website/newcastle-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000022": {
+			"active": true,
+			"name": "North Tyneside Metropolitan Borough Council",
+			"urls": {
+				"https://my.northtyneside.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.29, "ref": "https://www.websitecarbon.com/website/my-northtyneside-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000023": {
+			"active": true,
+			"name": "South Tyneside Council",
+			"urls": {
+				"https://www.southtyneside.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.79, "ref": "https://www.websitecarbon.com/website/southtyneside-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000024": {
+			"active": true,
+			"name": "Sunderland City Council",
+			"urls": {
+				"http://www.sunderland.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.95, "ref": "https://www.websitecarbon.com/website/sunderland-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000025": {
+			"active": true,
+			"name": "Birmingham City Council",
+			"urls": {
+				"http://www.birmingham.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.62, "ref": "https://www.websitecarbon.com/website/birmingham-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000026": {
+			"active": true,
+			"name": "Coventry City Council",
+			"urls": {
+				"https://www.coventry.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.72, "ref": "https://www.websitecarbon.com/website/coventry-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000027": {
+			"active": true,
+			"name": "Dudley Metropolitan Borough Council",
+			"urls": {
+				"https://www.dudley.gov.uk/": {
+					"values": {
+						"2021-05-25": { "CO2": 0, "ref": "" }
+					}
+				}
+			}
+		},
+		"E08000028": {
+			"active": true,
+			"name": "Sandwell Metropolitan Borough Council",
+			"urls": {
+				"http://www.sandwell.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.7, "ref": "https://www.websitecarbon.com/website/sandwell-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000029": {
+			"active": true,
+			"name": "Solihull Metropolitan Borough Council",
+			"urls": {
+				"http://www.solihull.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.75, "ref": "https://www.websitecarbon.com/website/solihull-gov-uk/" },
+						"2021-05-25": { "CO2": 1.47, "ref": "https://www.websitecarbon.com/website/solihull-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000030": {
+			"active": true,
+			"name": "Walsall Metropolitan Borough Council",
+			"urls": {
+				"http://www.walsall.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.31, "ref": "https://www.websitecarbon.com/website/walsall-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000031": {
+			"active": true,
+			"name": "Wolverhampton City Council",
+			"urls": {
+				"http://www.wolverhampton.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 2.86, "ref": "https://www.websitecarbon.com/website/wolverhampton-gov-uk/" },
+						"2021-05-25": { "CO2": 2.78, "ref": "https://www.websitecarbon.com/website/wolverhampton-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000032": {
+			"active": true,
+			"name": "Bradford Metropolitan District Council",
+			"urls": {
+				"http://www.bradford.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 2.51, "ref": "https://www.websitecarbon.com/website/bradford-gov-uk/" },
+						"2021-05-25": { "CO2": 2.16, "ref": "https://www.websitecarbon.com/website/bradford-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000033": {
+			"active": true,
+			"name": "Calderdale Metropolitan Borough Council",
+			"urls": {
+				"https://www.calderdale.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.17, "ref": "https://www.websitecarbon.com/website/calderdale-gov-uk/" },
+						"2021-05-25": { "CO2": 1.30, "ref": "https://www.websitecarbon.com/website/calderdale-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000034": {
+			"active": true,
+			"name": "Kirklees Council",
+			"urls": {
+				"https://www.kirklees.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.56, "ref": "https://www.websitecarbon.com/website/kirklees-gov-uk/" },
+						"2021-05-25": { "CO2": null }
+					}
+				}
+			}
+		},
+		"E08000035": {
+			"active": true,
+			"name": "Leeds City Council",
+			"urls": {
+				"https://www.leeds.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.18, "ref": "https://www.websitecarbon.com/website/leeds-gov-uk/" },
+						"2021-05-25": { "CO2": 1.17, "ref": "https://www.websitecarbon.com/website/leeds-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000036": {
+			"active": true,
+			"name": "Wakefield Metropolitan District Council",
+			"urls": {
+				"http://www.wakefield.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.43, "ref": "https://www.websitecarbon.com/website/wakefield-gov-uk/" },
+						"2021-05-25": { "CO2": 1.36, "ref": "https://www.websitecarbon.com/website/wakefield-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E08000037": {
+			"active": true,
+			"name": "Gateshead Metropolitan Borough Council",
+			"urls": {
+				"https://www.gateshead.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.56, "ref": "https://www.websitecarbon.com/website/gateshead-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000001": {
+			"active": true,
+			"name": "City of London",
+			"urls": {
+				"https://www.cityoflondon.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.43, "ref": "https://www.websitecarbon.com/website/cityoflondon-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000002": {
+			"active": true,
+			"name": "London Borough of Barking and Dagenham",
+			"urls": {
+				"https://www.lbbd.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 5.19, "ref": "https://www.websitecarbon.com/website/lbbd-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000003": {
+			"active": true,
+			"name": "London Borough of Barnet",
+			"urls": {
+				"https://www.barnet.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.23, "ref": "https://www.websitecarbon.com/website/barnet-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000004": {
+			"active": true,
+			"name": "London Borough of Bexley",
+			"urls": {
+				"https://www.bexley.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 2.93, "ref": "https://www.websitecarbon.com/website/bexley-gov-uk/" },
+						"2021-05-25": { "CO2": 2.68, "ref": "https://www.websitecarbon.com/website/bexley-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000005": {
+			"active": true,
+			"name": "London Borough of Brent",
+			"urls": {
+				"https://www.brent.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 3.64, "ref": "https://www.websitecarbon.com/website/brent-gov-uk/" },
+						"2021-05-25": { "CO2": 1.44, "ref": "https://www.websitecarbon.com/website/brent-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000006": {
+			"active": true,
+			"name": "London Borough of Bromley",
+			"urls": {
+				"https://www.bromley.gov.uk": {
+					"values": {
+						"2021-03-11": { "CO2": 1.64, "ref": "https://www.websitecarbon.com/website/camden-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000007": {
+			"active": true,
+			"name": "London Borough of Camden",
+			"urls": {
+				"https://www.camden.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 1.64, "ref": "https://www.websitecarbon.com/website/camden-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000008": {
+			"active": true,
+			"name": "London Borough of Croydon",
+			"urls": {
+				"https://new.croydon.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.72, "ref": "https://www.websitecarbon.com/website/new-croydon-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000009": {
+			"active": true,
+			"name": "London Borough of Ealing",
+			"urls": {
+				"https://www.ealing.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.64, "ref": "https://www.websitecarbon.com/website/ealing-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000010": {
+			"active": true,
+			"name": "London Borough of Enfield",
+			"urls": {
+				"https://new.enfield.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.79, "ref": "https://www.websitecarbon.com/website/new-enfield-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000011": {
+			"active": true,
+			"name": "Royal Borough of Greenwich",
+			"urls": {
+				"http://www.royalgreenwich.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 2.47, "ref": "https://www.websitecarbon.com/website/royalgreenwich-gov-uk/" },
+						"2021-05-25": { "CO2": 2.91, "ref": "https://www.websitecarbon.com/website/royalgreenwich-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000012": {
+			"active": true,
+			"name": "London Borough of Hackney",
+			"urls": {
+				"https://hackney.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 5.71, "ref": "https://www.websitecarbon.com/website/hackney-gov-uk-2/" },
+						"2021-05-25": { "CO2": 2.21, "ref": "https://www.websitecarbon.com/website/hackney-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000013": {
+			"active": true,
+			"name": "London Borough of Hammersmith & Fulham",
+			"urls": {
+				"https://www.lbhf.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 2.23, "ref": "https://www.websitecarbon.com/website/lbhf-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000014": {
+			"active": true,
+			"name": "London Borough of Haringey",
+			"urls": {
+				"https://www.haringey.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.71, "ref": "https://www.websitecarbon.com/website/haringey-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000015": {
+			"active": true,
+			"name": "London Borough of Harrow",
+			"urls": {
+				"https://www.harrow.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.87, "ref": "https://www.websitecarbon.com/website/harrow-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000016": {
+			"active": true,
+			"name": "London Borough of Havering",
+			"urls": {
+				"https://www.havering.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.23, "ref": "https://www.websitecarbon.com/website/havering-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000017": {
+			"active": true,
+			"name": "London Borough of Hillingdon",
+			"urls": {
+				"https://www.hillingdon.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.94, "ref": "https://www.websitecarbon.com/website/hillingdon-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000018": {
+			"active": true,
+			"name": "London Borough of Hounslow",
+			"urls": {
+				"https://www.hounslow.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.52, "ref": "https://www.websitecarbon.com/website/hounslow-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000019": {
+			"active": true,
+			"name": "London Borough of Islington",
+			"urls": {
+				"https://www.islington.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.91, "ref": "https://www.websitecarbon.com/website/islington-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000020": {
+			"active": true,
+			"name": "Royal Borough of Kensington and Chelsea",
+			"urls": {
+				"http://www.rbkc.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.58, "ref": "https://www.websitecarbon.com/website/rbkc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000021": {
+			"active": true,
+			"name": "Royal Borough of Kingston upon Thames",
+			"urls": {
+				"https://www.kingston.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 1.36, "ref": "https://www.websitecarbon.com/website/kingston-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000022": {
+			"active": true,
+			"name": "London Borough of Lambeth",
+			"urls": {
+				"https://beta.lambeth.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.09, "ref": "https://www.websitecarbon.com/website/beta-lambeth-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000023": {
+			"active": true,
+			"name": "London Borough of Lewisham",
+			"urls": {
+				"https://lewisham.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.87, "ref": "https://www.websitecarbon.com/website/lewisham-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000024": {
+			"active": true,
+			"name": "London Borough of Merton",
+			"urls": {
+				"https://www.merton.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.8, "ref": "https://www.websitecarbon.com/website/merton-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000025": {
+			"active": true,
+			"name": "London Borough of Newham",
+			"urls": {
+				"https://www.newham.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.2, "ref": "https://www.websitecarbon.com/website/newham-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000026": {
+			"active": true,
+			"name": "London Borough of Redbridge",
+			"urls": {
+				"https://www.redbridge.gov.uk/": {
+					"values": {
+						"2021-05-19": { "CO2": 3.91, "ref": "https://www.websitecarbon.com/website/redbridge-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000027": {
+			"active": true,
+			"name": "London Borough of Richmond upon Thames",
+			"urls": {
+				"https://www.richmond.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.78, "ref": "https://www.websitecarbon.com/website/richmond-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000028": {
+			"active": true,
+			"name": "London Borough of Southwark",
+			"urls": {
+				"https://www.southwark.gov.uk/": {
+					"values": {
+						"2021-05-19": { "CO2": 1.18, "ref": "https://www.websitecarbon.com/website/southwark-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000029": {
+			"active": true,
+			"name": "London Borough of Sutton",
+			"urls": {
+				"https://www.sutton.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.54, "ref": "https://www.websitecarbon.com/website/sutton-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000030": {
+			"active": true,
+			"name": "London Borough of Tower Hamlets",
+			"urls": {
+				"https://www.towerhamlets.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.72, "ref": "https://www.websitecarbon.com/website/towerhamlets-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000031": {
+			"active": true,
+			"name": "London Borough of Waltham Forest",
+			"urls": {
+				"https://www.walthamforest.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.8, "ref": "https://www.websitecarbon.com/website/walthamforest-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000032": {
+			"active": true,
+			"name": "London Borough of Wandsworth",
+			"urls": {
+				"https://www.wandsworth.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.57, "ref": "https://www.websitecarbon.com/website/wandsworth-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E09000033": {
+			"active": true,
+			"name": "Westminster City Council",
+			"urls": {
+				"http://www.westminster.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.76, "ref": "https://www.websitecarbon.com/website/westminster-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000003": {
+			"active": true,
+			"name": "Cambridgeshire County Council",
+			"urls": {
+				"https://www.cambridgeshire.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.47, "ref": "https://www.websitecarbon.com/website/cambridgeshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000006": {
+			"active": true,
+			"name": "Cumbria County Council",
+			"urls": {
+				"http://www.cumbria.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.77, "ref": "https://www.websitecarbon.com/website/cumbria-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000007": {
+			"active": true,
+			"name": "Derbyshire County Council",
+			"urls": {
+				"https://www.derbyshire.gov.uk/": {
+					"values": {
+						"2021-05-25": { "CO2": 0.75, "ref": "https://www.websitecarbon.com/website/derbyshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000008": {
+			"active": true,
+			"name": "Devon County Council",
+			"urls": {
+				"https://www.devon.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.96, "ref": "https://www.websitecarbon.com/website/devon-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000011": {
+			"active": true,
+			"name": "East Sussex County Council",
+			"urls": {
+				"https://www.eastsussex.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.18, "ref": "https://www.websitecarbon.com/website/eastsussex-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000012": {
+			"active": true,
+			"name": "Essex County Council",
+			"urls": {
+				"https://www.essex.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.59, "ref": "https://www.websitecarbon.com/website/essex-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000013": {
+			"active": true,
+			"name": "Gloucestershire County Council",
+			"urls": {
+				"https://www.gloucestershire.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 2.24, "ref": "https://www.websitecarbon.com/website/gloucestershire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000014": {
+			"active": true,
+			"name": "Hampshire County Council",
+			"urls": {
+				"https://www.hants.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.37, "ref": "https://www.websitecarbon.com/website/hants-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000016": {
+			"active": true,
+			"name": "Kent County Council",
+			"urls": {
+				"https://www.kent.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.19, "ref": "https://www.websitecarbon.com/website/kent-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000017": {
+			"active": true,
+			"name": "Lancashire County Council",
+			"urls": {
+				"https://www.lancashire.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 1.15, "ref": "https://www.websitecarbon.com/website/lancashire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000018": {
+			"active": true,
+			"name": "Leicestershire County Council",
+			"urls": {
+				"https://www.leicestershire.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 1.29, "ref": "https://www.websitecarbon.com/website/leicestershire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000019": {
+			"active": true,
+			"name": "Lincolnshire County Council",
+			"urls": {
+				"https://www.lincolnshire.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.6, "ref": "https://www.websitecarbon.com/website/lincolnshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000020": {
+			"active": true,
+			"name": "Norfolk County Council",
+			"urls": {
+				"https://www.norfolk.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.71, "ref": "https://www.websitecarbon.com/website/norfolk-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000021": {
+			"active": true,
+			"name": "Northamptonshire County Council",
+			"urls": {
+				"https://www.northamptonshire.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.87, "ref": "https://www.websitecarbon.com/website/northamptonshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000023": {
+			"active": true,
+			"name": "North Yorkshire County Council",
+			"urls": {
+				"https://www.northyorks.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.46, "ref": "https://www.websitecarbon.com/website/northyorks-gov-uk/" },
+						"2021-05-25": { "CO2": 0.46, "ref": "https://www.websitecarbon.com/website/northyorks-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000024": {
+			"active": true,
+			"name": "Nottinghamshire County Council",
+			"urls": {
+				"https://www.nottinghamshire.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.55, "ref": "https://www.websitecarbon.com/website/nottinghamshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000025": {
+			"active": true,
+			"name": "Oxfordshire County Council",
+			"urls": {
+				"https://www.oxfordshire.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.33, "ref": "https://www.websitecarbon.com/website/oxfordshire-gov-uk-2/" }
+					}
+				}
+			}
+		},
+		"E10000027": {
+			"active": true,
+			"name": "Somerset County Council",
+			"urls": {
+				"http://www.somerset.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.93, "ref": "https://www.websitecarbon.com/website/somerset-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000028": {
+			"active": true,
+			"name": "Staffordshire County Council",
+			"urls": {
+				"http://www.staffordshire.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.65, "ref": "https://www.websitecarbon.com/website/staffordshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000029": {
+			"active": true,
+			"name": "Suffolk County Council",
+			"urls": {
+				"http://www.suffolk.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.05, "ref": "https://www.websitecarbon.com/website/suffolk-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000030": {
+			"active": true,
+			"name": "Surrey County Council",
+			"urls": {
+				"http://www.surreycc.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.33, "ref": "https://www.websitecarbon.com/website/surreycc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000031": {
+			"active": true,
+			"name": "Warwickshire County Council",
+			"urls": {
+				"http://www.warwickshire.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 9.58, "ref": "https://www.websitecarbon.com/website/warwickshire-gov-uk/" },
+						"2021-05-25": { "CO2": 1.64, "ref": "https://www.websitecarbon.com/website/warwickshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000032": {
+			"active": true,
+			"name": "West Sussex County Council",
+			"urls": {
+				"http://www.westsussex.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.74, "ref": "https://www.websitecarbon.com/website/westsussex-gov-uk/" }
+					}
+				}
+			}
+		},
+		"E10000034": {
+			"active": true,
+			"name": "Worcestershire County Council",
+			"urls": {
+				"http://www.worcestershire.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 0.9, "ref": "https://www.websitecarbon.com/website/worcestershire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"N09000001": {
+			"active": true,
+			"name": "Antrim and Newtownabbey",
+			"urls": {
+				"https://antrimandnewtownabbey.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.34, "ref": "https://www.websitecarbon.com/website/antrimandnewtownabbey-gov-uk/" }
+					}
+				}
+			}
+		},
+		"N09000002": {
+			"active": true,
+			"name": "Armagh City, Banbridge and Craigavon",
+			"urls": {
+				"https://www.armaghbanbridgecraigavon.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.94, "ref": "https://www.websitecarbon.com/website/armaghbanbridgecraigavon-gov-uk/" }
+					}
+				}
+			}
+		},
+		"N09000003": {
+			"active": true,
+			"name": "Belfast",
+			"urls": {
+				"https://www.belfastcity.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.81, "ref": "https://www.websitecarbon.com/website/belfastcity-gov-uk/" }
+					}
+				}
+			}
+		},
+		"N09000004": {
+			"active": true,
+			"name": "Causeway Coast and Glens",
+			"urls": {
+				"https://www.causewaycoastandglens.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 2.02, "ref": "https://www.websitecarbon.com/website/causewaycoastandglens-gov-uk/" }
+					}
+				}
+			}
+		},
+		"N09000005": {
+			"active": true,
+			"name": "Derry City and Strabane",
+			"urls": {
+				"https://www.derrystrabane.com/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.16, "ref": "https://www.websitecarbon.com/website/derrystrabane-com/" }
+					}
+				}
+			}
+		},
+		"N09000006": {
+			"active": true,
+			"name": "Fermanagh and Omagh",
+			"urls": {
+				"https://www.fermanaghomagh.com/": {
+					"values": {
+						"2021-03-11": { "CO2": 1.09, "ref": "https://www.websitecarbon.com/website/fermanaghomagh-com/" }
+					}
+				}
+			}
+		},
+		"N09000007": {
+			"active": true,
+			"name": "Lisburn and Castlereagh",
+			"urls": {
+				"https://www.lisburncastlereagh.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.53, "ref": "https://www.websitecarbon.com/website/lisburncastlereagh-gov-uk/" }
+					}
+				}
+			}
+		},
+		"N09000008": {
+			"active": true,
+			"name": "Mid and East Antrim",
+			"urls": {
+				"https://www.midandeastantrim.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 2.32, "ref": "https://www.websitecarbon.com/website/midandeastantrim-gov-uk/" }
+					}
+				}
+			}
+		},
+		"N09000009": {
+			"active": true,
+			"name": "Mid Ulster",
+			"urls": {
+				"https://www.midulstercouncil.org/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.09, "ref": "https://www.websitecarbon.com/website/midulstercouncil-org/" }
+					}
+				}
+			}
+		},
+		"N09000010": {
+			"active": true,
+			"name": "Newry, Mourne and Down",
+			"urls": {
+				"https://www.newrymournedown.org/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.99, "ref": "https://www.websitecarbon.com/website/newrymournedown-org/" }
+					}
+				}
+			}
+		},
+		"N09000011": {
+			"active": true,
+			"name": "Ards and North Down",
+			"urls": {
+				"http://www.ardsandnorthdown.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 1.39, "ref": "https://www.websitecarbon.com/website/ardsandnorthdown-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000005": {
+			"active": true,
+			"name": "Clackmannanshire Council",
+			"urls": {
+				"https://www.clacks.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.28, "ref": "https://www.websitecarbon.com/website/clacks-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000006": {
+			"active": true,
+			"name": "Dumfries and Galloway Council",
+			"urls": {
+				"https://www.dumgal.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.43, "ref": "https://www.websitecarbon.com/website/dumgal-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000008": {
+			"active": true,
+			"name": "East Ayrshire Council",
+			"urls": {
+				"https://www.east-ayrshire.gov.uk": {
+					"values": {
+						"2021-03-09": { "CO2": 1.03, "ref": "https://www.websitecarbon.com/website/east-ayrshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000010": {
+			"active": true,
+			"name": "East Lothian Council",
+			"urls": {
+				"https://www.eastlothian.gov.uk": {
+					"values": {
+						"2021-03-10": { "CO2": 0.63, "ref": "https://www.websitecarbon.com/website/eastlothian-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000011": {
+			"active": true,
+			"name": "East Renfrewshire Council",
+			"urls": {
+				"https://www.eastrenfrewshire.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 1.11, "ref": "https://www.websitecarbon.com/website/eastrenfrewshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000013": {
+			"active": true,
+			"name": "Comhairle nan Eilean Siar",
+			"urls": {
+				"https://www.cne-siar.gov.uk": {
+					"values": {
+						"2021-03-09": { "CO2": 0.25, "ref": "https://www.websitecarbon.com/website/cne-siar-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000014": {
+			"active": true,
+			"name": "Falkirk Council",
+			"urls": {
+				"https://www.falkirk.gov.uk": {
+					"values": {
+						"2021-03-10": { "CO2": 0.22, "ref": "https://www.websitecarbon.com/website/falkirk-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000015": {
+			"active": true,
+			"name": "Fife Council",
+			"urls": {
+				"https://www.fife.gov.uk": {
+					"values": {
+						"2021-03-10": { "CO2": 1.66, "ref": "https://www.websitecarbon.com/website/fife-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000017": {
+			"active": true,
+			"name": "Highland Council",
+			"urls": {
+				"https://www.highland.gov.uk": {
+					"values": {
+						"2021-03-10": { "CO2": 0.49, "ref": "https://www.websitecarbon.com/website/highland-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000018": {
+			"active": true,
+			"name": "Inverclyde Council",
+			"urls": {
+				"https://www.inverclyde.gov.uk": {
+					"values": {
+						"2021-03-10": { "CO2": 0.7, "ref": "https://www.websitecarbon.com/website/inverclyde-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000019": {
+			"active": true,
+			"name": "Midlothian Council",
+			"urls": {
+				"https://www.midlothian.gov.uk": {
+					"values": {
+						"2021-03-10": { "CO2": 0.31, "ref": "https://www.websitecarbon.com/website/midlothian-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000020": {
+			"active": true,
+			"name": "Moray Council",
+			"urls": {
+				"http://www.moray.gov.uk": {
+					"values": {
+						"2021-03-10": { "CO2": 0.48, "ref": "https://www.websitecarbon.com/website/moray-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000021": {
+			"active": true,
+			"name": "North Ayrshire Council",
+			"urls": {
+				"https://www.north-ayrshire.gov.uk": {
+					"values": {
+						"2021-03-09": { "CO2": 1.13, "ref": "https://www.websitecarbon.com/website/north-ayrshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000023": {
+			"active": true,
+			"name": "Orkney Islands Council",
+			"urls": {
+				"https://www.orkney.gov.uk": {
+					"values": {
+						"2021-03-09": { "CO2": 2.28, "ref": "https://www.websitecarbon.com/website/orkney-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000024": {
+			"active": true,
+			"name": "Perth and Kinross Council",
+			"urls": {
+				"http://www.pkc.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.3, "ref": "https://www.websitecarbon.com/website/pkc-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000026": {
+			"active": true,
+			"name": "Scottish Borders Council",
+			"urls": {
+				"https://www.scotborders.gov.uk": {
+					"values": {
+						"2021-03-09": { "CO2": 0.13, "ref": "https://www.websitecarbon.com/website/scotborders-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000027": {
+			"active": true,
+			"name": "Shetland Islands Council",
+			"urls": {
+				"https://www.shetland.gov.uk": {
+					"values": {
+						"2021-05-25": { "CO2": 1.15, "ref": "https://www.websitecarbon.com/website/shetland-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000028": {
+			"active": true,
+			"name": "South Ayrshire Council",
+			"urls": {
+				"https://www.south-ayrshire.gov.uk": {
+					"values": {
+						"2021-03-09": { "CO2": 0.35, "ref": "https://www.websitecarbon.com/website/south-ayrshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000029": {
+			"active": true,
+			"name": "South Lanarkshire Council",
+			"urls": {
+				"https://www.southlanarkshire.gov.uk": {
+					"values": {
+						"2021-03-11": { "CO2": 1.16, "ref": "https://www.websitecarbon.com/website/southlanarkshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000030": {
+			"active": true,
+			"name": "Stirling Council",
+			"urls": {
+				"https://www.stirling.gov.uk": {
+					"values": {
+						"2021-03-11": { "CO2": 1.69, "ref": "https://www.websitecarbon.com/website/stirling-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000033": {
+			"active": true,
+			"name": "Aberdeen City Council",
+			"urls": {
+				"https://www.aberdeencity.gov.uk": {
+					"values": {
+						"2021-03-04": { "CO2": 3.19, "ref": "https://www.websitecarbon.com/website/aberdeencity-gov-uk/" },
+						"2021-05-25": { "CO2": 3.18, "ref": "https://www.websitecarbon.com/website/aberdeencity-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000034": {
+			"active": true,
+			"name": "Aberdeenshire Council",
+			"urls": {
+				"https://www.aberdeenshire.gov.uk": {
+					"values": {
+						"2021-03-04": { "CO2": 0.6, "ref": "https://www.websitecarbon.com/website/aberdeenshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000035": {
+			"active": true,
+			"name": "Argyll and Bute Council",
+			"urls": {
+				"https://www.argyll-bute.gov.uk": {
+					"values": {
+						"2021-03-11": { "CO2": 0.84, "ref": "https://www.websitecarbon.com/website/argyll-bute-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000036": {
+			"active": true,
+			"name": "City of Edinburgh Council",
+			"urls": {
+				"https://www.edinburgh.gov.uk": {
+					"values": {
+						"2021-03-11": { "CO2": 1.06, "ref": "https://www.websitecarbon.com/website/edinburgh-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000038": {
+			"active": true,
+			"name": "Renfrewshire Council",
+			"urls": {
+				"http://www.renfrewshire.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.45, "ref": "https://www.websitecarbon.com/website/renfrewshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000039": {
+			"active": true,
+			"name": "West Dunbartonshire Council",
+			"urls": {
+				"https://www.west-dunbarton.gov.uk": {
+					"values": {
+						"2021-03-04": { "CO2": 0.24, "ref": "https://www.websitecarbon.com/website/west-dunbarton-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000040": {
+			"active": true,
+			"name": "West Lothian Council",
+			"urls": {
+				"https://www.westlothian.gov.uk": {
+					"values": {
+						"2021-03-04": { "CO2": 1.09, "ref": "https://www.websitecarbon.com/website/westlothian-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000041": {
+			"active": true,
+			"name": "Angus Council",
+			"urls": {
+				"https://www.angus.gov.uk": {
+					"values": {
+						"2021-03-04": { "CO2": 0.68, "ref": "https://www.websitecarbon.com/website/angus-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000042": {
+			"active": true,
+			"name": "Dundee City Council",
+			"urls": {
+				"https://www.dundeecity.gov.uk": {
+					"values": {
+						"2021-03-10": { "CO2": 0.55, "ref": "https://www.websitecarbon.com/website/dundeecity-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000044": {
+			"active": true,
+			"name": "North Lanarkshire Council",
+			"urls": {
+				"https://www.northlanarkshire.gov.uk/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.95, "ref": "https://www.websitecarbon.com/website/northlanarkshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000045": {
+			"active": true,
+			"name": "East Dunbartonshire Council",
+			"urls": {
+				"https://www.eastdunbarton.gov.uk": {
+					"values": {
+						"2021-03-10": { "CO2": 0.53, "ref": "https://www.websitecarbon.com/website/eastdunbarton-gov-uk/" }
+					}
+				}
+			}
+		},
+		"S12000046": {
+			"active": true,
+			"name": "Glasgow City Council",
+			"urls": {
+				"https://www.glasgow.gov.uk": {
+					"values": {
+						"2021-03-10": { "CO2": 0.32, "ref": "https://www.websitecarbon.com/website/glasgow-gov-uk/" }
+					}
+				}
+			}
+		},
+		"W06000001": {
+			"active": true,
+			"name": "Isle of Anglesey County Council",
+			"urls": {
+				"https://www.ynysmon.gov.uk/cy/Trigolion/Trigolion.aspx": {
+					"values": {
+						"2021-03-10": { "CO2": 1.07, "ref": "https://www.websitecarbon.com/website/ynysmon-gov-uk-cy-trigolion-trigolion-aspx/" }
+					}
+				}
+			}
+		},
+		"W06000002": {
+			"active": true,
+			"name": "Gwynedd County Council",
+			"urls": {
+				"https://www.gwynedd.llyw.cymru/cy/Trigolion/Trigolion.aspx": {
+					"values": {
+						"2021-03-10": { "CO2": 0.46, "ref": "https://www.websitecarbon.com/website/gwynedd-llyw-cymru-cy-trigolion-trigolion-aspx/" }
+					}
+				}
+			}
+		},
+		"W06000003": {
+			"active": true,
+			"name": "Conwy County Borough Council",
+			"urls": {
+				"http://www.conwy.gov.uk/cy/Resident/Resident.aspx": {
+					"values": {
+						"2021-03-09": { "CO2": 1.17, "ref": "https://www.websitecarbon.com/website/conwy-gov-uk-cy-resident-resident-aspx/" }
+					}
+				}
+			}
+		},
+		"W06000004": {
+			"active": true,
+			"name": "Denbighshire County Council",
+			"urls": {
+				"https://www.denbighshire.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.41, "ref": "https://www.websitecarbon.com/website/denbighshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"W06000005": {
+			"active": true,
+			"name": "Flintshire County Council",
+			"urls": {
+				"https://www.siryfflint.gov.uk/cy/Home.aspx": {
+					"values": {
+						"2021-03-10": { "CO2": 1.02, "ref": "https://www.websitecarbon.com/website/siryfflint-gov-uk-cy-home-aspx/" }
+					}
+				}
+			}
+		},
+		"W06000006": {
+			"active": true,
+			"name": "Wrexham County Borough Council",
+			"urls": {
+				"https://www.wrecsam.gov.uk/preswylwyr": {
+					"values": {
+						"2021-03-04": { "CO2": 0.77, "ref": "https://www.websitecarbon.com/website/wrecsam-gov-uk-preswylwyr/" }
+					}
+				}
+			}
+		},
+		"W06000008": {
+			"active": true,
+			"name": "Ceredigion County Council",
+			"urls": {
+				"http://www.ceredigion.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.22, "ref": "https://www.websitecarbon.com/website/ceredigion-gov-uk/" }
+					}
+				}
+			}
+		},
+		"W06000009": {
+			"active": true,
+			"name": "Pembrokeshire County Council",
+			"urls": {
+				"http://www.pembrokeshire.gov.uk/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.38, "ref": "https://www.websitecarbon.com/website/pembrokeshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"W06000010": {
+			"active": true,
+			"name": "Carmarthenshire County Council",
+			"urls": {
+				"https://www.carmarthenshire.gov.wales/": {
+					"values": {
+						"2021-03-09": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/carmarthenshire-gov-wales/" }
+					}
+				}
+			}
+		},
+		"W06000011": {
+			"active": true,
+			"name": "Swansea City and Borough Council",
+			"urls": {
+				"https://www.swansea.gov.uk/residents": {
+					"values": {
+						"2021-03-11": { "CO2": 0.55, "ref": "https://www.websitecarbon.com/website/swansea-gov-uk-residents/" }
+					}
+				}
+			}
+		},
+		"W06000012": {
+			"active": true,
+			"name": "Neath Port Talbot County Borough Council",
+			"urls": {
+				"https://www.npt.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.66, "ref": "https://www.websitecarbon.com/website/npt-gov-uk/" }
+					}
+				}
+			}
+		},
+		"W06000013": {
+			"active": true,
+			"name": "Bridgend County Borough Council",
+			"urls": {
+				"https://www.bridgend.gov.uk/cy": {
+					"values": {
+						"2021-03-09": { "CO2": 2.82, "ref": "https://www.websitecarbon.com/website/bridgend-gov-uk-cy/" },
+						"2021-05-25": { "CO2": 2.69, "ref": "https://www.websitecarbon.com/website/bridgend-gov-uk-cy/" }
+					}
+				}
+			}
+		},
+		"W06000014": {
+			"active": true,
+			"name": "Vale of Glamorgan Council",
+			"urls": {
+				"https://www.valeofglamorgan.gov.uk/": {
+					"values": {
+						"2021-03-04": { "CO2": 1.07, "ref": "https://www.websitecarbon.com/website/valeofglamorgan-gov-uk/" }
+					}
+				}
+			}
+		},
+		"W06000015": {
+			"active": true,
+			"name": "Cardiff Council",
+			"urls": {
+				"https://www.cardiff.gov.uk/CYM/Hafan/Pages/default.aspx": {
+					"values": {
+						"2021-03-09": { "CO2": 3.7, "ref": "https://www.websitecarbon.com/website/cardiff-gov-uk-cym-hafan-pages-default-aspx/" },
+						"2021-05-25": { "CO2": null }
+					}
+				}
+			}
+		},
+		"W06000016": {
+			"active": true,
+			"name": "Rhondda Cynon Taf County Borough Council",
+			"urls": {
+				"https://www.rctcbc.gov.uk/CY/Resident/Resident.aspx": {
+					"values": {
+						"2021-03-09": { "CO2": 1.24, "ref": "https://www.websitecarbon.com/website/rctcbc-gov-uk-cy-resident-resident-aspx/" }
+					}
+				}
+			}
+		},
+		"W06000018": {
+			"active": true,
+			"name": "Caerphilly County Borough Council",
+			"urls": {
+				"https://www.caerffili.gov.uk/main.aspx?lang=cy-GB": {
+					"values": {
+						"2021-03-09": { "CO2": 2.11, "ref": "https://www.websitecarbon.com/website/caerffili-gov-uk-main-aspxlangcy-gb/" }
+					}
+				}
+			}
+		},
+		"W06000019": {
+			"active": true,
+			"name": "Blaenau Gwent County Borough Council",
+			"urls": {
+				"https://www.blaenau-gwent.gov.uk/cy/hafan/": {
+					"values": {
+						"2021-03-11": { "CO2": 0.52, "ref": "https://www.websitecarbon.com/website/blaenau-gwent-gov-uk-cy-hafan/" }
+					}
+				}
+			}
+		},
+		"W06000020": {
+			"active": true,
+			"name": "Torfaen County Borough Council",
+			"urls": {
+				"https://www.torfaen.gov.uk/cy/Home.aspx": {
+					"values": {
+						"2021-03-11": { "CO2": 0.86, "ref": "https://www.websitecarbon.com/website/torfaen-gov-uk-cy-home-aspx/" }
+					}
+				}
+			}
+		},
+		"W06000021": {
+			"active": true,
+			"name": "Monmouthshire County Council",
+			"urls": {
+				"https://www.monmouthshire.gov.uk/": {
+					"values": {
+						"2021-03-10": { "CO2": 0.88, "ref": "https://www.websitecarbon.com/website/monmouthshire-gov-uk/" }
+					}
+				}
+			}
+		},
+		"W06000022": {
+			"active": true,
+			"name": "Newport City Council",
+			"urls": {
+				"http://www.newport.gov.uk/cy/Hafan.aspx": {
+					"values": {
+						"2021-03-09": { "CO2": 0.97, "ref": "https://www.websitecarbon.com/website/newport-gov-uk-cy-hafan-aspx/" }
+					}
+				}
+			}
+		},
+		"W06000023": {
+			"active": true,
+			"name": "Powys County Council",
+			"urls": {
+				"https://cy.powys.gov.uk/?ccp=true": {
+					"values": {
+						"2021-03-11": { "CO2": 1.25, "ref": "https://www.websitecarbon.com/website/cy-powys-gov-uk-ccptrue/" }
+					}
+				}
+			}
+		},
+		"W06000024": {
+			"active": true,
+			"name": "Merthyr Tydfil County Borough Council",
+			"urls": {
+				"https://www.merthyr.gov.uk/resident/?lang=cy-GB": {
+					"values": {
+						"2021-03-10": { "CO2": 1.47, "ref": "https://www.websitecarbon.com/website/merthyr-gov-uk-resident-langcy-gb/" }
+					}
+				}
+			}
+		}
+	}
+}

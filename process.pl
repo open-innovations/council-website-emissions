@@ -1,38 +1,89 @@
 #!/usr/bin/perl
 
-open(FILE,"data/website-carbon.csv");
+use JSON::XS;
+use Data::Dumper;
+
+$file = "data/councils.json";
+$cfile = "data/website-carbon.csv";
+$tfile = "data/website-carbon.tsv";
+
+open(FILE,$file);
 @lines = <FILE>;
 close(FILE);
 
-$avco2 = 1.76;
-
+$data = JSON::XS->new->utf8->decode(join("",@lines));
 
 %council;
+$avco2 = 1.76;
 
-for($i = 1; $i < @lines; $i++){
-	# Remove newlines
-	$lines[$i] =~ s/[\n\r]//g;
-
-	# ONS code	Local authority name	Website	Status	CO2 emissions (g)	Website carbon link	Date last checked
-	(@cols) = split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/,$lines[$i]);
-	$id = $cols[0];
-	$nm = $cols[1];
-	$url = $cols[2];
-	$co2 = $cols[4];
-	$lnk = $cols[5];
-	$dat = $cols[6];
-	$def = $cols[7];
-	
-	$nm =~ s/(^\"|\"$)//g;
-
-	if(!$council{$id}){
-		if(!$def){
-			$council{$id} = {'name'=>$nm,'url'=>$url,'CO2'=>$co2,'link'=>$lnk,'date'=>$dat};
+# Make the CSV
+$tsv = "ONS code\tLocal authority name\tWebsite\tStatus\tCO2 emissions (g)\tWebsite carbon link\tDate last checked\n";
+for $id (sort{$data->{'councils'}{$a}{'name'} cmp $data->{'councils'}{$b}{'name'}}(keys(%{$data->{'councils'}}))){
+	$url = "";
+	@urls = keys(%{$data->{'councils'}{$id}{'urls'}});
+	# Find the default URL (if there is only one URL this is it)
+	if(@urls == 1){
+		$url = $urls[0];
+	}elsif(@urls > 1){
+		for($i = 0; $i < @urls; $i++){
+			if($data->{'councils'}{$id}{'urls'}{$urls[$i]}{'default'}){
+				$url = $urls[$i];
+			}
 		}
+		if(!$def){
+			print "No default URL provided for $id so using $urls[0]";
+			$url = $urls[0];
+		}
+	}
+	$recent = "";
+	$lastco = 0;
+	@dates = reverse(sort(keys(%{$data->{'councils'}{$id}{'urls'}{$url}{'values'}})));
+	if(@dates == 1){
+		$recent = $dates[0];
+		$lastco = $data->{'councils'}{$id}{'urls'}{$url}{'values'}{$recent}{'CO2'};
 	}else{
-		print "We already have $nm ($id)\n";
-	}	
+		for($i = 0; $i < @dates; $i++){
+			if(!$recent || $lastco eq ""){
+				$recent = $dates[$i];
+				$lastco = $data->{'councils'}{$id}{'urls'}{$url}{'values'}{$dates[$i]}{'CO2'};
+			}
+		}
+		if($id eq "W06000015"){
+			print "$id = $lastco = $recent\n";
+		}
+	}
+
+	if($data->{'councils'}{$id}{'active'}){
+		$tsv .= "$id\t$data->{'councils'}{$id}{'name'}\t$url";
+		$nm = $data->{'councils'}{$id}{'name'};
+		$co2 = $data->{'councils'}{$id}{'urls'}{$url}{'values'}{$recent}{'CO2'}||"";
+		$lnk = $data->{'councils'}{$id}{'urls'}{$url}{'values'}{$recent}{'ref'};
+		if($co2){
+			$tsv .= "\t\t".sprintf("%0.2f",$co2)."\t$lnk";
+		}else{
+			$tsv .= "\tFAIL\t\t"
+		}
+		$tsv .= "\t$recent\n";
+		$council{$id} = {'name'=>$nm,'url'=>$url,'CO2'=>$co2,'link'=>$lnk,'date'=>$recent};
+	}
 }
+@vals = split(/\t/,$tsv);
+$csv = "";
+for($i = 0; $i < @vals; $i++){
+	$csv .= ($vals[$i] =~ /\,/ ? "\"$vals[$i]\"" : $vals[$i]);
+	$csv .= ",";
+}
+
+open(FILE,">",$tfile);
+print FILE $tsv;
+close(FILE);
+
+open(FILE,">",$cfile);
+print FILE $csv;
+close(FILE);
+
+
+
 
 @order = reverse(sort{$council{$a}{'CO2'} <=> $council{$b}{'CO2'} || $council{$a}{'name'} cmp $council{$b}{'name'}}(keys(%council)));
 
@@ -61,8 +112,8 @@ for($i = 0; $i < @order; $i++){
 	if(!$council{$id}{'CO2'}){
 		$missing++;
 	}
-	$tr = "$idt\t<tr><td class=\"cen\">$rank</td><td>".($council{$id}{'url'} ? "<a href=\"$council{$id}{'url'}\">":"").$council{$id}{'name'}.($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">$id</td><td class=\"cen\">".($council{$id}{'link'} ? "<a href=\"$council{$id}{'link'}\">":"").($council{$id}{'CO2'}||"?").($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">$council{$id}{'date'}</td></tr>\n";
-	$tr2 = "$idt\t<tr><td>".($council{$id}{'url'} ? "<a href=\"$council{$id}{'url'}\">":"").$council{$id}{'name'}.($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">".($council{$id}{'link'} ? "<a href=\"$council{$id}{'link'}\">":"").($council{$id}{'CO2'}||"?").($council{$id}{'link'} ? "</a>":"")."</td></tr>\n";
+	$tr = "$idt\t<tr><td class=\"cen\">$rank</td><td>".($council{$id}{'url'} ? "<a href=\"$council{$id}{'url'}\">":"").$council{$id}{'name'}.($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">$id</td><td class=\"cen\">".($council{$id}{'link'} ? "<a href=\"$council{$id}{'link'}\">":"").($council{$id}{'CO2'} ? sprintf("%0.2f",$council{$id}{'CO2'}) : "?").($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">$council{$id}{'date'}</td></tr>\n";
+	$tr2 = "$idt\t<tr><td>".($council{$id}{'url'} ? "<a href=\"$council{$id}{'url'}\">":"").$council{$id}{'name'}.($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">".($council{$id}{'CO2'} ? sprintf("%0.2f",$council{$id}{'CO2'}) : "?")."</td></tr>\n";
 	$table .= $tr;
 	if($council{$id}{'CO2'} > 0){
 		$n = @worst;
