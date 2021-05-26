@@ -130,7 +130,8 @@
 			"urls": {
 				"https://www.eastriding.gov.uk/": {
 					"values": {
-						"2021-03-10": { "CO2": 1.97, "ref": "https://www.websitecarbon.com/website/eastriding-gov-uk/" }
+						"2021-03-10": { "CO2": 1.97, "ref": "https://www.websitecarbon.com/website/eastriding-gov-uk/" },
+						"2021-05-26": { "CO2": 2.02, "ref": "https://www.websitecarbon.com/website/eastriding-gov-uk/" }
 					}
 				}
 			}
@@ -2168,7 +2169,8 @@
 			"urls": {
 				"https://www.hambleton.gov.uk/": {
 					"values": {
-						"2021-03-09": { "CO2": 1.03, "ref": "https://www.websitecarbon.com/website/hambleton-gov-uk-new/" }
+						"2021-03-09": { "CO2": 1.03, "ref": "https://www.websitecarbon.com/website/hambleton-gov-uk-new/" },
+						"2021-05-26": { "CO2": 0.97, "ref": "https://www.websitecarbon.com/website/hambleton-gov-uk/" }
 					}
 				}
 			}
