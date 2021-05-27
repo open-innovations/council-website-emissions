@@ -49,7 +49,7 @@ sub processCouncils {
 		$ago = 0.5;
 	}else{
 		@ids = (sort{$data->{'councils'}{$a}{'name'} cmp $data->{'councils'}{$b}{'name'}}(keys(%{$data->{'councils'}})));
-		$ago = 0.5;
+		$ago = 14;
 	}
 
 	$n = @ids;

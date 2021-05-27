@@ -193,6 +193,7 @@ $indent = "\t\t\t\t";
 %biggestfiles;
 $fullsavings = 0;
 $co2savings = 0;
+$jquerycouncil = 0;
 
 # Make a page for each council
 for $id (sort{$data->{'councils'}{$a}{'name'} cmp $data->{'councils'}{$b}{'name'}}(keys(%{$data->{'councils'}}))){
@@ -242,7 +243,6 @@ for $id (sort{$data->{'councils'}{$a}{'name'} cmp $data->{'councils'}{$b}{'name'
 			$nimages = 0;
 			$imsaving = 0;
 			$doneimages{$details->{'images'}{'items'}[$j]{'url'}} = 1;
-			#$fullsavings += $details->{'images'}{'overallSavingsBytes'};
 			for($j = 0; $j < @{$details->{'images'}{'items'}}; $j++){
 				if($details->{'images'}{'items'}[$j]{'url'}){
 					$doneimages{$details->{'images'}{'items'}[$j]{'url'}} = {'bytes'=>$details->{'images'}{'items'}[$j]{'totalBytes'},'saving'=>$details->{'images'}{'items'}[$j]{'wastedBytes'}};
@@ -311,10 +311,12 @@ for $id (sort{$data->{'councils'}{$a}{'name'} cmp $data->{'councils'}{$b}{'name'
 			$fontweight = 0;
 			$fonts = 0;
 			$ttf = 0;
+			$jquery = 0;
 			for($j = 0; $j < @{$details->{'weight'}{'details'}{'items'}}; $j++){
 				$file = "File";
 				if($details->{'weight'}{'details'}{'items'}[$j]{'url'} =~ /([^\/]*)$/){
 					$file = $1;
+					if($file =~ /jquery/){ $jquery++; }
 				}
 				$u = $details->{'weight'}{'details'}{'items'}[$j]{'url'};
 				if(!$doneimages{$u} && $details->{'weight'}{'details'}{'items'}[$j]{'totalBytes'} > $large){
@@ -332,6 +334,7 @@ for $id (sort{$data->{'councils'}{$a}{'name'} cmp $data->{'councils'}{$b}{'name'
 					}
 				}
 			}
+			if($jquery > 0){ $jquerycouncil++; }
 			$dup = 0;
 			for $u (reverse(sort{ $duplicates{$a}{'bytes'} <=> $duplicates{$b}{'bytes'} }keys((%duplicates)))){
 				if($u){
@@ -393,7 +396,7 @@ for($i = 0; $i < @big; $i++){
 	}
 }
 print "Yearly image savings of ".niceSize($fullsavings*$monthlyvisits*12)." (".sprintf("%0.1f",($co2savings*$monthlyvisits*12)/1e3)."kg CO2) if $monthlyvisits visitors per month\n";
-
+print "jQuery usage: $jquerycouncil/$tot councils.\n";
 
 sub niceSize {
 	my $b = $_[0];
