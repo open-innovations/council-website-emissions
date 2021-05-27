@@ -142,7 +142,8 @@
 				"https://www.eastriding.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.97, "ref": "https://www.websitecarbon.com/website/eastriding-gov-uk/" },
-						"2021-05-26": { "CO2": 2.02, "ref": "https://www.websitecarbon.com/website/eastriding-gov-uk/" }
+						"2021-05-26": { "CO2": 2.02, "ref": "https://www.websitecarbon.com/website/eastriding-gov-uk/" },
+						"2021-05-27": { "CO2": 1.53, "bytes": 2531917, "green": 0, "imagebytes": 468545 }
 					}
 				}
 			}

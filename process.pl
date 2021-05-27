@@ -206,9 +206,9 @@ for $id (sort{$data->{'councils'}{$a}{'name'} cmp $data->{'councils'}{$b}{'name'
 
 	@urls = keys(%{$data->{'councils'}{$id}{'urls'}});
 	if($council{$id}{'rank'}/$nn < 0.5){
-		$body .= "$indent<p>Worse than ".sprintf("%d",(100*(1 - $council{$id}{'rank'}/$nn)))."% of councils tested.</p>\n";
+		#$body .= "$indent<p>Worse than ".sprintf("%d",(100*(1 - $council{$id}{'rank'}/$nn)))."% of councils tested.</p>\n";
 	}else{
-		$body .= "$indent<p>Better than ".sprintf("%d",(100*($council{$id}{'rank'}/$nn)))."% of councils tested.</p>\n";
+		#$body .= "$indent<p>Better than ".sprintf("%d",(100*($council{$id}{'rank'}/$nn)))."% of councils tested.</p>\n";
 	}
 	$body .= "$indent<h2>Emissions</h2>\n";
 	$body .= "$indent<ul class=\"emissions\">\n";
@@ -270,7 +270,7 @@ for $id (sort{$data->{'councils'}{$a}{'name'} cmp $data->{'councils'}{$b}{'name'
 					$body .= "$indent\t\t\t<p>We estimate potential to save at least ".niceSize($imsaving)."* by optimising images:</p>\n";
 				}
 				$body .= "$indent\t\t\t<ol>\n";
-				for $j (reverse(sort{ $doneimages{$a}{'bytes'} <=> $doneimages{$b}{'bytes'} }keys((%doneimages)))){
+				for $j (reverse(sort{ $doneimages{$a}{'bytes'} <=> $doneimages{$b}{'bytes'} || $a cmp $b }keys((%doneimages)))){
 					# Estimate savings for large images that Google hasn't estimated
 					if(!$doneimages{$j}{'saving'}){
 						if($doneimages{$j}{'bytes'} >= 1e6){
