@@ -1,11 +1,15 @@
 #!/usr/bin/perl
 
+use lib "lib/";
 use JSON::XS;
 use Data::Dumper;
+use ODILeeds::CarbonAPI;
 
 $file = "data/councils.json";
 $cfile = "data/website-carbon.csv";
 $tfile = "data/website-carbon.tsv";
+
+$carbon = ODILeeds::CarbonAPI->new();
 
 open(FILE,$file);
 @lines = <FILE>;
@@ -15,6 +19,7 @@ $data = JSON::XS->new->utf8->decode(join("",@lines));
 
 %council;
 $avco2 = 1.76;
+$monthlyvisits = 10000;
 
 # Make the CSV
 $tsv = "ONS code\tLocal authority name\tWebsite\tStatus\tCO2 emissions (g)\tWebsite carbon link\tDate last checked\n";
@@ -97,8 +102,11 @@ $median = 0;
 $missing = 0;
 @best = ();
 @worst = ();
-for($i = 0; $i < @order; $i++){
+$nn = 0;
+for($i = 0; $i < $tot; $i++){
 	$id = $order[$i];
+	$council{$id}{'rank'} = $i+1;
+	if($council{$id}{'CO2'}){ $nn++; }
 	if($council{$id}{'CO2'} < $lastco2){
 		$rank = $i+1;
 	}
@@ -109,8 +117,8 @@ for($i = 0; $i < @order; $i++){
 	if(!$council{$id}{'CO2'}){
 		$missing++;
 	}
-	$tr = "$idt\t<tr><td class=\"cen\">$rank</td><td>".($council{$id}{'url'} ? "<a href=\"$council{$id}{'url'}\">":"").$council{$id}{'name'}.($council{$id}{'url'} ? "</a>":"")."</td><td class=\"cen\"><a href=\"areas/$id.html\">$id</a></td><td class=\"cen\">".($council{$id}{'link'} ? "<a href=\"$council{$id}{'link'}\">":"").($council{$id}{'CO2'} ? sprintf("%0.2f",$council{$id}{'CO2'}) : "?").($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">$council{$id}{'date'}</td></tr>\n";
-	$tr2 = "$idt\t<tr><td>".($council{$id}{'url'} ? "<a href=\"$council{$id}{'url'}\">":"").$council{$id}{'name'}.($council{$id}{'url'} ? "</a>":"")."</td><td class=\"cen\">".($council{$id}{'CO2'} ? sprintf("%0.2f",$council{$id}{'CO2'}) : "?")."</td></tr>\n";
+	$tr = "$idt\t<tr><td class=\"cen\">$rank</td><td><a href=\"areas/$id.html\">".$council{$id}{'name'}.($council{$id}{'url'} ? "</a>":"")."</td><td class=\"cen\">$id</td><td class=\"cen\">".($council{$id}{'link'} ? "<a href=\"$council{$id}{'link'}\">":"").($council{$id}{'CO2'} ? sprintf("%0.2f",$council{$id}{'CO2'}) : "?").($council{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">$council{$id}{'date'}</td></tr>\n";
+	$tr2 = "$idt\t<tr><td><a href=\"areas/$id.html\">".$council{$id}{'name'}.($council{$id}{'url'} ? "</a>":"")."</td><td class=\"cen\">".($council{$id}{'CO2'} ? sprintf("%0.2f",$council{$id}{'CO2'}) : "?")."</td></tr>\n";
 	$table .= $tr;
 	if($council{$id}{'CO2'} > 0){
 		$n = @worst;
@@ -182,6 +190,9 @@ close(FILE);
 $html = join("",@lines);
 
 $indent = "\t\t\t\t";
+%biggestfiles;
+$fullsavings = 0;
+$co2savings = 0;
 
 # Make a page for each council
 for $id (sort{$data->{'councils'}{$a}{'name'} cmp $data->{'councils'}{$b}{'name'}}(keys(%{$data->{'councils'}}))){
@@ -191,23 +202,172 @@ for $id (sort{$data->{'councils'}{$a}{'name'} cmp $data->{'councils'}{$b}{'name'
 		$rid = $data->{'councils'}{$id}{'replacedBy'}{'id'};
 		$body .= "$indent<p>Replaced by <a href=\"$rid\.html\">$data->{'councils'}{$rid}{'name'}</a> on $data->{'councils'}{$id}{'replacedBy'}{'date'}.</p>";
 	}
+
+
+	@urls = keys(%{$data->{'councils'}{$id}{'urls'}});
+	if($council{$id}{'rank'}/$nn < 0.5){
+		$body .= "$indent<p>Worse than ".sprintf("%d",(100*(1 - $council{$id}{'rank'}/$nn)))."% of councils tested.</p>\n";
+	}else{
+		$body .= "$indent<p>Better than ".sprintf("%d",(100*($council{$id}{'rank'}/$nn)))."% of councils tested.</p>\n";
+	}
 	$body .= "$indent<h2>Emissions</h2>\n";
 	$body .= "$indent<ul class=\"emissions\">\n";
-	@urls = keys(%{$data->{'councils'}{$id}{'urls'}});
+
 	for($i = 0; $i < @urls; $i++){
 		$url = $urls[$i];
+
+		# Get the lighthouse details
+		$details = getDetails($urls[$i]);
+		if($details->{'file'}){
+			#print "Using details for $id\n";
+		}
+
 		$body .= "$indent\t<li>\n";
-		$body .= "$indent\t\t<p><strong>URL:</strong> <a href=\"$url\">$url</a></p>\n$indent\t\t<table>\n$indent\t\t\t<tr><th>Date checked</th><th>CO2 / grams</th></tr>\n";
+		$body .= "$indent\t<div>\n";
+		$body .= "$indent\t\t<p><strong>URL:</strong> <a href=\"$url\">$url</a></p>\n";
+		if($details->{'first-contentful-paint'}){
+			$body .= "$indent\t\t<p><strong>Time to load:</strong> ".sprintf("%0.1f",($details->{'first-contentful-paint'}{'numericValue'}/1000))." seconds</p>\n";
+		}
+		$body .= "$indent\t\t<table>\n$indent\t\t\t<tr><th>Date checked</th><th class=\"cen\">CO2 / grams</th><th class=\"cen\">Page size</th><th class=\"cen\"><a href=\"https://www.thegreenwebfoundation.org/directory/\">Energy</a></th></tr>\n";
 		@dates = reverse(sort(keys(%{$data->{'councils'}{$id}{'urls'}{$url}{'values'}})));
 		for($d = 0; $d < @dates; $d++){
-			$body .= "$indent\t\t\t<tr><td>$dates[$d]</td><td><a href=\"$data->{'councils'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'ref'}\">".sprintf("%0.2f",$data->{'councils'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'CO2'})."</a></td></tr>\n";
+			$body .= "$indent\t\t\t<tr><td>$dates[$d]</td><td class=\"cen\"><a href=\"$data->{'councils'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'ref'}\">".sprintf("%0.2f",$data->{'councils'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'CO2'})."</a></td><td class=\"cen\" data=\"$data->{'councils'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'bytes'}\">".niceSize($data->{'councils'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'bytes'})."</td><td class=\"cen ".($data->{'councils'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'green'} ? "c5-bg":"")."\">".($data->{'councils'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'green'} ? "GREEN":"GRID?")."</td></tr>\n";
 		}
 		$body .= "$indent\t\t</table>\n";
+
+		%doneimages = "";
+		%duplicates = "";
+		$large = 30000;
+		if($details->{'images'}){
+			$nimages = 0;
+			$imsaving = 0;
+			$doneimages{$details->{'images'}{'items'}[$j]{'url'}} = 1;
+			#$fullsavings += $details->{'images'}{'overallSavingsBytes'};
+			for($j = 0; $j < @{$details->{'images'}{'items'}}; $j++){
+				if($details->{'images'}{'items'}[$j]{'url'}){
+					$doneimages{$details->{'images'}{'items'}[$j]{'url'}} = {'bytes'=>$details->{'images'}{'items'}[$j]{'totalBytes'},'saving'=>$details->{'images'}{'items'}[$j]{'wastedBytes'}};
+					$imsaving += $details->{'images'}{'items'}[$j]{'wastedBytes'};
+					$nimages++;
+				}
+			}
+			for($j = 0; $j < @{$details->{'weight'}{'details'}{'items'}}; $j++){
+				$u = $details->{'weight'}{'details'}{'items'}[$j]{'url'};
+				$biggestfiles{$u} = {'bytes'=>$details->{'weight'}{'details'}{'items'}[$j]{'totalBytes'},'id'=>$id};
+				if($u =~ /\.(png|jpg|jpeg|webp)$/ || $u =~ /\.(png|jpg|jpeg|webp)\?/ || $u =~ /format=(png|jpg|jpeg|webp)\&/){
+					if($details->{'weight'}{'details'}{'items'}[$j]{'totalBytes'} >= $large){
+						if(!$doneimages{$u}){
+							$doneimages{$u} = {};
+							$nimages++;
+						}
+						$doneimages{$u}{'bytes'} = $details->{'weight'}{'details'}{'items'}[$j]{'totalBytes'};
+					}
+				}
+			}
+			if($nimages > 0){
+				$body .= "$indent\t\t<div class=\"tip\">\n";
+				$body .= "$indent\t\t\t<h4>Tip: Optimise images</h4>\n";
+				if($imsaving > 0){
+					$body .= "$indent\t\t\t<p>We estimate potential to save at least ".niceSize($imsaving)."* by optimising images:</p>\n";
+				}
+				$body .= "$indent\t\t\t<ol>\n";
+				for $j (reverse(sort{ $doneimages{$a}{'bytes'} <=> $doneimages{$b}{'bytes'} }keys((%doneimages)))){
+					# Estimate savings for large images that Google hasn't estimated
+					if(!$doneimages{$j}{'saving'}){
+						if($doneimages{$j}{'bytes'} >= 1e6){
+							# Say images over 1MB can be reduced to 400kB
+							$doneimages{$j}{'savedBytes'} = $doneimages{$j}{'bytes'}-400000;
+						}
+						if($doneimages{$j}{'bytes'} < 1e6 && $doneimages{$j}{'bytes'} > 5e5){
+							# Between 500kB and 1MB we'll estimate they can be reduced to 300kB
+							$doneimages{$j}{'savedBytes'} = $doneimages{$j}{'bytes'}-300000;
+						}
+					}else{
+						$doneimages{$j}{'savedBytes'} = $doneimages{$j}{'saving'};
+					}
+					
+					
+					$fullsavings += $doneimages{$j}{'savedBytes'};
+					if($data->{'councils'}{$id}{'urls'}{$url}{'values'}{$dates[0]}{'bytes'} > 0){
+						$co2savings += ($data->{'councils'}{$id}{'urls'}{$url}{'values'}{$dates[0]}{'CO2'} * $doneimages{$j}{'savedBytes'}/$data->{'councils'}{$id}{'urls'}{$url}{'values'}{$dates[0]}{'bytes'});
+					}
+					$file = "File";
+					if($j =~ /([^\/]*)$/){
+						$file = $1;
+					}
+					if($file){
+						$body .= "$indent\t\t\t\t<li><a href=\"$j\">".(length($file) > 22 ? substr($file,0,20)."...":$file)."</a> is ".niceSize($doneimages{$j}{'bytes'}).($doneimages{$j}{'saving'} > 0 ? " and could be ".niceSize($doneimages{$j}{'saving'})." smaller":"")."</li>\n";
+					}
+				}
+				$body .= "$indent\t\t\t</ol>\n";
+				$body .= "$indent\t\t\t<p>First, check that images are appropriately sized - you most likely don't need a 6000x4000 pixel image straight from a digital camera. In Windows, the Photos software will let you quickly shrink huge images and will give you an improvement.</p>\n";
+				$body .= "$indent\t\t\t<p>Next you could try using <a href=\"https://tinyjpg.com/\">tinyjpg.com</a> (JPG image) or <a href=\"https://tinypng.com/\">tinypng.com</a> (PNG image) to further optimise your image. This will strip out metadata that may be taking up lots of space.</p>\n";
+				$body .= "$indent\t\t\t<p class=\"small\">*This is an estimate from Google PageSpeed and you may get much better results than this in practice.</p>";
+				$body .= "$indent\t\t</div>\n";
+			}
+		}
+		if($details->{'weight'}){
+			$weight = 0;
+			$list = "";
+			$fontweight = 0;
+			$fonts = 0;
+			$ttf = 0;
+			for($j = 0; $j < @{$details->{'weight'}{'details'}{'items'}}; $j++){
+				$file = "File";
+				if($details->{'weight'}{'details'}{'items'}[$j]{'url'} =~ /([^\/]*)$/){
+					$file = $1;
+				}
+				$u = $details->{'weight'}{'details'}{'items'}[$j]{'url'};
+				if(!$doneimages{$u} && $details->{'weight'}{'details'}{'items'}[$j]{'totalBytes'} > $large){
+					if(!$duplicates{$u}){
+						$duplicates{$u} = {'bytes'=>$details->{'weight'}{'details'}{'items'}[$j]{'totalBytes'},'n'=>0};
+					}
+					$duplicates{$u}{'n'}++;
+					$duplicates{$u}{'file'} = $file;
+					if($file =~ /\.(ttf|woff|woff2|otf)$/ || $file =~ /\.(ttf|woff|woff2|otf)\?/){
+						$fontweight += $details->{'weight'}{'details'}{'items'}[$j]{'totalBytes'};
+						$fonts++;
+					}
+					if($file =~ /\.(ttf|otf)$/){
+						$ttf++;
+					}
+				}
+			}
+			$dup = 0;
+			for $u (reverse(sort{ $duplicates{$a}{'bytes'} <=> $duplicates{$b}{'bytes'} }keys((%duplicates)))){
+				if($u){
+					$list .= "$indent\t\t\t\t<li><a href=\"$u\">".(length($duplicates{$u}{'file'}) > 32 ? substr($duplicates{$u}{'file'},0,30)."...":$duplicates{$u}{'file'})."</a> is ".niceSize($duplicates{$u}{'bytes'}).($duplicates{$u}{'n'} > 1 ? " &times;$duplicates{$u}{'n'}" : "")."</li>\n";
+					$dup += ($duplicates{$u}{'n'}-1);
+					$weight += $duplicates{$u}{'bytes'};
+				}
+			}
+			if($weight > 100000){
+				$body .= "$indent\t\t<div class=\"tip\">\n";
+				$body .= "$indent\t\t\t<h4>Tip: Large files</h4>\n";
+				$body .= "$indent\t\t\t<p>Aside from images, here are the biggest resources:</p>\n";
+				$body .= "$indent\t\t\t<ol>\n";
+				$body .= $list;
+				$body .= "$indent\t\t\t</ol>\n";
+				if($dup > 0){
+					$body .= "$indent\t\t\t<p>There ".($dup==1 ? "is":"are")." $dup duplicate resource".($dup==1 ? "":"s")." included on the page.</p>\n";
+				}
+				if($fontweight > 100000){
+					$body .= "$indent\t\t\t<p>The page uses $fonts font".($fonts==1 ? "":"s")." which require".($fonts==1 ? "s":"")." ".niceSize($fontweight).". Could system fonts be used instead?".($ttf > 0 ? " There are $ttf TTF/OTF fonts on the page - WOFF2 versions of these fonts may be smaller.":"")."</p>\n";
+				}
+				$body .= "$indent\t\t</div>\n";
+			}
+		}
+
+		$body .= "$indent\t</div>\n";
+		$body .= "$indent\t<div>\n";
+		if($details->{'screenshot'}){
+			$body .= "$indent<img src=\"$details->{'screenshot'}\" alt=\"Screenshot\" class=\"screenshot\" />";
+		}
+		$body .= "$indent\t</div>\n";
 		$body .= "$indent\t</li>\n";
 	}
 	$body .= "$indent</ul>\n";
 
-	$body .= "$indent<h2>External links</h2>\n$indent<ul class=\"external\">\n";
+	$body .= "$indent<h2>External data links</h2>\n$indent<ul class=\"external\">\n";
 	$body .= "$indent\t<li><a href=\"https://findthatpostcode.uk/areas/$id.html\">Find that Postcode</a></li>\n";
 	$body .= "$indent\t<li><a href=\"http://statistics.data.gov.uk/doc/statistical-geography/$id\">ONS Linked Data</a></li>\n";
 	$body .= "$indent\t<li><a href=\"https://findthatpostcode.uk/areas/$id.geojson\">Boundary (GeoJSON)</a></li>\n";
@@ -221,4 +381,55 @@ for $id (sort{$data->{'councils'}{$a}{'name'} cmp $data->{'councils'}{$b}{'name'
 	open(FILE,">","areas/$id.html");
 	print FILE $txt;
 	close(FILE);
+}
+
+print "Biggest files:\n";
+@big = reverse(sort{ $biggestfiles{$a}{'bytes'} <=> $biggestfiles{$b}{'bytes'} }(keys(%biggestfiles)));
+for($i = 0; $i < @big; $i++){
+	if($biggestfiles{$big[$i]}{'bytes'} > 5e6){
+		print "  ".($i+1).". ".niceSize($biggestfiles{$big[$i]}{'bytes'})." - $biggestfiles{$big[$i]}{'id'} - $big[$i]\n";
+	}
+}
+print "Yearly image savings of ".niceSize($fullsavings*$monthlyvisits*12)." (".sprintf("%0.1f",($co2savings*$monthlyvisits*12)/1e3)."kg CO2) if $monthlyvisits visitors per month\n";
+
+
+sub niceSize {
+	my $b = $_[0];
+	if(!$b){ return ""; }
+	if($b > 1e12){ return sprintf("%0.1fTB",$b/1e12); }
+	if($b > 1e9){ return sprintf("%0.1fGB",$b/1e9); }
+	if($b > 1e8){ return sprintf("%0.0fMB",$b/1e6); }
+	if($b > 1e6){ return sprintf("%0.1fMB",$b/1e6); }
+	if($b > 1e5){ return sprintf("%0dkB",$b/1e3); }
+	if($b > 1e4){ return sprintf("%0.0fkB",$b/1e3); }
+	if($b > 1e3){ return sprintf("%0.1fkB",$b/1e3); }
+	return $b." bytes";
+}
+
+sub getDetails {
+	my $url = $_[0];
+	my $safeurl = $carbon->getSafeURL($url);
+	my ($file,@lines,$str,$json,$screenshot,$rtn,$green);
+	my $file = "data/raw/$safeurl.json";
+	if(-e $file){
+		open(FILE,$file);
+		@lines = <FILE>;
+		close(FILE);
+		$str = join("",@lines);
+		$json = JSON::XS->new->utf8->decode($str);
+		$rtn->{'file'} = 1;
+		if($json->{'lighthouseResult'}{'audits'}{'first-contentful-paint'}){
+			$rtn->{'first-contentful-paint'} = $json->{'lighthouseResult'}{'audits'}{'first-contentful-paint'};
+		}
+		if($json->{'lighthouseResult'}{'audits'}{'final-screenshot'}{'details'}{'data'}){
+			$rtn->{'screenshot'} = $json->{'lighthouseResult'}{'audits'}{'final-screenshot'}{'details'}{'data'};
+		}
+		if($json->{'lighthouseResult'}{'audits'}{'uses-optimized-images'}{'details'}){
+			$rtn->{'images'} = $json->{'lighthouseResult'}{'audits'}{'uses-optimized-images'}{'details'};
+		}
+		if($json->{'lighthouseResult'}{'audits'}{'total-byte-weight'}{'details'}){
+			$rtn->{'weight'} = $json->{'lighthouseResult'}{'audits'}{'total-byte-weight'};
+		}
+	}
+	return $rtn;	
 }

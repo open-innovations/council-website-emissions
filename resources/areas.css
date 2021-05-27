@@ -9,9 +9,30 @@ code, .code {
 	font-family: monospace;
 	padding: 0.125em 0.5em;
 }
+p, ol, .tip { margin-bottom: 0.5em; }
 code {
 	color: #555555;
 	background-color: #efefef;
 }
-.emissions li { margin-top: 1em; }
+.emissions > li { margin-top: 1em; display: grid; grid-template-columns: 65% 1fr; grid-gap: 1em; }
 .external li { list-style: square inside; }
+img.screenshot { border: 1px solid silver; max-width: 100%; }
+.tip {
+	color: #31708f;
+	background-color: #d9edf7;
+	border: 1px solid #bce8f1;
+	padding: 1em;
+}
+.tip h4 {
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+.tip h4::before {
+	content: "\24d8";
+	margin-right: 0.5em;
+	font-weight: bold;
+}
+.small {
+	font-size: 0.8em;
+	line-height: 1.2em;
+}
