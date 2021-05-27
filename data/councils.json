@@ -951,7 +951,8 @@
 				"http://www.ambervalley.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.38, "ref": "https://www.websitecarbon.com/website/ambervalley-gov-uk/" },
-						"2021-05-26": { "CO2": 1.51, "bytes": 2509544, "green": 0, "imagebytes": 800556 }
+						"2021-05-26": { "CO2": 1.51, "bytes": 2509544, "green": 0, "imagebytes": 800556 },
+						"2021-05-27": { "CO2": 1.52, "bytes": 2516604, "green": 0, "imagebytes": 800543 }
 					}
 				}
 			}
@@ -2362,7 +2363,8 @@
 				"https://www.hambleton.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.03, "ref": "https://www.websitecarbon.com/website/hambleton-gov-uk-new/" },
-						"2021-05-26": { "CO2": 0.97, "ref": "https://www.websitecarbon.com/website/hambleton-gov-uk/" }
+						"2021-05-26": { "CO2": 0.97, "ref": "https://www.websitecarbon.com/website/hambleton-gov-uk/" },
+						"2021-05-27": { "CO2": 0.87, "bytes": 1597246, "green": 1, "imagebytes": 1318948 }
 					}
 				}
 			}
@@ -2435,7 +2437,8 @@
 				"http://www.ashfield-dc.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.87, "ref": "https://www.websitecarbon.com/website/ashfield-dc-gov-uk/" },
-						"2021-05-26": { "CO2": 0.86, "bytes": 1422687, "green": 0, "imagebytes": 915803 }
+						"2021-05-26": { "CO2": 0.86, "bytes": 1422687, "green": 0, "imagebytes": 915803 },
+						"2021-05-27": { "CO2": 0.87, "bytes": 1447444, "green": 0, "imagebytes": 929467 }
 					}
 				}
 			}
@@ -2712,7 +2715,8 @@
 				"http://www.babergh.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.51, "ref": "https://www.websitecarbon.com/website/babergh-gov-uk/" },
-						"2021-05-26": { "CO2": 1.51, "bytes": 2499967, "green": 0, "imagebytes": 1848897 }
+						"2021-05-26": { "CO2": 1.51, "bytes": 2499967, "green": 0, "imagebytes": 1848897 },
+						"2021-05-27": { "CO2": 1.57, "bytes": 2599458, "green": 0, "imagebytes": 1963223 }
 					}
 				}
 			}
@@ -2969,7 +2973,8 @@
 				"http://www.adur-worthing.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.17, "ref": "https://www.websitecarbon.com/website/adur-worthing-gov-uk/" },
-						"2021-05-26": { "CO2": 1.25, "bytes": 2285150, "green": 1, "imagebytes": 1917594 }
+						"2021-05-26": { "CO2": 1.25, "bytes": 2285150, "green": 1, "imagebytes": 1917594 },
+						"2021-05-27": { "CO2": 1.25, "bytes": 2279430, "green": 1, "imagebytes": 1912206 }
 					}
 				}
 			}
@@ -2981,7 +2986,8 @@
 				"http://www.arun.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.14, "ref": "https://www.websitecarbon.com/website/arun-gov-uk/" },
-						"2021-05-26": { "CO2": 1.04, "bytes": 1730487, "green": 0, "imagebytes": 1316118 }
+						"2021-05-26": { "CO2": 1.04, "bytes": 1730487, "green": 0, "imagebytes": 1316118 },
+						"2021-05-27": { "CO2": 1.04, "bytes": 1730676, "green": 0, "imagebytes": 1316117 }
 					}
 				}
 			}
@@ -3381,7 +3387,8 @@
 				"http://www.barnsley.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.68, "ref": "https://www.websitecarbon.com/website/barnsley-gov-uk/" },
-						"2021-05-26": { "CO2": 0.72, "bytes": 1196913, "green": 0, "imagebytes": 917098 }
+						"2021-05-26": { "CO2": 0.72, "bytes": 1196913, "green": 0, "imagebytes": 917098 },
+						"2021-05-27": { "CO2": 0.72, "bytes": 1196945, "green": 0, "imagebytes": 917098 }
 					}
 				}
 			}
@@ -4445,7 +4452,8 @@
 				"https://antrimandnewtownabbey.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.34, "ref": "https://www.websitecarbon.com/website/antrimandnewtownabbey-gov-uk/" },
-						"2021-05-26": { "CO2": 3.08, "bytes": 5106455, "green": 0, "imagebytes": 3358163 }
+						"2021-05-26": { "CO2": 3.08, "bytes": 5106455, "green": 0, "imagebytes": 3358163 },
+						"2021-05-27": { "CO2": 2.99, "bytes": 4959884, "green": 0, "imagebytes": 3355816 }
 					}
 				}
 			}
@@ -4457,7 +4465,8 @@
 				"https://www.armaghbanbridgecraigavon.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.94, "ref": "https://www.websitecarbon.com/website/armaghbanbridgecraigavon-gov-uk/" },
-						"2021-05-26": { "CO2": 0.95, "bytes": 1579541, "green": 0, "imagebytes": 345325 }
+						"2021-05-26": { "CO2": 0.95, "bytes": 1579541, "green": 0, "imagebytes": 345325 },
+						"2021-05-27": { "CO2": 0.96, "bytes": 1586086, "green": 0, "imagebytes": 351789 }
 					}
 				}
 			}
@@ -4566,7 +4575,8 @@
 				"http://www.ardsandnorthdown.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.39, "ref": "https://www.websitecarbon.com/website/ardsandnorthdown-gov-uk/" },
-						"2021-05-26": { "CO2": 1.47, "bytes": 2445780, "green": 0, "imagebytes": 1769266 }
+						"2021-05-26": { "CO2": 1.47, "bytes": 2445780, "green": 0, "imagebytes": 1769266 },
+						"2021-05-27": { "CO2": 1.42, "bytes": 2362621, "green": 0, "imagebytes": 1683587 }
 					}
 				}
 			}
@@ -4820,7 +4830,8 @@
 				"https://www.aberdeencity.gov.uk": {
 					"values": {
 						"2021-03-04": { "CO2": 3.19, "ref": "https://www.websitecarbon.com/website/aberdeencity-gov-uk/" },
-						"2021-05-26": { "CO2": 3.12, "bytes": 5708459, "green": 1, "imagebytes": 2389783 }
+						"2021-05-26": { "CO2": 3.12, "bytes": 5708459, "green": 1, "imagebytes": 2389783 },
+						"2021-05-27": { "CO2": 3.12, "bytes": 5708425, "green": 1, "imagebytes": 2389759 }
 					}
 				}
 			}
@@ -4832,7 +4843,8 @@
 				"https://www.aberdeenshire.gov.uk": {
 					"values": {
 						"2021-03-04": { "CO2": 0.6, "ref": "https://www.websitecarbon.com/website/aberdeenshire-gov-uk/" },
-						"2021-05-26": { "CO2": 0.61, "bytes": 1014579, "green": 0, "imagebytes": 226667 }
+						"2021-05-26": { "CO2": 0.61, "bytes": 1014579, "green": 0, "imagebytes": 226667 },
+						"2021-05-27": { "CO2": 0.61, "bytes": 1017864, "green": 0, "imagebytes": 226667 }
 					}
 				}
 			}
@@ -4844,7 +4856,8 @@
 				"https://www.argyll-bute.gov.uk": {
 					"values": {
 						"2021-03-11": { "CO2": 0.84, "ref": "https://www.websitecarbon.com/website/argyll-bute-gov-uk/" },
-						"2021-05-26": { "CO2": 0.58, "bytes": 962687, "green": 0, "imagebytes": 323255 }
+						"2021-05-26": { "CO2": 0.58, "bytes": 962687, "green": 0, "imagebytes": 323255 },
+						"2021-05-27": { "CO2": 0.58, "bytes": 967634, "green": 0, "imagebytes": 323255 }
 					}
 				}
 			}
@@ -4904,7 +4917,8 @@
 				"https://www.angus.gov.uk": {
 					"values": {
 						"2021-03-04": { "CO2": 0.68, "ref": "https://www.websitecarbon.com/website/angus-gov-uk/" },
-						"2021-05-26": { "CO2": 0.56, "bytes": 1019620, "green": 1, "imagebytes": 349878 }
+						"2021-05-26": { "CO2": 0.56, "bytes": 1019620, "green": 1, "imagebytes": 349878 },
+						"2021-05-27": { "CO2": 0.56, "bytes": 1019555, "green": 1, "imagebytes": 349878 }
 					}
 				}
 			}

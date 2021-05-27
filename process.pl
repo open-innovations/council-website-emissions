@@ -360,7 +360,7 @@ for $id (sort{$data->{'councils'}{$a}{'name'} cmp $data->{'councils'}{$b}{'name'
 		$body .= "$indent\t</div>\n";
 		$body .= "$indent\t<div>\n";
 		if($details->{'screenshot'}){
-			$body .= "$indent<img src=\"$details->{'screenshot'}\" alt=\"Screenshot\" class=\"screenshot\" />";
+			$body .= "$indent<a href=\"$url\"><img src=\"$details->{'screenshot'}\" alt=\"Screenshot\" class=\"screenshot\" /></a>";
 		}
 		$body .= "$indent\t</div>\n";
 		$body .= "$indent\t</li>\n";
@@ -374,6 +374,8 @@ for $id (sort{$data->{'councils'}{$a}{'name'} cmp $data->{'councils'}{$b}{'name'
 	$body .= "$indent</ul>\n";
 
 	$txt =~ s/\{\{ ID \}\}/$id/g;
+	$txt =~ s/\{\{ CO2 \}\}/$council{$id}{'CO2'}/g;
+	$txt =~ s/\{\{ DATE \}\}/$council{$id}{'date'}/g;
 	$txt =~ s/\{\{ TITLE \}\}/$data->{'councils'}{$id}{'name'} website emissions/g;
 	$txt =~ s/\{\{ NAME \}\}/$data->{'councils'}{$id}{'name'}/g;
 	$txt =~ s/\{\{ BODY \}\}/$body/g;
