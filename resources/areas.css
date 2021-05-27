@@ -36,3 +36,9 @@ img.screenshot { border: 1px solid silver; max-width: 100%; }
 	font-size: 0.8em;
 	line-height: 1.2em;
 }
+
+@media only screen and (max-width: 640px) {
+	h1 { line-height: 1.5em; }
+	.emissions > li { grid-template-columns: 100%; }
+	.emissions > li div:first-child { grid-row: 2; }
+}
