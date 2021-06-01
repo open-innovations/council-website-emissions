@@ -1701,7 +1701,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 12.12, "ref": "https://www.websitecarbon.com/website/watford-gov-uk/" },
 						"2021-05-25": { "CO2": 6.3, "ref": "https://www.websitecarbon.com/website/watford-gov-uk/" },
-						"2021-05-27": { "CO2": 6.7, "bytes": 12267779, "green": 1, "imagebytes": 11810537 }
+						"2021-05-27": { "CO2": 6.7, "bytes": 12267779, "green": 1, "imagebytes": 11810537 },
+						"2021-06-01": { "CO2": 3.74, "bytes": 6845435, "green": 1, "imagebytes": 6388717 }
 					}
 				}
 			}
@@ -4306,7 +4307,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 9.58, "ref": "https://www.websitecarbon.com/website/warwickshire-gov-uk/" },
 						"2021-05-25": { "CO2": 1.64, "ref": "https://www.websitecarbon.com/website/warwickshire-gov-uk/" },
-						"2021-05-27": { "CO2": 7.43, "bytes": 13599544, "green": 1, "imagebytes": 13015452 }
+						"2021-05-27": { "CO2": 7.43, "bytes": 13599544, "green": 1, "imagebytes": 13015452 },
+						"2021-06-01": { "CO2": 1.38, "bytes": 2531994, "green": 1, "imagebytes": 1948098 }
 					}
 				}
 			}
