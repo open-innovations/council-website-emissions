@@ -3573,7 +3573,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 2.51, "ref": "https://www.websitecarbon.com/website/bradford-gov-uk/" },
 						"2021-05-25": { "CO2": 2.16, "ref": "https://www.websitecarbon.com/website/bradford-gov-uk/" },
-						"2021-05-27": { "CO2": 2.14, "bytes": 3543840, "green": 0, "imagebytes": 2752816 }
+						"2021-05-27": { "CO2": 2.14, "bytes": 3543840, "green": 0, "imagebytes": 2752816 },
+						"2021-06-01": { "CO2": 1.26, "bytes": 2084469, "green": 0, "imagebytes": 1303441 }
 					}
 				}
 			}
