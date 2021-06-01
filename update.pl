@@ -10,8 +10,26 @@ $delay = 100;
 if($ENV{'CC_GPSAPI_KEY'}){ $delay = 10; }
 
 
+%config;
+
+if(-e ".config"){
+	open(FILE,".config");
+	@lines = <FILE>;
+	close(FILE);
+	foreach $line (@lines){
+		$line =~ s/[\n\r]//g;
+		($k,$v) = split(/\t/,$line);
+		$config{$k} = $v;
+	}
+}else{
+	print "No .config file.\n";
+	exit;
+}
+
+
+
 # Read in the existing data
-$file = "data/councils.json";
+$file = $config{'JSON'}||"data/index.json";
 open(FILE,$file);
 @lines = <FILE>;
 close(FILE);
@@ -24,43 +42,43 @@ $carbon = ODILeeds::CarbonAPI->new();
 # Find the ISO8601 date format for today
 $today = strftime('%Y-%m-%d',gmtime());
 
-# Check if we've explicitly specified a council(s) by ID (semi-colon separated)
+# Check if we've explicitly specified an org(s) by ID (semi-colon separated)
 $id = $ARGV[0];
 
-if($id && !$data->{'councils'}{$id}){
+if($id && !$data->{'orgs'}{$id}){
 	print "Error: $id does not appear to exist in the dataset.\n";
 	exit;
 }
-# Process the council(s)
-processCouncils($id);
+# Process the org(s)
+processOrgs($id);
 
 
 
 #####################
 # SUBROUTINES
 
-sub processCouncils {
+sub processOrgs {
 	my $str = $_[0];
 	my (@ids,$ago,$n,$i);
-	print "Processing councils...\n";
+	print "Processing orgs...\n";
 
 	if($str){
 		@ids = split(/;/,$str);
 		$ago = 0.5;
 	}else{
-		@ids = (sort{$data->{'councils'}{$a}{'name'} cmp $data->{'councils'}{$b}{'name'}}(keys(%{$data->{'councils'}})));
+		@ids = (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(%{$data->{'orgs'}})));
 		$ago = 14;
 	}
 
 	$n = @ids;
 	if($n==1){
 		print "$ids[0]\n";
-		$dl = processCouncil($ids[0],$ago);
+		$dl = processOrg($ids[0],$ago);
 	}else{
 		for($i = 0; $i < @ids; $i++){
-			if($data->{'councils'}{$ids[$i]}{'active'}){
+			if($data->{'orgs'}{$ids[$i]}{'active'}){
 				print "$ids[$i]\n";
-				$dl = processCouncil($ids[$i],$ago);
+				$dl = processOrg($ids[$i],$ago);
 				if($dl){
 					print "\tsleeping for $delay seconds...\n";
 					sleep $delay;
@@ -71,25 +89,25 @@ sub processCouncils {
 	return;
 }
 
-sub processCouncil {
+sub processOrg {
 	my $id = $_[0];
 	my $ago = $_[1];
 	my (@urls,$u,$url,$recent,@dates,$lastco,$i,$days,$entry,$dl);
 
-	@urls = keys(%{$data->{'councils'}{$id}{'urls'}});
+	@urls = keys(%{$data->{'orgs'}{$id}{'urls'}});
 	$dl = 0;
 	for($u = 0; $u < @urls; $u++){
 		$url = $urls[$u];
 		$recent = "";
-		@dates = reverse(sort(keys(%{$data->{'councils'}{$id}{'urls'}{$url}{'values'}})));
+		@dates = reverse(sort(keys(%{$data->{'orgs'}{$id}{'urls'}{$url}{'values'}})));
 		if(@dates == 1){
 			$recent = $dates[0];
-			$lastco = $data->{'councils'}{$id}{'urls'}{$url}{'values'}{$recent}{'CO2'};
+			$lastco = $data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$recent}{'CO2'};
 		}else{
 			for($i = 0; $i < @dates; $i++){
 				if(!$recent || $lastco eq ""){
 					$recent = $dates[$i];
-					$lastco = $data->{'councils'}{$id}{'urls'}{$url}{'values'}{$dates[$i]}{'CO2'};
+					$lastco = $data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$i]}{'CO2'};
 				}
 			}
 		}
@@ -97,7 +115,7 @@ sub processCouncil {
 		if($days > ($ago||14)){
 			$entry = $carbon->makeEntry($url);
 			if($entry->{'co2'}){
-				$data->{'councils'}{$id}{'urls'}{$url}{'values'}{$today} = {'CO2'=>($entry->{'co2'} ? sprintf("%0.2f",$entry->{'co2'})+0 : $entry->{'co2'}),'bytes'=>($entry->{'bytes'}),'imagebytes'=>($entry->{'images'}{'bytes'}),'green'=>($entry->{'green'})};
+				$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$today} = {'CO2'=>($entry->{'co2'} ? sprintf("%0.2f",$entry->{'co2'})+0 : $entry->{'co2'}),'bytes'=>($entry->{'bytes'}),'imagebytes'=>($entry->{'images'}{'bytes'}),'green'=>($entry->{'green'})};
 				print "$id:\n";
 				print "\t$url\n";
 				print "\t$recent - ".$days." days ago\n";
@@ -140,7 +158,7 @@ sub saveIndex {
 	}
 	$str =~ s/\n\t+"CO2"\: ([^\,]*)\,\n\t+"ref"\: "([^\"]*)"\n\t+/"CO2": $1, "ref": "$2"/g;
 
-	open(FILE,">","data/councils.json");
+	open(FILE,">",$config{'JSON'}||"data/index.json");
 	print FILE $str;
 	close(FILE);
 
