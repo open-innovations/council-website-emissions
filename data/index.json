@@ -4372,7 +4372,8 @@
 			"urls": {
 				"https://www.westyorks-ca.gov.uk/": {
 					"values": {
-						"2021-05-27": { "CO2": 4.01, "bytes": 6651436, "green": 0, "imagebytes": 6152112 }
+						"2021-05-27": { "CO2": 4.01, "bytes": 6651436, "green": 0, "imagebytes": 6152112 },
+						"2021-06-10": { "CO2": 3.08, "bytes": 5105336, "green": 0, "imagebytes": 4591585 }
 					}
 				}
 			}

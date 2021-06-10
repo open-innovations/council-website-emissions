@@ -293,7 +293,7 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 					$body .= "$indent\t\t\t<p>We estimate potential to save at least ".niceSize($imsaving)."* by optimising images:</p>\n";
 				}
 				$body .= "$indent\t\t\t<ol>\n";
-				for $j (reverse(sort{ $doneimages{$a}{'bytes'} <=> $doneimages{$b}{'bytes'} || $a cmp $b }keys((%doneimages)))){
+				for $j (reverse(sort{ $doneimages{$a}{'bytes'} <=> $doneimages{$b}{'bytes'} || $b cmp $a }keys((%doneimages)))){
 					# Estimate savings for large images that Google hasn't estimated
 					if(!$doneimages{$j}{'saving'}){
 						if($doneimages{$j}{'bytes'} >= 1e6){
