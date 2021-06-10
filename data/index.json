@@ -3602,7 +3602,8 @@
 					"values": {
 						"2021-03-10": { "CO2": 0.56, "ref": "https://www.websitecarbon.com/website/kirklees-gov-uk/" },
 						"2021-05-25": { "CO2": null },
-						"2021-05-26": { "CO2": 0.68, "bytes": 1124466, "green": 0, "imagebytes": 804329 }
+						"2021-05-26": { "CO2": 0.68, "bytes": 1124466, "green": 0, "imagebytes": 804329 },
+						"2021-06-10": { "CO2": 0.67, "bytes": 1116646, "green": 0, "imagebytes": 817078 }
 					}
 				}
 			}
@@ -3629,7 +3630,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 1.43, "ref": "https://www.websitecarbon.com/website/wakefield-gov-uk/" },
 						"2021-05-25": { "CO2": 1.36, "ref": "https://www.websitecarbon.com/website/wakefield-gov-uk/" },
-						"2021-05-27": { "CO2": 1.35, "bytes": 2247195, "green": 0, "imagebytes": 1601445 }
+						"2021-05-27": { "CO2": 1.35, "bytes": 2247195, "green": 0, "imagebytes": 1601445 },
+						"2021-06-10": { "CO2": 1.47, "bytes": 2438395, "green": 0, "imagebytes": 1792878 }
 					}
 				}
 			}
