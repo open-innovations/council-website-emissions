@@ -5,6 +5,7 @@ use ODILeeds::CarbonAPI;
 use JSON::XS;
 use Data::Dumper;
 use POSIX qw(strftime);
+use MIME::Base64;
 
 $delay = 100;
 if($ENV{'CC_GPSAPI_KEY'}){ $delay = 10; }
@@ -92,7 +93,7 @@ sub processOrgs {
 sub processOrg {
 	my $id = $_[0];
 	my $ago = $_[1];
-	my (@urls,$u,$url,$recent,@dates,$lastco,$i,$days,$entry,$dl);
+	my (@urls,$u,$url,$recent,@dates,$lastco,$i,$days,$entry,$dl,$details,$handle,$image_decoded);
 
 	@urls = keys(%{$data->{'orgs'}{$id}{'urls'}});
 	$dl = 0;
@@ -132,6 +133,23 @@ sub processOrg {
 				$dl = 1;
 			}
 		}
+		print "$days = $recent $today = $ago\n";
+
+		# Get the lighthouse details
+		$details = getDetails($url);
+		# Update the screenshot
+		if($details->{'screenshot'}){
+			$details->{'screenshot'} =~ s/data:image\/jpeg;base64\,//g;
+			$image_decoded = MIME::Base64::decode_base64($details->{'screenshot'});
+			open ($handle, '>', "$config{'Directory'}$id.jpg") or die $!;
+			binmode $handle;
+			print $handle $image_decoded;
+			close ($handle);
+			print "Processing image $id\n";
+			`convert $config{'Directory'}$id.jpg -quality 60 -define webp:lossless=true $config{'Directory'}$id.webp`;
+			`rm $config{'Directory'}$id.jpg`;
+		}
+
 	}
 	return $dl;
 }
@@ -199,4 +217,32 @@ sub isLeapYear {
 	if($yy%100==0){ $ly = 0; }
 	if($yy%400==0){ $ly = 1; }
 	return $ly;
+}
+
+sub getDetails {
+	my $url = $_[0];
+	my $safeurl = $carbon->getSafeURL($url);
+	my ($file,@lines,$str,$json,$screenshot,$rtn,$green);
+	my $file = "data/raw/$safeurl.json";
+	if(-e $file){
+		open(FILE,$file);
+		@lines = <FILE>;
+		close(FILE);
+		$str = join("",@lines);
+		$json = JSON::XS->new->utf8->decode($str);
+		$rtn->{'file'} = 1;
+		if($json->{'lighthouseResult'}{'audits'}{'first-contentful-paint'}){
+			$rtn->{'first-contentful-paint'} = $json->{'lighthouseResult'}{'audits'}{'first-contentful-paint'};
+		}
+		if($json->{'lighthouseResult'}{'audits'}{'final-screenshot'}{'details'}{'data'}){
+			$rtn->{'screenshot'} = $json->{'lighthouseResult'}{'audits'}{'final-screenshot'}{'details'}{'data'};
+		}
+		if($json->{'lighthouseResult'}{'audits'}{'uses-optimized-images'}{'details'}){
+			$rtn->{'images'} = $json->{'lighthouseResult'}{'audits'}{'uses-optimized-images'}{'details'};
+		}
+		if($json->{'lighthouseResult'}{'audits'}{'total-byte-weight'}{'details'}){
+			$rtn->{'weight'} = $json->{'lighthouseResult'}{'audits'}{'total-byte-weight'};
+		}
+	}
+	return $rtn;	
 }
