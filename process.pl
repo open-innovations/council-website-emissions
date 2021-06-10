@@ -389,14 +389,14 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 		if($details->{'screenshot'}){
 			$im = $details->{'screenshot'};
 			$im =~ s/data:image\/jpeg;base64\,//g;
-			my $image_decoded = MIME::Base64::decode_base64($im);
-			open (my $handle, '>', "$odir$id.jpg") or die $!;
-			binmode $handle;
-			print $handle $image_decoded;
-			close ($handle);
-			print "Processing image $id\n";
-			`convert $odir$id.jpg -quality 60 -define webp:lossless=true $odir$id.webp`;
-			`rm $odir$id.jpg`;
+		#	my $image_decoded = MIME::Base64::decode_base64($im);
+		#	open (my $handle, '>', "$odir$id.jpg") or die $!;
+		#	binmode $handle;
+		#	print $handle $image_decoded;
+		#	close ($handle);
+		#	print "Processing image $id\n";
+		#	`convert $odir$id.jpg -quality 60 -define webp:lossless=true $odir$id.webp`;
+		#	`rm $odir$id.jpg`;
 			$body .= "$indent\t\t<a href=\"$url\"><img src=\"$id.webp\" alt=\"Screenshot\" class=\"screenshot\" /></a>\n";
 		}
 		$body .= "$indent\t</div>\n";
