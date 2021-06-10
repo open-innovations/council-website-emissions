@@ -255,7 +255,7 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 		$body .= "$indent\t\t<table>\n$indent\t\t\t<tr><th>Date checked</th><th class=\"cen\">CO2 / grams</th><th class=\"cen\">Page size</th><th class=\"cen\"><a href=\"https://www.thegreenwebfoundation.org/directory/\">Energy</a></th></tr>\n";
 		@dates = reverse(sort(keys(%{$data->{'orgs'}{$id}{'urls'}{$url}{'values'}})));
 		for($d = 0; $d < @dates; $d++){
-			$body .= "$indent\t\t\t<tr><td>$dates[$d]</td><td class=\"cen\"><a href=\"$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'ref'}\">".sprintf("%0.2f",$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'CO2'})."</a></td><td class=\"cen\" data=\"$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'bytes'}\">".niceSize($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'bytes'})."</td><td class=\"cen ".($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'green'} ? "c5-bg":"")."\">".($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'green'} ? "GREEN":"GRID?")."</td></tr>\n";
+			$body .= "$indent\t\t\t<tr><td>$dates[$d]</td><td class=\"cen\">".sprintf("%0.2f",$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'CO2'})."</td><td class=\"cen\" data=\"$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'bytes'}\">".niceSize($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'bytes'})."</td><td class=\"cen ".($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'green'} ? "c5-bg":"")."\">".($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'green'} ? "GREEN":"GRID?")."</td></tr>\n";
 		}
 		$body .= "$indent\t\t</table>\n";
 
