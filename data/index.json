@@ -20,7 +20,8 @@
 				"https://www.hartlepool.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.22, "ref": "https://www.websitecarbon.com/website/hartlepool-gov-uk/" },
-						"2021-05-27": { "CO2": 0.21, "bytes": 349031, "green": 0, "imagebytes": 116453 }
+						"2021-05-27": { "CO2": 0.21, "bytes": 349031, "green": 0, "imagebytes": 116453 },
+						"2021-06-30": { "CO2": 0.21, "bytes": 350015, "green": 0, "imagebytes": 116454 }
 					}
 				}
 			}
@@ -32,7 +33,8 @@
 				"https://www.middlesbrough.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.85, "ref": "https://www.websitecarbon.com/website/middlesbrough-gov-uk/" },
-						"2021-05-26": { "CO2": 1.29, "bytes": 2362637, "green": 1, "imagebytes": 1871419 }
+						"2021-05-26": { "CO2": 1.29, "bytes": 2362637, "green": 1, "imagebytes": 1871419 },
+						"2021-06-30": { "CO2": 1.29, "bytes": 2365044, "green": 1, "imagebytes": 1873675 }
 					}
 				}
 			}
@@ -45,7 +47,8 @@
 					"values": {
 						"2021-03-11": { "CO2": 7.28, "ref": "https://www.websitecarbon.com/website/redcar-cleveland-gov-uk/" },
 						"2021-05-25": { "CO2": 7.13, "ref": "https://www.websitecarbon.com/website/redcar-cleveland-gov-uk/" },
-						"2021-05-27": { "CO2": 7.51, "bytes": 12449749, "green": 0, "imagebytes": 10851797 }
+						"2021-05-27": { "CO2": 7.51, "bytes": 12449749, "green": 0, "imagebytes": 10851797 },
+						"2021-06-30": { "CO2": 7.51, "bytes": 12457508, "green": 0, "imagebytes": 10851943 }
 					}
 				}
 			}
@@ -57,7 +60,8 @@
 				"http://www.stockton.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.37, "ref": "https://www.websitecarbon.com/website/stockton-gov-uk/" },
-						"2021-05-27": { "CO2": 0.82, "bytes": 1503054, "green": 1, "imagebytes": 706244 }
+						"2021-05-27": { "CO2": 0.82, "bytes": 1503054, "green": 1, "imagebytes": 706244 },
+						"2021-06-30": { "CO2": 1.37, "bytes": 2511360, "green": 1, "imagebytes": 1705913 }
 					}
 				}
 			}
@@ -69,7 +73,8 @@
 				"https://www.darlington.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.39, "ref": "https://www.websitecarbon.com/website/darlington-gov-uk/" },
-						"2021-05-26": { "CO2": 0.38, "bytes": 693962, "green": 1, "imagebytes": 438092 }
+						"2021-05-26": { "CO2": 0.38, "bytes": 693962, "green": 1, "imagebytes": 438092 },
+						"2021-06-30": { "CO2": 0.38, "bytes": 694188, "green": 1, "imagebytes": 438089 }
 					}
 				}
 			}
@@ -81,7 +86,8 @@
 				"https://www3.halton.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.01, "ref": "https://www.websitecarbon.com/website/www3-halton-gov-uk/" },
-						"2021-05-27": { "CO2": 1.24, "bytes": 2056551, "green": 0, "imagebytes": 866171 }
+						"2021-05-27": { "CO2": 1.24, "bytes": 2056551, "green": 0, "imagebytes": 866171 },
+						"2021-06-30": { "CO2": 1.24, "bytes": 2049311, "green": 0, "imagebytes": 866530 }
 					}
 				}
 			}
@@ -93,7 +99,8 @@
 				"http://www.warrington.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.69, "ref": "https://www.websitecarbon.com/website/warrington-gov-uk/" },
-						"2021-05-27": { "CO2": 0.71, "bytes": 1292170, "green": 1, "imagebytes": 836041 }
+						"2021-05-27": { "CO2": 0.71, "bytes": 1292170, "green": 1, "imagebytes": 836041 },
+						"2021-06-30": { "CO2": 0.71, "bytes": 1300014, "green": 1, "imagebytes": 837153 }
 					}
 				}
 			}
@@ -106,7 +113,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 3.17, "ref": "https://www.websitecarbon.com/website/blackburn-gov-uk/" },
 						"2021-05-25": { "CO2": 0.36, "ref": "https://www.websitecarbon.com/website/blackburn-gov-uk/" },
-						"2021-05-27": { "CO2": 2.91, "bytes": 4822077, "green": 0, "imagebytes": 401795 }
+						"2021-05-27": { "CO2": 2.91, "bytes": 4822077, "green": 0, "imagebytes": 401795 },
+						"2021-06-30": { "CO2": 4.52, "bytes": 7493542, "green": 0, "imagebytes": 875772 }
 					}
 				}
 			}
@@ -118,7 +126,8 @@
 				"https://www.blackpool.gov.uk/": {
 					"values": {
 						"2021-05-25": { "CO2": 0.61, "ref": "https://www.websitecarbon.com/website/blackpool-gov-uk/" },
-						"2021-05-27": { "CO2": 0.61, "bytes": 1006881, "green": 0, "imagebytes": 132214 }
+						"2021-05-27": { "CO2": 0.61, "bytes": 1006881, "green": 0, "imagebytes": 132214 },
+						"2021-06-30": { "CO2": 0.62, "bytes": 1030652, "green": 0, "imagebytes": 151719 }
 					}
 				}
 			}
@@ -130,7 +139,8 @@
 				"http://www.hullcc.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 1.47, "ref": "https://www.websitecarbon.com/website/hull-gov-uk/" },
-						"2021-05-26": { "CO2": 1.24, "bytes": 2062937, "green": 0, "imagebytes": 986668 }
+						"2021-05-26": { "CO2": 1.24, "bytes": 2062937, "green": 0, "imagebytes": 986668 },
+						"2021-06-30": { "CO2": 1.28, "bytes": 2116614, "green": 0, "imagebytes": 1036735 }
 					}
 				}
 			}
@@ -144,7 +154,8 @@
 						"2021-03-10": { "CO2": 1.97, "ref": "https://www.websitecarbon.com/website/eastriding-gov-uk/" },
 						"2021-05-26": { "CO2": 2.02, "ref": "https://www.websitecarbon.com/website/eastriding-gov-uk/" },
 						"2021-05-27": { "CO2": 1.53, "bytes": 2531917, "green": 0, "imagebytes": 468545 },
-						"2021-06-10": { "CO2": 1.49, "bytes": 2475456, "green": 0, "imagebytes": 409874 }
+						"2021-06-10": { "CO2": 1.49, "bytes": 2475456, "green": 0, "imagebytes": 409874 },
+						"2021-06-30": { "CO2": 1.46, "bytes": 2425620, "green": 0, "imagebytes": 358372 }
 					}
 				}
 			}
@@ -156,7 +167,8 @@
 				"https://www.nelincs.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.62, "ref": "https://www.websitecarbon.com/website/nelincs-gov-uk/" },
-						"2021-05-27": { "CO2": 1.56, "bytes": 2579586, "green": 0, "imagebytes": 186090 }
+						"2021-05-27": { "CO2": 1.56, "bytes": 2579586, "green": 0, "imagebytes": 186090 },
+						"2021-06-30": { "CO2": 3.99, "bytes": 6622939, "green": 0, "imagebytes": 336182 }
 					}
 				}
 			}
@@ -168,7 +180,8 @@
 				"https://www.northlincs.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.78, "ref": "https://www.websitecarbon.com/website/northlincs-gov-uk/" },
-						"2021-05-27": { "CO2": 0.88, "bytes": 1457665, "green": 0, "imagebytes": 714228 }
+						"2021-05-27": { "CO2": 0.88, "bytes": 1457665, "green": 0, "imagebytes": 714228 },
+						"2021-06-30": { "CO2": 0.74, "bytes": 1223419, "green": 0, "imagebytes": 513514 }
 					}
 				}
 			}
@@ -181,7 +194,8 @@
 					"values": {
 						"2021-03-11": { "CO2": 1.07, "ref": "https://www.websitecarbon.com/website/york-gov-uk/" },
 						"2021-05-25": { "CO2": 1.28, "ref": "https://www.websitecarbon.com/website/york-gov-uk/" },
-						"2021-05-27": { "CO2": 1.07, "bytes": 1956186, "green": 1, "imagebytes": 1564910 }
+						"2021-05-27": { "CO2": 1.07, "bytes": 1956186, "green": 1, "imagebytes": 1564910 },
+						"2021-06-30": { "CO2": 1.15, "bytes": 2106902, "green": 1, "imagebytes": 1564887 }
 					}
 				}
 			}
@@ -193,7 +207,8 @@
 				"https://www.derby.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.84, "ref": "https://www.websitecarbon.com/website/derby-gov-uk/" },
-						"2021-05-26": { "CO2": 2.79, "bytes": 4620704, "green": 0, "imagebytes": 3584529 }
+						"2021-05-26": { "CO2": 2.79, "bytes": 4620704, "green": 0, "imagebytes": 3584529 },
+						"2021-06-30": { "CO2": 1.8, "bytes": 2984374, "green": 0, "imagebytes": 1944484 }
 					}
 				}
 			}
@@ -205,7 +220,8 @@
 				"https://www.leicester.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.58, "ref": "https://www.websitecarbon.com/website/leicester-gov-uk/" },
-						"2021-05-27": { "CO2": 0.6, "bytes": 995099, "green": 0, "imagebytes": 701316 }
+						"2021-05-27": { "CO2": 0.6, "bytes": 995099, "green": 0, "imagebytes": 701316 },
+						"2021-06-30": { "CO2": 0.57, "bytes": 945267, "green": 0, "imagebytes": 650342 }
 					}
 				}
 			}
@@ -217,7 +233,8 @@
 				"http://www.rutland.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.26, "ref": "https://www.websitecarbon.com/website/rutland-gov-uk/" },
-						"2021-05-27": { "CO2": 1.32, "bytes": 2191552, "green": 0, "imagebytes": 1580415 }
+						"2021-05-27": { "CO2": 1.32, "bytes": 2191552, "green": 0, "imagebytes": 1580415 },
+						"2021-06-30": { "CO2": 1.41, "bytes": 2343179, "green": 0, "imagebytes": 1729427 }
 					}
 				}
 			}
@@ -230,7 +247,8 @@
 					"values": {
 						"2021-03-09": { "CO2": 12.01, "ref": "https://www.websitecarbon.com/website/nottinghamcity-gov-uk/" },
 						"2021-05-25": { "CO2": 12.02, "ref": "https://www.websitecarbon.com/website/nottinghamcity-gov-uk/" },
-						"2021-05-27": { "CO2": 11.38, "bytes": 18880412, "green": 0, "imagebytes": 18013193 }
+						"2021-05-27": { "CO2": 11.38, "bytes": 18880412, "green": 0, "imagebytes": 18013193 },
+						"2021-06-30": { "CO2": 1.01, "bytes": 1668314, "green": 0, "imagebytes": 745817 }
 					}
 				}
 			}
@@ -242,7 +260,8 @@
 				"https://www.hertfordshire.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.89, "ref": "https://www.websitecarbon.com/website/hertfordshire-gov-uk/" },
-						"2021-05-27": { "CO2": 1.87, "bytes": 3103135, "green": 0, "imagebytes": 1800363 }
+						"2021-05-27": { "CO2": 1.87, "bytes": 3103135, "green": 0, "imagebytes": 1800363 },
+						"2021-06-30": { "CO2": 1.35, "bytes": 2237180, "green": 0, "imagebytes": 819195 }
 					}
 				}
 			}
@@ -255,7 +274,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 4.07, "ref": "https://www.websitecarbon.com/website/telford-gov-uk/" },
 						"2021-05-25": { "CO2": 3.85, "ref": "https://www.websitecarbon.com/website/telford-gov-uk/" },
-						"2021-05-27": { "CO2": 3.58, "bytes": 5935456, "green": 0, "imagebytes": 4923486 }
+						"2021-05-27": { "CO2": 3.58, "bytes": 5935456, "green": 0, "imagebytes": 4923486 },
+						"2021-06-30": { "CO2": 3.44, "bytes": 5700535, "green": 0, "imagebytes": 4797398 }
 					}
 				}
 			}
@@ -267,7 +287,8 @@
 				"http://www.stoke.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.93, "ref": "https://www.websitecarbon.com/website/stoke-gov-uk/" },
-						"2021-05-27": { "CO2": 0.54, "bytes": 887520, "green": 0, "imagebytes": 607880 }
+						"2021-05-27": { "CO2": 0.54, "bytes": 887520, "green": 0, "imagebytes": 607880 },
+						"2021-06-30": { "CO2": 0.53, "bytes": 876301, "green": 0, "imagebytes": 551600 }
 					}
 				}
 			}
@@ -279,7 +300,8 @@
 				"http://www.bathnes.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.2, "ref": "https://www.websitecarbon.com/website/bathnes-gov-uk/" },
-						"2021-05-26": { "CO2": 1.19, "bytes": 1977212, "green": 0, "imagebytes": 747568 }
+						"2021-05-26": { "CO2": 1.19, "bytes": 1977212, "green": 0, "imagebytes": 747568 },
+						"2021-06-30": { "CO2": 1.19, "bytes": 1974660, "green": 0, "imagebytes": 743144 }
 					}
 				}
 			}
@@ -291,7 +313,8 @@
 				"http://www.bristol.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.18, "ref": "https://www.websitecarbon.com/website/bristol-gov-uk/" },
-						"2021-05-26": { "CO2": 1.2, "bytes": 2195812, "green": 1, "imagebytes": 1410743 }
+						"2021-05-26": { "CO2": 1.2, "bytes": 2195812, "green": 1, "imagebytes": 1410743 },
+						"2021-06-30": { "CO2": 1.18, "bytes": 2159239, "green": 1, "imagebytes": 1373198 }
 					}
 				}
 			}
@@ -303,7 +326,8 @@
 				"http://www.n-somerset.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 2.01, "ref": "https://www.websitecarbon.com/website/n-somerset-gov-uk/" },
-						"2021-05-27": { "CO2": 2.01, "bytes": 3333540, "green": 0, "imagebytes": 2997367 }
+						"2021-05-27": { "CO2": 2.01, "bytes": 3333540, "green": 0, "imagebytes": 2997367 },
+						"2021-06-30": { "CO2": 2.26, "bytes": 3746598, "green": 0, "imagebytes": 3407382 }
 					}
 				}
 			}
@@ -315,7 +339,8 @@
 				"http://www.southglos.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.61, "ref": "https://www.websitecarbon.com/website/southglos-gov-uk/" },
-						"2021-05-27": { "CO2": 0.56, "bytes": 924300, "green": 0, "imagebytes": 420272 }
+						"2021-05-27": { "CO2": 0.56, "bytes": 924300, "green": 0, "imagebytes": 420272 },
+						"2021-06-30": { "CO2": 0.55, "bytes": 913069, "green": 0, "imagebytes": 420558 }
 					}
 				}
 			}
@@ -327,7 +352,8 @@
 				"https://www.plymouth.gov.uk/": {
 					"values": {
 						"2021-05-25": { "CO2": 1.2, "ref": "https://www.websitecarbon.com/website/plymouth-gov-uk/" },
-						"2021-05-27": { "CO2": 1.32, "bytes": 2192613, "green": 0, "imagebytes": 1890323 }
+						"2021-05-27": { "CO2": 1.32, "bytes": 2192613, "green": 0, "imagebytes": 1890323 },
+						"2021-06-30": { "CO2": 0.87, "bytes": 1445667, "green": 0, "imagebytes": 1142494 }
 					}
 				}
 			}
@@ -340,7 +366,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/torbay-gov-uk/" },
 						"2021-05-25": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/torbay-gov-uk/" },
-						"2021-05-27": { "CO2": 0.17, "bytes": 279519, "green": 0, "imagebytes": 54458 }
+						"2021-05-27": { "CO2": 0.17, "bytes": 279519, "green": 0, "imagebytes": 54458 },
+						"2021-06-30": { "CO2": 0.17, "bytes": 279483, "green": 0, "imagebytes": 54458 }
 					}
 				}
 			}
@@ -365,7 +392,8 @@
 				"https://www.poole.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.1, "ref": "https://www.websitecarbon.com/website/poole-gov-uk/" },
-						"2021-05-26": { "CO2": 1.09, "bytes": 1814165, "green": 0, "imagebytes": 908513 }
+						"2021-05-26": { "CO2": 1.09, "bytes": 1814165, "green": 0, "imagebytes": 908513 },
+						"2021-06-30": { "CO2": 1.12, "bytes": 1850667, "green": 0, "imagebytes": 908513 }
 					}
 				}
 			}
@@ -377,7 +405,8 @@
 				"http://www.swindon.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 2.1, "ref": "https://www.websitecarbon.com/website/swindon-gov-uk/" },
-						"2021-05-27": { "CO2": 4.87, "bytes": 8083688, "green": 0, "imagebytes": 7009388 }
+						"2021-05-27": { "CO2": 4.87, "bytes": 8083688, "green": 0, "imagebytes": 7009388 },
+						"2021-06-30": { "CO2": 2.26, "bytes": 3744897, "green": 0, "imagebytes": 2676048 }
 					}
 				}
 			}
@@ -389,7 +418,8 @@
 				"http://www.pkc.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.44, "ref": "https://www.websitecarbon.com/website/peterborough-gov-uk/" },
-						"2021-05-27": { "CO2": 0.33, "bytes": 549868, "green": 0, "imagebytes": 294339 }
+						"2021-05-27": { "CO2": 0.33, "bytes": 549868, "green": 0, "imagebytes": 294339 },
+						"2021-06-30": { "CO2": 0.33, "bytes": 539716, "green": 0, "imagebytes": 283197 }
 					}
 				}
 			}
@@ -402,7 +432,8 @@
 					"values": {
 						"2021-03-10": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/m-luton-gov-uk/" },
 						"2021-05-25": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/m-luton-gov-uk/" },
-						"2021-05-27": { "CO2": 0.17, "bytes": 310529, "green": 1, "imagebytes": 4660 }
+						"2021-05-27": { "CO2": 0.17, "bytes": 310529, "green": 1, "imagebytes": 4660 },
+						"2021-06-30": { "CO2": 0.17, "bytes": 311155, "green": 1, "imagebytes": 4660 }
 					}
 				}
 			}
@@ -414,7 +445,8 @@
 				"http://www.southend.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.89, "ref": "https://www.websitecarbon.com/website/southend-gov-uk/" },
-						"2021-05-27": { "CO2": 5.26, "bytes": 9635715, "green": 1, "imagebytes": 9233525 }
+						"2021-05-27": { "CO2": 5.26, "bytes": 9635715, "green": 1, "imagebytes": 9233525 },
+						"2021-06-30": { "CO2": 1.39, "bytes": 2541447, "green": 1, "imagebytes": 2137858 }
 					}
 				}
 			}
@@ -426,7 +458,8 @@
 				"http://www.thurrock.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.14, "ref": "https://www.websitecarbon.com/website/thurrock-gov-uk/" },
-						"2021-05-27": { "CO2": 1.2, "bytes": 2197047, "green": 1, "imagebytes": 1781374 }
+						"2021-05-27": { "CO2": 1.2, "bytes": 2197047, "green": 1, "imagebytes": 1781374 },
+						"2021-06-30": { "CO2": 1.52, "bytes": 2778252, "green": 1, "imagebytes": 2362778 }
 					}
 				}
 			}
@@ -438,7 +471,8 @@
 				"https://www.medway.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.85, "ref": "https://www.websitecarbon.com/website/medway-gov-uk/" },
-						"2021-05-27": { "CO2": 1.83, "bytes": 3353235, "green": 1, "imagebytes": 2518192 }
+						"2021-05-27": { "CO2": 1.83, "bytes": 3353235, "green": 1, "imagebytes": 2518192 },
+						"2021-06-30": { "CO2": 1.97, "bytes": 3602539, "green": 1, "imagebytes": 2760373 }
 					}
 				}
 			}
@@ -450,7 +484,8 @@
 				"http://www.bracknell-forest.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.46, "ref": "https://www.websitecarbon.com/website/bracknell-forest-gov-uk/" },
-						"2021-05-26": { "CO2": 0.23, "bytes": 376213, "green": 0, "imagebytes": 35445 }
+						"2021-05-26": { "CO2": 0.23, "bytes": 376213, "green": 0, "imagebytes": 35445 },
+						"2021-06-30": { "CO2": 0.23, "bytes": 381652, "green": 0, "imagebytes": 40068 }
 					}
 				}
 			}
@@ -462,7 +497,8 @@
 				"http://www.westberks.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.93, "ref": "https://www.websitecarbon.com/website/westberks-gov-uk/" },
-						"2021-05-27": { "CO2": 0.68, "bytes": 1129351, "green": 0, "imagebytes": 461671 }
+						"2021-05-27": { "CO2": 0.68, "bytes": 1129351, "green": 0, "imagebytes": 461671 },
+						"2021-06-30": { "CO2": 0.62, "bytes": 1022562, "green": 0, "imagebytes": 458408 }
 					}
 				}
 			}
@@ -475,7 +511,8 @@
 					"values": {
 						"2021-03-09": { "CO2": 3.45, "ref": "https://www.websitecarbon.com/website/reading-gov-uk/" },
 						"2021-05-25": { "CO2": 3.78, "ref": "https://www.websitecarbon.com/website/reading-gov-uk/" },
-						"2021-05-27": { "CO2": 3.78, "bytes": 6268535, "green": 0, "imagebytes": 2788154 }
+						"2021-05-27": { "CO2": 3.78, "bytes": 6268535, "green": 0, "imagebytes": 2788154 },
+						"2021-06-30": { "CO2": 3.97, "bytes": 6578122, "green": 0, "imagebytes": 3070152 }
 					}
 				}
 			}
@@ -487,7 +524,8 @@
 				"http://www.slough.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.57, "ref": "https://www.websitecarbon.com/website/slough-gov-uk/" },
-						"2021-05-27": { "CO2": 0.47, "bytes": 773455, "green": 0, "imagebytes": 432249 }
+						"2021-05-27": { "CO2": 0.47, "bytes": 773455, "green": 0, "imagebytes": 432249 },
+						"2021-06-30": { "CO2": 0.66, "bytes": 1102439, "green": 0, "imagebytes": 759584 }
 					}
 				}
 			}
@@ -499,7 +537,8 @@
 				"http://www.rbwm.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.81, "ref": "https://www.websitecarbon.com/website/rbwm-gov-uk/" },
-						"2021-05-27": { "CO2": 1.85, "bytes": 3067607, "green": 0, "imagebytes": 2390360 }
+						"2021-05-27": { "CO2": 1.85, "bytes": 3067607, "green": 0, "imagebytes": 2390360 },
+						"2021-06-30": { "CO2": 1.51, "bytes": 2501953, "green": 0, "imagebytes": 1991194 }
 					}
 				}
 			}
@@ -511,7 +550,8 @@
 				"http://www.wokingham.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.49, "ref": "https://www.websitecarbon.com/website/wokingham-gov-uk/" },
-						"2021-05-27": { "CO2": 0.45, "bytes": 749345, "green": 0, "imagebytes": 202718 }
+						"2021-05-27": { "CO2": 0.45, "bytes": 749345, "green": 0, "imagebytes": 202718 },
+						"2021-06-30": { "CO2": 0.44, "bytes": 737634, "green": 0, "imagebytes": 203033 }
 					}
 				}
 			}
@@ -523,7 +563,8 @@
 				"https://www.milton-keynes.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.97, "ref": "https://www.websitecarbon.com/website/milton-keynes-gov-uk/" },
-						"2021-05-27": { "CO2": 1.51, "bytes": 2506037, "green": 0, "imagebytes": 1407282 }
+						"2021-05-27": { "CO2": 1.51, "bytes": 2506037, "green": 0, "imagebytes": 1407282 },
+						"2021-06-30": { "CO2": 1.58, "bytes": 2620984, "green": 0, "imagebytes": 1514884 }
 					}
 				}
 			}
@@ -535,7 +576,8 @@
 				"http://www.brighton-hove.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.52, "ref": "https://www.websitecarbon.com/website/brighton-hove-gov-uk-2/" },
-						"2021-05-26": { "CO2": 0.47, "bytes": 852972, "green": 1, "imagebytes": 206086 }
+						"2021-05-26": { "CO2": 0.47, "bytes": 852972, "green": 1, "imagebytes": 206086 },
+						"2021-06-30": { "CO2": 0.47, "bytes": 854976, "green": 1, "imagebytes": 206090 }
 					}
 				}
 			}
@@ -547,7 +589,8 @@
 				"https://www.portsmouth.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.65, "ref": "https://www.websitecarbon.com/website/portsmouth-gov-uk/" },
-						"2021-05-27": { "CO2": 0.47, "bytes": 862202, "green": 1, "imagebytes": 128568 }
+						"2021-05-27": { "CO2": 0.47, "bytes": 862202, "green": 1, "imagebytes": 128568 },
+						"2021-06-30": { "CO2": 0.79, "bytes": 1442113, "green": 1, "imagebytes": 709415 }
 					}
 				}
 			}
@@ -559,7 +602,8 @@
 				"http://www.southampton.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.7, "ref": "https://www.websitecarbon.com/website/southampton-gov-uk/" },
-						"2021-05-27": { "CO2": 0.83, "bytes": 1381877, "green": 0, "imagebytes": 1036899 }
+						"2021-05-27": { "CO2": 0.83, "bytes": 1381877, "green": 0, "imagebytes": 1036899 },
+						"2021-06-30": { "CO2": 0.68, "bytes": 1132849, "green": 0, "imagebytes": 760600 }
 					}
 				}
 			}
@@ -571,7 +615,8 @@
 				"https://www.iow.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.81, "ref": "https://www.websitecarbon.com/website/iow-gov-uk/" },
-						"2021-05-26": { "CO2": 0.84, "bytes": 1400151, "green": 0, "imagebytes": 1035203 }
+						"2021-05-26": { "CO2": 0.84, "bytes": 1400151, "green": 0, "imagebytes": 1035203 },
+						"2021-06-30": { "CO2": 0.94, "bytes": 1561757, "green": 0, "imagebytes": 1195979 }
 					}
 				}
 			}
@@ -583,7 +628,8 @@
 				"https://www.durham.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.73, "ref": "https://www.websitecarbon.com/website/durham-gov-uk/" },
-						"2021-05-26": { "CO2": 0.7, "bytes": 1168235, "green": 0, "imagebytes": 184533 }
+						"2021-05-26": { "CO2": 0.7, "bytes": 1168235, "green": 0, "imagebytes": 184533 },
+						"2021-06-30": { "CO2": 0.7, "bytes": 1155357, "green": 0, "imagebytes": 170633 }
 					}
 				}
 			}
@@ -595,7 +641,8 @@
 				"https://www.cheshireeast.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.53, "ref": "https://www.websitecarbon.com/website/cheshireeast-gov-uk/" },
-						"2021-05-26": { "CO2": 0.9, "bytes": 1484928, "green": 0, "imagebytes": 891270 }
+						"2021-05-26": { "CO2": 0.9, "bytes": 1484928, "green": 0, "imagebytes": 891270 },
+						"2021-06-30": { "CO2": 0.5, "bytes": 822781, "green": 0, "imagebytes": 226653 }
 					}
 				}
 			}
@@ -607,7 +654,8 @@
 				"https://www.cheshirewestandchester.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.54, "ref": "https://www.websitecarbon.com/website/cheshirewestandchester-gov-uk/" },
-						"2021-05-26": { "CO2": 0.77, "bytes": 1274865, "green": 0, "imagebytes": 1023993 }
+						"2021-05-26": { "CO2": 0.77, "bytes": 1274865, "green": 0, "imagebytes": 1023993 },
+						"2021-06-30": { "CO2": 0.59, "bytes": 972367, "green": 0, "imagebytes": 720691 }
 					}
 				}
 			}
@@ -619,7 +667,8 @@
 				"https://www.shropshire.gov.uk/": {
 					"values": {
 						"2021-05-25": { "CO2": 0.49, "ref": "https://www.websitecarbon.com/website/shropshire-gov-uk/" },
-						"2021-05-27": { "CO2": 0.47, "bytes": 786087, "green": 0, "imagebytes": 509511 }
+						"2021-05-27": { "CO2": 0.47, "bytes": 786087, "green": 0, "imagebytes": 509511 },
+						"2021-06-30": { "CO2": 0.48, "bytes": 793251, "green": 0, "imagebytes": 516475 }
 					}
 				}
 			}
@@ -631,7 +680,8 @@
 				"https://www.cornwall.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.71, "ref": "https://www.websitecarbon.com/website/cornwall-gov-uk/" },
-						"2021-05-26": { "CO2": 1.13, "bytes": 1877626, "green": 0, "imagebytes": 220706 }
+						"2021-05-26": { "CO2": 1.13, "bytes": 1877626, "green": 0, "imagebytes": 220706 },
+						"2021-06-30": { "CO2": 1.2, "bytes": 1982419, "green": 0, "imagebytes": 325368 }
 					}
 				}
 			}
@@ -643,7 +693,8 @@
 				"https://www.scilly.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.69, "ref": "https://www.websitecarbon.com/website/scilly-gov-uk/" },
-						"2021-05-26": { "CO2": 0.74, "bytes": 1223443, "green": 0, "imagebytes": 959667 }
+						"2021-05-26": { "CO2": 0.74, "bytes": 1223443, "green": 0, "imagebytes": 959667 },
+						"2021-06-30": { "CO2": 0.81, "bytes": 1343410, "green": 0, "imagebytes": 1078422 }
 					}
 				}
 			}
@@ -656,7 +707,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 0.19, "ref": "https://www.websitecarbon.com/website/wiltshire-gov-uk/" },
 						"2021-05-25": { "CO2": 0.18, "ref": "https://www.websitecarbon.com/website/wiltshire-gov-uk/" },
-						"2021-05-27": { "CO2": 0.18, "bytes": 304628, "green": 0, "imagebytes": 16538 }
+						"2021-05-27": { "CO2": 0.18, "bytes": 304628, "green": 0, "imagebytes": 16538 },
+						"2021-06-30": { "CO2": 0.2, "bytes": 327602, "green": 0, "imagebytes": 37341 }
 					}
 				}
 			}
@@ -668,7 +720,8 @@
 				"http://www.bedford.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.39, "ref": "https://www.websitecarbon.com/website/bedford-gov-uk/" },
-						"2021-05-26": { "CO2": 1.9, "bytes": 3147382, "green": 0, "imagebytes": 1939236 }
+						"2021-05-26": { "CO2": 1.9, "bytes": 3147382, "green": 0, "imagebytes": 1939236 },
+						"2021-06-30": { "CO2": 1.73, "bytes": 2861667, "green": 0, "imagebytes": 1506062 }
 					}
 				}
 			}
@@ -680,7 +733,8 @@
 				"https://www.centralbedfordshire.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.54, "ref": "https://www.websitecarbon.com/website/centralbedfordshire-gov-uk/" },
-						"2021-05-26": { "CO2": 1.82, "bytes": 3022665, "green": 0, "imagebytes": 2275416 }
+						"2021-05-26": { "CO2": 1.82, "bytes": 3022665, "green": 0, "imagebytes": 2275416 },
+						"2021-06-30": { "CO2": 1.75, "bytes": 2899372, "green": 0, "imagebytes": 2148454 }
 					}
 				}
 			}
@@ -692,7 +746,8 @@
 				"https://www.northumberland.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 1.07, "ref": "https://www.websitecarbon.com/website/northumberland-gov-uk/" },
-						"2021-05-27": { "CO2": 1, "bytes": 1666649, "green": 0, "imagebytes": 649134 }
+						"2021-05-27": { "CO2": 1, "bytes": 1666649, "green": 0, "imagebytes": 649134 },
+						"2021-06-30": { "CO2": 0.95, "bytes": 1575317, "green": 0, "imagebytes": 599605 }
 					}
 				}
 			}
@@ -704,7 +759,8 @@
 				"https://www.bcpcouncil.gov.uk/Home.aspx": {
 					"values": {
 						"2021-05-19": { "CO2": 2.14, "ref": "https://www.websitecarbon.com/website/bcpcouncil-gov-uk-home-aspx/" },
-						"2021-05-27": { "CO2": 2.11, "bytes": 3497156, "green": 0, "imagebytes": 3217844 }
+						"2021-05-27": { "CO2": 2.11, "bytes": 3497156, "green": 0, "imagebytes": 3217844 },
+						"2021-06-30": { "CO2": 2.11, "bytes": 3499665, "green": 0, "imagebytes": 3217845 }
 					}
 				}
 			}
@@ -716,7 +772,8 @@
 				"https://www.dorsetcouncil.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.85, "ref": "https://www.websitecarbon.com/website/dorsetcouncil-gov-uk/" },
-						"2021-05-26": { "CO2": 0.77, "bytes": 1281578, "green": 0, "imagebytes": 383775 }
+						"2021-05-26": { "CO2": 0.77, "bytes": 1281578, "green": 0, "imagebytes": 383775 },
+						"2021-06-30": { "CO2": 0.72, "bytes": 1189871, "green": 0, "imagebytes": 288253 }
 					}
 				}
 			}
@@ -729,7 +786,8 @@
 					"values": {
 						"2021-03-09": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/buckscc-gov-uk/" },
 						"2021-05-25": { "CO2": 0.16, "ref": "https://www.websitecarbon.com/website/buckscc-gov-uk/" },
-						"2021-05-27": { "CO2": 0.16, "bytes": 259580, "green": 0, "imagebytes": 90617 }
+						"2021-05-27": { "CO2": 0.16, "bytes": 259580, "green": 0, "imagebytes": 90617 },
+						"2021-06-30": { "CO2": 0.16, "bytes": 263853, "green": 0, "imagebytes": 90617 }
 					}
 				}
 			}
@@ -741,7 +799,8 @@
 				"https://www.northnorthants.gov.uk/": {
 					"values": {
 						"2021-05-19": { "CO2": 0.63, "ref": "https://www.websitecarbon.com/website/northnorthants-gov-uk/" },
-						"2021-05-27": { "CO2": 0.49, "bytes": 816372, "green": 0, "imagebytes": 322554 }
+						"2021-05-27": { "CO2": 0.49, "bytes": 816372, "green": 0, "imagebytes": 322554 },
+						"2021-06-30": { "CO2": 0.49, "bytes": 814099, "green": 0, "imagebytes": 318212 }
 					}
 				}
 			}
@@ -753,7 +812,8 @@
 				"https://www.westnorthants.gov.uk/": {
 					"values": {
 						"2021-05-19": { "CO2": 0.62, "ref": "https://www.websitecarbon.com/website/westnorthants-gov-uk/" },
-						"2021-05-27": { "CO2": 0.49, "bytes": 810196, "green": 0, "imagebytes": 353321 }
+						"2021-05-27": { "CO2": 0.49, "bytes": 810196, "green": 0, "imagebytes": 353321 },
+						"2021-06-30": { "CO2": 0.49, "bytes": 809959, "green": 0, "imagebytes": 351558 }
 					}
 				}
 			}
@@ -817,7 +877,8 @@
 				"https://www.cambridge.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.58, "ref": "https://www.websitecarbon.com/website/cambridge-gov-uk/" },
-						"2021-05-26": { "CO2": 1.22, "bytes": 2023755, "green": 0, "imagebytes": 1816566 }
+						"2021-05-26": { "CO2": 1.22, "bytes": 2023755, "green": 0, "imagebytes": 1816566 },
+						"2021-06-30": { "CO2": 1.23, "bytes": 2033269, "green": 0, "imagebytes": 1824304 }
 					}
 				}
 			}
@@ -829,7 +890,8 @@
 				"https://www.eastcambs.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.45, "ref": "https://www.websitecarbon.com/website/eastcambs-gov-uk/" },
-						"2021-05-26": { "CO2": 0.39, "bytes": 722614, "green": 1, "imagebytes": 359287 }
+						"2021-05-26": { "CO2": 0.39, "bytes": 722614, "green": 1, "imagebytes": 359287 },
+						"2021-06-30": { "CO2": 0.38, "bytes": 689519, "green": 1, "imagebytes": 325373 }
 					}
 				}
 			}
@@ -841,7 +903,8 @@
 				"https://www.fenland.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.49, "ref": "https://www.websitecarbon.com/website/fenland-gov-uk/" },
-						"2021-05-26": { "CO2": 0.48, "bytes": 793227, "green": 0, "imagebytes": 503407 }
+						"2021-05-26": { "CO2": 0.48, "bytes": 793227, "green": 0, "imagebytes": 503407 },
+						"2021-06-30": { "CO2": 0.48, "bytes": 794014, "green": 0, "imagebytes": 503929 }
 					}
 				}
 			}
@@ -853,7 +916,8 @@
 				"https://www.huntingdonshire.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.12, "ref": "https://www.websitecarbon.com/website/huntingdonshire-gov-uk/" },
-						"2021-05-27": { "CO2": 0.68, "bytes": 1125436, "green": 0, "imagebytes": 373578 }
+						"2021-05-27": { "CO2": 0.68, "bytes": 1125436, "green": 0, "imagebytes": 373578 },
+						"2021-06-30": { "CO2": 0.92, "bytes": 1534280, "green": 0, "imagebytes": 782124 }
 					}
 				}
 			}
@@ -866,7 +930,8 @@
 					"values": {
 						"2021-03-09": { "CO2": 6.12, "ref": "https://www.websitecarbon.com/website/scambs-gov-uk/" },
 						"2021-05-25": { "CO2": 5.21, "ref": "https://www.websitecarbon.com/website/scambs-gov-uk/" },
-						"2021-05-27": { "CO2": 5.15, "bytes": 8535921, "green": 0, "imagebytes": 8101532 }
+						"2021-05-27": { "CO2": 5.15, "bytes": 8535921, "green": 0, "imagebytes": 8101532 },
+						"2021-06-30": { "CO2": 5.57, "bytes": 9234740, "green": 0, "imagebytes": 8800708 }
 					}
 				}
 			}
@@ -879,7 +944,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 2.55, "ref": "https://www.websitecarbon.com/website/allerdale-gov-uk/" },
 						"2021-05-25": { "CO2": 2.98, "ref": "https://www.websitecarbon.com/website/allerdale-gov-uk/" },
-						"2021-05-27": { "CO2": 2.99, "bytes": 4965701, "green": 0, "imagebytes": 3195753 }
+						"2021-05-27": { "CO2": 2.99, "bytes": 4965701, "green": 0, "imagebytes": 3195753 },
+						"2021-06-30": { "CO2": 2.93, "bytes": 4860847, "green": 0, "imagebytes": 3152626 }
 					}
 				}
 			}
@@ -891,7 +957,8 @@
 				"http://www.barrowbc.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.1, "ref": "https://www.websitecarbon.com/website/barrowbc-gov-uk/" },
-						"2021-05-26": { "CO2": 1.16, "bytes": 1919173, "green": 0, "imagebytes": 731935 }
+						"2021-05-26": { "CO2": 1.16, "bytes": 1919173, "green": 0, "imagebytes": 731935 },
+						"2021-06-30": { "CO2": 1.15, "bytes": 1907899, "green": 0, "imagebytes": 746954 }
 					}
 				}
 			}
@@ -904,7 +971,8 @@
 					"values": {
 						"2021-03-09": { "CO2": 2.65, "ref": "https://www.websitecarbon.com/website/carlisle-gov-uk/" },
 						"2021-05-25": { "CO2": 1.25, "ref": "https://www.websitecarbon.com/website/carlisle-gov-uk/" },
-						"2021-05-27": { "CO2": 0.89, "bytes": 1625146, "green": 1, "imagebytes": 563469 }
+						"2021-05-27": { "CO2": 0.89, "bytes": 1625146, "green": 1, "imagebytes": 563469 },
+						"2021-06-30": { "CO2": 0.9, "bytes": 1649964, "green": 1, "imagebytes": 564545 }
 					}
 				}
 			}
@@ -916,7 +984,8 @@
 				"https://www.copeland.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.64, "ref": "https://www.websitecarbon.com/website/copeland-gov-uk/" },
-						"2021-05-27": { "CO2": 0.62, "bytes": 1138571, "green": 1, "imagebytes": 719218 }
+						"2021-05-27": { "CO2": 0.62, "bytes": 1138571, "green": 1, "imagebytes": 719218 },
+						"2021-06-30": { "CO2": 0.6, "bytes": 1094175, "green": 1, "imagebytes": 674596 }
 					}
 				}
 			}
@@ -928,7 +997,8 @@
 				"https://www.eden.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.27, "ref": "https://www.websitecarbon.com/website/eden-gov-uk/" },
-						"2021-05-26": { "CO2": 0.15, "bytes": 243767, "green": 0, "imagebytes": 43953 }
+						"2021-05-26": { "CO2": 0.15, "bytes": 243767, "green": 0, "imagebytes": 43953 },
+						"2021-06-30": { "CO2": 0.25, "bytes": 417301, "green": 0, "imagebytes": 217704 }
 					}
 				}
 			}
@@ -940,7 +1010,8 @@
 				"https://www.southlakeland.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.37, "ref": "https://www.websitecarbon.com/website/southlakeland-gov-uk/" },
-						"2021-05-27": { "CO2": 0.34, "bytes": 556518, "green": 0, "imagebytes": 51067 }
+						"2021-05-27": { "CO2": 0.34, "bytes": 556518, "green": 0, "imagebytes": 51067 },
+						"2021-06-30": { "CO2": 0.44, "bytes": 736809, "green": 0, "imagebytes": 51386 }
 					}
 				}
 			}
@@ -953,7 +1024,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 1.38, "ref": "https://www.websitecarbon.com/website/ambervalley-gov-uk/" },
 						"2021-05-26": { "CO2": 1.51, "bytes": 2509544, "green": 0, "imagebytes": 800556 },
-						"2021-05-27": { "CO2": 1.52, "bytes": 2516604, "green": 0, "imagebytes": 800543 }
+						"2021-05-27": { "CO2": 1.52, "bytes": 2516604, "green": 0, "imagebytes": 800543 },
+						"2021-06-30": { "CO2": 1.5, "bytes": 2489939, "green": 0, "imagebytes": 776015 }
 					}
 				}
 			}
@@ -965,7 +1037,8 @@
 				"http://www.bolsover.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.98, "ref": "https://www.websitecarbon.com/website/bolsover-gov-uk/" },
-						"2021-05-26": { "CO2": 0.98, "bytes": 1630577, "green": 0, "imagebytes": 511206 }
+						"2021-05-26": { "CO2": 0.98, "bytes": 1630577, "green": 0, "imagebytes": 511206 },
+						"2021-06-30": { "CO2": 1.05, "bytes": 1749081, "green": 0, "imagebytes": 576029 }
 					}
 				}
 			}
@@ -978,7 +1051,8 @@
 					"values": {
 						"2021-03-09": { "CO2": 2.42, "ref": "https://www.websitecarbon.com/website/chesterfield-gov-uk/" },
 						"2021-05-25": { "CO2": 2.6, "ref": "https://www.websitecarbon.com/website/chesterfield-gov-uk/" },
-						"2021-05-27": { "CO2": 1.9, "bytes": 3473004, "green": 1, "imagebytes": 2798763 }
+						"2021-05-27": { "CO2": 1.9, "bytes": 3473004, "green": 1, "imagebytes": 2798763 },
+						"2021-06-30": { "CO2": 2.66, "bytes": 4877512, "green": 1, "imagebytes": 4204707 }
 					}
 				}
 			}
@@ -990,7 +1064,8 @@
 				"https://www.derbyshiredales.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.26, "ref": "https://www.websitecarbon.com/website/derbyshiredales-gov-uk/" },
-						"2021-05-26": { "CO2": 1.49, "bytes": 2472981, "green": 0, "imagebytes": 992682 }
+						"2021-05-26": { "CO2": 1.49, "bytes": 2472981, "green": 0, "imagebytes": 992682 },
+						"2021-06-30": { "CO2": 1.48, "bytes": 2448928, "green": 0, "imagebytes": 934337 }
 					}
 				}
 			}
@@ -1002,7 +1077,8 @@
 				"https://www.erewash.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.64, "ref": "https://www.websitecarbon.com/website/erewash-gov-uk/" },
-						"2021-05-27": { "CO2": 0.64, "bytes": 1054176, "green": 0, "imagebytes": 177917 }
+						"2021-05-27": { "CO2": 0.64, "bytes": 1054176, "green": 0, "imagebytes": 177917 },
+						"2021-06-30": { "CO2": 0.64, "bytes": 1056677, "green": 0, "imagebytes": 177917 }
 					}
 				}
 			}
@@ -1014,7 +1090,8 @@
 				"https://www.highpeak.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.05, "ref": "https://www.websitecarbon.com/website/highpeak-gov-uk/" },
-						"2021-05-27": { "CO2": 1.06, "bytes": 1755252, "green": 0, "imagebytes": 1188106 }
+						"2021-05-27": { "CO2": 1.06, "bytes": 1755252, "green": 0, "imagebytes": 1188106 },
+						"2021-06-30": { "CO2": 1.09, "bytes": 1802725, "green": 0, "imagebytes": 1204362 }
 					}
 				}
 			}
@@ -1026,7 +1103,8 @@
 				"https://www.ne-derbyshire.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.27, "ref": "https://www.websitecarbon.com/website/ne-derbyshire-gov-uk/" },
-						"2021-05-27": { "CO2": 0.3, "bytes": 493073, "green": 0, "imagebytes": 216765 }
+						"2021-05-27": { "CO2": 0.3, "bytes": 493073, "green": 0, "imagebytes": 216765 },
+						"2021-06-30": { "CO2": 0.25, "bytes": 410191, "green": 0, "imagebytes": 138365 }
 					}
 				}
 			}
@@ -1038,7 +1116,8 @@
 				"https://www.southderbyshire.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 1.59, "ref": "https://www.websitecarbon.com/website/southderbyshire-gov-uk/" },
-						"2021-05-27": { "CO2": 1.85, "bytes": 3071769, "green": 0, "imagebytes": 1943773 }
+						"2021-05-27": { "CO2": 1.85, "bytes": 3071769, "green": 0, "imagebytes": 1943773 },
+						"2021-06-30": { "CO2": 1.88, "bytes": 3126302, "green": 0, "imagebytes": 2027530 }
 					}
 				}
 			}
@@ -1051,7 +1130,8 @@
 					"values": {
 						"2021-03-10": { "CO2": 3.33, "ref": "https://www.websitecarbon.com/website/eastdevon-gov-uk/" },
 						"2021-05-25": { "CO2": 3.27, "ref": "https://www.websitecarbon.com/website/eastdevon-gov-uk/" },
-						"2021-05-27": { "CO2": 3.26, "bytes": 5401628, "green": 0, "imagebytes": 4959771 }
+						"2021-05-27": { "CO2": 3.26, "bytes": 5401628, "green": 0, "imagebytes": 4959771 },
+						"2021-06-30": { "CO2": 3.99, "bytes": 6617829, "green": 0, "imagebytes": 6175525 }
 					}
 				}
 			}
@@ -1063,7 +1143,8 @@
 				"https://exeter.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.66, "ref": "https://www.websitecarbon.com/website/exeter-gov-uk/" },
-						"2021-05-26": { "CO2": 0.63, "bytes": 1049162, "green": 0, "imagebytes": 725251 }
+						"2021-05-26": { "CO2": 0.63, "bytes": 1049162, "green": 0, "imagebytes": 725251 },
+						"2021-06-30": { "CO2": 0.62, "bytes": 1025295, "green": 0, "imagebytes": 725251 }
 					}
 				}
 			}
@@ -1075,7 +1156,8 @@
 				"https://www.middevon.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.26, "ref": "https://www.websitecarbon.com/website/middevon-gov-uk/" },
-						"2021-05-27": { "CO2": 0.26, "bytes": 425042, "green": 0, "imagebytes": 222579 }
+						"2021-05-27": { "CO2": 0.26, "bytes": 425042, "green": 0, "imagebytes": 222579 },
+						"2021-06-30": { "CO2": 0.27, "bytes": 439779, "green": 0, "imagebytes": 236857 }
 					}
 				}
 			}
@@ -1087,7 +1169,8 @@
 				"https://www.northdevon.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.24, "ref": "https://www.websitecarbon.com/website/northdevon-gov-uk/" },
-						"2021-05-27": { "CO2": 0.22, "bytes": 359981, "green": 0, "imagebytes": 10379 }
+						"2021-05-27": { "CO2": 0.22, "bytes": 359981, "green": 0, "imagebytes": 10379 },
+						"2021-06-30": { "CO2": 0.22, "bytes": 360361, "green": 0, "imagebytes": 10355 }
 					}
 				}
 			}
@@ -1099,7 +1182,8 @@
 				"http://www.southhams.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.2, "ref": "https://www.websitecarbon.com/website/southhams-gov-uk/" },
-						"2021-05-27": { "CO2": 1.06, "bytes": 1759287, "green": 0, "imagebytes": 972309 }
+						"2021-05-27": { "CO2": 1.06, "bytes": 1759287, "green": 0, "imagebytes": 972309 },
+						"2021-06-30": { "CO2": 0.68, "bytes": 1130873, "green": 0, "imagebytes": 466557 }
 					}
 				}
 			}
@@ -1111,7 +1195,8 @@
 				"http://www.teignbridge.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.6, "ref": "https://www.websitecarbon.com/website/teignbridge-gov-uk/" },
-						"2021-05-27": { "CO2": 0.57, "bytes": 943509, "green": 0, "imagebytes": 173683 }
+						"2021-05-27": { "CO2": 0.57, "bytes": 943509, "green": 0, "imagebytes": 173683 },
+						"2021-06-30": { "CO2": 0.58, "bytes": 960647, "green": 0, "imagebytes": 189356 }
 					}
 				}
 			}
@@ -1123,7 +1208,8 @@
 				"http://www.torridge.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.86, "ref": "https://www.websitecarbon.com/website/torridge-gov-uk/" },
-						"2021-05-27": { "CO2": 0.77, "bytes": 1278816, "green": 0, "imagebytes": 546217 }
+						"2021-05-27": { "CO2": 0.77, "bytes": 1278816, "green": 0, "imagebytes": 546217 },
+						"2021-06-30": { "CO2": 0.77, "bytes": 1282246, "green": 0, "imagebytes": 531336 }
 					}
 				}
 			}
@@ -1135,7 +1221,8 @@
 				"http://www.westdevon.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.16, "ref": "https://www.websitecarbon.com/website/westdevon-gov-uk/" },
-						"2021-05-27": { "CO2": 1.32, "bytes": 2183812, "green": 0, "imagebytes": 1398476 }
+						"2021-05-27": { "CO2": 1.32, "bytes": 2183812, "green": 0, "imagebytes": 1398476 },
+						"2021-06-30": { "CO2": 1.23, "bytes": 2037038, "green": 0, "imagebytes": 1372546 }
 					}
 				}
 			}
@@ -1225,7 +1312,8 @@
 				"https://www.lewes-eastbourne.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.54, "ref": "https://www.websitecarbon.com/website/lewes-eastbourne-gov-uk/" },
-						"2021-05-27": { "CO2": 0.56, "bytes": 924747, "green": 0, "imagebytes": 237811 }
+						"2021-05-27": { "CO2": 0.56, "bytes": 924747, "green": 0, "imagebytes": 237811 },
+						"2021-06-30": { "CO2": 0.55, "bytes": 905100, "green": 0, "imagebytes": 237810 }
 					}
 				}
 			}
@@ -1237,7 +1325,8 @@
 				"https://www.hastings.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.52, "ref": "https://www.websitecarbon.com/website/hastings-gov-uk/" },
-						"2021-05-27": { "CO2": 0.46, "bytes": 770060, "green": 0, "imagebytes": 268708 }
+						"2021-05-27": { "CO2": 0.46, "bytes": 770060, "green": 0, "imagebytes": 268708 },
+						"2021-06-30": { "CO2": 0.51, "bytes": 843662, "green": 0, "imagebytes": 317364 }
 					}
 				}
 			}
@@ -1249,7 +1338,8 @@
 				"https://www.lewes-eastbourne.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.54, "ref": "https://www.websitecarbon.com/website/lewes-eastbourne-gov-uk/" },
-						"2021-05-26": { "CO2": 0.54, "bytes": 903806, "green": 0, "imagebytes": 237809 }
+						"2021-05-26": { "CO2": 0.54, "bytes": 903806, "green": 0, "imagebytes": 237809 },
+						"2021-06-30": { "CO2": 0.55, "bytes": 905100, "green": 0, "imagebytes": 237810 }
 					}
 				}
 			}
@@ -1261,7 +1351,8 @@
 				"http://www.rother.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.33, "ref": "https://www.websitecarbon.com/website/rother-gov-uk/" },
-						"2021-05-27": { "CO2": 0.27, "bytes": 449099, "green": 0, "imagebytes": 200605 }
+						"2021-05-27": { "CO2": 0.27, "bytes": 449099, "green": 0, "imagebytes": 200605 },
+						"2021-06-30": { "CO2": 0.27, "bytes": 443089, "green": 0, "imagebytes": 194956 }
 					}
 				}
 			}
@@ -1273,7 +1364,8 @@
 				"http://www.wealden.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.58, "ref": "https://www.websitecarbon.com/website/wealden-gov-uk/" },
-						"2021-05-27": { "CO2": 1.46, "bytes": 2427545, "green": 0, "imagebytes": 1533351 }
+						"2021-05-27": { "CO2": 1.46, "bytes": 2427545, "green": 0, "imagebytes": 1533351 },
+						"2021-06-30": { "CO2": 1.44, "bytes": 2380931, "green": 0, "imagebytes": 1433004 }
 					}
 				}
 			}
@@ -1285,7 +1377,8 @@
 				"http://www.basildon.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.14, "ref": "https://www.websitecarbon.com/website/basildon-gov-uk/" },
-						"2021-05-26": { "CO2": 1.2, "bytes": 1997718, "green": 0, "imagebytes": 1089813 }
+						"2021-05-26": { "CO2": 1.2, "bytes": 1997718, "green": 0, "imagebytes": 1089813 },
+						"2021-06-30": { "CO2": 1.23, "bytes": 2037983, "green": 0, "imagebytes": 1088891 }
 					}
 				}
 			}
@@ -1298,7 +1391,8 @@
 					"values": {
 						"2021-03-09": { "CO2": 3.78, "ref": "https://www.websitecarbon.com/website/braintree-gov-uk/" },
 						"2021-05-25": { "CO2": 2.5, "ref": "https://www.websitecarbon.com/website/braintree-gov-uk/" },
-						"2021-05-27": { "CO2": 2.5, "bytes": 4575205, "green": 1, "imagebytes": 4096650 }
+						"2021-05-27": { "CO2": 2.5, "bytes": 4575205, "green": 1, "imagebytes": 4096650 },
+						"2021-06-30": { "CO2": 2.5, "bytes": 4574590, "green": 1, "imagebytes": 4102879 }
 					}
 				}
 			}
@@ -1310,7 +1404,8 @@
 				"https://www.brentwood.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.73, "ref": "https://www.websitecarbon.com/website/brentwood-gov-uk/" },
-						"2021-05-26": { "CO2": 0.61, "bytes": 1006109, "green": 0, "imagebytes": 694640 }
+						"2021-05-26": { "CO2": 0.61, "bytes": 1006109, "green": 0, "imagebytes": 694640 },
+						"2021-06-30": { "CO2": 1.48, "bytes": 2448199, "green": 0, "imagebytes": 900159 }
 					}
 				}
 			}
@@ -1322,7 +1417,8 @@
 				"https://www.castlepoint.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.65, "ref": "https://www.websitecarbon.com/website/castlepoint-gov-uk/" },
-						"2021-05-26": { "CO2": 1.35, "bytes": 2242540, "green": 0, "imagebytes": 1802618 }
+						"2021-05-26": { "CO2": 1.35, "bytes": 2242540, "green": 0, "imagebytes": 1802618 },
+						"2021-06-30": { "CO2": 1.3, "bytes": 2162542, "green": 0, "imagebytes": 1802660 }
 					}
 				}
 			}
@@ -1334,7 +1430,8 @@
 				"https://www.chelmsford.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.6, "ref": "https://www.websitecarbon.com/website/chelmsford-gov-uk/" },
-						"2021-05-26": { "CO2": 1.79, "bytes": 2970247, "green": 0, "imagebytes": 2295135 }
+						"2021-05-26": { "CO2": 1.79, "bytes": 2970247, "green": 0, "imagebytes": 2295135 },
+						"2021-06-30": { "CO2": 1.67, "bytes": 2774212, "green": 0, "imagebytes": 2094755 }
 					}
 				}
 			}
@@ -1346,7 +1443,8 @@
 				"https://www.colchester.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.65, "ref": "https://www.websitecarbon.com/website/colchester-gov-uk/" },
-						"2021-05-26": { "CO2": 1.89, "bytes": 3136696, "green": 0, "imagebytes": 1622720 }
+						"2021-05-26": { "CO2": 1.89, "bytes": 3136696, "green": 0, "imagebytes": 1622720 },
+						"2021-06-30": { "CO2": 1.81, "bytes": 3008891, "green": 0, "imagebytes": 1637715 }
 					}
 				}
 			}
@@ -1358,7 +1456,8 @@
 				"https://www.eppingforestdc.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.11, "ref": "https://www.websitecarbon.com/website/eppingforestdc-gov-uk/" },
-						"2021-05-27": { "CO2": 1.11, "bytes": 1848347, "green": 0, "imagebytes": 1237722 }
+						"2021-05-27": { "CO2": 1.11, "bytes": 1848347, "green": 0, "imagebytes": 1237722 },
+						"2021-06-30": { "CO2": 1.12, "bytes": 1851479, "green": 0, "imagebytes": 1239459 }
 					}
 				}
 			}
@@ -1370,7 +1469,8 @@
 				"https://www.harlow.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.32, "ref": "https://www.websitecarbon.com/website/harlow-gov-uk/" },
-						"2021-05-27": { "CO2": 0.32, "bytes": 586905, "green": 1, "imagebytes": 301322 }
+						"2021-05-27": { "CO2": 0.32, "bytes": 586905, "green": 1, "imagebytes": 301322 },
+						"2021-06-30": { "CO2": 0.62, "bytes": 1138521, "green": 1, "imagebytes": 852411 }
 					}
 				}
 			}
@@ -1383,7 +1483,8 @@
 					"values": {
 						"2021-03-10": { "CO2": 4.88, "ref": "https://www.websitecarbon.com/website/maldon-gov-uk/" },
 						"2021-05-25": { "CO2": 4.73, "ref": "https://www.websitecarbon.com/website/maldon-gov-uk/" },
-						"2021-05-27": { "CO2": 4.73, "bytes": 7850228, "green": 0, "imagebytes": 7424505 }
+						"2021-05-27": { "CO2": 4.73, "bytes": 7850228, "green": 0, "imagebytes": 7424505 },
+						"2021-06-30": { "CO2": 5.4, "bytes": 8949789, "green": 0, "imagebytes": 8521307 }
 					}
 				}
 			}
@@ -1395,7 +1496,8 @@
 				"http://www.rochford.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.74, "ref": "https://www.websitecarbon.com/website/rochford-gov-uk/" },
-						"2021-05-27": { "CO2": 1.15, "bytes": 1914377, "green": 0, "imagebytes": 1173110 }
+						"2021-05-27": { "CO2": 1.15, "bytes": 1914377, "green": 0, "imagebytes": 1173110 },
+						"2021-06-30": { "CO2": 1.06, "bytes": 1755746, "green": 0, "imagebytes": 1013122 }
 					}
 				}
 			}
@@ -1407,7 +1509,8 @@
 				"https://www.tendringdc.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.74, "ref": "https://www.websitecarbon.com/website/tendringdc-gov-uk/" },
-						"2021-05-27": { "CO2": 0.72, "bytes": 1202023, "green": 0, "imagebytes": 535797 }
+						"2021-05-27": { "CO2": 0.72, "bytes": 1202023, "green": 0, "imagebytes": 535797 },
+						"2021-06-30": { "CO2": 0.77, "bytes": 1275290, "green": 0, "imagebytes": 679712 }
 					}
 				}
 			}
@@ -1420,7 +1523,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 3.34, "ref": "https://www.websitecarbon.com/website/uttlesford-gov-uk/" },
 						"2021-05-25": { "CO2": 2.85, "ref": "https://www.websitecarbon.com/website/uttlesford-gov-uk/" },
-						"2021-05-27": { "CO2": 3.13, "bytes": 5191160, "green": 0, "imagebytes": 5002901 }
+						"2021-05-27": { "CO2": 3.13, "bytes": 5191160, "green": 0, "imagebytes": 5002901 },
+						"2021-06-30": { "CO2": 2.8, "bytes": 4638533, "green": 0, "imagebytes": 4393463 }
 					}
 				}
 			}
@@ -1433,7 +1537,8 @@
 					"values": {
 						"2021-03-09": { "CO2": 2.68, "ref": "https://www.websitecarbon.com/website/cheltenham-gov-uk/" },
 						"2021-05-25": { "CO2": 0.6, "ref": "https://www.websitecarbon.com/website/cheltenham-gov-uk/" },
-						"2021-05-27": { "CO2": 0.7, "bytes": 1278761, "green": 1, "imagebytes": 754545 }
+						"2021-05-27": { "CO2": 0.7, "bytes": 1278761, "green": 1, "imagebytes": 754545 },
+						"2021-06-30": { "CO2": 0.69, "bytes": 1264049, "green": 1, "imagebytes": 742603 }
 					}
 				}
 			}
@@ -1445,7 +1550,8 @@
 				"https://www.cotswold.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.47, "ref": "https://www.websitecarbon.com/website/cotswold-gov-uk/" },
-						"2021-05-26": { "CO2": 0.39, "bytes": 638668, "green": 0, "imagebytes": 330576 }
+						"2021-05-26": { "CO2": 0.39, "bytes": 638668, "green": 0, "imagebytes": 330576 },
+						"2021-06-30": { "CO2": 0.47, "bytes": 779756, "green": 0, "imagebytes": 393091 }
 					}
 				}
 			}
@@ -1457,7 +1563,8 @@
 				"https://www.fdean.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.5, "ref": "https://www.websitecarbon.com/website/fdean-gov-uk-2/" },
-						"2021-05-26": { "CO2": 0.48, "bytes": 797280, "green": 0, "imagebytes": 470536 }
+						"2021-05-26": { "CO2": 0.48, "bytes": 797280, "green": 0, "imagebytes": 470536 },
+						"2021-06-30": { "CO2": 0.51, "bytes": 851573, "green": 0, "imagebytes": 512163 }
 					}
 				}
 			}
@@ -1469,7 +1576,8 @@
 				"https://www.gloucester.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.31, "ref": "https://www.websitecarbon.com/website/gloucester-gov-uk/" },
-						"2021-05-27": { "CO2": 1.32, "bytes": 2182486, "green": 0, "imagebytes": 1644145 }
+						"2021-05-27": { "CO2": 1.32, "bytes": 2182486, "green": 0, "imagebytes": 1644145 },
+						"2021-06-30": { "CO2": 1.51, "bytes": 2500870, "green": 0, "imagebytes": 1966095 }
 					}
 				}
 			}
@@ -1481,7 +1589,8 @@
 				"https://www.stroud.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.37, "ref": "https://www.websitecarbon.com/website/stroud-gov-uk/" },
-						"2021-05-27": { "CO2": 0.38, "bytes": 629297, "green": 0, "imagebytes": 368048 }
+						"2021-05-27": { "CO2": 0.38, "bytes": 629297, "green": 0, "imagebytes": 368048 },
+						"2021-06-30": { "CO2": 0.38, "bytes": 633463, "green": 0, "imagebytes": 371487 }
 					}
 				}
 			}
@@ -1493,7 +1602,8 @@
 				"http://tewkesbury.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.74, "ref": "https://www.websitecarbon.com/website/tewkesbury-gov-uk/" },
-						"2021-05-27": { "CO2": 2.05, "bytes": 3408687, "green": 0, "imagebytes": 2186276 }
+						"2021-05-27": { "CO2": 2.05, "bytes": 3408687, "green": 0, "imagebytes": 2186276 },
+						"2021-06-30": { "CO2": 2.07, "bytes": 3428405, "green": 0, "imagebytes": 2187114 }
 					}
 				}
 			}
@@ -1506,7 +1616,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 2.99, "ref": "https://www.websitecarbon.com/website/basingstoke-gov-uk/" },
 						"2021-05-25": { "CO2": 1.66, "ref": "https://www.websitecarbon.com/website/basingstoke-gov-uk/" },
-						"2021-05-27": { "CO2": 1.66, "bytes": 2751546, "green": 0, "imagebytes": 2434210 }
+						"2021-05-27": { "CO2": 1.66, "bytes": 2751546, "green": 0, "imagebytes": 2434210 },
+						"2021-06-30": { "CO2": 1.45, "bytes": 2413197, "green": 0, "imagebytes": 2093310 }
 					}
 				}
 			}
@@ -1518,7 +1629,8 @@
 				"https://www.easthants.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.56, "ref": "https://www.websitecarbon.com/website/easthants-gov-uk/" },
-						"2021-05-26": { "CO2": 0.71, "bytes": 1183403, "green": 0, "imagebytes": 608069 }
+						"2021-05-26": { "CO2": 0.71, "bytes": 1183403, "green": 0, "imagebytes": 608069 },
+						"2021-06-30": { "CO2": 0.71, "bytes": 1185903, "green": 0, "imagebytes": 608065 }
 					}
 				}
 			}
@@ -1530,7 +1642,8 @@
 				"https://www.eastleigh.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.36, "ref": "https://www.websitecarbon.com/website/eastleigh-gov-uk/" },
-						"2021-05-26": { "CO2": 0.31, "bytes": 516776, "green": 0, "imagebytes": 255614 }
+						"2021-05-26": { "CO2": 0.31, "bytes": 516776, "green": 0, "imagebytes": 255614 },
+						"2021-06-30": { "CO2": 0.36, "bytes": 591053, "green": 0, "imagebytes": 327360 }
 					}
 				}
 			}
@@ -1542,7 +1655,8 @@
 				"https://www.fareham.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.23, "ref": "https://www.websitecarbon.com/website/fareham-gov-uk/" },
-						"2021-05-26": { "CO2": 5.87, "bytes": 9730921, "green": 0, "imagebytes": 9377319 }
+						"2021-05-26": { "CO2": 5.87, "bytes": 9730921, "green": 0, "imagebytes": 9377319 },
+						"2021-06-30": { "CO2": 1.92, "bytes": 3181682, "green": 0, "imagebytes": 2875950 }
 					}
 				}
 			}
@@ -1555,7 +1669,8 @@
 					"values": {
 						"2021-03-09": { "CO2": 2.11, "ref": "https://www.websitecarbon.com/website/gosport-gov-uk/" },
 						"2021-05-25": { "CO2": 1.11, "ref": "https://www.websitecarbon.com/website/gosport-gov-uk/" },
-						"2021-05-27": { "CO2": 1.21, "bytes": 2004434, "green": 0, "imagebytes": 941049 }
+						"2021-05-27": { "CO2": 1.21, "bytes": 2004434, "green": 0, "imagebytes": 941049 },
+						"2021-06-30": { "CO2": 0.95, "bytes": 1582329, "green": 0, "imagebytes": 1098290 }
 					}
 				}
 			}
@@ -1567,7 +1682,8 @@
 				"https://www.hart.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.31, "ref": "https://www.websitecarbon.com/website/hart-gov-uk/" },
-						"2021-05-27": { "CO2": 0.75, "bytes": 1239097, "green": 0, "imagebytes": 800852 }
+						"2021-05-27": { "CO2": 0.75, "bytes": 1239097, "green": 0, "imagebytes": 800852 },
+						"2021-06-30": { "CO2": 0.75, "bytes": 1237587, "green": 0, "imagebytes": 800852 }
 					}
 				}
 			}
@@ -1579,7 +1695,8 @@
 				"https://www.havant.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.42, "ref": "https://www.websitecarbon.com/website/havant-gov-uk/" },
-						"2021-05-27": { "CO2": 0.5, "bytes": 826897, "green": 0, "imagebytes": 317330 }
+						"2021-05-27": { "CO2": 0.5, "bytes": 826897, "green": 0, "imagebytes": 317330 },
+						"2021-06-30": { "CO2": 0.5, "bytes": 832946, "green": 0, "imagebytes": 321108 }
 					}
 				}
 			}
@@ -1591,7 +1708,8 @@
 				"https://newforest.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.3, "ref": "https://www.websitecarbon.com/website/newforest-gov-uk/" },
-						"2021-05-27": { "CO2": 0.3, "bytes": 504862, "green": 0, "imagebytes": 193513 }
+						"2021-05-27": { "CO2": 0.3, "bytes": 504862, "green": 0, "imagebytes": 193513 },
+						"2021-06-30": { "CO2": 0.3, "bytes": 505378, "green": 0, "imagebytes": 193513 }
 					}
 				}
 			}
@@ -1603,7 +1721,8 @@
 				"http://www.rushmoor.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.74, "ref": "https://www.websitecarbon.com/website/rushmoor-gov-uk/" },
-						"2021-05-27": { "CO2": 0.8, "bytes": 1331880, "green": 0, "imagebytes": 522139 }
+						"2021-05-27": { "CO2": 0.8, "bytes": 1331880, "green": 0, "imagebytes": 522139 },
+						"2021-06-30": { "CO2": 0.74, "bytes": 1228317, "green": 0, "imagebytes": 396961 }
 					}
 				}
 			}
@@ -1615,7 +1734,8 @@
 				"http://www.testvalley.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.1, "ref": "https://www.websitecarbon.com/website/testvalley-gov-uk/" },
-						"2021-05-27": { "CO2": 1.1, "bytes": 1817414, "green": 0, "imagebytes": 767004 }
+						"2021-05-27": { "CO2": 1.1, "bytes": 1817414, "green": 0, "imagebytes": 767004 },
+						"2021-06-30": { "CO2": 1.16, "bytes": 1917478, "green": 0, "imagebytes": 866950 }
 					}
 				}
 			}
@@ -1627,7 +1747,8 @@
 				"http://www.winchester.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 2.02, "ref": "https://www.websitecarbon.com/website/winchester-gov-uk/" },
-						"2021-05-27": { "CO2": 2.82, "bytes": 4679315, "green": 0, "imagebytes": 3582556 }
+						"2021-05-27": { "CO2": 2.82, "bytes": 4679315, "green": 0, "imagebytes": 3582556 },
+						"2021-06-30": { "CO2": 2.13, "bytes": 3533319, "green": 0, "imagebytes": 2436199 }
 					}
 				}
 			}
@@ -1640,7 +1761,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 3.57, "ref": "https://www.websitecarbon.com/website/broxbourne-gov-uk/" },
 						"2021-05-25": { "CO2": 3.57, "ref": "https://www.websitecarbon.com/website/broxbourne-gov-uk/" },
-						"2021-05-27": { "CO2": 3.23, "bytes": 5915468, "green": 1, "imagebytes": 5564250 }
+						"2021-05-27": { "CO2": 3.23, "bytes": 5915468, "green": 1, "imagebytes": 5564250 },
+						"2021-06-30": { "CO2": 3.23, "bytes": 5918097, "green": 1, "imagebytes": 5564307 }
 					}
 				}
 			}
@@ -1652,7 +1774,8 @@
 				"https://www.dacorum.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.3, "ref": "https://www.websitecarbon.com/website/dacorum-gov-uk/" },
-						"2021-05-26": { "CO2": 1.03, "bytes": 1703364, "green": 0, "imagebytes": 651108 }
+						"2021-05-26": { "CO2": 1.03, "bytes": 1703364, "green": 0, "imagebytes": 651108 },
+						"2021-06-30": { "CO2": 0.98, "bytes": 1620959, "green": 0, "imagebytes": 591605 }
 					}
 				}
 			}
@@ -1664,7 +1787,8 @@
 				"https://www.hertsmere.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.86, "ref": "https://www.websitecarbon.com/website/hertsmere-gov-uk/" },
-						"2021-05-27": { "CO2": 0.98, "bytes": 1620724, "green": 0, "imagebytes": 971911 }
+						"2021-05-27": { "CO2": 0.98, "bytes": 1620724, "green": 0, "imagebytes": 971911 },
+						"2021-06-30": { "CO2": 7.73, "bytes": 12824985, "green": 0, "imagebytes": 12258368 }
 					}
 				}
 			}
@@ -1676,7 +1800,8 @@
 				"https://www.north-herts.gov.uk/": {
 					"values": {
 						"2021-05-19": { "CO2": 0.67, "ref": "https://www.websitecarbon.com/website/north-herts-gov-uk/" },
-						"2021-05-27": { "CO2": 0.67, "bytes": 1110615, "green": 0, "imagebytes": 748001 }
+						"2021-05-27": { "CO2": 0.67, "bytes": 1110615, "green": 0, "imagebytes": 748001 },
+						"2021-06-30": { "CO2": 1.24, "bytes": 2059770, "green": 0, "imagebytes": 757483 }
 					}
 				}
 			}
@@ -1689,7 +1814,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 2.52, "ref": "https://www.websitecarbon.com/website/threerivers-gov-uk/" },
 						"2021-05-25": { "CO2": 3.09, "ref": "https://www.websitecarbon.com/website/threerivers-gov-uk/" },
-						"2021-05-27": { "CO2": 3.19, "bytes": 5289838, "green": 0, "imagebytes": 5017202 }
+						"2021-05-27": { "CO2": 3.19, "bytes": 5289838, "green": 0, "imagebytes": 5017202 },
+						"2021-06-30": { "CO2": 2.44, "bytes": 4052254, "green": 0, "imagebytes": 3778227 }
 					}
 				}
 			}
@@ -1703,7 +1829,8 @@
 						"2021-03-04": { "CO2": 12.12, "ref": "https://www.websitecarbon.com/website/watford-gov-uk/" },
 						"2021-05-25": { "CO2": 6.3, "ref": "https://www.websitecarbon.com/website/watford-gov-uk/" },
 						"2021-05-27": { "CO2": 6.7, "bytes": 12267779, "green": 1, "imagebytes": 11810537 },
-						"2021-06-01": { "CO2": 3.74, "bytes": 6845435, "green": 1, "imagebytes": 6388717 }
+						"2021-06-01": { "CO2": 3.74, "bytes": 6845435, "green": 1, "imagebytes": 6388717 },
+						"2021-06-30": { "CO2": 6.86, "bytes": 12546713, "green": 1, "imagebytes": 12085439 }
 					}
 				}
 			}
@@ -1716,7 +1843,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 2.92, "ref": "https://www.websitecarbon.com/website/ashford-gov-uk/" },
 						"2021-05-25": { "CO2": 1.61, "ref": "https://www.websitecarbon.com/website/ashford-gov-uk/" },
-						"2021-05-27": { "CO2": 2.43, "bytes": 4037896, "green": 0, "imagebytes": 3658244 }
+						"2021-05-27": { "CO2": 2.43, "bytes": 4037896, "green": 0, "imagebytes": 3658244 },
+						"2021-06-30": { "CO2": 1.81, "bytes": 2999485, "green": 0, "imagebytes": 2616982 }
 					}
 				}
 			}
@@ -1728,7 +1856,8 @@
 				"https://www.canterbury.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.29, "ref": "https://www.websitecarbon.com/website/canterbury-gov-uk/" },
-						"2021-05-26": { "CO2": 0.58, "bytes": 1058095, "green": 1, "imagebytes": 586280 }
+						"2021-05-26": { "CO2": 0.58, "bytes": 1058095, "green": 1, "imagebytes": 586280 },
+						"2021-06-30": { "CO2": 0.58, "bytes": 1059482, "green": 1, "imagebytes": 586280 }
 					}
 				}
 			}
@@ -1740,7 +1869,8 @@
 				"https://www.dartford.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.21, "ref": "https://www.websitecarbon.com/website/dartford-gov-uk/" },
-						"2021-05-26": { "CO2": 0.21, "bytes": 347841, "green": 0, "imagebytes": 198587 }
+						"2021-05-26": { "CO2": 0.21, "bytes": 347841, "green": 0, "imagebytes": 198587 },
+						"2021-06-30": { "CO2": 0.21, "bytes": 347729, "green": 0, "imagebytes": 198609 }
 					}
 				}
 			}
@@ -1752,7 +1882,8 @@
 				"https://www.dover.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.35, "ref": "https://www.websitecarbon.com/website/dover-gov-uk/" },
-						"2021-05-26": { "CO2": 0.32, "bytes": 528165, "green": 0, "imagebytes": 188258 }
+						"2021-05-26": { "CO2": 0.32, "bytes": 528165, "green": 0, "imagebytes": 188258 },
+						"2021-06-30": { "CO2": 0.32, "bytes": 531214, "green": 0, "imagebytes": 188217 }
 					}
 				}
 			}
@@ -1764,7 +1895,8 @@
 				"https://www.gravesham.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.42, "ref": "https://www.websitecarbon.com/website/gravesham-gov-uk/" },
-						"2021-05-27": { "CO2": 0.74, "bytes": 1229538, "green": 0, "imagebytes": 836176 }
+						"2021-05-27": { "CO2": 0.74, "bytes": 1229538, "green": 0, "imagebytes": 836176 },
+						"2021-06-30": { "CO2": 0.32, "bytes": 531923, "green": 0, "imagebytes": 161357 }
 					}
 				}
 			}
@@ -1777,7 +1909,8 @@
 					"values": {
 						"2021-03-10": { "CO2": 2.64, "ref": "https://www.websitecarbon.com/website/maidstone-gov-uk/" },
 						"2021-05-25": { "CO2": 4.47, "ref": "https://www.websitecarbon.com/website/maidstone-gov-uk/" },
-						"2021-05-27": { "CO2": 4.47, "bytes": 7412364, "green": 0, "imagebytes": 6522281 }
+						"2021-05-27": { "CO2": 4.47, "bytes": 7412364, "green": 0, "imagebytes": 6522281 },
+						"2021-06-30": { "CO2": 2.5, "bytes": 4153589, "green": 0, "imagebytes": 3262270 }
 					}
 				}
 			}
@@ -1789,7 +1922,8 @@
 				"http://www.sevenoaks.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 1.11, "ref": "https://www.websitecarbon.com/website/sevenoaks-gov-uk/" },
-						"2021-05-27": { "CO2": 1.37, "bytes": 2277150, "green": 0, "imagebytes": 2033511 }
+						"2021-05-27": { "CO2": 1.37, "bytes": 2277150, "green": 0, "imagebytes": 2033511 },
+						"2021-06-30": { "CO2": 1.11, "bytes": 1841233, "green": 0, "imagebytes": 1596119 }
 					}
 				}
 			}
@@ -1802,7 +1936,8 @@
 					"values": {
 						"2021-03-11": { "CO2": 2.51, "ref": "https://www.websitecarbon.com/website/folkestone-hythe-gov-uk-home/" },
 						"2021-05-25": { "CO2": 2.45, "ref": "https://www.websitecarbon.com/website/folkestone-hythe-gov-uk-home/" },
-						"2021-05-27": { "CO2": 2.45, "bytes": 4064901, "green": 0, "imagebytes": 3620668 }
+						"2021-05-27": { "CO2": 2.45, "bytes": 4064901, "green": 0, "imagebytes": 3620668 },
+						"2021-06-30": { "CO2": 2.55, "bytes": 4222962, "green": 0, "imagebytes": 3772684 }
 					}
 				}
 			}
@@ -1814,7 +1949,8 @@
 				"http://www.swale.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.2, "ref": "https://www.websitecarbon.com/website/swale-gov-uk/" },
-						"2021-05-27": { "CO2": 0.28, "bytes": 459289, "green": 0, "imagebytes": 221006 }
+						"2021-05-27": { "CO2": 0.28, "bytes": 459289, "green": 0, "imagebytes": 221006 },
+						"2021-06-30": { "CO2": 0.23, "bytes": 378984, "green": 0, "imagebytes": 140729 }
 					}
 				}
 			}
@@ -1826,7 +1962,8 @@
 				"http://thanet.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.82, "ref": "https://www.websitecarbon.com/website/thanet-gov-uk/" },
-						"2021-05-27": { "CO2": 1.69, "bytes": 2810032, "green": 0, "imagebytes": 2380256 }
+						"2021-05-27": { "CO2": 1.69, "bytes": 2810032, "green": 0, "imagebytes": 2380256 },
+						"2021-06-30": { "CO2": 1.69, "bytes": 2810606, "green": 0, "imagebytes": 2379301 }
 					}
 				}
 			}
@@ -1838,7 +1975,8 @@
 				"http://www.tmbc.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.33, "ref": "https://www.websitecarbon.com/website/tmbc-gov-uk/" },
-						"2021-05-27": { "CO2": 0.33, "bytes": 552795, "green": 0, "imagebytes": 223987 }
+						"2021-05-27": { "CO2": 0.33, "bytes": 552795, "green": 0, "imagebytes": 223987 },
+						"2021-06-30": { "CO2": 1.87, "bytes": 3109895, "green": 0, "imagebytes": 2859662 }
 					}
 				}
 			}
@@ -1850,7 +1988,8 @@
 				"http://www.tunbridgewells.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.64, "ref": "https://www.websitecarbon.com/website/tunbridgewells-gov-uk/" },
-						"2021-05-27": { "CO2": 1.49, "bytes": 2478423, "green": 0, "imagebytes": 1887729 }
+						"2021-05-27": { "CO2": 1.49, "bytes": 2478423, "green": 0, "imagebytes": 1887729 },
+						"2021-06-30": { "CO2": 1.49, "bytes": 2472310, "green": 0, "imagebytes": 1879782 }
 					}
 				}
 			}
@@ -1862,7 +2001,8 @@
 				"http://www.burnley.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.79, "ref": "https://www.websitecarbon.com/website/burnley-gov-uk/" },
-						"2021-05-26": { "CO2": 0.96, "bytes": 1589152, "green": 0, "imagebytes": 1392821 }
+						"2021-05-26": { "CO2": 0.96, "bytes": 1589152, "green": 0, "imagebytes": 1392821 },
+						"2021-06-30": { "CO2": 0.84, "bytes": 1400035, "green": 0, "imagebytes": 1203501 }
 					}
 				}
 			}
@@ -1874,7 +2014,8 @@
 				"https://www.chorley.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.79, "ref": "https://www.websitecarbon.com/website/chorley-gov-uk/" },
-						"2021-05-26": { "CO2": 1.04, "bytes": 1723222, "green": 0, "imagebytes": 1387238 }
+						"2021-05-26": { "CO2": 1.04, "bytes": 1723222, "green": 0, "imagebytes": 1387238 },
+						"2021-06-30": { "CO2": 0.92, "bytes": 1528337, "green": 0, "imagebytes": 1155113 }
 					}
 				}
 			}
@@ -1886,7 +2027,8 @@
 				"https://new.fylde.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.43, "ref": "https://www.websitecarbon.com/website/new-fylde-gov-uk/" },
-						"2021-05-26": { "CO2": 0.43, "bytes": 720879, "green": 0, "imagebytes": 24869 }
+						"2021-05-26": { "CO2": 0.43, "bytes": 720879, "green": 0, "imagebytes": 24869 },
+						"2021-06-30": { "CO2": 0.42, "bytes": 694290, "green": 0, "imagebytes": 24868 }
 					}
 				}
 			}
@@ -1898,7 +2040,8 @@
 				"https://www.hyndburnbc.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.66, "ref": "https://www.websitecarbon.com/website/hyndburnbc-gov-uk/" },
-						"2021-05-27": { "CO2": 0.65, "bytes": 1073948, "green": 0, "imagebytes": 576014 }
+						"2021-05-27": { "CO2": 0.65, "bytes": 1073948, "green": 0, "imagebytes": 576014 },
+						"2021-06-30": { "CO2": 0.64, "bytes": 1067779, "green": 0, "imagebytes": 569116 }
 					}
 				}
 			}
@@ -1910,7 +2053,8 @@
 				"https://www.lancaster.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.95, "ref": "https://www.websitecarbon.com/website/lancaster-gov-uk/" },
-						"2021-05-27": { "CO2": 0.99, "bytes": 1634801, "green": 0, "imagebytes": 568307 }
+						"2021-05-27": { "CO2": 0.99, "bytes": 1634801, "green": 0, "imagebytes": 568307 },
+						"2021-06-30": { "CO2": 0.99, "bytes": 1636581, "green": 0, "imagebytes": 568455 }
 					}
 				}
 			}
@@ -1922,7 +2066,8 @@
 				"https://www.pendle.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.78, "ref": "https://www.websitecarbon.com/website/pendle-gov-uk/" },
-						"2021-05-27": { "CO2": 0.74, "bytes": 1228658, "green": 0, "imagebytes": 526100 }
+						"2021-05-27": { "CO2": 0.74, "bytes": 1228658, "green": 0, "imagebytes": 526100 },
+						"2021-06-30": { "CO2": 1.49, "bytes": 2466402, "green": 0, "imagebytes": 1757753 }
 					}
 				}
 			}
@@ -1934,7 +2079,8 @@
 				"https://www.preston.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 1.85, "ref": "https://www.websitecarbon.com/website/preston-gov-uk/" },
-						"2021-05-27": { "CO2": 1.67, "bytes": 2762024, "green": 0, "imagebytes": 2502938 }
+						"2021-05-27": { "CO2": 1.67, "bytes": 2762024, "green": 0, "imagebytes": 2502938 },
+						"2021-06-30": { "CO2": 1.66, "bytes": 2756709, "green": 0, "imagebytes": 2497130 }
 					}
 				}
 			}
@@ -1946,7 +2092,8 @@
 				"https://www.ribblevalley.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.42, "ref": "https://www.websitecarbon.com/website/ribblevalley-gov-uk/" },
-						"2021-05-27": { "CO2": 0.35, "bytes": 581394, "green": 0, "imagebytes": 274582 }
+						"2021-05-27": { "CO2": 0.35, "bytes": 581394, "green": 0, "imagebytes": 274582 },
+						"2021-06-30": { "CO2": 0.4, "bytes": 660480, "green": 0, "imagebytes": 350683 }
 					}
 				}
 			}
@@ -1959,7 +2106,8 @@
 					"values": {
 						"2021-03-09": { "CO2": 0.18, "ref": "https://www.websitecarbon.com/website/rossendale-gov-uk/" },
 						"2021-05-25": { "CO2": 0.18, "ref": "https://www.websitecarbon.com/website/rossendale-gov-uk/" },
-						"2021-05-27": { "CO2": 0.16, "bytes": 301242, "green": 1, "imagebytes": 128599 }
+						"2021-05-27": { "CO2": 0.16, "bytes": 301242, "green": 1, "imagebytes": 128599 },
+						"2021-06-30": { "CO2": 0.16, "bytes": 301870, "green": 1, "imagebytes": 128599 }
 					}
 				}
 			}
@@ -1971,7 +2119,8 @@
 				"http://www.southribble.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.44, "ref": "https://www.websitecarbon.com/website/southribble-gov-uk/" },
-						"2021-05-27": { "CO2": 1.35, "bytes": 2467097, "green": 1, "imagebytes": 2146625 }
+						"2021-05-27": { "CO2": 1.35, "bytes": 2467097, "green": 1, "imagebytes": 2146625 },
+						"2021-06-30": { "CO2": 1.27, "bytes": 2328827, "green": 1, "imagebytes": 1997502 }
 					}
 				}
 			}
@@ -1983,7 +2132,8 @@
 				"http://www.westlancs.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.28, "ref": "https://www.websitecarbon.com/website/westlancs-gov-uk/" },
-						"2021-05-27": { "CO2": 1.7, "bytes": 2819165, "green": 0, "imagebytes": 1377756 }
+						"2021-05-27": { "CO2": 1.7, "bytes": 2819165, "green": 0, "imagebytes": 1377756 },
+						"2021-06-30": { "CO2": 1.68, "bytes": 2794178, "green": 0, "imagebytes": 1567743 }
 					}
 				}
 			}
@@ -1995,7 +2145,8 @@
 				"http://www.wyre.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.25, "ref": "https://www.websitecarbon.com/website/wyre-gov-uk/" },
-						"2021-05-27": { "CO2": 5.01, "bytes": 8311879, "green": 0, "imagebytes": 7940020 }
+						"2021-05-27": { "CO2": 5.01, "bytes": 8311879, "green": 0, "imagebytes": 7940020 },
+						"2021-06-30": { "CO2": 0.84, "bytes": 1388523, "green": 0, "imagebytes": 1016836 }
 					}
 				}
 			}
@@ -2007,7 +2158,8 @@
 				"http://www.blaby.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.3, "ref": "https://www.websitecarbon.com/website/blaby-gov-uk/" },
-						"2021-05-26": { "CO2": 0.49, "bytes": 817513, "green": 0, "imagebytes": 613750 }
+						"2021-05-26": { "CO2": 0.49, "bytes": 817513, "green": 0, "imagebytes": 613750 },
+						"2021-06-30": { "CO2": 0.58, "bytes": 961348, "green": 0, "imagebytes": 755727 }
 					}
 				}
 			}
@@ -2019,7 +2171,8 @@
 				"https://www.charnwood.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.11, "ref": "https://www.websitecarbon.com/website/charnwood-gov-uk/" },
-						"2021-05-26": { "CO2": 1.47, "bytes": 2687325, "green": 1, "imagebytes": 2306522 }
+						"2021-05-26": { "CO2": 1.47, "bytes": 2687325, "green": 1, "imagebytes": 2306522 },
+						"2021-06-30": { "CO2": 1.3, "bytes": 2381714, "green": 1, "imagebytes": 2000552 }
 					}
 				}
 			}
@@ -2031,7 +2184,8 @@
 				"https://www.harborough.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.05, "ref": "https://www.websitecarbon.com/website/harborough-gov-uk/" },
-						"2021-05-27": { "CO2": 1.05, "bytes": 1740763, "green": 0, "imagebytes": 1166062 }
+						"2021-05-27": { "CO2": 1.05, "bytes": 1740763, "green": 0, "imagebytes": 1166062 },
+						"2021-06-30": { "CO2": 1, "bytes": 1657180, "green": 0, "imagebytes": 1081160 }
 					}
 				}
 			}
@@ -2043,7 +2197,8 @@
 				"https://www.hinckley-bosworth.gov.uk": {
 					"values": {
 						"2021-03-10": { "CO2": 0.62, "ref": "https://www.websitecarbon.com/website/hinckley-bosworth-gov-uk/" },
-						"2021-05-27": { "CO2": 0.46, "bytes": 845484, "green": 1, "imagebytes": 354457 }
+						"2021-05-27": { "CO2": 0.46, "bytes": 845484, "green": 1, "imagebytes": 354457 },
+						"2021-06-30": { "CO2": 0.46, "bytes": 845736, "green": 1, "imagebytes": 353878 }
 					}
 				}
 			}
@@ -2055,7 +2210,8 @@
 				"https://www.melton.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.79, "ref": "https://www.websitecarbon.com/website/melton-gov-uk/" },
-						"2021-05-27": { "CO2": 0.55, "bytes": 998588, "green": 1, "imagebytes": 707797 }
+						"2021-05-27": { "CO2": 0.55, "bytes": 998588, "green": 1, "imagebytes": 707797 },
+						"2021-06-30": { "CO2": 0.61, "bytes": 1113569, "green": 1, "imagebytes": 820908 }
 					}
 				}
 			}
@@ -2067,7 +2223,8 @@
 				"https://www.nwleics.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.82, "ref": "https://www.websitecarbon.com/website/nwleics-gov-uk/" },
-						"2021-05-27": { "CO2": 0.81, "bytes": 1487609, "green": 1, "imagebytes": 1300271 }
+						"2021-05-27": { "CO2": 0.81, "bytes": 1487609, "green": 1, "imagebytes": 1300271 },
+						"2021-06-30": { "CO2": 0.83, "bytes": 1519797, "green": 1, "imagebytes": 1330982 }
 					}
 				}
 			}
@@ -2079,7 +2236,8 @@
 				"https://www.oadby-wigston.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.21, "ref": "https://www.websitecarbon.com/website/oadby-wigston-gov-uk/" },
-						"2021-05-27": { "CO2": 1.09, "bytes": 1997303, "green": 1, "imagebytes": 1632111 }
+						"2021-05-27": { "CO2": 1.09, "bytes": 1997303, "green": 1, "imagebytes": 1632111 },
+						"2021-06-30": { "CO2": 1.07, "bytes": 1964263, "green": 1, "imagebytes": 1656757 }
 					}
 				}
 			}
@@ -2092,7 +2250,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 2.27, "ref": "https://www.websitecarbon.com/website/mybostonuk-com/" },
 						"2021-05-25": { "CO2": 2.41, "ref": "https://www.websitecarbon.com/website/mybostonuk-com/" },
-						"2021-05-27": { "CO2": 2.4, "bytes": 4397116, "green": 1, "imagebytes": 2579334 }
+						"2021-05-27": { "CO2": 2.4, "bytes": 4397116, "green": 1, "imagebytes": 2579334 },
+						"2021-06-30": { "CO2": 2.38, "bytes": 4364288, "green": 1, "imagebytes": 2579427 }
 					}
 				}
 			}
@@ -2104,7 +2263,8 @@
 				"https://www.e-lindsey.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.25, "ref": "https://www.websitecarbon.com/website/e-lindsey-gov-uk/" },
-						"2021-05-26": { "CO2": 1.72, "bytes": 2844870, "green": 0, "imagebytes": 2385851 }
+						"2021-05-26": { "CO2": 1.72, "bytes": 2844870, "green": 0, "imagebytes": 2385851 },
+						"2021-06-30": { "CO2": 1.74, "bytes": 2883935, "green": 0, "imagebytes": 2434275 }
 					}
 				}
 			}
@@ -2116,7 +2276,8 @@
 				"https://www.lincoln.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.96, "ref": "https://www.websitecarbon.com/website/lincoln-gov-uk/" },
-						"2021-05-26": { "CO2": 2.35, "bytes": 3901332, "green": 0, "imagebytes": 3570316 }
+						"2021-05-26": { "CO2": 2.35, "bytes": 3901332, "green": 0, "imagebytes": 3570316 },
+						"2021-06-30": { "CO2": 2.35, "bytes": 3901633, "green": 0, "imagebytes": 3570316 }
 					}
 				}
 			}
@@ -2129,7 +2290,8 @@
 					"values": {
 						"2021-03-11": { "CO2": 2.89, "ref": "https://www.websitecarbon.com/website/n-kesteven-gov-uk/" },
 						"2021-05-25": { "CO2": 2.47, "ref": "https://www.websitecarbon.com/website/n-kesteven-gov-uk/" },
-						"2021-05-27": { "CO2": 2.35, "bytes": 3903208, "green": 0, "imagebytes": 1829963 }
+						"2021-05-27": { "CO2": 2.35, "bytes": 3903208, "green": 0, "imagebytes": 1829963 },
+						"2021-06-30": { "CO2": 1.81, "bytes": 3008988, "green": 0, "imagebytes": 1464484 }
 					}
 				}
 			}
@@ -2141,7 +2303,8 @@
 				"http://www.sholland.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.67, "ref": "https://www.websitecarbon.com/website/sholland-gov-uk/" },
-						"2021-05-27": { "CO2": 0.41, "bytes": 681764, "green": 0, "imagebytes": 253847 }
+						"2021-05-27": { "CO2": 0.41, "bytes": 681764, "green": 0, "imagebytes": 253847 },
+						"2021-06-30": { "CO2": 0.98, "bytes": 1629005, "green": 0, "imagebytes": 1166469 }
 					}
 				}
 			}
@@ -2153,7 +2316,8 @@
 				"http://www.southkesteven.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.33, "ref": "https://www.websitecarbon.com/website/southkesteven-gov-uk/" },
-						"2021-05-27": { "CO2": 0.47, "bytes": 773430, "green": 0, "imagebytes": 540379 }
+						"2021-05-27": { "CO2": 0.47, "bytes": 773430, "green": 0, "imagebytes": 540379 },
+						"2021-06-30": { "CO2": 0.32, "bytes": 528159, "green": 0, "imagebytes": 283909 }
 					}
 				}
 			}
@@ -2165,7 +2329,8 @@
 				"http://www.west-lindsey.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.32, "ref": "https://www.websitecarbon.com/website/west-lindsey-gov-uk/" },
-						"2021-05-27": { "CO2": 1.21, "bytes": 2010342, "green": 0, "imagebytes": 854176 }
+						"2021-05-27": { "CO2": 1.21, "bytes": 2010342, "green": 0, "imagebytes": 854176 },
+						"2021-06-30": { "CO2": 1.21, "bytes": 2012464, "green": 0, "imagebytes": 852253 }
 					}
 				}
 			}
@@ -2177,7 +2342,8 @@
 				"https://www.breckland.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.11, "ref": "https://www.websitecarbon.com/website/breckland-gov-uk/" },
-						"2021-05-26": { "CO2": 1.61, "bytes": 2673863, "green": 0, "imagebytes": 2115215 }
+						"2021-05-26": { "CO2": 1.61, "bytes": 2673863, "green": 0, "imagebytes": 2115215 },
+						"2021-06-30": { "CO2": 1.63, "bytes": 2696627, "green": 0, "imagebytes": 2041817 }
 					}
 				}
 			}
@@ -2189,7 +2355,8 @@
 				"http://www.broadland.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.47, "ref": "https://www.websitecarbon.com/website/broadland-gov-uk/" },
-						"2021-05-26": { "CO2": 0.26, "bytes": 475916, "green": 1, "imagebytes": 154240 }
+						"2021-05-26": { "CO2": 0.26, "bytes": 475916, "green": 1, "imagebytes": 154240 },
+						"2021-06-30": { "CO2": 1.57, "bytes": 2876768, "green": 1, "imagebytes": 2580278 }
 					}
 				}
 			}
@@ -2201,7 +2368,8 @@
 				"https://www.great-yarmouth.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.29, "ref": "https://www.websitecarbon.com/website/great-yarmouth-gov-uk/" },
-						"2021-05-27": { "CO2": 1.31, "bytes": 2178214, "green": 0, "imagebytes": 1623549 }
+						"2021-05-27": { "CO2": 1.31, "bytes": 2178214, "green": 0, "imagebytes": 1623549 },
+						"2021-06-30": { "CO2": 1.22, "bytes": 2025156, "green": 0, "imagebytes": 1467790 }
 					}
 				}
 			}
@@ -2213,7 +2381,8 @@
 				"https://www.west-norfolk.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.63, "ref": "https://www.websitecarbon.com/website/west-norfolk-gov-uk/" },
-						"2021-05-26": { "CO2": 0.59, "bytes": 1072611, "green": 1, "imagebytes": 802866 }
+						"2021-05-26": { "CO2": 0.59, "bytes": 1072611, "green": 1, "imagebytes": 802866 },
+						"2021-06-30": { "CO2": 0.59, "bytes": 1074381, "green": 1, "imagebytes": 802866 }
 					}
 				}
 			}
@@ -2226,7 +2395,8 @@
 					"values": {
 						"2021-03-11": { "CO2": 2.41, "ref": "https://www.websitecarbon.com/website/north-norfolk-gov-uk/" },
 						"2021-05-25": { "CO2": 2.21, "ref": "https://www.websitecarbon.com/website/north-norfolk-gov-uk/" },
-						"2021-05-27": { "CO2": 1.35, "bytes": 2233464, "green": 0, "imagebytes": 1960083 }
+						"2021-05-27": { "CO2": 1.35, "bytes": 2233464, "green": 0, "imagebytes": 1960083 },
+						"2021-06-30": { "CO2": 0.85, "bytes": 1406155, "green": 0, "imagebytes": 1144628 }
 					}
 				}
 			}
@@ -2238,7 +2408,8 @@
 				"https://www.norwich.gov.uk/site/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.32, "ref": "https://www.websitecarbon.com/website/norwich-gov-uk/" },
-						"2021-05-27": { "CO2": 0.47, "bytes": 786317, "green": 0, "imagebytes": 518607 }
+						"2021-05-27": { "CO2": 0.47, "bytes": 786317, "green": 0, "imagebytes": 518607 },
+						"2021-06-30": { "CO2": 0.5, "bytes": 825973, "green": 0, "imagebytes": 556040 }
 					}
 				}
 			}
@@ -2250,7 +2421,8 @@
 				"http://www.south-norfolk.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.49, "ref": "https://www.websitecarbon.com/website/south-norfolk-gov-uk/" },
-						"2021-05-27": { "CO2": 0.5, "bytes": 924075, "green": 1, "imagebytes": 110493 }
+						"2021-05-27": { "CO2": 0.5, "bytes": 924075, "green": 1, "imagebytes": 110493 },
+						"2021-06-30": { "CO2": 1.58, "bytes": 2883285, "green": 1, "imagebytes": 2580278 }
 					}
 				}
 			}
@@ -2353,7 +2525,8 @@
 				"https://www.cravendc.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.57, "ref": "https://www.websitecarbon.com/website/cravendc-gov-uk/" },
-						"2021-05-26": { "CO2": 0.62, "bytes": 1035579, "green": 0, "imagebytes": 471198 }
+						"2021-05-26": { "CO2": 0.62, "bytes": 1035579, "green": 0, "imagebytes": 471198 },
+						"2021-06-30": { "CO2": 0.54, "bytes": 894202, "green": 0, "imagebytes": 332101 }
 					}
 				}
 			}
@@ -2368,7 +2541,8 @@
 						"2021-03-10": { "CO2": 1.03, "ref": "https://www.websitecarbon.com/website/hambleton-gov-uk-new/" },
 						"2021-05-26": { "CO2": 0.97, "ref": "https://www.websitecarbon.com/website/hambleton-gov-uk/" },
 						"2021-05-27": { "CO2": 0.87, "bytes": 1597246, "green": 1, "imagebytes": 1318948 },
-						"2021-06-10": { "CO2": 2.29, "bytes": 4194870, "green": 1, "imagebytes": 3916040 }
+						"2021-06-10": { "CO2": 2.29, "bytes": 4194870, "green": 1, "imagebytes": 3916040 },
+						"2021-06-30": { "CO2": 2.62, "bytes": 4793812, "green": 1, "imagebytes": 4514485 }
 					}
 				}
 			}
@@ -2382,7 +2556,8 @@
 						"2021-03-09": { "CO2": 0.95, "ref": "https://www.websitecarbon.com/website/harrogate-gov-uk/" },
 						"2021-05-25": { "CO2": 0.95, "ref": "https://www.websitecarbon.com/website/harrogate-gov-uk/" },
 						"2021-05-27": { "CO2": 0.86, "bytes": 1567735, "green": 1, "imagebytes": 1112234 },
-						"2021-06-10": { "CO2": 0.86, "bytes": 1568704, "green": 1, "imagebytes": 1112272 }
+						"2021-06-10": { "CO2": 0.86, "bytes": 1568704, "green": 1, "imagebytes": 1112272 },
+						"2021-06-30": { "CO2": 0.86, "bytes": 1570176, "green": 1, "imagebytes": 1116490 }
 					}
 				}
 			}
@@ -2394,7 +2569,8 @@
 				"https://www.richmondshire.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.72, "ref": "https://www.websitecarbon.com/website/richmondshire-gov-uk/" },
-						"2021-05-27": { "CO2": 0.85, "bytes": 1408626, "green": 0, "imagebytes": 854388 }
+						"2021-05-27": { "CO2": 0.85, "bytes": 1408626, "green": 0, "imagebytes": 854388 },
+						"2021-06-30": { "CO2": 0.86, "bytes": 1427799, "green": 0, "imagebytes": 869931 }
 					}
 				}
 			}
@@ -2406,7 +2582,8 @@
 				"http://www.ryedale.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.74, "ref": "https://www.websitecarbon.com/website/ryedale-gov-uk/" },
-						"2021-05-27": { "CO2": 1.41, "bytes": 2333433, "green": 0, "imagebytes": 1824968 }
+						"2021-05-27": { "CO2": 1.41, "bytes": 2333433, "green": 0, "imagebytes": 1824968 },
+						"2021-06-30": { "CO2": 1.34, "bytes": 2215388, "green": 0, "imagebytes": 1702936 }
 					}
 				}
 			}
@@ -2418,7 +2595,8 @@
 				"https://www.scarborough.gov.uk/": {
 					"values": {
 						"2021-05-25": { "CO2": 1.71, "ref": "https://www.websitecarbon.com/website/scarborough-gov-uk/" },
-						"2021-05-27": { "CO2": 1.71, "bytes": 3128519, "green": 1, "imagebytes": 2272128 }
+						"2021-05-27": { "CO2": 1.71, "bytes": 3128519, "green": 1, "imagebytes": 2272128 },
+						"2021-06-30": { "CO2": 1.54, "bytes": 2826720, "green": 1, "imagebytes": 1968096 }
 					}
 				}
 			}
@@ -2430,7 +2608,8 @@
 				"http://www.selby.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.9, "ref": "https://www.websitecarbon.com/website/selby-gov-uk/" },
-						"2021-05-27": { "CO2": 1, "bytes": 1821862, "green": 1, "imagebytes": 1156649 }
+						"2021-05-27": { "CO2": 1, "bytes": 1821862, "green": 1, "imagebytes": 1156649 },
+						"2021-06-30": { "CO2": 1.05, "bytes": 1917377, "green": 1, "imagebytes": 1249974 }
 					}
 				}
 			}
@@ -2443,7 +2622,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 0.87, "ref": "https://www.websitecarbon.com/website/ashfield-dc-gov-uk/" },
 						"2021-05-26": { "CO2": 0.86, "bytes": 1422687, "green": 0, "imagebytes": 915803 },
-						"2021-05-27": { "CO2": 0.87, "bytes": 1447444, "green": 0, "imagebytes": 929467 }
+						"2021-05-27": { "CO2": 0.87, "bytes": 1447444, "green": 0, "imagebytes": 929467 },
+						"2021-06-30": { "CO2": 0.89, "bytes": 1483458, "green": 0, "imagebytes": 964327 }
 					}
 				}
 			}
@@ -2455,7 +2635,8 @@
 				"http://www.bassetlaw.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.46, "ref": "https://www.websitecarbon.com/website/bassetlaw-gov-uk/" },
-						"2021-05-26": { "CO2": 0.44, "bytes": 737777, "green": 0, "imagebytes": 216015 }
+						"2021-05-26": { "CO2": 0.44, "bytes": 737777, "green": 0, "imagebytes": 216015 },
+						"2021-06-30": { "CO2": 0.45, "bytes": 739883, "green": 0, "imagebytes": 216035 }
 					}
 				}
 			}
@@ -2467,7 +2648,8 @@
 				"https://www.broxtowe.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.86, "ref": "https://www.websitecarbon.com/website/broxtowe-gov-uk/" },
-						"2021-05-26": { "CO2": 0.86, "bytes": 1426891, "green": 0, "imagebytes": 243592 }
+						"2021-05-26": { "CO2": 0.86, "bytes": 1426891, "green": 0, "imagebytes": 243592 },
+						"2021-06-30": { "CO2": 0.83, "bytes": 1373885, "green": 0, "imagebytes": 226885 }
 					}
 				}
 			}
@@ -2479,7 +2661,8 @@
 				"https://www.gedling.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.42, "ref": "https://www.websitecarbon.com/website/gedling-gov-uk/" },
-						"2021-05-27": { "CO2": 0.42, "bytes": 704925, "green": 0, "imagebytes": 304331 }
+						"2021-05-27": { "CO2": 0.42, "bytes": 704925, "green": 0, "imagebytes": 304331 },
+						"2021-06-30": { "CO2": 0.43, "bytes": 706620, "green": 0, "imagebytes": 304337 }
 					}
 				}
 			}
@@ -2491,7 +2674,8 @@
 				"https://www.mansfield.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.57, "ref": "https://www.websitecarbon.com/website/mansfield-gov-uk/" },
-						"2021-05-27": { "CO2": 0.52, "bytes": 870694, "green": 0, "imagebytes": 298499 }
+						"2021-05-27": { "CO2": 0.52, "bytes": 870694, "green": 0, "imagebytes": 298499 },
+						"2021-06-30": { "CO2": 0.51, "bytes": 852120, "green": 0, "imagebytes": 277133 }
 					}
 				}
 			}
@@ -2503,7 +2687,8 @@
 				"https://www.newark-sherwooddc.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.81, "ref": "https://www.websitecarbon.com/website/newark-sherwooddc-gov-uk/" },
-						"2021-05-27": { "CO2": 1.37, "bytes": 2269803, "green": 0, "imagebytes": 1028925 }
+						"2021-05-27": { "CO2": 1.37, "bytes": 2269803, "green": 0, "imagebytes": 1028925 },
+						"2021-06-30": { "CO2": 0.64, "bytes": 1068568, "green": 0, "imagebytes": 778219 }
 					}
 				}
 			}
@@ -2515,7 +2700,8 @@
 				"http://www.rushcliffe.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.43, "ref": "https://www.websitecarbon.com/website/rushcliffe-gov-uk/" },
-						"2021-05-27": { "CO2": 0.34, "bytes": 627403, "green": 1, "imagebytes": 217348 }
+						"2021-05-27": { "CO2": 0.34, "bytes": 627403, "green": 1, "imagebytes": 217348 },
+						"2021-06-30": { "CO2": 0.34, "bytes": 628290, "green": 1, "imagebytes": 217066 }
 					}
 				}
 			}
@@ -2527,7 +2713,8 @@
 				"https://www.cherwell.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.33, "ref": "https://www.websitecarbon.com/website/cherwell-gov-uk-2/" },
-						"2021-05-26": { "CO2": 0.75, "bytes": 1236660, "green": 0, "imagebytes": 1008684 }
+						"2021-05-26": { "CO2": 0.75, "bytes": 1236660, "green": 0, "imagebytes": 1008684 },
+						"2021-06-30": { "CO2": 0.84, "bytes": 1388389, "green": 0, "imagebytes": 1159714 }
 					}
 				}
 			}
@@ -2539,7 +2726,8 @@
 				"https://www.oxford.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.42, "ref": "https://www.websitecarbon.com/website/oxford-gov-uk-2/" },
-						"2021-05-27": { "CO2": 0.55, "bytes": 1013415, "green": 1, "imagebytes": 505357 }
+						"2021-05-27": { "CO2": 0.55, "bytes": 1013415, "green": 1, "imagebytes": 505357 },
+						"2021-06-30": { "CO2": 0.56, "bytes": 1019280, "green": 1, "imagebytes": 505372 }
 					}
 				}
 			}
@@ -2551,7 +2739,8 @@
 				"http://www.southoxon.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.18, "ref": "https://www.websitecarbon.com/website/southoxon-gov-uk/" },
-						"2021-05-27": { "CO2": 0.77, "bytes": 1282345, "green": 0, "imagebytes": 509483 }
+						"2021-05-27": { "CO2": 0.77, "bytes": 1282345, "green": 0, "imagebytes": 509483 },
+						"2021-06-30": { "CO2": 0.63, "bytes": 1038949, "green": 0, "imagebytes": 264876 }
 					}
 				}
 			}
@@ -2563,7 +2752,8 @@
 				"http://www.whitehorsedc.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.17, "ref": "https://www.websitecarbon.com/website/whitehorsedc-gov-uk/" },
-						"2021-05-27": { "CO2": 0.77, "bytes": 1273915, "green": 0, "imagebytes": 500949 }
+						"2021-05-27": { "CO2": 0.77, "bytes": 1273915, "green": 0, "imagebytes": 500949 },
+						"2021-06-30": { "CO2": 0.62, "bytes": 1030382, "green": 0, "imagebytes": 256345 }
 					}
 				}
 			}
@@ -2575,7 +2765,8 @@
 				"http://www.westoxon.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.51, "ref": "https://www.websitecarbon.com/website/westoxon-gov-uk/" },
-						"2021-05-27": { "CO2": 0.58, "bytes": 959638, "green": 0, "imagebytes": 544230 }
+						"2021-05-27": { "CO2": 0.58, "bytes": 959638, "green": 0, "imagebytes": 544230 },
+						"2021-06-30": { "CO2": 0.75, "bytes": 1235880, "green": 0, "imagebytes": 611369 }
 					}
 				}
 			}
@@ -2587,7 +2778,8 @@
 				"https://www.mendip.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.52, "ref": "https://www.websitecarbon.com/website/mendip-gov-uk/" },
-						"2021-05-27": { "CO2": 1.15, "bytes": 1912037, "green": 0, "imagebytes": 1466891 }
+						"2021-05-27": { "CO2": 1.15, "bytes": 1912037, "green": 0, "imagebytes": 1466891 },
+						"2021-06-30": { "CO2": 0.83, "bytes": 1369442, "green": 0, "imagebytes": 948612 }
 					}
 				}
 			}
@@ -2599,7 +2791,8 @@
 				"http://www.sedgemoor.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.91, "ref": "https://www.websitecarbon.com/website/sedgemoor-gov-uk/" },
-						"2021-05-27": { "CO2": 0.89, "bytes": 1480861, "green": 0, "imagebytes": 679460 }
+						"2021-05-27": { "CO2": 0.89, "bytes": 1480861, "green": 0, "imagebytes": 679460 },
+						"2021-06-30": { "CO2": 0.92, "bytes": 1530730, "green": 0, "imagebytes": 727243 }
 					}
 				}
 			}
@@ -2611,7 +2804,8 @@
 				"http://www.southsomerset.gov.uk": {
 					"values": {
 						"2021-03-04": { "CO2": 0.51, "ref": "https://www.websitecarbon.com/website/southsomerset-gov-uk/" },
-						"2021-05-27": { "CO2": 0.52, "bytes": 867992, "green": 0, "imagebytes": 199133 }
+						"2021-05-27": { "CO2": 0.52, "bytes": 867992, "green": 0, "imagebytes": 199133 },
+						"2021-06-30": { "CO2": 0.56, "bytes": 920684, "green": 0, "imagebytes": 249836 }
 					}
 				}
 			}
@@ -2623,7 +2817,8 @@
 				"http://www.cannockchasedc.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.42, "ref": "https://www.websitecarbon.com/website/cannockchasedc-gov-uk/" },
-						"2021-05-26": { "CO2": 0.37, "bytes": 616246, "green": 0, "imagebytes": 321687 }
+						"2021-05-26": { "CO2": 0.37, "bytes": 616246, "green": 0, "imagebytes": 321687 },
+						"2021-06-30": { "CO2": 0.41, "bytes": 687917, "green": 0, "imagebytes": 391003 }
 					}
 				}
 			}
@@ -2635,7 +2830,8 @@
 				"https://www.eaststaffsbc.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.84, "ref": "https://www.websitecarbon.com/website/eaststaffsbc-gov-uk/" },
-						"2021-05-26": { "CO2": 0.83, "bytes": 1382361, "green": 0, "imagebytes": 177366 }
+						"2021-05-26": { "CO2": 0.83, "bytes": 1382361, "green": 0, "imagebytes": 177366 },
+						"2021-06-30": { "CO2": 0.83, "bytes": 1368672, "green": 0, "imagebytes": 165198 }
 					}
 				}
 			}
@@ -2647,7 +2843,8 @@
 				"https://www.lichfielddc.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.3, "ref": "https://www.websitecarbon.com/website/lichfielddc-gov-uk/" },
-						"2021-05-26": { "CO2": 0.28, "bytes": 505831, "green": 1, "imagebytes": 277847 }
+						"2021-05-26": { "CO2": 0.28, "bytes": 505831, "green": 1, "imagebytes": 277847 },
+						"2021-06-30": { "CO2": 0.5, "bytes": 909349, "green": 1, "imagebytes": 679679 }
 					}
 				}
 			}
@@ -2659,7 +2856,8 @@
 				"https://www.newcastle-staffs.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.38, "ref": "https://www.websitecarbon.com/website/newcastle-staffs-gov-uk/" },
-						"2021-05-27": { "CO2": 1.25, "bytes": 2065193, "green": 0, "imagebytes": 1626329 }
+						"2021-05-27": { "CO2": 1.25, "bytes": 2065193, "green": 0, "imagebytes": 1626329 },
+						"2021-06-30": { "CO2": 1.12, "bytes": 1854824, "green": 0, "imagebytes": 1404080 }
 					}
 				}
 			}
@@ -2671,7 +2869,8 @@
 				"https://www.sstaffs.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 1.92, "ref": "https://www.websitecarbon.com/website/sstaffs-gov-uk/" },
-						"2021-05-27": { "CO2": 1.9, "bytes": 3147947, "green": 0, "imagebytes": 2725513 }
+						"2021-05-27": { "CO2": 1.9, "bytes": 3147947, "green": 0, "imagebytes": 2725513 },
+						"2021-06-30": { "CO2": 1.9, "bytes": 3148609, "green": 0, "imagebytes": 2725503 }
 					}
 				}
 			}
@@ -2683,7 +2882,8 @@
 				"http://www.staffordbc.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.62, "ref": "https://www.websitecarbon.com/website/staffordbc-gov-uk/" },
-						"2021-05-27": { "CO2": 0.87, "bytes": 1448572, "green": 0, "imagebytes": 832616 }
+						"2021-05-27": { "CO2": 0.87, "bytes": 1448572, "green": 0, "imagebytes": 832616 },
+						"2021-06-30": { "CO2": 0.73, "bytes": 1204891, "green": 0, "imagebytes": 586904 }
 					}
 				}
 			}
@@ -2696,7 +2896,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 2.94, "ref": "https://www.websitecarbon.com/website/staffsmoorlands-gov-uk/" },
 						"2021-05-25": { "CO2": 2.87, "ref": "https://www.websitecarbon.com/website/staffsmoorlands-gov-uk/" },
-						"2021-05-27": { "CO2": 2.79, "bytes": 4625586, "green": 0, "imagebytes": 4051806 }
+						"2021-05-27": { "CO2": 2.79, "bytes": 4625586, "green": 0, "imagebytes": 4051806 },
+						"2021-06-30": { "CO2": 2.85, "bytes": 4725162, "green": 0, "imagebytes": 4149251 }
 					}
 				}
 			}
@@ -2708,7 +2909,8 @@
 				"http://www.tamworth.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.93, "ref": "https://www.websitecarbon.com/website/tamworth-gov-uk/" },
-						"2021-05-27": { "CO2": 0.77, "bytes": 1284359, "green": 0, "imagebytes": 861345 }
+						"2021-05-27": { "CO2": 0.77, "bytes": 1284359, "green": 0, "imagebytes": 861345 },
+						"2021-06-30": { "CO2": 0.68, "bytes": 1122465, "green": 0, "imagebytes": 786677 }
 					}
 				}
 			}
@@ -2721,7 +2923,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 1.51, "ref": "https://www.websitecarbon.com/website/babergh-gov-uk/" },
 						"2021-05-26": { "CO2": 1.51, "bytes": 2499967, "green": 0, "imagebytes": 1848897 },
-						"2021-05-27": { "CO2": 1.57, "bytes": 2599458, "green": 0, "imagebytes": 1963223 }
+						"2021-05-27": { "CO2": 1.57, "bytes": 2599458, "green": 0, "imagebytes": 1963223 },
+						"2021-06-30": { "CO2": 1.52, "bytes": 2518209, "green": 0, "imagebytes": 1883837 }
 					}
 				}
 			}
@@ -2747,7 +2950,8 @@
 				"https://www.ipswich.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.29, "ref": "https://www.websitecarbon.com/website/ipswich-gov-uk/" },
-						"2021-05-27": { "CO2": 0.28, "bytes": 517139, "green": 1, "imagebytes": 370765 }
+						"2021-05-27": { "CO2": 0.28, "bytes": 517139, "green": 1, "imagebytes": 370765 },
+						"2021-06-30": { "CO2": 0.38, "bytes": 690137, "green": 1, "imagebytes": 543662 }
 					}
 				}
 			}
@@ -2759,7 +2963,8 @@
 				"https://www.midsuffolk.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.52, "ref": "https://www.websitecarbon.com/website/midsuffolk-gov-uk/" },
-						"2021-05-27": { "CO2": 1.55, "bytes": 2573779, "green": 0, "imagebytes": 1950990 }
+						"2021-05-27": { "CO2": 1.55, "bytes": 2573779, "green": 0, "imagebytes": 1950990 },
+						"2021-06-30": { "CO2": 1.49, "bytes": 2466012, "green": 0, "imagebytes": 1843671 }
 					}
 				}
 			}
@@ -2784,7 +2989,8 @@
 				"https://www.elmbridge.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.16, "ref": "https://www.websitecarbon.com/website/elmbridge-gov-uk/" },
-						"2021-05-27": { "CO2": 1.32, "bytes": 2189070, "green": 0, "imagebytes": 1855594 }
+						"2021-05-27": { "CO2": 1.32, "bytes": 2189070, "green": 0, "imagebytes": 1855594 },
+						"2021-06-30": { "CO2": 0.98, "bytes": 1630506, "green": 0, "imagebytes": 1296333 }
 					}
 				}
 			}
@@ -2796,7 +3002,8 @@
 				"https://www.epsom-ewell.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.39, "ref": "https://www.websitecarbon.com/website/epsom-ewell-gov-uk/" },
-						"2021-05-27": { "CO2": 0.95, "bytes": 1745299, "green": 1, "imagebytes": 1439687 }
+						"2021-05-27": { "CO2": 0.95, "bytes": 1745299, "green": 1, "imagebytes": 1439687 },
+						"2021-06-30": { "CO2": 0.75, "bytes": 1376772, "green": 1, "imagebytes": 1123739 }
 					}
 				}
 			}
@@ -2808,7 +3015,8 @@
 				"https://www.guildford.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.13, "ref": "https://www.websitecarbon.com/website/guildford-gov-uk/" },
-						"2021-05-27": { "CO2": 0.68, "bytes": 1127692, "green": 0, "imagebytes": 832928 }
+						"2021-05-27": { "CO2": 0.68, "bytes": 1127692, "green": 0, "imagebytes": 832928 },
+						"2021-06-30": { "CO2": 0.68, "bytes": 1129145, "green": 0, "imagebytes": 832928 }
 					}
 				}
 			}
@@ -2820,7 +3028,8 @@
 				"https://www.molevalley.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.21, "ref": "https://www.websitecarbon.com/website/molevalley-gov-uk/" },
-						"2021-05-26": { "CO2": 1.03, "bytes": 1881344, "green": 1, "imagebytes": 1099657 }
+						"2021-05-26": { "CO2": 1.03, "bytes": 1881344, "green": 1, "imagebytes": 1099657 },
+						"2021-06-30": { "CO2": 1.22, "bytes": 2226334, "green": 1, "imagebytes": 1443200 }
 					}
 				}
 			}
@@ -2833,7 +3042,8 @@
 					"values": {
 						"2021-03-09": { "CO2": 3.23, "ref": "https://www.websitecarbon.com/website/reigate-banstead-gov-uk/" },
 						"2021-05-25": { "CO2": 2.3, "ref": "https://www.websitecarbon.com/website/reigate-banstead-gov-uk/" },
-						"2021-05-27": { "CO2": 2.08, "bytes": 3811744, "green": 1, "imagebytes": 3521518 }
+						"2021-05-27": { "CO2": 2.08, "bytes": 3811744, "green": 1, "imagebytes": 3521518 },
+						"2021-06-30": { "CO2": 2.24, "bytes": 4105229, "green": 1, "imagebytes": 3813511 }
 					}
 				}
 			}
@@ -2845,7 +3055,8 @@
 				"http://www.runnymede.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.66, "ref": "https://www.websitecarbon.com/website/runnymede-gov-uk/" },
-						"2021-05-27": { "CO2": 0.65, "bytes": 1073472, "green": 0, "imagebytes": 909014 }
+						"2021-05-27": { "CO2": 0.65, "bytes": 1073472, "green": 0, "imagebytes": 909014 },
+						"2021-06-30": { "CO2": 0.66, "bytes": 1092826, "green": 0, "imagebytes": 928430 }
 					}
 				}
 			}
@@ -2857,7 +3068,8 @@
 				"http://www.spelthorne.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.35, "ref": "https://www.websitecarbon.com/website/spelthorne-gov-uk/" },
-						"2021-05-27": { "CO2": 0.76, "bytes": 1257171, "green": 0, "imagebytes": 915728 }
+						"2021-05-27": { "CO2": 0.76, "bytes": 1257171, "green": 0, "imagebytes": 915728 },
+						"2021-06-30": { "CO2": 0.76, "bytes": 1257432, "green": 0, "imagebytes": 904837 }
 					}
 				}
 			}
@@ -2869,7 +3081,8 @@
 				"http://www.surreyheath.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.24, "ref": "https://www.websitecarbon.com/website/surreyheath-gov-uk/" },
-						"2021-05-27": { "CO2": 0.25, "bytes": 411827, "green": 0, "imagebytes": 70197 }
+						"2021-05-27": { "CO2": 0.25, "bytes": 411827, "green": 0, "imagebytes": 70197 },
+						"2021-06-30": { "CO2": 0.22, "bytes": 364186, "green": 0, "imagebytes": 70197 }
 					}
 				}
 			}
@@ -2881,7 +3094,8 @@
 				"http://www.tandridge.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.11, "ref": "https://www.websitecarbon.com/website/tandridge-gov-uk/" },
-						"2021-05-27": { "CO2": 1.39, "bytes": 2312099, "green": 0, "imagebytes": 1085657 }
+						"2021-05-27": { "CO2": 1.39, "bytes": 2312099, "green": 0, "imagebytes": 1085657 },
+						"2021-06-30": { "CO2": 1.15, "bytes": 1902971, "green": 0, "imagebytes": 770459 }
 					}
 				}
 			}
@@ -2893,7 +3107,8 @@
 				"http://www.waverley.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.64, "ref": "https://www.websitecarbon.com/website/waverley-gov-uk/" },
-						"2021-05-27": { "CO2": 0.58, "bytes": 967590, "green": 0, "imagebytes": 97223 }
+						"2021-05-27": { "CO2": 0.58, "bytes": 967590, "green": 0, "imagebytes": 97223 },
+						"2021-06-30": { "CO2": 0.58, "bytes": 955326, "green": 0, "imagebytes": 157980 }
 					}
 				}
 			}
@@ -2906,7 +3121,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 2.39, "ref": "https://www.websitecarbon.com/website/woking-gov-uk/" },
 						"2021-05-25": { "CO2": 2.42, "ref": "https://www.websitecarbon.com/website/woking-gov-uk/" },
-						"2021-05-27": { "CO2": 2.31, "bytes": 4219758, "green": 1, "imagebytes": 3603368 }
+						"2021-05-27": { "CO2": 2.31, "bytes": 4219758, "green": 1, "imagebytes": 3603368 },
+						"2021-06-30": { "CO2": 2.73, "bytes": 4998492, "green": 1, "imagebytes": 4382215 }
 					}
 				}
 			}
@@ -2918,7 +3134,8 @@
 				"https://www.northwarks.gov.uk/site/": {
 					"values": {
 						"2021-03-11": { "CO2": 0, "ref": "" },
-						"2021-05-27": { "CO2": 0.44, "bytes": 723221, "green": 0, "imagebytes": 387314 }
+						"2021-05-27": { "CO2": 0.44, "bytes": 723221, "green": 0, "imagebytes": 387314 },
+						"2021-06-30": { "CO2": 0.4, "bytes": 655575, "green": 0, "imagebytes": 332287 }
 					}
 				}
 			}
@@ -2930,7 +3147,8 @@
 				"https://www.nuneatonandbedworth.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.63, "ref": "https://www.websitecarbon.com/website/nuneatonandbedworth-gov-uk/" },
-						"2021-05-27": { "CO2": 0.72, "bytes": 1192675, "green": 0, "imagebytes": 359302 }
+						"2021-05-27": { "CO2": 0.72, "bytes": 1192675, "green": 0, "imagebytes": 359302 },
+						"2021-06-30": { "CO2": 0.72, "bytes": 1191033, "green": 0, "imagebytes": 359389 }
 					}
 				}
 			}
@@ -2942,7 +3160,8 @@
 				"http://www.rugby.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.58, "ref": "https://www.websitecarbon.com/website/rugby-gov-uk/" },
-						"2021-05-27": { "CO2": 0.77, "bytes": 1404487, "green": 1, "imagebytes": 1131118 }
+						"2021-05-27": { "CO2": 0.77, "bytes": 1404487, "green": 1, "imagebytes": 1131118 },
+						"2021-06-30": { "CO2": 0.77, "bytes": 1405028, "green": 1, "imagebytes": 1131118 }
 					}
 				}
 			}
@@ -2954,7 +3173,8 @@
 				"http://www.stratford.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.82, "ref": "https://www.websitecarbon.com/website/stratford-gov-uk/" },
-						"2021-05-27": { "CO2": 0.9, "bytes": 1485500, "green": 0, "imagebytes": 630755 }
+						"2021-05-27": { "CO2": 0.9, "bytes": 1485500, "green": 0, "imagebytes": 630755 },
+						"2021-06-30": { "CO2": 0.89, "bytes": 1483273, "green": 0, "imagebytes": 627870 }
 					}
 				}
 			}
@@ -2966,7 +3186,8 @@
 				"http://www.warwickdc.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.36, "ref": "https://www.websitecarbon.com/website/warwickdc-gov-uk/" },
-						"2021-05-27": { "CO2": 0.51, "bytes": 838722, "green": 0, "imagebytes": 545686 }
+						"2021-05-27": { "CO2": 0.51, "bytes": 838722, "green": 0, "imagebytes": 545686 },
+						"2021-06-30": { "CO2": 0.48, "bytes": 800401, "green": 0, "imagebytes": 473696 }
 					}
 				}
 			}
@@ -2979,7 +3200,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 1.17, "ref": "https://www.websitecarbon.com/website/adur-worthing-gov-uk/" },
 						"2021-05-26": { "CO2": 1.25, "bytes": 2285150, "green": 1, "imagebytes": 1917594 },
-						"2021-05-27": { "CO2": 1.25, "bytes": 2279430, "green": 1, "imagebytes": 1912206 }
+						"2021-05-27": { "CO2": 1.25, "bytes": 2279430, "green": 1, "imagebytes": 1912206 },
+						"2021-06-30": { "CO2": 1.26, "bytes": 2307399, "green": 1, "imagebytes": 1768241 }
 					}
 				}
 			}
@@ -2992,7 +3214,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 1.14, "ref": "https://www.websitecarbon.com/website/arun-gov-uk/" },
 						"2021-05-26": { "CO2": 1.04, "bytes": 1730487, "green": 0, "imagebytes": 1316118 },
-						"2021-05-27": { "CO2": 1.04, "bytes": 1730676, "green": 0, "imagebytes": 1316117 }
+						"2021-05-27": { "CO2": 1.04, "bytes": 1730676, "green": 0, "imagebytes": 1316117 },
+						"2021-06-30": { "CO2": 1.13, "bytes": 1874114, "green": 0, "imagebytes": 1466715 }
 					}
 				}
 			}
@@ -3004,7 +3227,8 @@
 				"https://www.chichester.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.14, "ref": "https://www.websitecarbon.com/website/chichester-gov-uk/" },
-						"2021-05-26": { "CO2": 0.68, "bytes": 1130933, "green": 0, "imagebytes": 934053 }
+						"2021-05-26": { "CO2": 0.68, "bytes": 1130933, "green": 0, "imagebytes": 934053 },
+						"2021-06-30": { "CO2": 0.98, "bytes": 1632435, "green": 0, "imagebytes": 1435084 }
 					}
 				}
 			}
@@ -3016,7 +3240,8 @@
 				"https://crawley.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.31, "ref": "https://www.websitecarbon.com/website/crawley-gov-uk/" },
-						"2021-05-26": { "CO2": 0.3, "bytes": 498451, "green": 0, "imagebytes": 59139 }
+						"2021-05-26": { "CO2": 0.3, "bytes": 498451, "green": 0, "imagebytes": 59139 },
+						"2021-06-30": { "CO2": 0.32, "bytes": 525545, "green": 0, "imagebytes": 81035 }
 					}
 				}
 			}
@@ -3028,7 +3253,8 @@
 				"https://www.horsham.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.19, "ref": "https://www.websitecarbon.com/website/horsham-gov-uk/" },
-						"2021-05-27": { "CO2": 1.22, "bytes": 2019892, "green": 0, "imagebytes": 261618 }
+						"2021-05-27": { "CO2": 1.22, "bytes": 2019892, "green": 0, "imagebytes": 261618 },
+						"2021-06-30": { "CO2": 1.29, "bytes": 2134506, "green": 0, "imagebytes": 437304 }
 					}
 				}
 			}
@@ -3040,7 +3266,8 @@
 				"https://www.midsussex.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.47, "ref": "https://www.websitecarbon.com/website/midsussex-gov-uk/" },
-						"2021-05-27": { "CO2": 1.59, "bytes": 2642428, "green": 0, "imagebytes": 1662860 }
+						"2021-05-27": { "CO2": 1.59, "bytes": 2642428, "green": 0, "imagebytes": 1662860 },
+						"2021-06-30": { "CO2": 1.36, "bytes": 2256075, "green": 0, "imagebytes": 1273466 }
 					}
 				}
 			}
@@ -3052,7 +3279,8 @@
 				"http://www.bromsgrove.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.69, "ref": "https://www.websitecarbon.com/website/bromsgrove-gov-uk/" },
-						"2021-05-26": { "CO2": 1.01, "bytes": 1670542, "green": 0, "imagebytes": 1014589 }
+						"2021-05-26": { "CO2": 1.01, "bytes": 1670542, "green": 0, "imagebytes": 1014589 },
+						"2021-06-30": { "CO2": 0.6, "bytes": 994383, "green": 0, "imagebytes": 334679 }
 					}
 				}
 			}
@@ -3064,7 +3292,8 @@
 				"https://www.malvernhills.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.39, "ref": "https://www.websitecarbon.com/website/malvernhills-gov-uk/" },
-						"2021-05-27": { "CO2": 0.38, "bytes": 638218, "green": 0, "imagebytes": 329081 }
+						"2021-05-27": { "CO2": 0.38, "bytes": 638218, "green": 0, "imagebytes": 329081 },
+						"2021-06-30": { "CO2": 0.39, "bytes": 642470, "green": 0, "imagebytes": 329125 }
 					}
 				}
 			}
@@ -3076,7 +3305,8 @@
 				"https://www.redditchbc.gov.uk/": {
 					"values": {
 						"2021-05-19": { "CO2": 1.21, "ref": "https://www.websitecarbon.com/website/redditchbc-gov-uk/" },
-						"2021-05-27": { "CO2": 1.14, "bytes": 1894813, "green": 0, "imagebytes": 1273418 }
+						"2021-05-27": { "CO2": 1.14, "bytes": 1894813, "green": 0, "imagebytes": 1273418 },
+						"2021-06-30": { "CO2": 1.26, "bytes": 2094362, "green": 0, "imagebytes": 1475505 }
 					}
 				}
 			}
@@ -3088,7 +3318,8 @@
 				"http://www.worcester.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.36, "ref": "https://www.websitecarbon.com/website/worcester-gov-uk/" },
-						"2021-05-27": { "CO2": 0.44, "bytes": 723096, "green": 0, "imagebytes": 291679 }
+						"2021-05-27": { "CO2": 0.44, "bytes": 723096, "green": 0, "imagebytes": 291679 },
+						"2021-06-30": { "CO2": 0.43, "bytes": 716140, "green": 0, "imagebytes": 280516 }
 					}
 				}
 			}
@@ -3100,7 +3331,8 @@
 				"http://www.wychavon.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.38, "ref": "https://www.websitecarbon.com/website/wychavon-gov-uk/" },
-						"2021-05-27": { "CO2": 0.38, "bytes": 632581, "green": 0, "imagebytes": 337440 }
+						"2021-05-27": { "CO2": 0.38, "bytes": 632581, "green": 0, "imagebytes": 337440 },
+						"2021-06-30": { "CO2": 0.38, "bytes": 625831, "green": 0, "imagebytes": 308127 }
 					}
 				}
 			}
@@ -3113,7 +3345,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 6.62, "ref": "https://www.websitecarbon.com/website/wyreforestdc-gov-uk/" },
 						"2021-05-25": { "CO2": 1.93, "ref": "https://www.websitecarbon.com/website/wyreforestdc-gov-uk/" },
-						"2021-05-27": { "CO2": 4.1, "bytes": 6803352, "green": 0, "imagebytes": 5786194 }
+						"2021-05-27": { "CO2": 4.1, "bytes": 6803352, "green": 0, "imagebytes": 5786194 },
+						"2021-06-30": { "CO2": 3.86, "bytes": 6396535, "green": 0, "imagebytes": 5745068 }
 					}
 				}
 			}
@@ -3126,7 +3359,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 2.19, "ref": "https://www.websitecarbon.com/website/stalbans-gov-uk/" },
 						"2021-05-25": { "CO2": 2.4, "ref": "https://www.websitecarbon.com/website/stalbans-gov-uk/" },
-						"2021-05-27": { "CO2": 2.41, "bytes": 3990347, "green": 0, "imagebytes": 3333984 }
+						"2021-05-27": { "CO2": 2.41, "bytes": 3990347, "green": 0, "imagebytes": 3333984 },
+						"2021-06-30": { "CO2": 2.29, "bytes": 3802530, "green": 0, "imagebytes": 3145828 }
 					}
 				}
 			}
@@ -3138,7 +3372,8 @@
 				"https://www.welhat.gov.uk/": {
 					"values": {
 						"2021-05-25": { "CO2": 1.12, "ref": "https://www.websitecarbon.com/website/welhat-gov-uk/" },
-						"2021-05-27": { "CO2": 1.14, "bytes": 1898458, "green": 0, "imagebytes": 1605612 }
+						"2021-05-27": { "CO2": 1.14, "bytes": 1898458, "green": 0, "imagebytes": 1605612 },
+						"2021-06-30": { "CO2": 0.97, "bytes": 1604517, "green": 0, "imagebytes": 1311176 }
 					}
 				}
 			}
@@ -3150,7 +3385,8 @@
 				"https://www.eastherts.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.78, "ref": "https://www.websitecarbon.com/website/eastherts-gov-uk/" },
-						"2021-05-26": { "CO2": 0.72, "bytes": 1194320, "green": 0, "imagebytes": 369270 }
+						"2021-05-26": { "CO2": 0.72, "bytes": 1194320, "green": 0, "imagebytes": 369270 },
+						"2021-06-30": { "CO2": 0.71, "bytes": 1172463, "green": 0, "imagebytes": 356311 }
 					}
 				}
 			}
@@ -3162,7 +3398,8 @@
 				"http://www.stevenage.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.89, "ref": "https://www.websitecarbon.com/website/stevenage-gov-uk/" },
-						"2021-05-27": { "CO2": 0.91, "bytes": 1505098, "green": 0, "imagebytes": 467124 }
+						"2021-05-27": { "CO2": 0.91, "bytes": 1505098, "green": 0, "imagebytes": 467124 },
+						"2021-06-30": { "CO2": 1, "bytes": 1652477, "green": 0, "imagebytes": 501408 }
 					}
 				}
 			}
@@ -3174,7 +3411,8 @@
 				"https://www.eastsuffolk.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.31, "ref": "https://www.websitecarbon.com/website/eastsuffolk-gov-uk/" },
-						"2021-05-27": { "CO2": 1.77, "bytes": 2938122, "green": 0, "imagebytes": 2643680 }
+						"2021-05-27": { "CO2": 1.77, "bytes": 2938122, "green": 0, "imagebytes": 2643680 },
+						"2021-06-30": { "CO2": 1.23, "bytes": 2040374, "green": 0, "imagebytes": 1748741 }
 					}
 				}
 			}
@@ -3186,7 +3424,8 @@
 				"https://www.westsuffolk.gov.uk/": {
 					"values": {
 						"2021-05-25": { "CO2": 1.34, "ref": "https://www.websitecarbon.com/website/westsuffolk-gov-uk/" },
-						"2021-05-27": { "CO2": 1.36, "bytes": 2254229, "green": 0, "imagebytes": 1727741 }
+						"2021-05-27": { "CO2": 1.36, "bytes": 2254229, "green": 0, "imagebytes": 1727741 },
+						"2021-06-30": { "CO2": 0.97, "bytes": 1609237, "green": 0, "imagebytes": 1085809 }
 					}
 				}
 			}
@@ -3198,7 +3437,8 @@
 				"https://www.somersetwestandtaunton.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.5, "ref": "https://www.websitecarbon.com/website/somersetwestandtaunton-gov-uk/" },
-						"2021-05-27": { "CO2": 0.47, "bytes": 782875, "green": 0, "imagebytes": 62039 }
+						"2021-05-27": { "CO2": 0.47, "bytes": 782875, "green": 0, "imagebytes": 62039 },
+						"2021-06-30": { "CO2": 0.47, "bytes": 784810, "green": 0, "imagebytes": 62039 }
 					}
 				}
 			}
@@ -3210,7 +3450,8 @@
 				"https://www.bolton.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.25, "ref": "https://www.websitecarbon.com/website/bolton-gov-uk/" },
-						"2021-05-26": { "CO2": 0.92, "bytes": 1691755, "green": 1, "imagebytes": 1115240 }
+						"2021-05-26": { "CO2": 0.92, "bytes": 1691755, "green": 1, "imagebytes": 1115240 },
+						"2021-06-30": { "CO2": 1.28, "bytes": 2351172, "green": 1, "imagebytes": 1771049 }
 					}
 				}
 			}
@@ -3222,7 +3463,8 @@
 				"https://www.bury.gov.uk/": {
 					"values": {
 						"2021-05-19": { "CO2": 0.15, "ref": "https://www.websitecarbon.com/website/bury-gov-uk/" },
-						"2021-05-27": { "CO2": 0.15, "bytes": 244362, "green": 0, "imagebytes": 99044 }
+						"2021-05-27": { "CO2": 0.15, "bytes": 244362, "green": 0, "imagebytes": 99044 },
+						"2021-06-30": { "CO2": 0.14, "bytes": 239468, "green": 0, "imagebytes": 99036 }
 					}
 				}
 			}
@@ -3234,7 +3476,8 @@
 				"https://www.manchester.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.74, "ref": "https://www.websitecarbon.com/website/manchester-gov-uk/" },
-						"2021-05-27": { "CO2": 0.8, "bytes": 1329453, "green": 0, "imagebytes": 526960 }
+						"2021-05-27": { "CO2": 0.8, "bytes": 1329453, "green": 0, "imagebytes": 526960 },
+						"2021-06-30": { "CO2": 1.22, "bytes": 2021044, "green": 0, "imagebytes": 1215086 }
 					}
 				}
 			}
@@ -3246,7 +3489,8 @@
 				"https://www.oldham.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.56, "ref": "https://www.websitecarbon.com/website/oldham-gov-uk/" },
-						"2021-05-27": { "CO2": 0.62, "bytes": 1036488, "green": 0, "imagebytes": 397463 }
+						"2021-05-27": { "CO2": 0.62, "bytes": 1036488, "green": 0, "imagebytes": 397463 },
+						"2021-06-30": { "CO2": 0.5, "bytes": 831310, "green": 0, "imagebytes": 152062 }
 					}
 				}
 			}
@@ -3258,7 +3502,8 @@
 				"http://www.rochdale.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 2.01, "ref": "https://www.websitecarbon.com/website/rochdale-gov-uk/" },
-						"2021-05-27": { "CO2": 2.34, "bytes": 3876350, "green": 0, "imagebytes": 2917512 }
+						"2021-05-27": { "CO2": 2.34, "bytes": 3876350, "green": 0, "imagebytes": 2917512 },
+						"2021-06-30": { "CO2": 2.61, "bytes": 4328747, "green": 0, "imagebytes": 3369900 }
 					}
 				}
 			}
@@ -3270,7 +3515,8 @@
 				"http://www.salford.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.27, "ref": "https://www.websitecarbon.com/website/salford-gov-uk/" },
-						"2021-05-27": { "CO2": 0.27, "bytes": 446561, "green": 0, "imagebytes": 179441 }
+						"2021-05-27": { "CO2": 0.27, "bytes": 446561, "green": 0, "imagebytes": 179441 },
+						"2021-06-30": { "CO2": 0.34, "bytes": 567791, "green": 0, "imagebytes": 193264 }
 					}
 				}
 			}
@@ -3282,7 +3528,8 @@
 				"http://www.stockport.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.44, "ref": "https://www.websitecarbon.com/website/stockport-gov-uk/" },
-						"2021-05-27": { "CO2": 1.84, "bytes": 3052015, "green": 0, "imagebytes": 1649069 }
+						"2021-05-27": { "CO2": 1.84, "bytes": 3052015, "green": 0, "imagebytes": 1649069 },
+						"2021-06-30": { "CO2": 1.65, "bytes": 2744128, "green": 0, "imagebytes": 1328154 }
 					}
 				}
 			}
@@ -3294,7 +3541,8 @@
 				"http://www.tameside.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.39, "ref": "https://www.websitecarbon.com/website/tameside-gov-uk/" },
-						"2021-05-27": { "CO2": 0.34, "bytes": 570356, "green": 0, "imagebytes": 107724 }
+						"2021-05-27": { "CO2": 0.34, "bytes": 570356, "green": 0, "imagebytes": 107724 },
+						"2021-06-30": { "CO2": 0.33, "bytes": 546720, "green": 0, "imagebytes": 123282 }
 					}
 				}
 			}
@@ -3306,7 +3554,8 @@
 				"https://www.trafford.gov.uk/": {
 					"values": {
 						"2021-05-25": { "CO2": 1.14, "ref": "https://www.websitecarbon.com/website/trafford-gov-uk/" },
-						"2021-05-27": { "CO2": 1.14, "bytes": 1896683, "green": 0, "imagebytes": 842294 }
+						"2021-05-27": { "CO2": 1.14, "bytes": 1896683, "green": 0, "imagebytes": 842294 },
+						"2021-06-30": { "CO2": 1.52, "bytes": 2519485, "green": 0, "imagebytes": 1451568 }
 					}
 				}
 			}
@@ -3318,7 +3567,8 @@
 				"http://www.wigan.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.51, "ref": "https://www.websitecarbon.com/website/wigan-gov-uk/" },
-						"2021-05-27": { "CO2": 0.5, "bytes": 821177, "green": 0, "imagebytes": 31181 }
+						"2021-05-27": { "CO2": 0.5, "bytes": 821177, "green": 0, "imagebytes": 31181 },
+						"2021-06-30": { "CO2": 0.5, "bytes": 826677, "green": 0, "imagebytes": 29933 }
 					}
 				}
 			}
@@ -3330,7 +3580,8 @@
 				"https://www.knowsley.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.95, "ref": "https://www.websitecarbon.com/website/knowsley-gov-uk/" },
-						"2021-05-27": { "CO2": 0.43, "bytes": 784652, "green": 1, "imagebytes": 466704 }
+						"2021-05-27": { "CO2": 0.43, "bytes": 784652, "green": 1, "imagebytes": 466704 },
+						"2021-06-30": { "CO2": 0.43, "bytes": 778828, "green": 1, "imagebytes": 466726 }
 					}
 				}
 			}
@@ -3344,7 +3595,8 @@
 						"2021-03-10": { "CO2": 3.62, "ref": "https://www.websitecarbon.com/website/liverpool-gov-uk/" },
 						"2021-05-25": { "CO2": 1.66, "ref": "https://www.websitecarbon.com/website/liverpool-gov-uk/" },
 						"2021-05-27": { "CO2": 1.58, "bytes": 2615262, "green": 0, "imagebytes": 853034 },
-						"2021-06-10": { "CO2": 1.57, "bytes": 2609277, "green": 0, "imagebytes": 844784 }
+						"2021-06-10": { "CO2": 1.57, "bytes": 2609277, "green": 0, "imagebytes": 844784 },
+						"2021-06-30": { "CO2": 1.62, "bytes": 2695111, "green": 0, "imagebytes": 929400 }
 					}
 				}
 			}
@@ -3356,7 +3608,8 @@
 				"http://www.sthelens.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.45, "ref": "https://www.websitecarbon.com/website/sthelens-gov-uk/" },
-						"2021-05-27": { "CO2": 0.43, "bytes": 711829, "green": 0, "imagebytes": 336421 }
+						"2021-05-27": { "CO2": 0.43, "bytes": 711829, "green": 0, "imagebytes": 336421 },
+						"2021-06-30": { "CO2": 0.46, "bytes": 763834, "green": 0, "imagebytes": 386674 }
 					}
 				}
 			}
@@ -3369,7 +3622,8 @@
 					"values": {
 						"2021-03-09": { "CO2": 3.33, "ref": "https://www.websitecarbon.com/website/sefton-gov-uk/" },
 						"2021-05-25": { "CO2": 4.27, "ref": "https://www.websitecarbon.com/website/sefton-gov-uk/" },
-						"2021-05-27": { "CO2": 4.13, "bytes": 7567233, "green": 1, "imagebytes": 6977613 }
+						"2021-05-27": { "CO2": 4.13, "bytes": 7567233, "green": 1, "imagebytes": 6977613 },
+						"2021-06-30": { "CO2": 2.86, "bytes": 5240694, "green": 1, "imagebytes": 4650288 }
 					}
 				}
 			}
@@ -3381,7 +3635,8 @@
 				"http://www.wirral.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.11, "ref": "https://www.websitecarbon.com/website/wirral-gov-uk/" },
-						"2021-05-27": { "CO2": 0.41, "bytes": 744414, "green": 1, "imagebytes": 164681 }
+						"2021-05-27": { "CO2": 0.41, "bytes": 744414, "green": 1, "imagebytes": 164681 },
+						"2021-06-30": { "CO2": 0.4, "bytes": 724688, "green": 1, "imagebytes": 145320 }
 					}
 				}
 			}
@@ -3394,7 +3649,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 0.68, "ref": "https://www.websitecarbon.com/website/barnsley-gov-uk/" },
 						"2021-05-26": { "CO2": 0.72, "bytes": 1196913, "green": 0, "imagebytes": 917098 },
-						"2021-05-27": { "CO2": 0.72, "bytes": 1196945, "green": 0, "imagebytes": 917098 }
+						"2021-05-27": { "CO2": 0.72, "bytes": 1196945, "green": 0, "imagebytes": 917098 },
+						"2021-06-30": { "CO2": 0.85, "bytes": 1406328, "green": 0, "imagebytes": 1125925 }
 					}
 				}
 			}
@@ -3406,7 +3662,8 @@
 				"https://www.doncaster.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.96, "ref": "https://www.websitecarbon.com/website/doncaster-gov-uk-2/" },
-						"2021-05-27": { "CO2": 0.97, "bytes": 1609810, "green": 0, "imagebytes": 396110 }
+						"2021-05-27": { "CO2": 0.97, "bytes": 1609810, "green": 0, "imagebytes": 396110 },
+						"2021-06-30": { "CO2": 0.98, "bytes": 1628241, "green": 0, "imagebytes": 395557 }
 					}
 				}
 			}
@@ -3418,7 +3675,8 @@
 				"http://www.rotherham.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.66, "ref": "https://www.websitecarbon.com/website/rotherham-gov-uk/" },
-						"2021-05-27": { "CO2": 0.55, "bytes": 1004508, "green": 1, "imagebytes": 770270 }
+						"2021-05-27": { "CO2": 0.55, "bytes": 1004508, "green": 1, "imagebytes": 770270 },
+						"2021-06-30": { "CO2": 2.07, "bytes": 3795170, "green": 1, "imagebytes": 3560003 }
 					}
 				}
 			}
@@ -3430,7 +3688,8 @@
 				"http://www.sheffield.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.06, "ref": "https://www.websitecarbon.com/website/sheffield-gov-uk/" },
-						"2021-05-27": { "CO2": 0.96, "bytes": 1591016, "green": 0, "imagebytes": 572004 }
+						"2021-05-27": { "CO2": 0.96, "bytes": 1591016, "green": 0, "imagebytes": 572004 },
+						"2021-06-30": { "CO2": 0.93, "bytes": 1541372, "green": 0, "imagebytes": 525389 }
 					}
 				}
 			}
@@ -3442,7 +3701,8 @@
 				"https://www.newcastle.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.74, "ref": "https://www.websitecarbon.com/website/newcastle-gov-uk/" },
-						"2021-05-27": { "CO2": 1.24, "bytes": 2057305, "green": 0, "imagebytes": 676034 }
+						"2021-05-27": { "CO2": 1.24, "bytes": 2057305, "green": 0, "imagebytes": 676034 },
+						"2021-06-30": { "CO2": 1.89, "bytes": 3132507, "green": 0, "imagebytes": 1718749 }
 					}
 				}
 			}
@@ -3454,7 +3714,8 @@
 				"https://my.northtyneside.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.29, "ref": "https://www.websitecarbon.com/website/my-northtyneside-gov-uk/" },
-						"2021-05-27": { "CO2": 0.27, "bytes": 447059, "green": 0, "imagebytes": 87000 }
+						"2021-05-27": { "CO2": 0.27, "bytes": 447059, "green": 0, "imagebytes": 87000 },
+						"2021-06-30": { "CO2": 0.31, "bytes": 507558, "green": 0, "imagebytes": 87001 }
 					}
 				}
 			}
@@ -3466,7 +3727,8 @@
 				"https://www.southtyneside.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.79, "ref": "https://www.websitecarbon.com/website/southtyneside-gov-uk/" },
-						"2021-05-27": { "CO2": 0.79, "bytes": 1316139, "green": 0, "imagebytes": 369625 }
+						"2021-05-27": { "CO2": 0.79, "bytes": 1316139, "green": 0, "imagebytes": 369625 },
+						"2021-06-30": { "CO2": 0.68, "bytes": 1122553, "green": 0, "imagebytes": 295124 }
 					}
 				}
 			}
@@ -3478,7 +3740,8 @@
 				"http://www.sunderland.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.95, "ref": "https://www.websitecarbon.com/website/sunderland-gov-uk/" },
-						"2021-05-27": { "CO2": 0.93, "bytes": 1549881, "green": 0, "imagebytes": 1052145 }
+						"2021-05-27": { "CO2": 0.93, "bytes": 1549881, "green": 0, "imagebytes": 1052145 },
+						"2021-06-30": { "CO2": 0.78, "bytes": 1290370, "green": 0, "imagebytes": 792959 }
 					}
 				}
 			}
@@ -3490,7 +3753,8 @@
 				"http://www.birmingham.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.62, "ref": "https://www.websitecarbon.com/website/birmingham-gov-uk/" },
-						"2021-05-26": { "CO2": 1.71, "bytes": 2835058, "green": 0, "imagebytes": 2538192 }
+						"2021-05-26": { "CO2": 1.71, "bytes": 2835058, "green": 0, "imagebytes": 2538192 },
+						"2021-06-30": { "CO2": 1.93, "bytes": 3197204, "green": 0, "imagebytes": 2893374 }
 					}
 				}
 			}
@@ -3502,7 +3766,8 @@
 				"https://www.coventry.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.72, "ref": "https://www.websitecarbon.com/website/coventry-gov-uk/" },
-						"2021-05-26": { "CO2": 0.61, "bytes": 1115902, "green": 1, "imagebytes": 612861 }
+						"2021-05-26": { "CO2": 0.61, "bytes": 1115902, "green": 1, "imagebytes": 612861 },
+						"2021-06-30": { "CO2": 0.77, "bytes": 1411731, "green": 1, "imagebytes": 907002 }
 					}
 				}
 			}
@@ -3514,7 +3779,8 @@
 				"https://www.dudley.gov.uk/": {
 					"values": {
 						"2021-05-25": { "CO2": 0, "ref": "" },
-						"2021-05-27": { "CO2": 1.78, "bytes": 2947518, "green": 0, "imagebytes": 1707994 }
+						"2021-05-27": { "CO2": 1.78, "bytes": 2947518, "green": 0, "imagebytes": 1707994 },
+						"2021-06-30": { "CO2": 2.48, "bytes": 4105821, "green": 0, "imagebytes": 3081399 }
 					}
 				}
 			}
@@ -3526,7 +3792,8 @@
 				"http://www.sandwell.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.7, "ref": "https://www.websitecarbon.com/website/sandwell-gov-uk/" },
-						"2021-05-27": { "CO2": 0.57, "bytes": 1044780, "green": 1, "imagebytes": 730255 }
+						"2021-05-27": { "CO2": 0.57, "bytes": 1044780, "green": 1, "imagebytes": 730255 },
+						"2021-06-30": { "CO2": 0.51, "bytes": 929219, "green": 1, "imagebytes": 619025 }
 					}
 				}
 			}
@@ -3539,7 +3806,8 @@
 					"values": {
 						"2021-03-09": { "CO2": 1.75, "ref": "https://www.websitecarbon.com/website/solihull-gov-uk/" },
 						"2021-05-25": { "CO2": 1.47, "ref": "https://www.websitecarbon.com/website/solihull-gov-uk/" },
-						"2021-05-27": { "CO2": 1.84, "bytes": 3046823, "green": 0, "imagebytes": 2673682 }
+						"2021-05-27": { "CO2": 1.84, "bytes": 3046823, "green": 0, "imagebytes": 2673682 },
+						"2021-06-30": { "CO2": 1.91, "bytes": 3169358, "green": 0, "imagebytes": 2797317 }
 					}
 				}
 			}
@@ -3551,7 +3819,8 @@
 				"http://www.walsall.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.31, "ref": "https://www.websitecarbon.com/website/walsall-gov-uk/" },
-						"2021-05-27": { "CO2": 0.37, "bytes": 621073, "green": 0, "imagebytes": 143234 }
+						"2021-05-27": { "CO2": 0.37, "bytes": 621073, "green": 0, "imagebytes": 143234 },
+						"2021-06-30": { "CO2": 0.37, "bytes": 615958, "green": 0, "imagebytes": 137317 }
 					}
 				}
 			}
@@ -3564,7 +3833,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 2.86, "ref": "https://www.websitecarbon.com/website/wolverhampton-gov-uk/" },
 						"2021-05-25": { "CO2": 2.78, "ref": "https://www.websitecarbon.com/website/wolverhampton-gov-uk/" },
-						"2021-05-27": { "CO2": 2.7, "bytes": 4483955, "green": 0, "imagebytes": 3874426 }
+						"2021-05-27": { "CO2": 2.7, "bytes": 4483955, "green": 0, "imagebytes": 3874426 },
+						"2021-06-30": { "CO2": 2.65, "bytes": 4400214, "green": 0, "imagebytes": 3790625 }
 					}
 				}
 			}
@@ -3579,7 +3849,8 @@
 						"2021-05-25": { "CO2": 2.16, "ref": "https://www.websitecarbon.com/website/bradford-gov-uk/" },
 						"2021-05-27": { "CO2": 2.14, "bytes": 3543840, "green": 0, "imagebytes": 2752816 },
 						"2021-06-01": { "CO2": 1.26, "bytes": 2084469, "green": 0, "imagebytes": 1303441 },
-						"2021-06-10": { "CO2": 1.95, "bytes": 3237192, "green": 0, "imagebytes": 2461967 }
+						"2021-06-10": { "CO2": 1.95, "bytes": 3237192, "green": 0, "imagebytes": 2461967 },
+						"2021-06-30": { "CO2": 1.64, "bytes": 2720376, "green": 0, "imagebytes": 1937563 }
 					}
 				}
 			}
@@ -3593,7 +3864,8 @@
 						"2021-03-09": { "CO2": 1.17, "ref": "https://www.websitecarbon.com/website/calderdale-gov-uk/" },
 						"2021-05-25": { "CO2": 1.3, "ref": "https://www.websitecarbon.com/website/calderdale-gov-uk/" },
 						"2021-05-27": { "CO2": 1.24, "bytes": 2063299, "green": 0, "imagebytes": 1562696 },
-						"2021-06-10": { "CO2": 1.24, "bytes": 2062376, "green": 0, "imagebytes": 1571166 }
+						"2021-06-10": { "CO2": 1.24, "bytes": 2062376, "green": 0, "imagebytes": 1571166 },
+						"2021-06-30": { "CO2": 0.9, "bytes": 1487691, "green": 0, "imagebytes": 953896 }
 					}
 				}
 			}
@@ -3607,7 +3879,8 @@
 						"2021-03-10": { "CO2": 0.56, "ref": "https://www.websitecarbon.com/website/kirklees-gov-uk/" },
 						"2021-05-25": { "CO2": null },
 						"2021-05-26": { "CO2": 0.68, "bytes": 1124466, "green": 0, "imagebytes": 804329 },
-						"2021-06-10": { "CO2": 0.67, "bytes": 1116646, "green": 0, "imagebytes": 817078 }
+						"2021-06-10": { "CO2": 0.67, "bytes": 1116646, "green": 0, "imagebytes": 817078 },
+						"2021-06-30": { "CO2": 0.5, "bytes": 830899, "green": 0, "imagebytes": 511973 }
 					}
 				}
 			}
@@ -3621,7 +3894,8 @@
 						"2021-03-10": { "CO2": 1.18, "ref": "https://www.websitecarbon.com/website/leeds-gov-uk/" },
 						"2021-05-25": { "CO2": 1.17, "ref": "https://www.websitecarbon.com/website/leeds-gov-uk/" },
 						"2021-05-27": { "CO2": 0.72, "bytes": 1197297, "green": 0, "imagebytes": 351956 },
-						"2021-06-10": { "CO2": 0.75, "bytes": 1237749, "green": 0, "imagebytes": 404980 }
+						"2021-06-10": { "CO2": 0.75, "bytes": 1237749, "green": 0, "imagebytes": 404980 },
+						"2021-06-30": { "CO2": 0.91, "bytes": 1506868, "green": 0, "imagebytes": 523574 }
 					}
 				}
 			}
@@ -3635,7 +3909,8 @@
 						"2021-03-04": { "CO2": 1.43, "ref": "https://www.websitecarbon.com/website/wakefield-gov-uk/" },
 						"2021-05-25": { "CO2": 1.36, "ref": "https://www.websitecarbon.com/website/wakefield-gov-uk/" },
 						"2021-05-27": { "CO2": 1.35, "bytes": 2247195, "green": 0, "imagebytes": 1601445 },
-						"2021-06-10": { "CO2": 1.47, "bytes": 2438395, "green": 0, "imagebytes": 1792878 }
+						"2021-06-10": { "CO2": 1.47, "bytes": 2438395, "green": 0, "imagebytes": 1792878 },
+						"2021-06-30": { "CO2": 1.5, "bytes": 2486651, "green": 0, "imagebytes": 1842705 }
 					}
 				}
 			}
@@ -3647,7 +3922,8 @@
 				"https://www.gateshead.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.56, "ref": "https://www.websitecarbon.com/website/gateshead-gov-uk/" },
-						"2021-05-26": { "CO2": 3.87, "bytes": 6419006, "green": 0, "imagebytes": 5681418 }
+						"2021-05-26": { "CO2": 3.87, "bytes": 6419006, "green": 0, "imagebytes": 5681418 },
+						"2021-06-30": { "CO2": 1.72, "bytes": 2855267, "green": 0, "imagebytes": 2053277 }
 					}
 				}
 			}
@@ -3659,7 +3935,8 @@
 				"https://www.cityoflondon.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.43, "ref": "https://www.websitecarbon.com/website/cityoflondon-gov-uk/" },
-						"2021-05-26": { "CO2": 2.41, "bytes": 4414384, "green": 1, "imagebytes": 910974 }
+						"2021-05-26": { "CO2": 2.41, "bytes": 4414384, "green": 1, "imagebytes": 910974 },
+						"2021-06-30": { "CO2": 1.96, "bytes": 3592813, "green": 1, "imagebytes": 561323 }
 					}
 				}
 			}
@@ -3672,7 +3949,8 @@
 					"values": {
 						"2021-03-11": { "CO2": 5.19, "ref": "https://www.websitecarbon.com/website/lbbd-gov-uk/" },
 						"2021-05-25": { "CO2": 5.68, "ref": "https://www.websitecarbon.com/website/lbbd-gov-uk/" },
-						"2021-05-27": { "CO2": 4.23, "bytes": 7022351, "green": 0, "imagebytes": 2138332 }
+						"2021-05-27": { "CO2": 4.23, "bytes": 7022351, "green": 0, "imagebytes": 2138332 },
+						"2021-06-30": { "CO2": 4.26, "bytes": 7073202, "green": 0, "imagebytes": 1846923 }
 					}
 				}
 			}
@@ -3684,7 +3962,8 @@
 				"https://www.barnet.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.23, "ref": "https://www.websitecarbon.com/website/barnet-gov-uk/" },
-						"2021-05-27": { "CO2": 1.45, "bytes": 2410153, "green": 0, "imagebytes": 1614845 }
+						"2021-05-27": { "CO2": 1.45, "bytes": 2410153, "green": 0, "imagebytes": 1614845 },
+						"2021-06-30": { "CO2": 1.43, "bytes": 2371541, "green": 0, "imagebytes": 1566134 }
 					}
 				}
 			}
@@ -3697,7 +3976,8 @@
 					"values": {
 						"2021-03-11": { "CO2": 2.93, "ref": "https://www.websitecarbon.com/website/bexley-gov-uk/" },
 						"2021-05-25": { "CO2": 2.68, "ref": "https://www.websitecarbon.com/website/bexley-gov-uk/" },
-						"2021-05-27": { "CO2": 2.77, "bytes": 4587688, "green": 0, "imagebytes": 3285289 }
+						"2021-05-27": { "CO2": 2.77, "bytes": 4587688, "green": 0, "imagebytes": 3285289 },
+						"2021-06-30": { "CO2": 2.92, "bytes": 4840137, "green": 0, "imagebytes": 3527854 }
 					}
 				}
 			}
@@ -3710,7 +3990,8 @@
 					"values": {
 						"2021-03-09": { "CO2": 3.64, "ref": "https://www.websitecarbon.com/website/brent-gov-uk/" },
 						"2021-05-25": { "CO2": 1.44, "ref": "https://www.websitecarbon.com/website/brent-gov-uk/" },
-						"2021-05-27": { "CO2": 2.83, "bytes": 4689823, "green": 0, "imagebytes": 3792093 }
+						"2021-05-27": { "CO2": 2.83, "bytes": 4689823, "green": 0, "imagebytes": 3792093 },
+						"2021-06-30": { "CO2": 4.78, "bytes": 7925971, "green": 0, "imagebytes": 7040083 }
 					}
 				}
 			}
@@ -3722,7 +4003,8 @@
 				"https://www.bromley.gov.uk": {
 					"values": {
 						"2021-03-11": { "CO2": 1.64, "ref": "https://www.websitecarbon.com/website/camden-gov-uk/" },
-						"2021-05-26": { "CO2": 0.39, "bytes": 654443, "green": 0, "imagebytes": 353699 }
+						"2021-05-26": { "CO2": 0.39, "bytes": 654443, "green": 0, "imagebytes": 353699 },
+						"2021-06-30": { "CO2": 0.48, "bytes": 789050, "green": 0, "imagebytes": 487899 }
 					}
 				}
 			}
@@ -3734,7 +4016,8 @@
 				"https://www.camden.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 1.64, "ref": "https://www.websitecarbon.com/website/camden-gov-uk/" },
-						"2021-05-26": { "CO2": 1.62, "bytes": 2695260, "green": 0, "imagebytes": 979893 }
+						"2021-05-26": { "CO2": 1.62, "bytes": 2695260, "green": 0, "imagebytes": 979893 },
+						"2021-06-30": { "CO2": 1.69, "bytes": 2799058, "green": 0, "imagebytes": 1115821 }
 					}
 				}
 			}
@@ -3746,7 +4029,8 @@
 				"https://new.croydon.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.72, "ref": "https://www.websitecarbon.com/website/new-croydon-gov-uk/" },
-						"2021-05-26": { "CO2": 0.64, "bytes": 1058987, "green": 0, "imagebytes": 283629 }
+						"2021-05-26": { "CO2": 0.64, "bytes": 1058987, "green": 0, "imagebytes": 283629 },
+						"2021-06-30": { "CO2": 0.87, "bytes": 1435086, "green": 0, "imagebytes": 657533 }
 					}
 				}
 			}
@@ -3758,7 +4042,8 @@
 				"https://www.ealing.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.64, "ref": "https://www.websitecarbon.com/website/ealing-gov-uk/" },
-						"2021-05-26": { "CO2": 0.71, "bytes": 1174448, "green": 0, "imagebytes": 772021 }
+						"2021-05-26": { "CO2": 0.71, "bytes": 1174448, "green": 0, "imagebytes": 772021 },
+						"2021-06-30": { "CO2": 0.88, "bytes": 1464605, "green": 0, "imagebytes": 1059742 }
 					}
 				}
 			}
@@ -3770,7 +4055,8 @@
 				"https://new.enfield.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.79, "ref": "https://www.websitecarbon.com/website/new-enfield-gov-uk/" },
-						"2021-05-27": { "CO2": 1.85, "bytes": 3075077, "green": 0, "imagebytes": 403294 }
+						"2021-05-27": { "CO2": 1.85, "bytes": 3075077, "green": 0, "imagebytes": 403294 },
+						"2021-06-30": { "CO2": 1.86, "bytes": 3083301, "green": 0, "imagebytes": 405977 }
 					}
 				}
 			}
@@ -3783,7 +4069,8 @@
 					"values": {
 						"2021-03-11": { "CO2": 2.47, "ref": "https://www.websitecarbon.com/website/royalgreenwich-gov-uk/" },
 						"2021-05-25": { "CO2": 2.91, "ref": "https://www.websitecarbon.com/website/royalgreenwich-gov-uk/" },
-						"2021-05-27": { "CO2": 2.63, "bytes": 4810756, "green": 1, "imagebytes": 4076042 }
+						"2021-05-27": { "CO2": 2.63, "bytes": 4810756, "green": 1, "imagebytes": 4076042 },
+						"2021-06-30": { "CO2": 2.47, "bytes": 4517117, "green": 1, "imagebytes": 3777478 }
 					}
 				}
 			}
@@ -3796,7 +4083,8 @@
 					"values": {
 						"2021-03-11": { "CO2": 5.71, "ref": "https://www.websitecarbon.com/website/hackney-gov-uk-2/" },
 						"2021-05-25": { "CO2": 2.21, "ref": "https://www.websitecarbon.com/website/hackney-gov-uk/" },
-						"2021-05-27": { "CO2": 2.34, "bytes": 4274790, "green": 1, "imagebytes": 1989027 }
+						"2021-05-27": { "CO2": 2.34, "bytes": 4274790, "green": 1, "imagebytes": 1989027 },
+						"2021-06-30": { "CO2": 1.74, "bytes": 3189332, "green": 1, "imagebytes": 1766559 }
 					}
 				}
 			}
@@ -3809,7 +4097,8 @@
 					"values": {
 						"2021-03-10": { "CO2": 2.23, "ref": "https://www.websitecarbon.com/website/lbhf-gov-uk/" },
 						"2021-05-25": { "CO2": 1.79, "ref": "https://www.websitecarbon.com/website/lbhf-gov-uk/" },
-						"2021-05-27": { "CO2": 1.78, "bytes": 3262068, "green": 1, "imagebytes": 2852606 }
+						"2021-05-27": { "CO2": 1.78, "bytes": 3262068, "green": 1, "imagebytes": 2852606 },
+						"2021-06-30": { "CO2": 1.61, "bytes": 2953200, "green": 1, "imagebytes": 2524608 }
 					}
 				}
 			}
@@ -3821,7 +4110,8 @@
 				"https://www.haringey.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.71, "ref": "https://www.websitecarbon.com/website/haringey-gov-uk/" },
-						"2021-05-27": { "CO2": 1.31, "bytes": 2404537, "green": 1, "imagebytes": 1598261 }
+						"2021-05-27": { "CO2": 1.31, "bytes": 2404537, "green": 1, "imagebytes": 1598261 },
+						"2021-06-30": { "CO2": 0.98, "bytes": 1793774, "green": 1, "imagebytes": 986331 }
 					}
 				}
 			}
@@ -3834,7 +4124,8 @@
 					"values": {
 						"2021-03-10": { "CO2": 0.87, "ref": "https://www.websitecarbon.com/website/harrow-gov-uk/" },
 						"2021-05-27": { "CO2": 1.54, "bytes": 2817903, "green": 1, "imagebytes": 2213848 },
-						"2021-06-10": { "CO2": 1.54, "bytes": 2821445, "green": 1, "imagebytes": 2213932 }
+						"2021-06-10": { "CO2": 1.54, "bytes": 2821445, "green": 1, "imagebytes": 2213932 },
+						"2021-06-30": { "CO2": 1.07, "bytes": 1955872, "green": 1, "imagebytes": 1289292 }
 					}
 				}
 			}
@@ -3846,7 +4137,8 @@
 				"https://www.havering.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.23, "ref": "https://www.websitecarbon.com/website/havering-gov-uk/" },
-						"2021-05-27": { "CO2": 1.09, "bytes": 1992999, "green": 1, "imagebytes": 1560864 }
+						"2021-05-27": { "CO2": 1.09, "bytes": 1992999, "green": 1, "imagebytes": 1560864 },
+						"2021-06-30": { "CO2": 0.88, "bytes": 1603319, "green": 1, "imagebytes": 1142194 }
 					}
 				}
 			}
@@ -3858,7 +4150,8 @@
 				"https://www.hillingdon.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.94, "ref": "https://www.websitecarbon.com/website/hillingdon-gov-uk/" },
-						"2021-05-27": { "CO2": 2.02, "bytes": 3348705, "green": 0, "imagebytes": 2901993 }
+						"2021-05-27": { "CO2": 2.02, "bytes": 3348705, "green": 0, "imagebytes": 2901993 },
+						"2021-06-30": { "CO2": 1.99, "bytes": 3296406, "green": 0, "imagebytes": 2861288 }
 					}
 				}
 			}
@@ -3870,7 +4163,8 @@
 				"https://www.hounslow.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.52, "ref": "https://www.websitecarbon.com/website/hounslow-gov-uk/" },
-						"2021-05-27": { "CO2": 0.49, "bytes": 888791, "green": 1, "imagebytes": 470239 }
+						"2021-05-27": { "CO2": 0.49, "bytes": 888791, "green": 1, "imagebytes": 470239 },
+						"2021-06-30": { "CO2": 0.55, "bytes": 1015093, "green": 1, "imagebytes": 565011 }
 					}
 				}
 			}
@@ -3882,7 +4176,8 @@
 				"https://www.islington.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.91, "ref": "https://www.websitecarbon.com/website/islington-gov-uk/" },
-						"2021-05-27": { "CO2": 1.78, "bytes": 2949135, "green": 0, "imagebytes": 1799407 }
+						"2021-05-27": { "CO2": 1.78, "bytes": 2949135, "green": 0, "imagebytes": 1799407 },
+						"2021-06-30": { "CO2": 1.11, "bytes": 1843891, "green": 0, "imagebytes": 693266 }
 					}
 				}
 			}
@@ -3894,7 +4189,8 @@
 				"http://www.rbkc.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.58, "ref": "https://www.websitecarbon.com/website/rbkc-gov-uk/" },
-						"2021-05-27": { "CO2": 1.58, "bytes": 2622072, "green": 0, "imagebytes": 2009959 }
+						"2021-05-27": { "CO2": 1.58, "bytes": 2622072, "green": 0, "imagebytes": 2009959 },
+						"2021-06-30": { "CO2": 1.51, "bytes": 2508335, "green": 0, "imagebytes": 1895491 }
 					}
 				}
 			}
@@ -3906,7 +4202,8 @@
 				"https://www.kingston.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 1.36, "ref": "https://www.websitecarbon.com/website/kingston-gov-uk/" },
-						"2021-05-27": { "CO2": 0.69, "bytes": 1253857, "green": 1, "imagebytes": 776960 }
+						"2021-05-27": { "CO2": 0.69, "bytes": 1253857, "green": 1, "imagebytes": 776960 },
+						"2021-06-30": { "CO2": 0.69, "bytes": 1257146, "green": 1, "imagebytes": 776990 }
 					}
 				}
 			}
@@ -3918,7 +4215,8 @@
 				"https://beta.lambeth.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.09, "ref": "https://www.websitecarbon.com/website/beta-lambeth-gov-uk/" },
-						"2021-05-27": { "CO2": 3.8, "bytes": 6299286, "green": 0, "imagebytes": 5942927 }
+						"2021-05-27": { "CO2": 3.8, "bytes": 6299286, "green": 0, "imagebytes": 5942927 },
+						"2021-06-30": { "CO2": 1.18, "bytes": 1959974, "green": 0, "imagebytes": 1599169 }
 					}
 				}
 			}
@@ -3930,7 +4228,8 @@
 				"https://lewisham.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.87, "ref": "https://www.websitecarbon.com/website/lewisham-gov-uk/" },
-						"2021-05-27": { "CO2": 0.66, "bytes": 1100341, "green": 0, "imagebytes": 320847 }
+						"2021-05-27": { "CO2": 0.66, "bytes": 1100341, "green": 0, "imagebytes": 320847 },
+						"2021-06-30": { "CO2": 0.66, "bytes": 1100898, "green": 0, "imagebytes": 320637 }
 					}
 				}
 			}
@@ -3942,7 +4241,8 @@
 				"https://www.merton.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.8, "ref": "https://www.websitecarbon.com/website/merton-gov-uk/" },
-						"2021-05-27": { "CO2": 0.79, "bytes": 1318456, "green": 0, "imagebytes": 625874 }
+						"2021-05-27": { "CO2": 0.79, "bytes": 1318456, "green": 0, "imagebytes": 625874 },
+						"2021-06-30": { "CO2": 0.8, "bytes": 1334304, "green": 0, "imagebytes": 640727 }
 					}
 				}
 			}
@@ -3954,7 +4254,8 @@
 				"https://www.newham.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.2, "ref": "https://www.websitecarbon.com/website/newham-gov-uk/" },
-						"2021-05-27": { "CO2": 5.3, "bytes": 9692910, "green": 1, "imagebytes": 9299829 }
+						"2021-05-27": { "CO2": 5.3, "bytes": 9692910, "green": 1, "imagebytes": 9299829 },
+						"2021-06-30": { "CO2": 2.63, "bytes": 4814755, "green": 1, "imagebytes": 4420149 }
 					}
 				}
 			}
@@ -3966,7 +4267,8 @@
 				"https://www.redbridge.gov.uk/": {
 					"values": {
 						"2021-05-19": { "CO2": 3.91, "ref": "https://www.websitecarbon.com/website/redbridge-gov-uk/" },
-						"2021-05-27": { "CO2": 3.33, "bytes": 5521001, "green": 0, "imagebytes": 2390167 }
+						"2021-05-27": { "CO2": 3.33, "bytes": 5521001, "green": 0, "imagebytes": 2390167 },
+						"2021-06-30": { "CO2": 3.32, "bytes": 5508219, "green": 0, "imagebytes": 2369864 }
 					}
 				}
 			}
@@ -3978,7 +4280,8 @@
 				"https://www.richmond.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.78, "ref": "https://www.websitecarbon.com/website/richmond-gov-uk/" },
-						"2021-05-27": { "CO2": 0.87, "bytes": 1445033, "green": 0, "imagebytes": 892424 }
+						"2021-05-27": { "CO2": 0.87, "bytes": 1445033, "green": 0, "imagebytes": 892424 },
+						"2021-06-30": { "CO2": 0.77, "bytes": 1276635, "green": 0, "imagebytes": 723211 }
 					}
 				}
 			}
@@ -3990,7 +4293,8 @@
 				"https://www.southwark.gov.uk/": {
 					"values": {
 						"2021-05-19": { "CO2": 1.18, "ref": "https://www.websitecarbon.com/website/southwark-gov-uk/" },
-						"2021-05-27": { "CO2": 1.2, "bytes": 1989845, "green": 0, "imagebytes": 1143077 }
+						"2021-05-27": { "CO2": 1.2, "bytes": 1989845, "green": 0, "imagebytes": 1143077 },
+						"2021-06-30": { "CO2": 1.21, "bytes": 2006612, "green": 0, "imagebytes": 1152836 }
 					}
 				}
 			}
@@ -4002,7 +4306,8 @@
 				"https://www.sutton.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.54, "ref": "https://www.websitecarbon.com/website/sutton-gov-uk/" },
-						"2021-05-27": { "CO2": 2.01, "bytes": 3330734, "green": 0, "imagebytes": 2900200 }
+						"2021-05-27": { "CO2": 2.01, "bytes": 3330734, "green": 0, "imagebytes": 2900200 },
+						"2021-06-30": { "CO2": 3.72, "bytes": 6173252, "green": 0, "imagebytes": 5728263 }
 					}
 				}
 			}
@@ -4014,7 +4319,8 @@
 				"https://www.towerhamlets.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.72, "ref": "https://www.websitecarbon.com/website/towerhamlets-gov-uk/" },
-						"2021-05-27": { "CO2": 0.73, "bytes": 1205532, "green": 0, "imagebytes": 458100 }
+						"2021-05-27": { "CO2": 0.73, "bytes": 1205532, "green": 0, "imagebytes": 458100 },
+						"2021-06-30": { "CO2": 0.76, "bytes": 1256274, "green": 0, "imagebytes": 490126 }
 					}
 				}
 			}
@@ -4026,7 +4332,8 @@
 				"https://www.walthamforest.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.8, "ref": "https://www.websitecarbon.com/website/walthamforest-gov-uk/" },
-						"2021-05-27": { "CO2": 0.86, "bytes": 1569032, "green": 1, "imagebytes": 904306 }
+						"2021-05-27": { "CO2": 0.86, "bytes": 1569032, "green": 1, "imagebytes": 904306 },
+						"2021-06-30": { "CO2": 0.85, "bytes": 1549728, "green": 1, "imagebytes": 880743 }
 					}
 				}
 			}
@@ -4038,7 +4345,8 @@
 				"https://www.wandsworth.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.57, "ref": "https://www.websitecarbon.com/website/wandsworth-gov-uk/" },
-						"2021-05-27": { "CO2": 0.58, "bytes": 959379, "green": 0, "imagebytes": 381233 }
+						"2021-05-27": { "CO2": 0.58, "bytes": 959379, "green": 0, "imagebytes": 381233 },
+						"2021-06-30": { "CO2": 0.6, "bytes": 996714, "green": 0, "imagebytes": 415366 }
 					}
 				}
 			}
@@ -4050,7 +4358,8 @@
 				"http://www.westminster.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.76, "ref": "https://www.websitecarbon.com/website/westminster-gov-uk/" },
-						"2021-05-27": { "CO2": 0.76, "bytes": 1395540, "green": 1, "imagebytes": 581152 }
+						"2021-05-27": { "CO2": 0.76, "bytes": 1395540, "green": 1, "imagebytes": 581152 },
+						"2021-06-30": { "CO2": 1.11, "bytes": 2033889, "green": 1, "imagebytes": 1219285 }
 					}
 				}
 			}
@@ -4062,7 +4371,8 @@
 				"https://www.cambridgeshire.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.47, "ref": "https://www.websitecarbon.com/website/cambridgeshire-gov-uk/" },
-						"2021-05-26": { "CO2": 0.74, "bytes": 1223704, "green": 0, "imagebytes": 750255 }
+						"2021-05-26": { "CO2": 0.74, "bytes": 1223704, "green": 0, "imagebytes": 750255 },
+						"2021-06-30": { "CO2": 0.49, "bytes": 813764, "green": 0, "imagebytes": 212957 }
 					}
 				}
 			}
@@ -4074,7 +4384,8 @@
 				"http://www.cumbria.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.77, "ref": "https://www.websitecarbon.com/website/cumbria-gov-uk/" },
-						"2021-05-26": { "CO2": 0.53, "bytes": 885883, "green": 0, "imagebytes": 361758 }
+						"2021-05-26": { "CO2": 0.53, "bytes": 885883, "green": 0, "imagebytes": 361758 },
+						"2021-06-30": { "CO2": 0.59, "bytes": 979762, "green": 0, "imagebytes": 453033 }
 					}
 				}
 			}
@@ -4086,7 +4397,8 @@
 				"https://www.derbyshire.gov.uk/": {
 					"values": {
 						"2021-05-25": { "CO2": 0.75, "ref": "https://www.websitecarbon.com/website/derbyshire-gov-uk/" },
-						"2021-05-27": { "CO2": 0.75, "bytes": 1251198, "green": 0, "imagebytes": 671298 }
+						"2021-05-27": { "CO2": 0.75, "bytes": 1251198, "green": 0, "imagebytes": 671298 },
+						"2021-06-30": { "CO2": 0.62, "bytes": 1032129, "green": 0, "imagebytes": 450136 }
 					}
 				}
 			}
@@ -4098,7 +4410,8 @@
 				"https://www.devon.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.96, "ref": "https://www.websitecarbon.com/website/devon-gov-uk/" },
-						"2021-05-26": { "CO2": 0.9, "bytes": 1642097, "green": 1, "imagebytes": 1125683 }
+						"2021-05-26": { "CO2": 0.9, "bytes": 1642097, "green": 1, "imagebytes": 1125683 },
+						"2021-06-30": { "CO2": 0.63, "bytes": 1148889, "green": 1, "imagebytes": 474098 }
 					}
 				}
 			}
@@ -4111,7 +4424,8 @@
 					"values": {
 						"2021-03-10": { "CO2": 0.18, "ref": "https://www.websitecarbon.com/website/eastsussex-gov-uk/" },
 						"2021-05-25": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/eastsussex-gov-uk/" },
-						"2021-05-27": { "CO2": 0.16, "bytes": 266307, "green": 0, "imagebytes": 84579 }
+						"2021-05-27": { "CO2": 0.16, "bytes": 266307, "green": 0, "imagebytes": 84579 },
+						"2021-06-30": { "CO2": 0.19, "bytes": 308376, "green": 0, "imagebytes": 125230 }
 					}
 				}
 			}
@@ -4123,7 +4437,8 @@
 				"https://www.essex.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.59, "ref": "https://www.websitecarbon.com/website/essex-gov-uk/" },
-						"2021-05-27": { "CO2": 0.69, "bytes": 1146101, "green": 0, "imagebytes": 610559 }
+						"2021-05-27": { "CO2": 0.69, "bytes": 1146101, "green": 0, "imagebytes": 610559 },
+						"2021-06-30": { "CO2": 1.74, "bytes": 2884404, "green": 0, "imagebytes": 2315437 }
 					}
 				}
 			}
@@ -4136,7 +4451,8 @@
 					"values": {
 						"2021-03-10": { "CO2": 2.24, "ref": "https://www.websitecarbon.com/website/gloucestershire-gov-uk/" },
 						"2021-05-25": { "CO2": 1.95, "ref": "https://www.websitecarbon.com/website/gloucestershire-gov-uk/" },
-						"2021-05-27": { "CO2": 2.17, "bytes": 3604169, "green": 0, "imagebytes": 2422166 }
+						"2021-05-27": { "CO2": 2.17, "bytes": 3604169, "green": 0, "imagebytes": 2422166 },
+						"2021-06-30": { "CO2": 2.3, "bytes": 3816298, "green": 0, "imagebytes": 2640839 }
 					}
 				}
 			}
@@ -4148,7 +4464,8 @@
 				"https://www.hants.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.37, "ref": "https://www.websitecarbon.com/website/hants-gov-uk/" },
-						"2021-05-27": { "CO2": 0.35, "bytes": 575690, "green": 0, "imagebytes": 342559 }
+						"2021-05-27": { "CO2": 0.35, "bytes": 575690, "green": 0, "imagebytes": 342559 },
+						"2021-06-30": { "CO2": 0.41, "bytes": 682717, "green": 0, "imagebytes": 456004 }
 					}
 				}
 			}
@@ -4161,7 +4478,8 @@
 					"values": {
 						"2021-03-10": { "CO2": 0.19, "ref": "https://www.websitecarbon.com/website/kent-gov-uk/" },
 						"2021-05-25": { "CO2": 0.14, "ref": "https://www.websitecarbon.com/website/kent-gov-uk/" },
-						"2021-05-27": { "CO2": 0.13, "bytes": 208053, "green": 0, "imagebytes": 30043 }
+						"2021-05-27": { "CO2": 0.13, "bytes": 208053, "green": 0, "imagebytes": 30043 },
+						"2021-06-30": { "CO2": 0.15, "bytes": 242294, "green": 0, "imagebytes": 63822 }
 					}
 				}
 			}
@@ -4173,7 +4491,8 @@
 				"https://www.lancashire.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 1.15, "ref": "https://www.websitecarbon.com/website/lancashire-gov-uk/" },
-						"2021-05-27": { "CO2": 0.92, "bytes": 1533558, "green": 0, "imagebytes": 1043786 }
+						"2021-05-27": { "CO2": 0.92, "bytes": 1533558, "green": 0, "imagebytes": 1043786 },
+						"2021-06-30": { "CO2": 0.78, "bytes": 1298357, "green": 0, "imagebytes": 798011 }
 					}
 				}
 			}
@@ -4185,7 +4504,8 @@
 				"https://www.leicestershire.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 1.29, "ref": "https://www.websitecarbon.com/website/leicestershire-gov-uk/" },
-						"2021-05-27": { "CO2": 1.31, "bytes": 2402303, "green": 1, "imagebytes": 1688506 }
+						"2021-05-27": { "CO2": 1.31, "bytes": 2402303, "green": 1, "imagebytes": 1688506 },
+						"2021-06-30": { "CO2": 1.21, "bytes": 2223752, "green": 1, "imagebytes": 1494112 }
 					}
 				}
 			}
@@ -4197,7 +4517,8 @@
 				"https://www.lincolnshire.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.6, "ref": "https://www.websitecarbon.com/website/lincolnshire-gov-uk/" },
-						"2021-05-26": { "CO2": 0.58, "bytes": 1054958, "green": 1, "imagebytes": 564202 }
+						"2021-05-26": { "CO2": 0.58, "bytes": 1054958, "green": 1, "imagebytes": 564202 },
+						"2021-06-30": { "CO2": 0.62, "bytes": 1128033, "green": 1, "imagebytes": 787875 }
 					}
 				}
 			}
@@ -4209,7 +4530,8 @@
 				"https://www.norfolk.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.71, "ref": "https://www.websitecarbon.com/website/norfolk-gov-uk/" },
-						"2021-05-27": { "CO2": 0.71, "bytes": 1181731, "green": 0, "imagebytes": 651308 }
+						"2021-05-27": { "CO2": 0.71, "bytes": 1181731, "green": 0, "imagebytes": 651308 },
+						"2021-06-30": { "CO2": 0.71, "bytes": 1171767, "green": 0, "imagebytes": 639349 }
 					}
 				}
 			}
@@ -4221,7 +4543,8 @@
 				"https://www.northamptonshire.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.87, "ref": "https://www.websitecarbon.com/website/northamptonshire-gov-uk/" },
-						"2021-05-27": { "CO2": 0.57, "bytes": 951545, "green": 0, "imagebytes": 338079 }
+						"2021-05-27": { "CO2": 0.57, "bytes": 951545, "green": 0, "imagebytes": 338079 },
+						"2021-06-30": { "CO2": 0.6, "bytes": 993689, "green": 0, "imagebytes": 339459 }
 					}
 				}
 			}
@@ -4234,7 +4557,8 @@
 					"values": {
 						"2021-03-11": { "CO2": 0.46, "ref": "https://www.websitecarbon.com/website/northyorks-gov-uk/" },
 						"2021-05-25": { "CO2": 0.46, "ref": "https://www.websitecarbon.com/website/northyorks-gov-uk/" },
-						"2021-05-27": { "CO2": 0.48, "bytes": 869638, "green": 1, "imagebytes": 401654 }
+						"2021-05-27": { "CO2": 0.48, "bytes": 869638, "green": 1, "imagebytes": 401654 },
+						"2021-06-30": { "CO2": 0.69, "bytes": 1266463, "green": 1, "imagebytes": 393336 }
 					}
 				}
 			}
@@ -4246,7 +4570,8 @@
 				"https://www.nottinghamshire.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.55, "ref": "https://www.websitecarbon.com/website/nottinghamshire-gov-uk/" },
-						"2021-05-27": { "CO2": 0.58, "bytes": 964423, "green": 0, "imagebytes": 452503 }
+						"2021-05-27": { "CO2": 0.58, "bytes": 964423, "green": 0, "imagebytes": 452503 },
+						"2021-06-30": { "CO2": 0.83, "bytes": 1382267, "green": 0, "imagebytes": 865945 }
 					}
 				}
 			}
@@ -4258,7 +4583,8 @@
 				"https://www.oxfordshire.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.33, "ref": "https://www.websitecarbon.com/website/oxfordshire-gov-uk-2/" },
-						"2021-05-27": { "CO2": 0.37, "bytes": 620168, "green": 0, "imagebytes": 389664 }
+						"2021-05-27": { "CO2": 0.37, "bytes": 620168, "green": 0, "imagebytes": 389664 },
+						"2021-06-30": { "CO2": 0.33, "bytes": 547826, "green": 0, "imagebytes": 315957 }
 					}
 				}
 			}
@@ -4270,7 +4596,8 @@
 				"http://www.somerset.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.93, "ref": "https://www.websitecarbon.com/website/somerset-gov-uk/" },
-						"2021-05-27": { "CO2": 1.93, "bytes": 3537230, "green": 1, "imagebytes": 2630619 }
+						"2021-05-27": { "CO2": 1.93, "bytes": 3537230, "green": 1, "imagebytes": 2630619 },
+						"2021-06-30": { "CO2": 1.94, "bytes": 3553308, "green": 1, "imagebytes": 2630619 }
 					}
 				}
 			}
@@ -4282,7 +4609,8 @@
 				"http://www.staffordshire.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.65, "ref": "https://www.websitecarbon.com/website/staffordshire-gov-uk/" },
-						"2021-05-27": { "CO2": 1.44, "bytes": 2380546, "green": 0, "imagebytes": 1253850 }
+						"2021-05-27": { "CO2": 1.44, "bytes": 2380546, "green": 0, "imagebytes": 1253850 },
+						"2021-06-30": { "CO2": 1.41, "bytes": 2335966, "green": 0, "imagebytes": 1593792 }
 					}
 				}
 			}
@@ -4294,7 +4622,8 @@
 				"http://www.suffolk.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.05, "ref": "https://www.websitecarbon.com/website/suffolk-gov-uk/" },
-						"2021-05-27": { "CO2": 1.05, "bytes": 1748354, "green": 0, "imagebytes": 1096089 }
+						"2021-05-27": { "CO2": 1.05, "bytes": 1748354, "green": 0, "imagebytes": 1096089 },
+						"2021-06-30": { "CO2": 1.29, "bytes": 2134344, "green": 0, "imagebytes": 1407404 }
 					}
 				}
 			}
@@ -4306,7 +4635,8 @@
 				"http://www.surreycc.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.33, "ref": "https://www.websitecarbon.com/website/surreycc-gov-uk/" },
-						"2021-05-27": { "CO2": 0.35, "bytes": 576833, "green": 0, "imagebytes": 266801 }
+						"2021-05-27": { "CO2": 0.35, "bytes": 576833, "green": 0, "imagebytes": 266801 },
+						"2021-06-30": { "CO2": 0.33, "bytes": 549786, "green": 0, "imagebytes": 247503 }
 					}
 				}
 			}
@@ -4320,7 +4650,8 @@
 						"2021-03-04": { "CO2": 9.58, "ref": "https://www.websitecarbon.com/website/warwickshire-gov-uk/" },
 						"2021-05-25": { "CO2": 1.64, "ref": "https://www.websitecarbon.com/website/warwickshire-gov-uk/" },
 						"2021-05-27": { "CO2": 7.43, "bytes": 13599544, "green": 1, "imagebytes": 13015452 },
-						"2021-06-01": { "CO2": 1.38, "bytes": 2531994, "green": 1, "imagebytes": 1948098 }
+						"2021-06-01": { "CO2": 1.38, "bytes": 2531994, "green": 1, "imagebytes": 1948098 },
+						"2021-06-30": { "CO2": 2.24, "bytes": 4095937, "green": 1, "imagebytes": 3508257 }
 					}
 				}
 			}
@@ -4332,7 +4663,8 @@
 				"http://www.westsussex.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.74, "ref": "https://www.websitecarbon.com/website/westsussex-gov-uk/" },
-						"2021-05-27": { "CO2": 1.1, "bytes": 1829596, "green": 0, "imagebytes": 1213794 }
+						"2021-05-27": { "CO2": 1.1, "bytes": 1829596, "green": 0, "imagebytes": 1213794 },
+						"2021-06-30": { "CO2": 0.2, "bytes": 325533, "green": 0, "imagebytes": 1897 }
 					}
 				}
 			}
@@ -4344,7 +4676,8 @@
 				"http://www.worcestershire.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.9, "ref": "https://www.websitecarbon.com/website/worcestershire-gov-uk/" },
-						"2021-05-27": { "CO2": 0.9, "bytes": 1493313, "green": 0, "imagebytes": 1336162 }
+						"2021-05-27": { "CO2": 0.9, "bytes": 1493313, "green": 0, "imagebytes": 1336162 },
+						"2021-06-30": { "CO2": 0.92, "bytes": 1525353, "green": 0, "imagebytes": 1366845 }
 					}
 				}
 			}
@@ -4355,7 +4688,8 @@
 			"urls": {
 				"https://www.greatermanchester-ca.gov.uk/": {
 					"values": {
-						"2021-05-27": { "CO2": 1.25, "bytes": 2065305, "green": 0, "imagebytes": 1126663 }
+						"2021-05-27": { "CO2": 1.25, "bytes": 2065305, "green": 0, "imagebytes": 1126663 },
+						"2021-06-30": { "CO2": 1.27, "bytes": 2107777, "green": 0, "imagebytes": 1166031 }
 					}
 				}
 			}
@@ -4366,7 +4700,8 @@
 			"urls": {
 				"https://sheffieldcityregion.org.uk/": {
 					"values": {
-						"2021-05-27": { "CO2": 8.54, "bytes": 14161995, "green": 0, "imagebytes": 12407614 }
+						"2021-05-27": { "CO2": 8.54, "bytes": 14161995, "green": 0, "imagebytes": 12407614 },
+						"2021-06-30": { "CO2": 1.84, "bytes": 3049725, "green": 0, "imagebytes": 1236219 }
 					}
 				}
 			}
@@ -4378,7 +4713,8 @@
 				"https://www.westyorks-ca.gov.uk/": {
 					"values": {
 						"2021-05-27": { "CO2": 4.01, "bytes": 6651436, "green": 0, "imagebytes": 6152112 },
-						"2021-06-10": { "CO2": 3.08, "bytes": 5105336, "green": 0, "imagebytes": 4591585 }
+						"2021-06-10": { "CO2": 3.08, "bytes": 5105336, "green": 0, "imagebytes": 4591585 },
+						"2021-06-30": { "CO2": 3.36, "bytes": 5579378, "green": 0, "imagebytes": 4584889 }
 					}
 				}
 			}
@@ -4389,7 +4725,8 @@
 			"urls": {
 				"https://www.liverpoolcityregion-ca.gov.uk/": {
 					"values": {
-						"2021-05-27": { "CO2": 1.64, "bytes": 2713322, "green": 0, "imagebytes": 1102223 }
+						"2021-05-27": { "CO2": 1.64, "bytes": 2713322, "green": 0, "imagebytes": 1102223 },
+						"2021-06-30": { "CO2": 1.68, "bytes": 2780165, "green": 0, "imagebytes": 1148772 }
 					}
 				}
 			}
@@ -4400,7 +4737,8 @@
 			"urls": {
 				"https://teesvalley-ca.gov.uk/": {
 					"values": {
-						"2021-05-27": { "CO2": 1.53, "bytes": 2791197, "green": 1, "imagebytes": 1737669 }
+						"2021-05-27": { "CO2": 1.53, "bytes": 2791197, "green": 1, "imagebytes": 1737669 },
+						"2021-06-30": { "CO2": 2.18, "bytes": 3993937, "green": 1, "imagebytes": 2726535 }
 					}
 				}
 			}
@@ -4411,7 +4749,8 @@
 			"urls": {
 				"https://www.wmca.org.uk/": {
 					"values": {
-						"2021-05-27": { "CO2": 1.47, "bytes": 2439716, "green": 0, "imagebytes": 1361023 }
+						"2021-05-27": { "CO2": 1.47, "bytes": 2439716, "green": 0, "imagebytes": 1361023 },
+						"2021-06-30": { "CO2": 2.56, "bytes": 4244856, "green": 0, "imagebytes": 3246371 }
 					}
 				}
 			}
@@ -4422,7 +4761,8 @@
 			"urls": {
 				"https://cambridgeshirepeterborough-ca.gov.uk/": {
 					"values": {
-						"2021-05-27": { "CO2": 0.9, "bytes": 1501084, "green": 0, "imagebytes": 308270 }
+						"2021-05-27": { "CO2": 0.9, "bytes": 1501084, "green": 0, "imagebytes": 308270 },
+						"2021-06-30": { "CO2": 0.92, "bytes": 1529020, "green": 0, "imagebytes": 305161 }
 					}
 				}
 			}
@@ -4433,7 +4773,8 @@
 			"urls": {
 				"https://www.westofengland-ca.gov.uk/": {
 					"values": {
-						"2021-05-27": { "CO2": 6.51, "bytes": 10792678, "green": 0, "imagebytes": 9368111 }
+						"2021-05-27": { "CO2": 6.51, "bytes": 10792678, "green": 0, "imagebytes": 9368111 },
+						"2021-06-30": { "CO2": 6.51, "bytes": 10798928, "green": 0, "imagebytes": 9339624 }
 					}
 				}
 			}
@@ -4444,7 +4785,8 @@
 			"urls": {
 				"https://northeastca.gov.uk/": {
 					"values": {
-						"2021-05-27": { "CO2": 0.75, "bytes": 1379913, "green": 1, "imagebytes": 318182 }
+						"2021-05-27": { "CO2": 0.75, "bytes": 1379913, "green": 1, "imagebytes": 318182 },
+						"2021-06-30": { "CO2": 0.75, "bytes": 1377425, "green": 1, "imagebytes": 318330 }
 					}
 				}
 			}
@@ -4455,7 +4797,8 @@
 			"urls": {
 				"https://www.northoftyne-ca.gov.uk/": {
 					"values": {
-						"2021-05-27": { "CO2": 1.59, "bytes": 2638395, "green": 0, "imagebytes": 302020 }
+						"2021-05-27": { "CO2": 1.59, "bytes": 2638395, "green": 0, "imagebytes": 302020 },
+						"2021-06-30": { "CO2": 0.57, "bytes": 949991, "green": 0, "imagebytes": 396566 }
 					}
 				}
 			}
@@ -4468,7 +4811,8 @@
 					"values": {
 						"2021-03-09": { "CO2": 1.34, "ref": "https://www.websitecarbon.com/website/antrimandnewtownabbey-gov-uk/" },
 						"2021-05-26": { "CO2": 3.08, "bytes": 5106455, "green": 0, "imagebytes": 3358163 },
-						"2021-05-27": { "CO2": 2.99, "bytes": 4959884, "green": 0, "imagebytes": 3355816 }
+						"2021-05-27": { "CO2": 2.99, "bytes": 4959884, "green": 0, "imagebytes": 3355816 },
+						"2021-06-30": { "CO2": 3.78, "bytes": 6273846, "green": 0, "imagebytes": 5070185 }
 					}
 				}
 			}
@@ -4481,7 +4825,8 @@
 					"values": {
 						"2021-03-11": { "CO2": 0.94, "ref": "https://www.websitecarbon.com/website/armaghbanbridgecraigavon-gov-uk/" },
 						"2021-05-26": { "CO2": 0.95, "bytes": 1579541, "green": 0, "imagebytes": 345325 },
-						"2021-05-27": { "CO2": 0.96, "bytes": 1586086, "green": 0, "imagebytes": 351789 }
+						"2021-05-27": { "CO2": 0.96, "bytes": 1586086, "green": 0, "imagebytes": 351789 },
+						"2021-06-30": { "CO2": 0.96, "bytes": 1585730, "green": 0, "imagebytes": 350280 }
 					}
 				}
 			}
@@ -4493,7 +4838,8 @@
 				"https://www.belfastcity.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.81, "ref": "https://www.websitecarbon.com/website/belfastcity-gov-uk/" },
-						"2021-05-26": { "CO2": 0.91, "bytes": 1509445, "green": 0, "imagebytes": 434766 }
+						"2021-05-26": { "CO2": 0.91, "bytes": 1509445, "green": 0, "imagebytes": 434766 },
+						"2021-06-30": { "CO2": 0.81, "bytes": 1340668, "green": 0, "imagebytes": 258195 }
 					}
 				}
 			}
@@ -4505,7 +4851,8 @@
 				"https://www.causewaycoastandglens.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 2.02, "ref": "https://www.websitecarbon.com/website/causewaycoastandglens-gov-uk/" },
-						"2021-05-26": { "CO2": 2.09, "bytes": 3460438, "green": 0, "imagebytes": 3047607 }
+						"2021-05-26": { "CO2": 2.09, "bytes": 3460438, "green": 0, "imagebytes": 3047607 },
+						"2021-06-30": { "CO2": 2.08, "bytes": 3446103, "green": 0, "imagebytes": 3031752 }
 					}
 				}
 			}
@@ -4517,7 +4864,8 @@
 				"https://www.derrystrabane.com/": {
 					"values": {
 						"2021-03-09": { "CO2": 1.16, "ref": "https://www.websitecarbon.com/website/derrystrabane-com/" },
-						"2021-05-26": { "CO2": 2.01, "bytes": 3679734, "green": 1, "imagebytes": 3094288 }
+						"2021-05-26": { "CO2": 2.01, "bytes": 3679734, "green": 1, "imagebytes": 3094288 },
+						"2021-06-30": { "CO2": 2.06, "bytes": 3768662, "green": 1, "imagebytes": 3182149 }
 					}
 				}
 			}
@@ -4529,7 +4877,8 @@
 				"https://www.fermanaghomagh.com/": {
 					"values": {
 						"2021-03-11": { "CO2": 1.09, "ref": "https://www.websitecarbon.com/website/fermanaghomagh-com/" },
-						"2021-05-26": { "CO2": 1.47, "bytes": 2432090, "green": 0, "imagebytes": 981345 }
+						"2021-05-26": { "CO2": 1.47, "bytes": 2432090, "green": 0, "imagebytes": 981345 },
+						"2021-06-30": { "CO2": 1.13, "bytes": 1870883, "green": 0, "imagebytes": 542048 }
 					}
 				}
 			}
@@ -4541,7 +4890,8 @@
 				"https://www.lisburncastlereagh.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.53, "ref": "https://www.websitecarbon.com/website/lisburncastlereagh-gov-uk/" },
-						"2021-05-27": { "CO2": 0.65, "bytes": 1077466, "green": 0, "imagebytes": 777182 }
+						"2021-05-27": { "CO2": 0.65, "bytes": 1077466, "green": 0, "imagebytes": 777182 },
+						"2021-06-30": { "CO2": 1.03, "bytes": 1708890, "green": 0, "imagebytes": 1412053 }
 					}
 				}
 			}
@@ -4554,7 +4904,8 @@
 					"values": {
 						"2021-03-10": { "CO2": 2.32, "ref": "https://www.websitecarbon.com/website/midandeastantrim-gov-uk/" },
 						"2021-05-25": { "CO2": 2.31, "ref": "https://www.websitecarbon.com/website/midandeastantrim-gov-uk/" },
-						"2021-05-27": { "CO2": 2.44, "bytes": 4052032, "green": 0, "imagebytes": 3301198 }
+						"2021-05-27": { "CO2": 2.44, "bytes": 4052032, "green": 0, "imagebytes": 3301198 },
+						"2021-06-30": { "CO2": 2.35, "bytes": 3893631, "green": 0, "imagebytes": 3132283 }
 					}
 				}
 			}
@@ -4566,7 +4917,8 @@
 				"https://www.midulstercouncil.org/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.09, "ref": "https://www.websitecarbon.com/website/midulstercouncil-org/" },
-						"2021-05-26": { "CO2": 1.59, "bytes": 2644003, "green": 0, "imagebytes": 1583832 }
+						"2021-05-26": { "CO2": 1.59, "bytes": 2644003, "green": 0, "imagebytes": 1583832 },
+						"2021-06-30": { "CO2": 0.98, "bytes": 1624490, "green": 0, "imagebytes": 554594 }
 					}
 				}
 			}
@@ -4578,7 +4930,8 @@
 				"https://www.newrymournedown.org/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.99, "ref": "https://www.websitecarbon.com/website/newrymournedown-org/" },
-						"2021-05-27": { "CO2": 0.85, "bytes": 1563478, "green": 1, "imagebytes": 765834 }
+						"2021-05-27": { "CO2": 0.85, "bytes": 1563478, "green": 1, "imagebytes": 765834 },
+						"2021-06-30": { "CO2": 0.99, "bytes": 1812180, "green": 1, "imagebytes": 994859 }
 					}
 				}
 			}
@@ -4591,7 +4944,8 @@
 					"values": {
 						"2021-03-09": { "CO2": 1.39, "ref": "https://www.websitecarbon.com/website/ardsandnorthdown-gov-uk/" },
 						"2021-05-26": { "CO2": 1.47, "bytes": 2445780, "green": 0, "imagebytes": 1769266 },
-						"2021-05-27": { "CO2": 1.42, "bytes": 2362621, "green": 0, "imagebytes": 1683587 }
+						"2021-05-27": { "CO2": 1.42, "bytes": 2362621, "green": 0, "imagebytes": 1683587 },
+						"2021-06-30": { "CO2": 1.48, "bytes": 2457994, "green": 0, "imagebytes": 1774677 }
 					}
 				}
 			}
@@ -4603,7 +4957,8 @@
 				"https://www.clacks.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.28, "ref": "https://www.websitecarbon.com/website/clacks-gov-uk/" },
-						"2021-05-26": { "CO2": 0.24, "bytes": 431215, "green": 1, "imagebytes": 216608 }
+						"2021-05-26": { "CO2": 0.24, "bytes": 431215, "green": 1, "imagebytes": 216608 },
+						"2021-06-30": { "CO2": 0.21, "bytes": 376777, "green": 1, "imagebytes": 216617 }
 					}
 				}
 			}
@@ -4615,7 +4970,8 @@
 				"https://www.dumgal.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.43, "ref": "https://www.websitecarbon.com/website/dumgal-gov-uk/" },
-						"2021-05-26": { "CO2": 0.42, "bytes": 696609, "green": 0, "imagebytes": 229009 }
+						"2021-05-26": { "CO2": 0.42, "bytes": 696609, "green": 0, "imagebytes": 229009 },
+						"2021-06-30": { "CO2": 0.44, "bytes": 726617, "green": 0, "imagebytes": 229030 }
 					}
 				}
 			}
@@ -4627,7 +4983,8 @@
 				"https://www.east-ayrshire.gov.uk": {
 					"values": {
 						"2021-03-09": { "CO2": 1.03, "ref": "https://www.websitecarbon.com/website/east-ayrshire-gov-uk/" },
-						"2021-05-26": { "CO2": 1.01, "bytes": 1671393, "green": 0, "imagebytes": 1177158 }
+						"2021-05-26": { "CO2": 1.01, "bytes": 1671393, "green": 0, "imagebytes": 1177158 },
+						"2021-06-30": { "CO2": 1.18, "bytes": 1951377, "green": 0, "imagebytes": 1457499 }
 					}
 				}
 			}
@@ -4639,7 +4996,8 @@
 				"https://www.eastlothian.gov.uk": {
 					"values": {
 						"2021-03-10": { "CO2": 0.63, "ref": "https://www.websitecarbon.com/website/eastlothian-gov-uk/" },
-						"2021-05-26": { "CO2": 0.67, "bytes": 1226058, "green": 1, "imagebytes": 949600 }
+						"2021-05-26": { "CO2": 0.67, "bytes": 1226058, "green": 1, "imagebytes": 949600 },
+						"2021-06-30": { "CO2": 0.73, "bytes": 1334660, "green": 1, "imagebytes": 1054717 }
 					}
 				}
 			}
@@ -4651,7 +5009,8 @@
 				"https://www.eastrenfrewshire.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.11, "ref": "https://www.websitecarbon.com/website/eastrenfrewshire-gov-uk/" },
-						"2021-05-26": { "CO2": 0.92, "bytes": 1519517, "green": 0, "imagebytes": 1019663 }
+						"2021-05-26": { "CO2": 0.92, "bytes": 1519517, "green": 0, "imagebytes": 1019663 },
+						"2021-06-30": { "CO2": 0.85, "bytes": 1412078, "green": 0, "imagebytes": 918866 }
 					}
 				}
 			}
@@ -4663,7 +5022,8 @@
 				"https://www.cne-siar.gov.uk": {
 					"values": {
 						"2021-03-09": { "CO2": 0.25, "ref": "https://www.websitecarbon.com/website/cne-siar-gov-uk/" },
-						"2021-05-26": { "CO2": 0.23, "bytes": 379734, "green": 0, "imagebytes": 146088 }
+						"2021-05-26": { "CO2": 0.23, "bytes": 379734, "green": 0, "imagebytes": 146088 },
+						"2021-06-30": { "CO2": 0.22, "bytes": 359828, "green": 0, "imagebytes": 140608 }
 					}
 				}
 			}
@@ -4675,7 +5035,8 @@
 				"https://www.falkirk.gov.uk": {
 					"values": {
 						"2021-03-10": { "CO2": 0.22, "ref": "https://www.websitecarbon.com/website/falkirk-gov-uk/" },
-						"2021-05-27": { "CO2": 0.21, "bytes": 345242, "green": 0, "imagebytes": 95574 }
+						"2021-05-27": { "CO2": 0.21, "bytes": 345242, "green": 0, "imagebytes": 95574 },
+						"2021-06-30": { "CO2": 0.21, "bytes": 348684, "green": 0, "imagebytes": 99970 }
 					}
 				}
 			}
@@ -4687,7 +5048,8 @@
 				"https://www.fife.gov.uk": {
 					"values": {
 						"2021-03-10": { "CO2": 1.66, "ref": "https://www.websitecarbon.com/website/fife-gov-uk/" },
-						"2021-05-27": { "CO2": 3.44, "bytes": 5713088, "green": 0, "imagebytes": 3629778 }
+						"2021-05-27": { "CO2": 3.44, "bytes": 5713088, "green": 0, "imagebytes": 3629778 },
+						"2021-06-30": { "CO2": 1.95, "bytes": 3235383, "green": 0, "imagebytes": 1152038 }
 					}
 				}
 			}
@@ -4699,7 +5061,8 @@
 				"https://www.highland.gov.uk": {
 					"values": {
 						"2021-03-10": { "CO2": 0.49, "ref": "https://www.websitecarbon.com/website/highland-gov-uk/" },
-						"2021-05-27": { "CO2": 0.54, "bytes": 979453, "green": 1, "imagebytes": 649827 }
+						"2021-05-27": { "CO2": 0.54, "bytes": 979453, "green": 1, "imagebytes": 649827 },
+						"2021-06-30": { "CO2": 0.35, "bytes": 644999, "green": 1, "imagebytes": 314434 }
 					}
 				}
 			}
@@ -4711,7 +5074,8 @@
 				"https://www.inverclyde.gov.uk": {
 					"values": {
 						"2021-03-10": { "CO2": 0.7, "ref": "https://www.websitecarbon.com/website/inverclyde-gov-uk/" },
-						"2021-05-27": { "CO2": 0.71, "bytes": 1176917, "green": 0, "imagebytes": 630390 }
+						"2021-05-27": { "CO2": 0.71, "bytes": 1176917, "green": 0, "imagebytes": 630390 },
+						"2021-06-30": { "CO2": 0.87, "bytes": 1442805, "green": 0, "imagebytes": 896776 }
 					}
 				}
 			}
@@ -4723,7 +5087,8 @@
 				"https://www.midlothian.gov.uk": {
 					"values": {
 						"2021-03-10": { "CO2": 0.31, "ref": "https://www.websitecarbon.com/website/midlothian-gov-uk/" },
-						"2021-05-26": { "CO2": 0.37, "bytes": 680760, "green": 1, "imagebytes": 289481 }
+						"2021-05-26": { "CO2": 0.37, "bytes": 680760, "green": 1, "imagebytes": 289481 },
+						"2021-06-30": { "CO2": 0.39, "bytes": 710506, "green": 1, "imagebytes": 317968 }
 					}
 				}
 			}
@@ -4735,7 +5100,8 @@
 				"http://www.moray.gov.uk": {
 					"values": {
 						"2021-03-10": { "CO2": 0.48, "ref": "https://www.websitecarbon.com/website/moray-gov-uk/" },
-						"2021-05-26": { "CO2": 0.46, "bytes": 763410, "green": 0, "imagebytes": 141664 }
+						"2021-05-26": { "CO2": 0.46, "bytes": 763410, "green": 0, "imagebytes": 141664 },
+						"2021-06-30": { "CO2": 0.46, "bytes": 763810, "green": 0, "imagebytes": 141664 }
 					}
 				}
 			}
@@ -4747,7 +5113,8 @@
 				"https://www.north-ayrshire.gov.uk": {
 					"values": {
 						"2021-03-09": { "CO2": 1.13, "ref": "https://www.websitecarbon.com/website/north-ayrshire-gov-uk/" },
-						"2021-05-27": { "CO2": 1.17, "bytes": 1944958, "green": 0, "imagebytes": 1034120 }
+						"2021-05-27": { "CO2": 1.17, "bytes": 1944958, "green": 0, "imagebytes": 1034120 },
+						"2021-06-30": { "CO2": 1.13, "bytes": 1869277, "green": 0, "imagebytes": 934540 }
 					}
 				}
 			}
@@ -4760,7 +5127,8 @@
 					"values": {
 						"2021-03-09": { "CO2": 2.28, "ref": "https://www.websitecarbon.com/website/orkney-gov-uk/" },
 						"2021-05-25": { "CO2": 1.04, "ref": "https://www.websitecarbon.com/website/orkney-gov-uk/" },
-						"2021-05-27": { "CO2": 1.06, "bytes": 1760970, "green": 0, "imagebytes": 1479516 }
+						"2021-05-27": { "CO2": 1.06, "bytes": 1760970, "green": 0, "imagebytes": 1479516 },
+						"2021-06-30": { "CO2": 1.18, "bytes": 1955276, "green": 0, "imagebytes": 1672925 }
 					}
 				}
 			}
@@ -4772,7 +5140,8 @@
 				"http://www.pkc.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.3, "ref": "https://www.websitecarbon.com/website/pkc-gov-uk/" },
-						"2021-05-27": { "CO2": 0.33, "bytes": 549868, "green": 0, "imagebytes": 294339 }
+						"2021-05-27": { "CO2": 0.33, "bytes": 549868, "green": 0, "imagebytes": 294339 },
+						"2021-06-30": { "CO2": 0.33, "bytes": 539716, "green": 0, "imagebytes": 283197 }
 					}
 				}
 			}
@@ -4785,7 +5154,8 @@
 					"values": {
 						"2021-03-09": { "CO2": 0.13, "ref": "https://www.websitecarbon.com/website/scotborders-gov-uk/" },
 						"2021-05-25": { "CO2": 0.13, "ref": "https://www.websitecarbon.com/website/scotborders-gov-uk/" },
-						"2021-05-27": { "CO2": 0.11, "bytes": 196713, "green": 1, "imagebytes": 53303 }
+						"2021-05-27": { "CO2": 0.11, "bytes": 196713, "green": 1, "imagebytes": 53303 },
+						"2021-06-30": { "CO2": 0.14, "bytes": 252032, "green": 1, "imagebytes": 53303 }
 					}
 				}
 			}
@@ -4797,7 +5167,8 @@
 				"https://www.shetland.gov.uk": {
 					"values": {
 						"2021-05-25": { "CO2": 1.15, "ref": "https://www.websitecarbon.com/website/shetland-gov-uk/" },
-						"2021-05-27": { "CO2": 1.19, "bytes": 1977592, "green": 0, "imagebytes": 1442595 }
+						"2021-05-27": { "CO2": 1.19, "bytes": 1977592, "green": 0, "imagebytes": 1442595 },
+						"2021-06-30": { "CO2": 1.15, "bytes": 1900997, "green": 0, "imagebytes": 1444467 }
 					}
 				}
 			}
@@ -4809,7 +5180,8 @@
 				"https://www.south-ayrshire.gov.uk": {
 					"values": {
 						"2021-03-09": { "CO2": 0.35, "ref": "https://www.websitecarbon.com/website/south-ayrshire-gov-uk/" },
-						"2021-05-27": { "CO2": 0.37, "bytes": 616579, "green": 0, "imagebytes": 283549 }
+						"2021-05-27": { "CO2": 0.37, "bytes": 616579, "green": 0, "imagebytes": 283549 },
+						"2021-06-30": { "CO2": 0.36, "bytes": 598454, "green": 0, "imagebytes": 264510 }
 					}
 				}
 			}
@@ -4821,7 +5193,8 @@
 				"https://www.southlanarkshire.gov.uk": {
 					"values": {
 						"2021-03-11": { "CO2": 1.16, "ref": "https://www.websitecarbon.com/website/southlanarkshire-gov-uk/" },
-						"2021-05-27": { "CO2": 1.45, "bytes": 2411055, "green": 0, "imagebytes": 355985 }
+						"2021-05-27": { "CO2": 1.45, "bytes": 2411055, "green": 0, "imagebytes": 355985 },
+						"2021-06-30": { "CO2": 1.45, "bytes": 2412379, "green": 0, "imagebytes": 355985 }
 					}
 				}
 			}
@@ -4833,7 +5206,8 @@
 				"https://www.stirling.gov.uk": {
 					"values": {
 						"2021-03-11": { "CO2": 1.69, "ref": "https://www.websitecarbon.com/website/stirling-gov-uk/" },
-						"2021-05-27": { "CO2": 1.37, "bytes": 2279880, "green": 0, "imagebytes": 1074545 }
+						"2021-05-27": { "CO2": 1.37, "bytes": 2279880, "green": 0, "imagebytes": 1074545 },
+						"2021-06-30": { "CO2": 1.4, "bytes": 2324968, "green": 0, "imagebytes": 1127314 }
 					}
 				}
 			}
@@ -4846,7 +5220,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 3.19, "ref": "https://www.websitecarbon.com/website/aberdeencity-gov-uk/" },
 						"2021-05-26": { "CO2": 3.12, "bytes": 5708459, "green": 1, "imagebytes": 2389783 },
-						"2021-05-27": { "CO2": 3.12, "bytes": 5708425, "green": 1, "imagebytes": 2389759 }
+						"2021-05-27": { "CO2": 3.12, "bytes": 5708425, "green": 1, "imagebytes": 2389759 },
+						"2021-06-30": { "CO2": 3.1, "bytes": 5669167, "green": 1, "imagebytes": 2392280 }
 					}
 				}
 			}
@@ -4859,7 +5234,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 0.6, "ref": "https://www.websitecarbon.com/website/aberdeenshire-gov-uk/" },
 						"2021-05-26": { "CO2": 0.61, "bytes": 1014579, "green": 0, "imagebytes": 226667 },
-						"2021-05-27": { "CO2": 0.61, "bytes": 1017864, "green": 0, "imagebytes": 226667 }
+						"2021-05-27": { "CO2": 0.61, "bytes": 1017864, "green": 0, "imagebytes": 226667 },
+						"2021-06-30": { "CO2": 0.64, "bytes": 1054467, "green": 0, "imagebytes": 248511 }
 					}
 				}
 			}
@@ -4872,7 +5248,8 @@
 					"values": {
 						"2021-03-11": { "CO2": 0.84, "ref": "https://www.websitecarbon.com/website/argyll-bute-gov-uk/" },
 						"2021-05-26": { "CO2": 0.58, "bytes": 962687, "green": 0, "imagebytes": 323255 },
-						"2021-05-27": { "CO2": 0.58, "bytes": 967634, "green": 0, "imagebytes": 323255 }
+						"2021-05-27": { "CO2": 0.58, "bytes": 967634, "green": 0, "imagebytes": 323255 },
+						"2021-06-30": { "CO2": 0.58, "bytes": 966198, "green": 0, "imagebytes": 325091 }
 					}
 				}
 			}
@@ -4884,7 +5261,8 @@
 				"https://www.edinburgh.gov.uk": {
 					"values": {
 						"2021-03-11": { "CO2": 1.06, "ref": "https://www.websitecarbon.com/website/edinburgh-gov-uk/" },
-						"2021-05-26": { "CO2": 2.26, "bytes": 4140335, "green": 1, "imagebytes": 3598505 }
+						"2021-05-26": { "CO2": 2.26, "bytes": 4140335, "green": 1, "imagebytes": 3598505 },
+						"2021-06-30": { "CO2": 2.26, "bytes": 4144829, "green": 1, "imagebytes": 3598540 }
 					}
 				}
 			}
@@ -4896,7 +5274,8 @@
 				"http://www.renfrewshire.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.45, "ref": "https://www.websitecarbon.com/website/renfrewshire-gov-uk/" },
-						"2021-05-27": { "CO2": 0.43, "bytes": 712527, "green": 0, "imagebytes": 385596 }
+						"2021-05-27": { "CO2": 0.43, "bytes": 712527, "green": 0, "imagebytes": 385596 },
+						"2021-06-30": { "CO2": 0.45, "bytes": 748037, "green": 0, "imagebytes": 420659 }
 					}
 				}
 			}
@@ -4908,7 +5287,8 @@
 				"https://www.west-dunbarton.gov.uk": {
 					"values": {
 						"2021-03-04": { "CO2": 0.24, "ref": "https://www.websitecarbon.com/website/west-dunbarton-gov-uk/" },
-						"2021-05-27": { "CO2": 0.25, "bytes": 411386, "green": 0, "imagebytes": 238757 }
+						"2021-05-27": { "CO2": 0.25, "bytes": 411386, "green": 0, "imagebytes": 238757 },
+						"2021-06-30": { "CO2": 0.25, "bytes": 411372, "green": 0, "imagebytes": 238757 }
 					}
 				}
 			}
@@ -4920,7 +5300,8 @@
 				"https://www.westlothian.gov.uk": {
 					"values": {
 						"2021-03-04": { "CO2": 1.09, "ref": "https://www.websitecarbon.com/website/westlothian-gov-uk/" },
-						"2021-05-27": { "CO2": 0.86, "bytes": 1429745, "green": 0, "imagebytes": 993901 }
+						"2021-05-27": { "CO2": 0.86, "bytes": 1429745, "green": 0, "imagebytes": 993901 },
+						"2021-06-30": { "CO2": 0.86, "bytes": 1422672, "green": 0, "imagebytes": 984546 }
 					}
 				}
 			}
@@ -4933,7 +5314,8 @@
 					"values": {
 						"2021-03-04": { "CO2": 0.68, "ref": "https://www.websitecarbon.com/website/angus-gov-uk/" },
 						"2021-05-26": { "CO2": 0.56, "bytes": 1019620, "green": 1, "imagebytes": 349878 },
-						"2021-05-27": { "CO2": 0.56, "bytes": 1019555, "green": 1, "imagebytes": 349878 }
+						"2021-05-27": { "CO2": 0.56, "bytes": 1019555, "green": 1, "imagebytes": 349878 },
+						"2021-06-30": { "CO2": 0.45, "bytes": 820232, "green": 1, "imagebytes": 149141 }
 					}
 				}
 			}
@@ -4945,7 +5327,8 @@
 				"https://www.dundeecity.gov.uk": {
 					"values": {
 						"2021-03-10": { "CO2": 0.55, "ref": "https://www.websitecarbon.com/website/dundeecity-gov-uk/" },
-						"2021-05-26": { "CO2": 0.58, "bytes": 967222, "green": 0, "imagebytes": 387810 }
+						"2021-05-26": { "CO2": 0.58, "bytes": 967222, "green": 0, "imagebytes": 387810 },
+						"2021-06-30": { "CO2": 0.65, "bytes": 1076390, "green": 0, "imagebytes": 490040 }
 					}
 				}
 			}
@@ -4957,7 +5340,8 @@
 				"https://www.northlanarkshire.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.95, "ref": "https://www.websitecarbon.com/website/northlanarkshire-gov-uk/" },
-						"2021-05-27": { "CO2": 0.95, "bytes": 1572153, "green": 0, "imagebytes": 1132173 }
+						"2021-05-27": { "CO2": 0.95, "bytes": 1572153, "green": 0, "imagebytes": 1132173 },
+						"2021-06-30": { "CO2": 1.26, "bytes": 2085719, "green": 0, "imagebytes": 1653429 }
 					}
 				}
 			}
@@ -4969,7 +5353,8 @@
 				"https://www.eastdunbarton.gov.uk": {
 					"values": {
 						"2021-03-10": { "CO2": 0.53, "ref": "https://www.websitecarbon.com/website/eastdunbarton-gov-uk/" },
-						"2021-05-26": { "CO2": 0.6, "bytes": 1094398, "green": 1, "imagebytes": 729064 }
+						"2021-05-26": { "CO2": 0.6, "bytes": 1094398, "green": 1, "imagebytes": 729064 },
+						"2021-06-30": { "CO2": 0.61, "bytes": 1124137, "green": 1, "imagebytes": 770133 }
 					}
 				}
 			}
@@ -4981,7 +5366,8 @@
 				"https://www.glasgow.gov.uk": {
 					"values": {
 						"2021-03-10": { "CO2": 0.32, "ref": "https://www.websitecarbon.com/website/glasgow-gov-uk/" },
-						"2021-05-26": { "CO2": 0.4, "bytes": 659043, "green": 0, "imagebytes": 547077 }
+						"2021-05-26": { "CO2": 0.4, "bytes": 659043, "green": 0, "imagebytes": 547077 },
+						"2021-06-30": { "CO2": 0.38, "bytes": 630547, "green": 0, "imagebytes": 546575 }
 					}
 				}
 			}
@@ -4993,7 +5379,8 @@
 				"https://www.ynysmon.gov.uk/cy/Trigolion/Trigolion.aspx": {
 					"values": {
 						"2021-03-10": { "CO2": 1.07, "ref": "https://www.websitecarbon.com/website/ynysmon-gov-uk-cy-trigolion-trigolion-aspx/" },
-						"2021-05-26": { "CO2": 0.78, "bytes": 1286969, "green": 0, "imagebytes": 562466 }
+						"2021-05-26": { "CO2": 0.78, "bytes": 1286969, "green": 0, "imagebytes": 562466 },
+						"2021-06-30": { "CO2": 0.78, "bytes": 1286728, "green": 0, "imagebytes": 562445 }
 					}
 				}
 			}
@@ -5005,7 +5392,8 @@
 				"https://www.gwynedd.llyw.cymru/cy/Trigolion/Trigolion.aspx": {
 					"values": {
 						"2021-03-10": { "CO2": 0.46, "ref": "https://www.websitecarbon.com/website/gwynedd-llyw-cymru-cy-trigolion-trigolion-aspx/" },
-						"2021-05-27": { "CO2": 0.4, "bytes": 667290, "green": 0, "imagebytes": 98888 }
+						"2021-05-27": { "CO2": 0.4, "bytes": 667290, "green": 0, "imagebytes": 98888 },
+						"2021-06-30": { "CO2": 0.39, "bytes": 645952, "green": 0, "imagebytes": 91263 }
 					}
 				}
 			}
@@ -5017,7 +5405,8 @@
 				"http://www.conwy.gov.uk/cy/Resident/Resident.aspx": {
 					"values": {
 						"2021-03-09": { "CO2": 1.17, "ref": "https://www.websitecarbon.com/website/conwy-gov-uk-cy-resident-resident-aspx/" },
-						"2021-05-26": { "CO2": 1.12, "bytes": 1854892, "green": 0, "imagebytes": 1377244 }
+						"2021-05-26": { "CO2": 1.12, "bytes": 1854892, "green": 0, "imagebytes": 1377244 },
+						"2021-06-30": { "CO2": 1.31, "bytes": 2179966, "green": 0, "imagebytes": 1708942 }
 					}
 				}
 			}
@@ -5029,7 +5418,8 @@
 				"https://www.denbighshire.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.41, "ref": "https://www.websitecarbon.com/website/denbighshire-gov-uk/" },
-						"2021-05-26": { "CO2": 0.41, "bytes": 675644, "green": 0, "imagebytes": 258839 }
+						"2021-05-26": { "CO2": 0.41, "bytes": 675644, "green": 0, "imagebytes": 258839 },
+						"2021-06-30": { "CO2": 0.42, "bytes": 690032, "green": 0, "imagebytes": 269303 }
 					}
 				}
 			}
@@ -5041,7 +5431,8 @@
 				"https://www.siryfflint.gov.uk/cy/Home.aspx": {
 					"values": {
 						"2021-03-10": { "CO2": 1.02, "ref": "https://www.websitecarbon.com/website/siryfflint-gov-uk-cy-home-aspx/" },
-						"2021-05-26": { "CO2": 3.82, "bytes": 6334780, "green": 0, "imagebytes": 4967948 }
+						"2021-05-26": { "CO2": 3.82, "bytes": 6334780, "green": 0, "imagebytes": 4967948 },
+						"2021-06-30": { "CO2": 2.39, "bytes": 3970580, "green": 0, "imagebytes": 2901025 }
 					}
 				}
 			}
@@ -5053,7 +5444,8 @@
 				"https://www.wrecsam.gov.uk/preswylwyr": {
 					"values": {
 						"2021-03-04": { "CO2": 0.77, "ref": "https://www.websitecarbon.com/website/wrecsam-gov-uk-preswylwyr/" },
-						"2021-05-27": { "CO2": 0.85, "bytes": 1415064, "green": 0, "imagebytes": 442467 }
+						"2021-05-27": { "CO2": 0.85, "bytes": 1415064, "green": 0, "imagebytes": 442467 },
+						"2021-06-30": { "CO2": 0.87, "bytes": 1448021, "green": 0, "imagebytes": 478607 }
 					}
 				}
 			}
@@ -5065,7 +5457,8 @@
 				"http://www.ceredigion.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.22, "ref": "https://www.websitecarbon.com/website/ceredigion-gov-uk/" },
-						"2021-05-26": { "CO2": 0.22, "bytes": 360578, "green": 0, "imagebytes": 211497 }
+						"2021-05-26": { "CO2": 0.22, "bytes": 360578, "green": 0, "imagebytes": 211497 },
+						"2021-06-30": { "CO2": 0.22, "bytes": 360900, "green": 0, "imagebytes": 211497 }
 					}
 				}
 			}
@@ -5077,7 +5470,8 @@
 				"http://www.pembrokeshire.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.38, "ref": "https://www.websitecarbon.com/website/pembrokeshire-gov-uk/" },
-						"2021-05-27": { "CO2": 0.38, "bytes": 637942, "green": 0, "imagebytes": 607646 }
+						"2021-05-27": { "CO2": 0.38, "bytes": 637942, "green": 0, "imagebytes": 607646 },
+						"2021-06-30": { "CO2": 0.38, "bytes": 638331, "green": 0, "imagebytes": 607713 }
 					}
 				}
 			}
@@ -5090,7 +5484,8 @@
 					"values": {
 						"2021-03-09": { "CO2": 0.17, "ref": "https://www.websitecarbon.com/website/carmarthenshire-gov-wales/" },
 						"2021-05-25": { "CO2": 0.18, "ref": "https://www.websitecarbon.com/website/carmarthenshire-gov-wales/" },
-						"2021-05-27": { "CO2": 0.17, "bytes": 278896, "green": 0, "imagebytes": 68093 }
+						"2021-05-27": { "CO2": 0.17, "bytes": 278896, "green": 0, "imagebytes": 68093 },
+						"2021-06-30": { "CO2": 0.17, "bytes": 279067, "green": 0, "imagebytes": 68093 }
 					}
 				}
 			}
@@ -5102,7 +5497,8 @@
 				"https://www.swansea.gov.uk/residents": {
 					"values": {
 						"2021-03-11": { "CO2": 0.55, "ref": "https://www.websitecarbon.com/website/swansea-gov-uk-residents/" },
-						"2021-05-27": { "CO2": 0.5, "bytes": 831924, "green": 0, "imagebytes": 393423 }
+						"2021-05-27": { "CO2": 0.5, "bytes": 831924, "green": 0, "imagebytes": 393423 },
+						"2021-06-30": { "CO2": 0.5, "bytes": 832073, "green": 0, "imagebytes": 393383 }
 					}
 				}
 			}
@@ -5114,7 +5510,8 @@
 				"https://www.npt.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.66, "ref": "https://www.websitecarbon.com/website/npt-gov-uk/" },
-						"2021-05-27": { "CO2": 0.57, "bytes": 940285, "green": 0, "imagebytes": 707126 }
+						"2021-05-27": { "CO2": 0.57, "bytes": 940285, "green": 0, "imagebytes": 707126 },
+						"2021-06-30": { "CO2": 0.27, "bytes": 447047, "green": 0, "imagebytes": 211386 }
 					}
 				}
 			}
@@ -5127,7 +5524,8 @@
 					"values": {
 						"2021-03-09": { "CO2": 2.82, "ref": "https://www.websitecarbon.com/website/bridgend-gov-uk-cy/" },
 						"2021-05-25": { "CO2": 2.69, "ref": "https://www.websitecarbon.com/website/bridgend-gov-uk-cy/" },
-						"2021-05-27": { "CO2": 2.65, "bytes": 4399859, "green": 0, "imagebytes": 3170311 }
+						"2021-05-27": { "CO2": 2.65, "bytes": 4399859, "green": 0, "imagebytes": 3170311 },
+						"2021-06-30": { "CO2": 2.65, "bytes": 4394135, "green": 0, "imagebytes": 3169853 }
 					}
 				}
 			}
@@ -5139,7 +5537,8 @@
 				"https://www.valeofglamorgan.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.07, "ref": "https://www.websitecarbon.com/website/valeofglamorgan-gov-uk/" },
-						"2021-05-27": { "CO2": 0.68, "bytes": 1123761, "green": 0, "imagebytes": 831483 }
+						"2021-05-27": { "CO2": 0.68, "bytes": 1123761, "green": 0, "imagebytes": 831483 },
+						"2021-06-30": { "CO2": 1.09, "bytes": 1805172, "green": 0, "imagebytes": 1510326 }
 					}
 				}
 			}
@@ -5152,7 +5551,8 @@
 					"values": {
 						"2021-03-09": { "CO2": 3.7, "ref": "https://www.websitecarbon.com/website/cardiff-gov-uk-cym-hafan-pages-default-aspx/" },
 						"2021-05-25": { "CO2": 5.28, "ref": "https://www.websitecarbon.com/website/cardiff-gov-uk-cym-hafan-pages-default-aspx/" },
-						"2021-05-27": { "CO2": 5.33, "bytes": 8844314, "green": 0, "imagebytes": 2565685 }
+						"2021-05-27": { "CO2": 5.33, "bytes": 8844314, "green": 0, "imagebytes": 2565685 },
+						"2021-06-30": { "CO2": 5.6, "bytes": 9295431, "green": 0, "imagebytes": 2997385 }
 					}
 				}
 			}
@@ -5164,7 +5564,8 @@
 				"https://www.rctcbc.gov.uk/CY/Resident/Resident.aspx": {
 					"values": {
 						"2021-03-09": { "CO2": 1.24, "ref": "https://www.websitecarbon.com/website/rctcbc-gov-uk-cy-resident-resident-aspx/" },
-						"2021-05-27": { "CO2": 1.22, "bytes": 2017895, "green": 0, "imagebytes": 1153403 }
+						"2021-05-27": { "CO2": 1.22, "bytes": 2017895, "green": 0, "imagebytes": 1153403 },
+						"2021-06-30": { "CO2": 0.94, "bytes": 1552181, "green": 0, "imagebytes": 961353 }
 					}
 				}
 			}
@@ -5176,7 +5577,8 @@
 				"https://www.caerffili.gov.uk/main.aspx?lang=cy-GB": {
 					"values": {
 						"2021-03-09": { "CO2": 2.11, "ref": "https://www.websitecarbon.com/website/caerffili-gov-uk-main-aspxlangcy-gb/" },
-						"2021-05-26": { "CO2": 2.24, "bytes": 3719778, "green": 0, "imagebytes": 724772 }
+						"2021-05-26": { "CO2": 2.24, "bytes": 3719778, "green": 0, "imagebytes": 724772 },
+						"2021-06-30": { "CO2": 2.28, "bytes": 3784489, "green": 0, "imagebytes": 723996 }
 					}
 				}
 			}
@@ -5188,7 +5590,8 @@
 				"https://www.blaenau-gwent.gov.uk/cy/hafan/": {
 					"values": {
 						"2021-03-11": { "CO2": 0.52, "ref": "https://www.websitecarbon.com/website/blaenau-gwent-gov-uk-cy-hafan/" },
-						"2021-05-26": { "CO2": 0.43, "bytes": 718346, "green": 0, "imagebytes": 217137 }
+						"2021-05-26": { "CO2": 0.43, "bytes": 718346, "green": 0, "imagebytes": 217137 },
+						"2021-06-30": { "CO2": 0.44, "bytes": 724375, "green": 0, "imagebytes": 224908 }
 					}
 				}
 			}
@@ -5200,7 +5603,8 @@
 				"https://www.torfaen.gov.uk/cy/Home.aspx": {
 					"values": {
 						"2021-03-11": { "CO2": 0.86, "ref": "https://www.websitecarbon.com/website/torfaen-gov-uk-cy-home-aspx/" },
-						"2021-05-27": { "CO2": 0.83, "bytes": 1373812, "green": 0, "imagebytes": 1060319 }
+						"2021-05-27": { "CO2": 0.83, "bytes": 1373812, "green": 0, "imagebytes": 1060319 },
+						"2021-06-30": { "CO2": 0.83, "bytes": 1370468, "green": 0, "imagebytes": 1060556 }
 					}
 				}
 			}
@@ -5212,7 +5616,8 @@
 				"https://www.monmouthshire.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.88, "ref": "https://www.websitecarbon.com/website/monmouthshire-gov-uk/" },
-						"2021-05-27": { "CO2": 3.09, "bytes": 5133489, "green": 0, "imagebytes": 4459301 }
+						"2021-05-27": { "CO2": 3.09, "bytes": 5133489, "green": 0, "imagebytes": 4459301 },
+						"2021-06-30": { "CO2": 1.39, "bytes": 2301238, "green": 0, "imagebytes": 1619511 }
 					}
 				}
 			}
@@ -5224,7 +5629,8 @@
 				"http://www.newport.gov.uk/cy/Hafan.aspx": {
 					"values": {
 						"2021-03-09": { "CO2": 0.97, "ref": "https://www.websitecarbon.com/website/newport-gov-uk-cy-hafan-aspx/" },
-						"2021-05-27": { "CO2": 1.12, "bytes": 1854770, "green": 0, "imagebytes": 846108 }
+						"2021-05-27": { "CO2": 1.12, "bytes": 1854770, "green": 0, "imagebytes": 846108 },
+						"2021-06-30": { "CO2": 1.03, "bytes": 1704256, "green": 0, "imagebytes": 822052 }
 					}
 				}
 			}
@@ -5236,7 +5642,8 @@
 				"https://cy.powys.gov.uk/?ccp=true": {
 					"values": {
 						"2021-03-11": { "CO2": 1.25, "ref": "https://www.websitecarbon.com/website/cy-powys-gov-uk-ccptrue/" },
-						"2021-05-27": { "CO2": 1.35, "bytes": 2241289, "green": 0, "imagebytes": 1823552 }
+						"2021-05-27": { "CO2": 1.35, "bytes": 2241289, "green": 0, "imagebytes": 1823552 },
+						"2021-06-30": { "CO2": 1.26, "bytes": 2089242, "green": 0, "imagebytes": 1678552 }
 					}
 				}
 			}
@@ -5248,7 +5655,8 @@
 				"https://www.merthyr.gov.uk/resident/?lang=cy-GB": {
 					"values": {
 						"2021-03-10": { "CO2": 1.47, "ref": "https://www.websitecarbon.com/website/merthyr-gov-uk-resident-langcy-gb/" },
-						"2021-05-27": { "CO2": 0.8, "bytes": 1330839, "green": 0, "imagebytes": 367687 }
+						"2021-05-27": { "CO2": 0.8, "bytes": 1330839, "green": 0, "imagebytes": 367687 },
+						"2021-06-30": { "CO2": 0.89, "bytes": 1482807, "green": 0, "imagebytes": 369796 }
 					}
 				}
 			}
