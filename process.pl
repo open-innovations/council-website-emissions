@@ -4,6 +4,7 @@
 use lib "lib/";
 use JSON::XS;
 use Data::Dumper;
+use POSIX qw(strftime);
 use ODILeeds::CarbonAPI;
 
 %config;
@@ -41,6 +42,7 @@ $data = JSON::XS->new->utf8->decode(join("",@lines));
 %org;
 $avco2 = 1.76;
 $monthlyvisits = 10000;
+$mostrecent = "2000-00-00";
 
 # Make the CSV
 $tsv = "$config{'Code'}\t$type name\tWebsite\tStatus\tCO2 emissions (g)\tWebsite carbon link\tDate last checked\n";
@@ -75,6 +77,7 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 			}
 		}
 	}
+	if($recent gt $mostrecent){ $mostrecent = $recent; }
 
 	if($data->{'orgs'}{$id}{'active'}){
 		$tsv .= "$id\t$data->{'orgs'}{$id}{'name'}\t$url";
@@ -105,8 +108,21 @@ open(FILE,">",$cfile);
 print FILE $csv;
 close(FILE);
 
-
-
+open(FILE,"index.html");
+@lines = <FILE>;
+close(FILE);
+$str = join("",@lines);
+if($str =~ /<time datetime="([^\"]*)">([^\<]*)<\/time>/){
+	$lastupdate = $1;
+	if($mostrecent gt $lastupdate){
+		print "Updating timestamp from $lastupdate to $mostrecent\n";
+		$mostrecentnice = ISO2String("%d %B %Y",$mostrecent);
+		$str =~ s/<time datetime="([^\"]*)">([^\<]*)<\/time>/<time datetime="$mostrecent">$mostrecentnice<\/time>/;
+		open(FILE,">","index.html");
+		print FILE $str;
+		close(FILE);
+	}
+}
 
 @order = reverse(sort{$org{$a}{'CO2'} <=> $org{$b}{'CO2'} || $org{$a}{'name'} cmp $org{$b}{'name'}}(keys(%org)));
 
@@ -456,3 +472,14 @@ sub getDetails {
 	}
 	return $rtn;	
 }
+
+sub ISO2String {
+	my $fmt = $_[0];
+	my $str = $_[1];
+	my $o = $str;
+	if($str =~ /(^|\D)([0-9]{4})-([0-9]{2})-([0-9]{2})(\D|$)/){
+		$o = strftime($fmt,(0,0,12,$4,$3-1,$2-1900));
+	}
+	return $o;
+}
+
