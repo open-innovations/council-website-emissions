@@ -72,7 +72,10 @@
 				}
 				// Build y-axis labels
 				gap = defaultSpacing(min,max,3);
-				for(y = min; y <= max; y+=gap) ylabels[y] = {'label':y};
+				// Work out precision of the gap and limit our labels to the same precision
+				gapstr = gap+"";
+				prec = (gapstr.indexOf(".") > 0 ? gapstr.split('.')[1].length : 0);
+				for(y = min; y <= max; y+=gap) ylabels[y] = {'label':(prec > 0 ? y.toPrecision(prec) : y)};
 
 				// Build x-axis labels
 				monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
