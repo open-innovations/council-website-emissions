@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+# Website CO2 emissions calculator v 1.1.1
 
 use lib "lib/";
 use JSON::XS;
@@ -276,7 +277,7 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 			for($j = 0; $j < @{$details->{'weight'}{'details'}{'items'}}; $j++){
 				$u = $details->{'weight'}{'details'}{'items'}[$j]{'url'};
 				$biggestfiles{$u} = {'bytes'=>$details->{'weight'}{'details'}{'items'}[$j]{'totalBytes'},'id'=>$id};
-				if($u =~ /\.(png|jpg|jpeg|webp)$/ || $u =~ /\.(png|jpg|jpeg|webp)\?/ || $u =~ /format=(png|jpg|jpeg|webp)\&/){
+				if($u =~ /\.(png|jpg|jpeg|webp)($|\?|\.)/ || $u =~ /format=(png|jpg|jpeg|webp)\&/){
 					if($details->{'weight'}{'details'}{'items'}[$j]{'totalBytes'} >= $large){
 						if(!$doneimages{$u}){
 							$doneimages{$u} = {};
