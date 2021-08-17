@@ -36,7 +36,7 @@ html, body {
 	line-height: 1.44em;
 }
 h1 { font-size: 1.7em; font-weight: 600; }
-h2 { font-size: 1.4em; font-weight: 600; }
+h2 { font-size: 1.4em; font-weight: 600; margin-bottom: 1em; }
 h3 { font-size: 1.2em; margin-top: 2em; }
 h1 + p, h2 + p, h3 + p { margin-top: 1em; }
 strong { font-weight: 700; }
@@ -85,20 +85,23 @@ a.button:hover, button:hover, button:focus, a.button:focus { background-color: #
 .padded { padding: 1em; }
 .padded-bottom { padding: 1em; margin-bottom: 1em; }
 .doublepadded { padding: 2em; }
-.tallpadded { padding: 2em 1em; }
+.tallpadded { padding-top: 2em; padding-bottom: 2em; }
 section { padding: 2em 0; }
 
 /* Use CSS Grid */
 .grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-auto-rows: minmax(204px, auto);
+	grid-auto-rows: auto;
 	grid-gap: 1em;
 	list-style: none;
 	order: 1;
 	margin: 0px;
 	padding: 0px;
 }
+.grid a { display: block; padding: 1.5em; text-decoration: none; height: 100%; }
+.grid a *:last-child { margin-bottom: 0; }
+.grid a:focus { outline: 4px solid #2254F4; }
 
 table { width: 100%; margin: 1em 0; }
 table th { background: #ddd; color: black; }

@@ -1,11 +1,12 @@
 #!/usr/bin/perl
-# Website CO2 emissions calculator v 1.1.1
+# Website CO2 emissions calculator v 1.1.2
 
 use lib "lib/";
 use JSON::XS;
 use Data::Dumper;
 use POSIX qw(strftime);
 use ODILeeds::CarbonAPI;
+
 
 %config;
 
@@ -32,6 +33,16 @@ $cfile = $config{'CSV'}||"data/index.csv";
 $tfile = $config{'TSV'}||"data/index.tsv";
 
 $carbon = ODILeeds::CarbonAPI->new();
+
+
+
+if(!-d $odir){
+	`mkdir $odir`;
+}
+if(!-e $odir."template.html"){
+	print "No template file at ".$odi."template.html\n";
+	exit;
+}
 
 open(FILE,$file);
 @lines = <FILE>;
@@ -144,6 +155,11 @@ for($i = 0; $i < $tot; $i++){
 }
 $half = int($nn/2);
 
+if($nn == 0){
+	print "No values!\n";
+	exit;	
+}
+
 for($i = 0; $i < $tot; $i++){
 	$id = $order[$i];
 	$org{$id}{'rank'} = $i+1;
@@ -184,6 +200,7 @@ $table .= "$idt</table>\n";
 $tablebest .= "$idt</table>\n";
 $tableworst .= "$idt</table>\n";
 
+print "nn = $nn\n";
 $av /= $nn;
 
 $better = ($av < $avco2);
@@ -293,7 +310,7 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 			for($j = 0; $j < @{$details->{'weight'}{'details'}{'items'}}; $j++){
 				$u = $details->{'weight'}{'details'}{'items'}[$j]{'url'};
 				$biggestfiles{$u} = {'bytes'=>$details->{'weight'}{'details'}{'items'}[$j]{'totalBytes'},'id'=>$id};
-				if($u =~ /\.(png|jpg|jpeg|webp)($|\?|\.)/ || $u =~ /format=(png|jpg|jpeg|webp)\&/){
+				if($u =~ /\.(png|jpg|jpeg|webp)($|[\?\.\:])/i || $u =~ /format=(png|jpg|jpeg|webp)\&/i){
 					if($details->{'weight'}{'details'}{'items'}[$j]{'totalBytes'} >= $large){
 						if(!$doneimages{$u}){
 							$doneimages{$u} = {};
@@ -482,4 +499,3 @@ sub ISO2String {
 	}
 	return $o;
 }
-
