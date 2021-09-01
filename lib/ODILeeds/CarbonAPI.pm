@@ -99,6 +99,10 @@ sub makeEntry {
 		@lines = <FILE>;
 		close(FILE);
 		$str = join("",@lines);
+		if($str eq ""){
+			print "ERROR: No input for $jfile\n";
+			return {};
+		}
 		$json = JSON::XS->new->utf8->decode($str);
 		if(!$json->{'analysisUTCTimestamp'}){
 			$download = 1;
@@ -117,6 +121,10 @@ sub makeEntry {
 		open(FILE,">",$jfile);
 		print FILE $str;
 		close(FILE);
+		if($str eq ""){
+			print "ERROR: No input for $jfile\n";
+			return {};
+		}
 		$json = JSON::XS->new->utf8->decode($str);
 	}
 	$n = 0;
