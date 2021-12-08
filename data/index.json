@@ -5231,7 +5231,6 @@
 				"https://www.kirklees.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.56, "ref": "https://www.websitecarbon.com/website/kirklees-gov-uk/" },
-						"2021-05-25": { "CO2": null },
 						"2021-05-26": { "CO2": 0.68, "bytes": 1124466, "green": 0, "imagebytes": 804329 },
 						"2021-06-10": { "CO2": 0.67, "bytes": 1116646, "green": 0, "imagebytes": 817078 },
 						"2021-06-30": { "CO2": 0.5, "bytes": 830899, "green": 0, "imagebytes": 511973 },
