@@ -251,6 +251,7 @@ $indent = "\t\t\t\t";
 $fullsavings = 0;
 $co2savings = 0;
 $jqueryorg = 0;
+%cookie = ('civiccomputing.com'=>{'total'=>0,'n'=>0},'freeprivacypolicy.com'=>{'total'=>0,'n'=>0},'cookiepro.com'=>{'total'=>0,'n'=>0},'cookiebot.com'=>{'total'=>0,'n'=>0},'cookielaw.org'=>{'total'=>0,'n'=>0},'cookiereports.com'=>{'total'=>0,'n'=>0});
 
 # Make a page for each org
 for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(%{$data->{'orgs'}}))){
@@ -369,8 +370,21 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 			$fonts = 0;
 			$ttf = 0;
 			$jquery = 0;
+			$civiccomputing = 0;
+			$privacypolicy = 0;
+			for $src (keys(%cookie)){
+				$cookie{$src}{'n'} = 0;
+			}
 			for($j = 0; $j < @{$details->{'weight'}{'details'}{'items'}}; $j++){
 				$file = "File";
+				for $src (keys(%cookie)){
+					if($details->{'weight'}{'details'}{'items'}[$j]{'url'} =~ $src){
+						$cookie{$src}{'n'}++;
+					}
+				}
+#				if($details->{'weight'}{'details'}{'items'}[$j]{'url'} =~ /cookie/ || $details->{'weight'}{'details'}{'items'}[$j]{'url'} =~ /consent/){
+#					print "$details->{'weight'}{'details'}{'items'}[$j]{'url'}\n";
+#				}
 				if($details->{'weight'}{'details'}{'items'}[$j]{'url'} =~ /([^\/]*)$/){
 					$file = $1;
 					if($file =~ /jquery/){ $jquery++; }
@@ -392,6 +406,9 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 				}
 			}
 			if($jquery > 0){ $jqueryorg++; }
+			for $src (keys(%cookie)){
+				if($cookie{$src}{'n'} > 0){ $cookie{$src}{'total'}++; }
+			}
 			$dup = 0;
 			for $u (reverse(sort{ $duplicates{$a}{'bytes'} <=> $duplicates{$b}{'bytes'} }keys((%duplicates)))){
 				if($u){
@@ -448,6 +465,10 @@ for($i = 0; $i < @big; $i++){
 }
 print "Yearly image savings of ".niceSize($fullsavings*$monthlyvisits*12)." (".sprintf("%0.1f",($co2savings*$monthlyvisits*12)/1e3)."kg CO2) if $monthlyvisits visitors per month\n";
 print "jQuery usage: $jqueryorg/$tot orgs.\n";
+print "Cookie settings:\n";
+for $src (reverse(sort{$cookie{$a}{'total'} <=> $cookie{$b}{'total'}}(keys(%cookie)))){
+	print "\t$src: $cookie{$src}{'total'}\n";
+}
 
 sub niceSize {
 	my $b = $_[0];
