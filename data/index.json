@@ -2576,7 +2576,7 @@
 			"active": true,
 			"name": "Watford Borough Council",
 			"urls": {
-				"http://www.watford.gov.uk/": {
+				"https://www.watford.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 12.12, "ref": "https://www.websitecarbon.com/website/watford-gov-uk/" },
 						"2021-05-25": { "CO2": 6.3, "ref": "https://www.websitecarbon.com/website/watford-gov-uk/" },
@@ -2588,7 +2588,8 @@
 						"2021-10-06": { "CO2": 6.74, "bytes": 12329300, "green": 1, "imagebytes": 11832546 },
 						"2021-11-02": { "CO2": 4.91, "bytes": 8981420, "green": 1, "imagebytes": 8484741 },
 						"2021-12-08": { "CO2": 10.25, "bytes": 18759064, "green": 1, "imagebytes": 18132629 },
-						"2022-01-04": { "CO2": 13.03, "bytes": 23853876, "green": 1, "imagebytes": 23211302 }
+						"2022-01-04": { "CO2": 13.03, "bytes": 23853876, "green": 1, "imagebytes": 23211302 },
+						"2022-01-11": { "CO2": 10.26, "bytes": 18777525, "green": 1, "imagebytes": 18143561 }
 					}
 				}
 			}
@@ -7116,7 +7117,8 @@
 						"2021-10-06": { "CO2": 1.75, "bytes": 2900058, "green": 0, "imagebytes": 2406300 },
 						"2021-11-02": { "CO2": 1.85, "bytes": 3061247, "green": 0, "imagebytes": 2568197 },
 						"2021-12-08": { "CO2": 1.97, "bytes": 3269525, "green": 0, "imagebytes": 2775861 },
-						"2022-01-04": { "CO2": 5.7, "bytes": 9453988, "green": 0, "imagebytes": 8960883 }
+						"2022-01-04": { "CO2": 5.7, "bytes": 9453988, "green": 0, "imagebytes": 8960883 },
+						"2022-01-11": { "CO2": 1.52, "bytes": 2515595, "green": 0, "imagebytes": 2007009 }
 					}
 				}
 			}
