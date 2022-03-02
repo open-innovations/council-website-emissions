@@ -12,7 +12,7 @@
 	<meta name="twitter:site" content="@ODILeeds">
 	<meta name="twitter:url" property="og:url" content="https://open-innovations.github.io/council-website-emissions/areas/E09000001">
 	<meta name="twitter:title" property="og:title" content="City of London website emissions">
-	<meta name="twitter:description" property="og:description" content="The City of London homepage produces 2.04g of CO2 emissions per visit (as of 2022-02-01).">
+	<meta name="twitter:description" property="og:description" content="The City of London homepage produces 0.8g of CO2 emissions per visit (as of 2022-03-01).">
 	<meta name="twitter:image" property="og:image" content="https://open-innovations.org/resources/images/logos/oi-square-5.png">
 </head>
 <body class="b1-bg">
@@ -39,6 +39,7 @@
 						<p><strong>Time to load:</strong> 1.5 seconds</p>
 						<table>
 							<tr><th>Date checked</th><th class="cen">CO2 / grams</th><th class="cen">Page size</th><th class="cen"><a href="https://www.thegreenwebfoundation.org/directory/">Energy</a></th></tr>
+							<tr><td>2022-03-01</td><td class="cen">0.80</td><td class="cen" data="1458986">1.5MB</td><td class="cen c5-bg">GREEN</td></tr>
 							<tr><td>2022-02-01</td><td class="cen">2.04</td><td class="cen" data="3731842">3.7MB</td><td class="cen c5-bg">GREEN</td></tr>
 							<tr><td>2022-01-04</td><td class="cen">1.81</td><td class="cen" data="3321150">3.3MB</td><td class="cen c5-bg">GREEN</td></tr>
 							<tr><td>2021-12-08</td><td class="cen">1.77</td><td class="cen" data="3239880">3.2MB</td><td class="cen c5-bg">GREEN</td></tr>
@@ -51,20 +52,27 @@
 							<tr><td>2021-03-09</td><td class="cen">1.43</td><td class="cen" data=""></td><td class="cen ">GRID?</td></tr>
 						</table>
 						<div class="tip">
+							<h4>Tip: Optimise images</h4>
+							<ol>
+								<li><a href="https://www.cityoflondon.gov.uk/image-library/banners-1920-x-630/Things-to-do/square-smile-such-a-beautiful-smile.x3d8d093e.jpg?q=70&f=webp">square-smile-such-a-...</a> is 76kB</li>
+								<li><a href="https://www.cityoflondon.gov.uk/image-library/banners-1920-x-630/System-wide-images-web-team-only/Guildhall-yard-with-red-chairs.x42e8c866.jpg?q=70&crop=1920,630,0,5&f=webp">Guildhall-yard-with-...</a> is 54kB</li>
+							</ol>
+							<p>First, check that images are appropriately sized - you most likely don't need a 6000x4000 pixel image straight from a digital camera. In Windows, the Photos software will let you quickly shrink huge images and will give you an improvement.</p>
+							<p>Next you could try using <a href="https://tinyjpg.com/">tinyjpg.com</a> (JPG image) or <a href="https://tinypng.com/">tinypng.com</a> (PNG image) to further optimise your image. This will strip out metadata that may be taking up lots of space.</p>
+							<p class="small">*This is an estimate from Google PageSpeed and you may get much better results than this in practice.</p>						</div>
+						<div class="tip">
 							<h4>Tip: Large files</h4>
 							<p>Aside from images, here are the biggest resources:</p>
 							<ol>
-								<li><a href="https://www.cityoflondon.gov.uk/api/delivery/projects/website/entries/search?fields=entryTitle%2Csys.contentTypeId%2Csys.id&linkDepth=1&orderBy=%5B%7B%22asc%22%3A%22entryTitle%22%7D%5D&pageIndex=0&pageSize=10000&where=%5B%7B%22field%22%3A%22sys.versionStatus%22%2C%22equalTo%22%3A%22published%22%7D%2C%7B%22field%22%3A%22sys.contentTypeId%22%2C%22in%22%3A%5B%5D%7D%5D">search?fields=entryTitle%2Csys...</a> is 487kB &times;2</li>
-								<li><a href="https://www.cityoflondon.gov.uk/?redux=true">?redux=true</a> is 422kB</li>
-								<li><a href="https://www.cityoflondon.gov.uk/api/delivery/projects/website/nodes/things-to-do?entryFields=*&entryLinkDepth=4">things-to-do?entryFields=*&ent...</a> is 323kB</li>
-								<li><a href="https://www.cityoflondon.gov.uk/api/delivery/projects/website/nodes/root?entryFields=*&entryLinkDepth=4">root?entryFields=*&entryLinkDe...</a> is 323kB</li>
-								<li><a href="https://www.cityoflondon.gov.uk/"></a> is 293kB</li>
-								<li><a href="https://www.cityoflondon.gov.uk/static/js/app.96d0a57a1f30d112f0db.js">app.96d0a57a1f30d112f0db.js</a> is 180kB</li>
-								<li><a href="https://platform.twitter.com/embed/embed.modules.c690f634f8916333bc3b.js">embed.modules.c690f634f8916333...</a> is 169kB</li>
-								<li><a href="https://www.cityoflondon.gov.uk/static/js/vendor.5c05f3c588b01b220163.js">vendor.5c05f3c588b01b220163.js</a> is 154kB</li>
-								<li><a href="https://platform.twitter.com/widgets/widget_iframe.8f764d5bd2778f88121d31d7d8d8e1e3.html?origin=https%3A%2F%2Fwww.cityoflondon.gov.uk">widget_iframe.8f764d5bd2778f88...</a> is 106kB</li>
+								<li><a href="https://www.cityoflondon.gov.uk/"></a> is 462kB</li>
+								<li><a href="https://www.cityoflondon.gov.uk/static/modern/js/vendor.28c0e34215961311edf8.mjs">vendor.28c0e34215961311edf8.mjs</a> is 191kB</li>
+								<li><a href="https://platform.twitter.com/embed/embed.modules.aef85bf61d706d7edafa.js">embed.modules.aef85bf61d706d7e...</a> is 172kB</li>
+								<li><a href="https://www.cityoflondon.gov.uk/static/modern/js/app.3a33ec7c661e3212e1a5.mjs">app.3a33ec7c661e3212e1a5.mjs</a> is 168kB</li>
+								<li><a href="https://platform.twitter.com/widgets/widget_iframe.a58e82e150afc25eb5372dd55a98b778.html?origin=https%3A%2F%2Fwww.cityoflondon.gov.uk">widget_iframe.a58e82e150afc25e...</a> is 106kB</li>
+								<li><a href="https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js">cookieControl-9.x.min.js</a> is 78kB</li>
+								<li><a href="https://www.googletagmanager.com/gtm.js?id=GTM-5C7LND">gtm.js?id=GTM-5C7LND</a> is 56kB</li>
+								<li><a href="https://www.cityoflondon.gov.uk/api/delivery/projects/website/entries/search?linkDepth=3&pageIndex=0&pageSize=20&where=%5B%7B%22field%22%3A%22sys.id%22%2C%22equalTo%22%3A%22c86d8652-689c-4d20-8163-4916d5bc870a%22%7D%2C%7B%22field%22%3A%22sys.language%22%2C%22equalTo%22%3A%22en-GB%22%7D%2C%7B%22field%22%3A%22sys.versionStatus%22%2C%22equalTo%22%3A%22published%22%7D%5D">search?linkDepth=3&pageIndex=0...</a> is 52kB</li>
 							</ol>
-							<p>There is 1 duplicate resource included on the page.</p>
 						</div>
 					</div>
 					<div>
