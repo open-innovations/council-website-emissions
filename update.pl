@@ -36,7 +36,7 @@ open(FILE,$file);
 @lines = <FILE>;
 close(FILE);
 $str = join("",@lines);
-$data = JSON::XS->new->utf8->decode($str);
+$data = parseJSON($str);
 
 # Create an object for calculating the carbon usage
 $carbon = ODILeeds::CarbonAPI->new();
@@ -220,6 +220,13 @@ sub isLeapYear {
 	return $ly;
 }
 
+sub parseJSON {
+	my $body = $_[0];
+	my $x;
+	eval { $x = JSON::XS->new->utf8->decode($body); return $x; }
+	or do { return {}; };
+}
+
 sub getDetails {
 	my $url = $_[0];
 	my $safeurl = $carbon->getSafeURL($url);
@@ -230,7 +237,7 @@ sub getDetails {
 		@lines = <FILE>;
 		close(FILE);
 		$str = join("",@lines);
-		$json = JSON::XS->new->utf8->decode($str);
+		$json = parseJSON($str);
 		$rtn->{'file'} = 1;
 		if($json->{'lighthouseResult'}{'audits'}{'first-contentful-paint'}){
 			$rtn->{'first-contentful-paint'} = $json->{'lighthouseResult'}{'audits'}{'first-contentful-paint'};
