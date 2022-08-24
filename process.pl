@@ -251,10 +251,11 @@ $indent = "\t\t\t\t";
 $fullsavings = 0;
 $co2savings = 0;
 $jqueryorg = 0;
-%cookie = ('civiccomputing.com'=>{'total'=>0,'n'=>0},'freeprivacypolicy.com'=>{'total'=>0,'n'=>0},'cookiepro.com'=>{'total'=>0,'n'=>0},'cookiebot.com'=>{'total'=>0,'n'=>0},'cookielaw.org'=>{'total'=>0,'n'=>0},'cookiereports.com'=>{'total'=>0,'n'=>0});
+%cookie = ('civiccomputing.com'=>{'total'=>0,'n'=>0},'freeprivacypolicy.com'=>{'total'=>0,'n'=>0},'cookiepro.com'=>{'total'=>0,'n'=>0},'cookiebot.com'=>{'total'=>0,'n'=>0},'cookielaw.org'=>{'total'=>0,'n'=>0},'cookiereports.com'=>{'total'=>0,'n'=>0},'privacypolicies.com'=>{'total'=>0,'n'=>0});
 
 # Make a page for each org
 for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(%{$data->{'orgs'}}))){
+
 	$txt = $html;
 	$body = "<h1>$data->{'orgs'}{$id}{'name'} - <code>$id</code>".($data->{'orgs'}{$id}{'active'} ? "<span class=\"c5-bg code\">ACTIVE</span>":"<span class=\"c12-bg code\">INACTIVE</span>")."</h1>\n";
 	if($data->{'orgs'}{$id}{'replacedBy'}){
@@ -382,9 +383,9 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 						$cookie{$src}{'n'}++;
 					}
 				}
-#				if($details->{'weight'}{'details'}{'items'}[$j]{'url'} =~ /cookie/ || $details->{'weight'}{'details'}{'items'}[$j]{'url'} =~ /consent/){
-#					print "$details->{'weight'}{'details'}{'items'}[$j]{'url'}\n";
-#				}
+				#if($details->{'weight'}{'details'}{'items'}[$j]{'url'} =~ /cookie/ || $details->{'weight'}{'details'}{'items'}[$j]{'url'} =~ /consent/){
+				#	print "$details->{'weight'}{'details'}{'items'}[$j]{'url'}\n";
+				#}
 				if($details->{'weight'}{'details'}{'items'}[$j]{'url'} =~ /([^\/]*)$/){
 					$file = $1;
 					if($file =~ /jquery/){ $jquery++; }
@@ -493,6 +494,7 @@ sub getDetails {
 		@lines = <FILE>;
 		close(FILE);
 		$str = join("",@lines);
+		if(!$str){ $str = "{}"; }
 		$json = JSON::XS->new->utf8->decode($str);
 		$rtn->{'file'} = 1;
 		if($json->{'lighthouseResult'}{'audits'}{'first-contentful-paint'}){

@@ -87,7 +87,7 @@
 				for(d = sdate; d <= edate; d.setDate(d.getDate() + 1)){
 					smonth = (new Date(d.getFullYear(),d.getMonth(),1)).getTime();
 					m = d.getMonth();
-					if(!xlabels[smonth]) xlabels[smonth] = {'label':(m==0 ? '' : monthNames[m].substr(0,1))+(m==0 ? ' '+d.getFullYear():'')};
+					if(!xlabels[smonth]) xlabels[smonth] = {'label':(m==0 ? '' : (m%3==0 ? monthNames[m].substr(0,3) : ""))+(m==0 ? ' '+d.getFullYear():'')};
 				}
 				
 				div = document.createElement('div');
