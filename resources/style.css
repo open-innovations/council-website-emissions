@@ -144,6 +144,11 @@ table.top td:last-child { width: 20%; }
 table.top-best th { background-color: #1DD3A7; color: black; }
 table.top-worst th { background-color: #F9BC26; color: black; }
 
+.tabs { grid-gap: 1px; }
+.tabs .tab { background: #ddd; }
+.tabs .tab[aria-selected=true] { background: #f9f9f9; }
+.pane { background: #f9f9f9; padding: 1em; }
+
 .date { text-align: center; margin: 0 0 1em 0; font-weight: 600; }
 
 blockquote { min-height: auto!important; background: #efefef; padding: 1em 3em; margin-bottom: 1em; position: relative; quotes: "\201C""\201D""\2018""\2019"; }

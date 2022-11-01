@@ -1,8 +1,8 @@
 #!/usr/bin/perl
-# Website CO2 emissions wrapper v 1.1.1
+# Website CO2 emissions wrapper v 1.2.1
 
 use lib "lib/";
-use ODILeeds::CarbonAPI;
+use OpenInnovations::CarbonAPI;
 use JSON::XS;
 use Data::Dumper;
 use POSIX qw(strftime);
@@ -39,7 +39,7 @@ $str = join("",@lines);
 $data = parseJSON($str);
 
 # Create an object for calculating the carbon usage
-$carbon = ODILeeds::CarbonAPI->new();
+$carbon = OpenInnovations::CarbonAPI->new(("raw"=>$config{'raw'},"CC_GPSAPI_KEY"=>$ENV{'CC_GPSAPI_KEY'}));
 
 # Find the ISO8601 date format for today
 $today = strftime('%Y-%m-%d',gmtime());
@@ -94,6 +94,8 @@ sub processOrgs {
 sub processOrg {
 	my $id = $_[0];
 	my $ago = $_[1];
+
+	print "Process Org $id ($ago)\n";
 	my (@urls,$u,$url,$recent,@dates,$lastco,$i,$days,$entry,$dl,$details,$handle,$image_decoded);
 
 	@urls = keys(%{$data->{'orgs'}{$id}{'urls'}});

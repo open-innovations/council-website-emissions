@@ -1,7 +1,12 @@
-package ODILeeds::CarbonAPI;
+package OpenInnovations::CarbonAPI;
 
 # Port of https://gitlab.com/wholegrain/carbon-api-2-0/-/blob/master/includes/carbonapi.php
-# Version 1.0
+# Version 3.1
+#   - Add backup check when transferSize is 0 in lighthouseResult
+# Version 3.0
+#   - Update calculations to CarbonAPI v3
+# Uses v3 figures from the CarbonAPI at https://sustainablewebdesign.org/calculating-digital-emissions/
+# Last updated: 2022-11-01
 
 use strict;
 use warnings;
@@ -10,14 +15,14 @@ use URI::Split qw/ uri_split /;
 use JSON::XS;
 use POSIX qw(strftime);
 
-my $KWG_PER_GB = 1.805;	# 0.81
-my $RETURNING_VISITOR_PERCENTAGE = 0.75;	# 0.75
-my $FIRST_TIME_VIEWING_PERCENTAGE = 0.25;	# 0.25
-my $PERCENTAGE_OF_DATA_LOADED_ON_SUBSEQUENT_LOAD = 0.02;	# 0.02
-my $CARBON_PER_KWG_GRID = 475;	# 442
-my $CARBON_PER_KWG_RENEWABLE = 33.4;	# 50
-my $PERCENTAGE_OF_ENERGY_IN_DATACENTER = 0.1008;
-my $PERCENTAGE_OF_ENERGY_IN_TRANSMISSION_AND_END_USER = 0.8992;	# 0.81
+my $KWG_PER_GB = 0.81; # 1.805 in v2
+my $RETURNING_VISITOR_PERCENTAGE = 0.75;	# same as v2
+my $FIRST_TIME_VIEWING_PERCENTAGE = 0.25;	# same as v2
+my $PERCENTAGE_OF_DATA_LOADED_ON_SUBSEQUENT_LOAD = 0.02;	# same as v2
+my $CARBON_PER_KWG_GRID = 442;	# 475 in v2
+my $CARBON_PER_KWG_RENEWABLE = 50;	# 33.4 in v2
+my $PERCENTAGE_OF_ENERGY_IN_DATACENTER = 0.15;	# 0.1008 in v2
+my $PERCENTAGE_OF_ENERGY_IN_TRANSMISSION_AND_END_USER = 0.85;	# 0.8992 in v2
 my $CO2_GRAMS_TO_LITRES = 0.5562;
 
 
@@ -30,26 +35,30 @@ sub new {
  
 	bless $self, $class;
 
-	# Find most recent version of the green energy database
-	opendir(DIR,"data/raw/");
-	$date = "";
-	$recent = "";
-	$file = "";
-	while( ($filename = readdir(DIR))) {
-		if($filename =~ /([0-9]{4}-[0-9]{2}-[0-9]{2})\.db/){
-			$date = $1;
-			if($date gt $recent){
-				$file = $filename;
-				$recent = $date;
+	if($self->{'raw'}){
+
+		# Find most recent version of the green energy database
+		opendir(DIR,$self->{'raw'});
+		$date = "";
+		$recent = "";
+		$file = "";
+		while( ($filename = readdir(DIR))) {
+			if($filename =~ /([0-9]{4}-[0-9]{2}-[0-9]{2})\.db/){
+				$date = $1;
+				if($date gt $recent){
+					$file = $filename;
+					$recent = $date;
+				}
 			}
 		}
-	}
-	closedir(DIR);
-	if($file){
-		$self->{'db'} = "data/raw/$file";
-	}else{
-		print "Error: Please download and gunzip a green energy SQLite file from https://admin.thegreenwebfoundation.org/admin/green-urls and save it in data/raw/\n";
-		exit;
+		closedir(DIR);
+
+		if($file){
+			$self->{'db'} = $self->{'raw'}.$file;
+		}else{
+			print "Warning: Please download and gunzip a green energy SQLite file from https://admin.thegreenwebfoundation.org/admin/green-urls and save it in $self->{'raw'}\n";
+			exit;
+		}
 	}
 
 	return $self;
@@ -59,7 +68,7 @@ sub new {
 sub getGreen {
 	my ($self, $url) = @_;
 	my (@parts,$host,$rtn);
-	if($url){
+	if($url && $self->{'db'} && -e $self->{'db'}){
 		@parts = uri_split($url);
 		$host = $parts[1];
 		$rtn = `sqlite3 $self->{'db'} "select url,modified from greendomain where url = '$host'"`;
@@ -81,49 +90,59 @@ sub getSafeURL {
 
 sub makeEntry {
 	my ($self, $url) = @_;
-	my ($pageSpeedParameters,%results,$bytesTransfered,$statistics,$co2,%entry,$str,$json,@lines,@items,$n,%images,$safeurl,$jfile,$download,$today);
+	my ($pageSpeedParameters,%results,$bytesTransfered,$statistics,$co2,%entry,$str,$json,@lines,@items,$n,%images,$safeurl,$jfile,$download,$today,$i);
 
 	if(!$url){ return {}; }
 	# Setup the default parameters required for google
 	# Add the google page speed api key if it exists
-	$results{'pagespeedapi'} = { 'url' => 'https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url='.$url.($ENV{'CC_GPSAPI_KEY'} ? '&key='.$ENV{'CC_GPSAPI_KEY'} :'') };
+	$results{'pagespeedapi'} = { 'url' => 'https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url='.$url.($self->{'CC_GPSAPI_KEY'} ? '&key='.$self->{'CC_GPSAPI_KEY'} :'') };
 	$results{'greenweb'} = { 'green'=>$self->getGreen($url) };
 	
 	$safeurl = $self->getSafeURL($url);
-	$jfile = "data/raw/$safeurl.json";
+	$jfile = "";
 	$download = 0;
 	$today = strftime('%Y-%m-%d',gmtime());
 
-	if(-e $jfile){
-		open(FILE,$jfile);
-		@lines = <FILE>;
-		close(FILE);
-		$str = join("",@lines);
-		if($str eq ""){
-			print "ERROR: No input for $jfile\n";
-			return {};
-		}
-		$json = JSON::XS->new->utf8->decode($str);
-		if(!$json->{'analysisUTCTimestamp'}){
-			$download = 1;
-		}
-		if($json->{'analysisUTCTimestamp'} && substr($json->{'analysisUTCTimestamp'},0,10) ne $today){
+	if($self->{'raw'}){
+		$jfile = $self->{'raw'}."$safeurl.json";
+		
+		if(-e $jfile){
+			open(FILE,$jfile);
+			@lines = <FILE>;
+			close(FILE);
+			$str = join("",@lines);
+			if($str eq ""){
+				#print "ERROR: No input for $jfile\n";
+				return {};
+			}
+			$json = JSON::XS->new->utf8->decode($str);
+			if(!$json->{'analysisUTCTimestamp'}){
+				$download = 1;
+			}
+			if($json->{'analysisUTCTimestamp'} && substr($json->{'analysisUTCTimestamp'},0,10) ne $today){
+				$download = 1;
+			}
+		}else{
 			$download = 1;
 		}
 	}else{
 		$download = 1;
 	}
 
+
+
 	if($download){
-		print "Downloading $results{'pagespeedapi'}{'url'} ...\n";
+		#print "Downloading $results{'pagespeedapi'}{'url'} ...\n";
 		$str = `curl -s "$results{'pagespeedapi'}{'url'}"`;
-		# Save the contents
-		open(FILE,">",$jfile);
-		print FILE $str;
-		close(FILE);
 		if($str eq ""){
 			print "ERROR: No input for $jfile\n";
 			return {};
+		}
+		if($jfile){
+			# Save the contents
+			open(FILE,">",$jfile);
+			print FILE $str;
+			close(FILE);
 		}
 		$json = JSON::XS->new->utf8->decode($str);
 	}
@@ -131,6 +150,13 @@ sub makeEntry {
 	if($json->{'lighthouseResult'}{'audits'}{'network-requests'}{'details'}{'items'}){
 		@items = @{$json->{'lighthouseResult'}{'audits'}{'network-requests'}{'details'}{'items'}};
 		$n = @items;
+	}
+	
+	for($i = 0; $i < @items; $i++){
+		if($items[$i]{'transferSize'} == 0){
+			print "\tWARNING: No transferSize for item $i ($items[$i]{'url'})\n";
+			$items[$i]{'transferSize'} = checkCompressedDownloadSize($items[$i]{'url'});
+		}
 	}
 
 	# If google page speed api didnt work
@@ -167,7 +193,7 @@ sub makeEntry {
 # -----------------------------------------------------------------------------------------------------------------
 sub calculateTransferedBytes {
 	my ($self, @items) = @_;
-	my ($carry,$i);
+	my ($carry,$i,$url);
 	$carry = 0;
 	for($i = 0; $i < @items; $i++){
 		if($items[$i]{'transferSize'}){
@@ -175,6 +201,16 @@ sub calculateTransferedBytes {
 		}
 	}
 	return $carry;
+}
+
+sub checkCompressedDownloadSize {
+	my ($url) = $_[0];
+	my ($str,@rtn,$size);
+	$size = 0;
+	print "\tChecking compressed transfer for $url...";
+	$size = `curl -L --compressed -so /dev/null "$url" -w '%{size_download}'`;
+	print " $size bytes\n";
+	return $size;
 }
 
 sub getImages {

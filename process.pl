@@ -5,7 +5,7 @@ use lib "lib/";
 use JSON::XS;
 use Data::Dumper;
 use POSIX qw(strftime);
-use ODILeeds::CarbonAPI;
+use OpenInnovations::CarbonAPI;
 
 
 %config;
@@ -32,7 +32,7 @@ $file = $config{'JSON'}||"data/index.json";
 $cfile = $config{'CSV'}||"data/index.csv";
 $tfile = $config{'TSV'}||"data/index.tsv";
 
-$carbon = ODILeeds::CarbonAPI->new();
+$carbon = OpenInnovations::CarbonAPI->new(("raw"=>$config{'raw'},"CC_GPSAPI_KEY"=>$ENV{'CC_GPSAPI_KEY'}));
 
 
 
@@ -51,7 +51,7 @@ close(FILE);
 $data = JSON::XS->new->utf8->decode(join("",@lines));
 
 %org;
-$avco2 = 1.76;
+$avco2 = 0.5;	# Previously 1.76 in v2
 $monthlyvisits = 10000;
 $mostrecent = "2000-00-00";
 
@@ -95,13 +95,14 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 		$nm = $data->{'orgs'}{$id}{'name'};
 		$co2 = $data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$recent}{'CO2'}||"";
 		$lnk = $data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$recent}{'ref'};
+		$byt = $data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$recent}{'bytes'};
 		if($co2){
 			$tsv .= "\t\t".sprintf("%0.2f",$co2)."\t$lnk";
 		}else{
 			$tsv .= "\tFAIL\t\t"
 		}
 		$tsv .= "\t$recent\n";
-		$org{$id} = {'name'=>$nm,'url'=>$url,'CO2'=>$co2,'link'=>$lnk,'date'=>$recent};
+		$org{$id} = {'name'=>$nm,'url'=>$url,'CO2'=>$co2,'link'=>$lnk,'date'=>$recent,'bytes'=>$byt};
 	}
 }
 @vals = split(/\t/,$tsv);
@@ -138,9 +139,9 @@ if($str =~ /<time datetime="([^\"]*)">([^\<]*)<\/time>/){
 @order = reverse(sort{$org{$a}{'CO2'} <=> $org{$b}{'CO2'} || $org{$a}{'name'} cmp $org{$b}{'name'}}(keys(%org)));
 
 $idt = "				";
-$table = "\n$idt<table class=\"table-sort\">\n$idt\t<tr><th>Rank</th><th>$type</th><th>$config{'Code'}</th><th>CO2 / grams</th><th>Last checked</th></tr>\n";
-$tablebest = "\n$idt<table class=\"top top-best\">\n$idt\t<tr><th>$type</th><th>CO2 / grams</th></tr>\n";
-$tableworst = "\n$idt<table class=\"top top-worst\">\n$idt\t<tr><th>$type</th><th>CO2 / grams</th></tr>\n";
+$table = "\n$idt<table class=\"table-sort\">\n$idt\t<tr><th>Rank</th><th>$type</th><th>$config{'Code'}</th><th>CO2 (g)</th><th>MB</th><th>Updated</th></tr>\n";
+$tablebest = "\n$idt<table class=\"top top-best\">\n$idt\t<tr><th>$type</th><th>CO2 (g)</th></tr>\n";
+$tableworst = "\n$idt<table class=\"top top-worst\">\n$idt\t<tr><th>$type</th><th>CO2 (g)</th></tr>\n";
 $rank = 1;
 $av = 0;
 $tot = @order;
@@ -173,7 +174,7 @@ for($i = 0; $i < $tot; $i++){
 	if(!$org{$id}{'CO2'}){
 		$missing++;
 	}
-	$tr = "$idt\t<tr><td class=\"cen\">$rank</td><td><a href=\"$odir$id.html\">".$org{$id}{'name'}.($org{$id}{'url'} ? "</a>":"")."</td><td class=\"cen\">$id</td><td class=\"cen\">".($org{$id}{'link'} ? "<a href=\"$org{$id}{'link'}\">":"").($org{$id}{'CO2'} ? sprintf("%0.2f",$org{$id}{'CO2'}) : "?").($org{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">$org{$id}{'date'}</td></tr>\n";
+	$tr = "$idt\t<tr><td class=\"cen\">$rank</td><td><a href=\"$odir$id.html\">".$org{$id}{'name'}.($org{$id}{'url'} ? "</a>":"")."</td><td class=\"cen\">$id</td><td class=\"cen\">".($org{$id}{'link'} ? "<a href=\"$org{$id}{'link'}\">":"").($org{$id}{'CO2'} ? sprintf("%0.2f",$org{$id}{'CO2'}) : "?").($org{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">".sprintf("%0.1f",$org{$id}{'bytes'}/1e6)."</td><td class=\"cen\">$org{$id}{'date'}</td></tr>\n";
 	$tr2 = "$idt\t<tr><td><a href=\"$odir$id.html\">".$org{$id}{'name'}.($org{$id}{'url'} ? "</a>":"")."</td><td class=\"cen\">".($org{$id}{'CO2'} ? sprintf("%0.2f",$org{$id}{'CO2'}) : "?")."</td></tr>\n";
 	$table .= $tr;
 	if($org{$id}{'CO2'} > 0){
