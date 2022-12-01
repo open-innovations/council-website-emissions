@@ -7,7 +7,6 @@ use Data::Dumper;
 use POSIX qw(strftime);
 use OpenInnovations::CarbonAPI;
 
-
 %config;
 
 if(-e ".config"){
@@ -88,6 +87,7 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 			}
 		}
 	}
+
 	if($recent gt $mostrecent){ $mostrecent = $recent; }
 
 	if($data->{'orgs'}{$id}{'active'}){
@@ -105,6 +105,51 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 		$org{$id} = {'name'=>$nm,'url'=>$url,'CO2'=>$co2,'link'=>$lnk,'date'=>$recent,'bytes'=>$byt};
 	}
 }
+# Now go through everything again and compare the overall most recent date with data from a year before
+if($mostrecent =~ /^([0-9]{4})\-([0-9]{2})/){
+	$y = $1-1;
+	$m = $2;
+	$yearago = "$y-$m";
+	$values = {'size'=>{'yearago'=>[],'now'=>[]},'co2'=>{'yearago'=>[],'now'=>[]}};
+	for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(%{$data->{'orgs'}}))){
+		$url = "";
+		@urls = keys(%{$data->{'orgs'}{$id}{'urls'}});
+		# Find the default URL (if there is only one URL this is it)
+		if(@urls == 1){
+			$url = $urls[0];
+		}elsif(@urls > 1){
+			for($i = 0; $i < @urls; $i++){
+				if($data->{'orgs'}{$id}{'urls'}{$urls[$i]}{'default'}){
+					$url = $urls[$i];
+				}
+			}
+			if(!$def){
+				print "No default URL provided for $id so using $urls[0]";
+				$url = $urls[0];
+			}
+		}
+		@dates = reverse(sort(keys(%{$data->{'orgs'}{$id}{'urls'}{$url}{'values'}})));
+		$yearago = "";
+		if($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$mostrecent}){
+			for($d = 0; $d < @dates; $d++){
+				if($dates[$d] =~ /$y-$m/){ $yearago = $dates[$d]; }
+			}
+			if($yearago){
+				#print "A year ago $mostrecent to $yearago ($id)\n";
+				push(@{$values->{'co2'}{'yearago'}},$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$yearago}{'CO2'});
+				push(@{$values->{'co2'}{'now'}},$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$mostrecent}{'CO2'});
+				push(@{$values->{'size'}{'yearago'}},$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$yearago}{'bytes'});
+				push(@{$values->{'size'}{'now'}},$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$mostrecent}{'bytes'});
+			}
+		}
+	}
+	$n = @{$values->{'co2'}{'yearago'}};
+	print "Based on ".$n." entries, since last year\n";
+	print "\t- the median CO2 has changed from ".median(@{$values->{'co2'}{'yearago'}})."g to ".median(@{$values->{'co2'}{'now'}})."g\n";
+	print "\t- the median homepage size has changed from ".sprintf("%0.1f",median(@{$values->{'size'}{'yearago'}})/1e6)."MB to ".sprintf("%0.1f",median(@{$values->{'size'}{'now'}})/1e6)."MB\n";
+}
+
+
 @vals = split(/\t/,$tsv);
 $csv = "";
 for($i = 0; $i < @vals; $i++){
@@ -210,7 +255,7 @@ if($av > 0.5*$avco2){ $howwell = "well"; }
 if($av > 0.75*$avco2){ $howwell = "better"; }
 if($av > 1*$avco2){ $howwell = "OK"; }
 if($av > 1.25*$avco2){ $howwell = "badly"; }
-$results = "The average emissions from a $type homepage are <strong class=\"bold\">".sprintf("%.2f",$av)."g</strong> (median of <strong class=\"bold\">".sprintf("%.2f",$median)."g</strong>) which is ".($better ? "better than":"worse than")." an average website (".$avco2."g). So, overall, ".$typeplural." are doing <strong class=\"bold\">$howwell</strong>.";
+$results = "The average emissions from a $type homepage are <strong class=\"bold\">".sprintf("%.2f",$av)."g</strong> (median of <strong class=\"bold\">".sprintf("%.2f",$median)."g</strong>) which is ".($better ? "better than":"worse than")." an average website (".$avco2."g). Overall, ".$typeplural." are doing <strong class=\"bold\">$howwell</strong>.";
 if($missing > 0){
 	$results .= " We were unable to calculate emissions for <strong class=\"bold\">$missing out of $tot</strong> ".$typeplural." possibly due to their sites blocking automated requests.";
 }
@@ -513,7 +558,20 @@ sub getDetails {
 	}
 	return $rtn;	
 }
-
+sub median {
+	my @data = @_;
+	@data = sort(@data);
+	my $count = @data;
+	my $med = 0;
+	my $pos = int($count / 2);
+	if( $count % 2 == 1){
+		return $data[$pos];
+	}else{
+		my $med2 = $med - 1;
+		return ($data[$pos] + $data[$pos-1]) / 2;
+	}
+	return "";
+}
 sub ISO2String {
 	my $fmt = $_[0];
 	my $str = $_[1];

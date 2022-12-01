@@ -57,102 +57,28 @@
 			tr = t.querySelectorAll('tr');
 			tr.forEach(function(row){
 				row.addEventListener('mouseover',function(e){
-					console.log('over',e);
 				});
 			});
 			if(tr.length > 3){
-				graphs = {
-					'carbon': {
-						'data': [],
-						'min': 0,
-						'max': -Infinity,
-						'xlabels': {},
-						'ylabels': {},
-						'sdate': 0,
-						'edate': 0,
-						'column': 1,
-						'title': 'CO2 / grams'
-					},
-					'size': {
-						'data': [],
-						'min': 0,
-						'max': -Infinity,
-						'xlabels': {},
-						'ylabels': {},
-						'sdate': 0,
-						'edate': 0,
-						'column': 2,
-						'scale': 1e-6,
-						'title': 'Size / MB'
-					}
-					
-				};
 
 				tabbed = document.createElement('div');
 				tabbed.classList.add('panes');
 				tabbed.classList.add('tabbed');
 				t.insertAdjacentElement('beforebegin', tabbed);
-				tabbed.innerHTML = '<div class="pane"><span class="tab-title">CO2 emissions</span><div class="graph" id="graph-carbon"></div><span class="small">Note: we updated <a href=\"https://sustainablewebdesign.org/calculating-digital-emissions/\">the methodology for calculating CO2 emissions</a> on 2022-11-01 which reduced the CO2 emissions.</span></div><div class="pane"><span class="tab-title">Page size</span><div class="graph" id="graph-size"></div></div>';
+				tabbed.innerHTML = '<div class="pane"><span class="tab-title">CO2 estimate</span><div class="graph" id="graph-carbon"></div><div class="warning" style="padding:0.25em 0.5em;line-height: 1em;"><span class="small">Note: from 1st November 2022 we adopted <a href=\"https://sustainablewebdesign.org/calculating-digital-emissions/\">version 3 of the methodology for estimating CO2 emissions</a>. This will tend to lower CO2 estimates for a given size.</span></div></div><div class="pane"><span class="tab-title">Page size</span><div class="graph" id="graph-size"></div></div>';
 
-				graphs.carbon.el = document.getElementById('graph-carbon');
-				graphs.size.el = document.getElementById('graph-size');
-
-				for(typ in graphs){
-					
-					for(r = 1; r < tr.length; r++){
-						td = tr[r].querySelectorAll('td');
-						d = new Date(td[0].innerHTML);
-						tm = d.getTime();
-						if(r==1) graphs[typ].edate = d;
-						if(r==tr.length-1) graphs[typ].sdate = d;
-						y = parseFloat(td[graphs[typ].column].getAttribute('data')||td[graphs[typ].column].innerText);
-						if(typeof graphs[typ].scale==="number") y *= graphs[typ].scale;
-						if(!isNaN(y)){
-							graphs[typ].max = Math.max(graphs[typ].max,y);
-							graphs[typ].data.unshift({x:tm,y:y,'label':d.toLocaleString('en-GB',{ year: 'numeric', month: 'long', day: 'numeric' })});
-						}
-					}
-					// Build y-axis labels
-					gap = defaultSpacing(graphs[typ].min,graphs[typ].max,3);
-					// Work out precision of the gap and limit our labels to the same precision
-					gapstr = gap+"";
-					prec = (gapstr.indexOf(".") > 0 ? gapstr.split('.')[1].length : 0);
-					for(y = graphs[typ].min; y <= graphs[typ].max; y+=gap) graphs[typ].ylabels[y] = {'label':(prec > 0 ? y.toPrecision(prec) : y)};
-
-					// Build x-axis labels
-					monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-					for(d = graphs[typ].sdate; d <= graphs[typ].edate; d.setDate(d.getDate() + 1)){
-						smonth = (new Date(d.getFullYear(),d.getMonth(),1)).getTime();
-						m = d.getMonth();
-						if(!graphs[typ].xlabels[smonth]) graphs[typ].xlabels[smonth] = {'label':(m==0 ? '' : (m%3==0 ? monthNames[m].substr(0,3) : ""))+(m==0 ? ' '+d.getFullYear():'')};
-					}
-					graphs[typ].graph = OI.linechart(graphs[typ].el,{
-						'left':50,
-						'right':10,
-						'top':10,
-						'bottom':30,
-						'axis':{
-							'x':{
-								'labels':graphs[typ].xlabels
-							},
-							'y':{
-								'title':{ 'label':graphs[typ].title },
-								'grid': {'show':true,'stroke':'#bbb'},
-								'min': 0,
-								'labels':graphs[typ].ylabels
-							}
-						}
-					});
-					graphs[typ].graph.addSeries(graphs[typ].data,{
-						'points':{'color':'#1DD3A7','size': 4},
-						'line':{'color':'#1DD3A7'},
-						'tooltip':{
-							'label': function(d){
-								return d.data.label+':\n'+d.data.y+' grams of CO2';
-							}
-						}
-					});
-					graphs[typ].graph.draw();
+				graphs = {
+					'carbon': new Graph(document.getElementById('graph-carbon'),tr,{
+						'column': 1,
+						'title': 'CO2 / grams',
+						'tooltip': function(d,opt){ return d.data.label+':\n'+d.data.y.toFixed(2)+' grams of CO2'; }
+					}),
+					'size': new Graph(document.getElementById('graph-size'),tr,{
+						'column': 2,
+						'scale': 1e-6,
+						'title': 'Size / MB',
+						'tooltip': function(d,opt){ return d.data.label+':\n'+d.data.y.toFixed(1)+'MB'; }
+					})
 				}
 
 				OI.TabbedInterface(tabbed);
@@ -160,6 +86,72 @@
 			}
 		});
 	});
+	function Graph(el,tr,opt){
+		if(!el){
+			console.error('No element to attach to');
+			return this;
+		}
+		if(!opt) opt = {};
+		if(typeof opt.sdate!=="number") opt.sdate = 0;
+		if(typeof opt.edate!=="number") opt.edate = 0;
+		if(typeof opt.min!=="number") opt.min = 0;
+		if(typeof opt.max!=="number") opt.max = -Infinity;
+		var r,td,d,tm,data=[],xlabels={},ylabels={};
+		for(r = 1; r < tr.length; r++){
+			td = tr[r].querySelectorAll('td');
+			d = new Date(td[0].innerHTML);
+			tm = d.getTime();
+			if(r==1) opt.edate = d;
+			if(r==tr.length-1) opt.sdate = d;
+			y = parseFloat(td[opt.column].getAttribute('data')||td[opt.column].innerText);
+			if(typeof opt.scale==="number") y *= opt.scale;
+			if(!isNaN(y)){
+				opt.max = Math.max(opt.max,y);
+				data.unshift({x:tm,y:y,'label':d.toLocaleString('en-GB',{ year: 'numeric', month: 'long', day: 'numeric' })});
+			}
+		}
+		// Build y-axis labels
+		gap = defaultSpacing(opt.min,opt.max,3);
+		// Work out precision of the gap and limit our labels to the same precision
+		gapstr = gap+"";
+		prec = (gapstr.indexOf(".") > 0 ? gapstr.split('.')[1].length : 0);
+		for(y = opt.min; y <= opt.max; y+=gap) ylabels[y] = {'label':(prec > 0 ? y.toPrecision(prec) : y)};
+
+		// Build x-axis labels
+		monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+		for(d = opt.sdate; d <= opt.edate; d.setDate(d.getDate() + 1)){
+			smonth = (new Date(d.getFullYear(),d.getMonth(),1)).getTime();
+			m = d.getMonth();
+			if(!xlabels[smonth]) xlabels[smonth] = {'label':(m==0 ? '' : (m%3==0 ? monthNames[m].substr(0,3) : ""))+(m==0 ? ' '+d.getFullYear():'')};
+		}
+		this.graph = OI.linechart(el,{
+			'left':50,
+			'right':10,
+			'top':10,
+			'bottom':30,
+			'axis':{
+				'x':{
+					'labels':xlabels
+				},
+				'y':{
+					'title':{ 'label':opt.title },
+					'grid': {'show':true,'stroke':'#bbb'},
+					'min': 0,
+					'labels':ylabels
+				}
+			}
+		});
+		var _obj = this;
+		this.graph.addSeries(data,{
+			'points':{'color':'#1DD3A7','size': 4},
+			'line':{'color':'#1DD3A7'},
+			'tooltip':{
+				'label': (typeof opt.tooltip==="function" ? opt.tooltip : function(d){ return d.data.label+':\n'+d.data.y; })
+			}
+		});
+		this.graph.draw();
+		return this;
+	}
 
 	function TabbedInterface(el){
 		var tabs,panes,p,h,b,l;
