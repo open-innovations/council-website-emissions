@@ -122,7 +122,7 @@
 		for(d = opt.sdate; d <= opt.edate; d.setDate(d.getDate() + 1)){
 			smonth = (new Date(d.getFullYear(),d.getMonth(),1)).getTime();
 			m = d.getMonth();
-			if(!xlabels[smonth]) xlabels[smonth] = {'label':(m==0 ? '' : (m%3==0 ? monthNames[m].substr(0,3) : ""))+(m==0 ? ' '+d.getFullYear():'')};
+			if(!xlabels[smonth]) xlabels[smonth] = {'label':(m==0 ? '' : (m%3==0 ? monthNames[m].substr(0,0) : ""))+(m==0 ? ' '+d.getFullYear():'')};
 		}
 		this.graph = OI.linechart(el,{
 			'left':50,
