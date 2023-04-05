@@ -220,7 +220,7 @@ sub getImages {
 	for($i = 0; $i < @items; $i++){
 		if($items[$i]{'resourceType'} && $items[$i]{'resourceType'} eq "Image" && $items[$i]{'transferSize'}){
 			$b += $items[$i]{'transferSize'};
-			push(@im,{'url'=>$items[$i]{'url'},'bytes'=>$items[$i]{'transferSize'}+0,'time'=>int($items[$i]{'endTime'}-$items[$i]{'startTime'})});
+			push(@im,{'url'=>$items[$i]{'url'},'bytes'=>$items[$i]{'transferSize'}+0,'time'=>($items[$i]{'endTime'}-$items[$i]{'startTime'})});
 		}
 	}
 	return {'i'=>\@im,'bytes'=>$b};
