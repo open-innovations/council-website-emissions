@@ -299,15 +299,42 @@ $co2savings = 0;
 $jqueryorg = 0;
 %cookie = ('civiccomputing.com'=>{'total'=>0,'n'=>0},'freeprivacypolicy.com'=>{'total'=>0,'n'=>0},'cookiepro.com'=>{'total'=>0,'n'=>0},'cookiebot.com'=>{'total'=>0,'n'=>0},'cookielaw.org'=>{'total'=>0,'n'=>0},'cookiereports.com'=>{'total'=>0,'n'=>0},'privacypolicies.com'=>{'total'=>0,'n'=>0});
 
+
+# Create a "replaces" structure for each org using the "replacedBy" structures
+for $id (keys(%{$data->{'orgs'}})){
+
+	if($data->{'orgs'}{$id}{'replacedBy'}){
+		if(!$data->{'orgs'}{$data->{'orgs'}{$id}{'replacedBy'}{'id'}}{'replaces'}){
+			@{$data->{'orgs'}{$data->{'orgs'}{$id}{'replacedBy'}{'id'}}{'replaces'}} = ();
+		}
+		push(@{$data->{'orgs'}{$data->{'orgs'}{$id}{'replacedBy'}{'id'}}{'replaces'}},$id);
+	}
+}
+
 # Make a page for each org
 for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(%{$data->{'orgs'}}))){
 
 	$txt = $html;
 	$body = "<h1>$data->{'orgs'}{$id}{'name'} - <code>$id</code>".($data->{'orgs'}{$id}{'active'} ? "<span class=\"c5-bg code\">ACTIVE</span>":"<span class=\"c12-bg code\">INACTIVE</span>")."</h1>\n";
+
+	# Create any "replaced by" links
 	if($data->{'orgs'}{$id}{'replacedBy'}){
 		$rid = $data->{'orgs'}{$id}{'replacedBy'}{'id'};
 		$body .= "$indent<p>Replaced by <a href=\"$rid\.html\">$data->{'orgs'}{$rid}{'name'}</a> on $data->{'orgs'}{$id}{'replacedBy'}{'date'}.</p>";
 	}
+
+	# Create any "replaces" links
+	if($data->{'orgs'}{$id}{'replaces'}){
+		@rids = sort(@{$data->{'orgs'}{$id}{'replaces'}});
+		$replaces = "";
+		for($r = 0; $r < @rids; $r++){
+			$rid = $rids[$r];
+			print "$id ($data->{'orgs'}{$id}{'name'}) => $rid - $data->{'orgs'}{$rid}{'name'}\n";
+			$replaces .= ($replaces ? ", " : "")."<a href=\"$rid\.html\">$data->{'orgs'}{$rid}{'name'}</a>";
+		}
+		$body .= "$indent<p>Replaced: $replaces.</p>";
+	}
+
 
 
 	@urls = keys(%{$data->{'orgs'}{$id}{'urls'}});
