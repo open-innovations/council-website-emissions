@@ -10888,8 +10888,10 @@
 			}
 		},
 		"E10000006": {
-			"active": true,
+			"active": false,
 			"name": "Cumbria County Council",
+			"note": "Replaced by Cumberland council and Westmorland and Furness council",
+			"replacedBy": { "date": "2023-04-01", "id": ["E06000063","E06000064"] },
 			"urls": {
 				"http://www.cumbria.gov.uk/": {
 					"values": {

@@ -302,12 +302,18 @@ $jqueryorg = 0;
 
 # Create a "replaces" structure for each org using the "replacedBy" structures
 for $id (keys(%{$data->{'orgs'}})){
-
 	if($data->{'orgs'}{$id}{'replacedBy'}){
-		if(!$data->{'orgs'}{$data->{'orgs'}{$id}{'replacedBy'}{'id'}}{'replaces'}){
-			@{$data->{'orgs'}{$data->{'orgs'}{$id}{'replacedBy'}{'id'}}{'replaces'}} = ();
+		if(ref($data->{'orgs'}{$id}{'replacedBy'}{'id'}) eq "ARRAY"){
+			for($r = 0; $r < @{$data->{'orgs'}{$id}{'replacedBy'}{'id'}}; $r++){
+				$rid = $data->{'orgs'}{$id}{'replacedBy'}{'id'}[$r];
+				if(!$data->{'orgs'}{$rid}{'replaces'}){ $data->{'orgs'}{$rid}{'replaces'} = {}; }
+				$data->{'orgs'}{$rid}{'replaces'}{$id} = 1;
+			}
+		}else{
+			$rid = $data->{'orgs'}{$id}{'replacedBy'}{'id'};
+			if(!$data->{'orgs'}{$rid}{'replaces'}){ $data->{'orgs'}{$rid}{'replaces'} = {}; }
+			$data->{'orgs'}{$rid}{'replaces'}{$id} = 1;
 		}
-		push(@{$data->{'orgs'}{$data->{'orgs'}{$id}{'replacedBy'}{'id'}}{'replaces'}},$id);
 	}
 }
 
@@ -319,20 +325,31 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 
 	# Create any "replaced by" links
 	if($data->{'orgs'}{$id}{'replacedBy'}){
-		$rid = $data->{'orgs'}{$id}{'replacedBy'}{'id'};
-		$body .= "$indent<p>Replaced by <a href=\"$rid\.html\">$data->{'orgs'}{$rid}{'name'}</a> on $data->{'orgs'}{$id}{'replacedBy'}{'date'}.</p>";
+		$replaces = "";
+		if(ref($data->{'orgs'}{$id}{'replacedBy'}{'id'}) eq "ARRAY"){
+			for($r = 0; $r < @{$data->{'orgs'}{$id}{'replacedBy'}{'id'}}; $r++){
+				$rid = $data->{'orgs'}{$id}{'replacedBy'}{'id'}[$r];
+				$replaces .= ($r > 0 ? ", " : "")."<a href=\"$rid\.html\">$data->{'orgs'}{$rid}{'name'}</a>";
+			}
+			$replaces .= " on $data->{'orgs'}{$id}{'replacedBy'}{'date'}";
+		}else{
+			$rid = $data->{'orgs'}{$id}{'replacedBy'}{'id'};
+			$replaces = "<a href=\"$rid\.html\">$data->{'orgs'}{$rid}{'name'}</a> on $data->{'orgs'}{$id}{'replacedBy'}{'date'}";
+		}
+
+		$body .= "$indent<p>Replaced by $replaces.</p>";
 	}
 
 	# Create any "replaces" links
 	if($data->{'orgs'}{$id}{'replaces'}){
-		@rids = sort(@{$data->{'orgs'}{$id}{'replaces'}});
+		@rids = sort(keys(%{$data->{'orgs'}{$id}{'replaces'}}));
 		$replaces = "";
 		for($r = 0; $r < @rids; $r++){
 			$rid = $rids[$r];
 			print "$id ($data->{'orgs'}{$id}{'name'}) => $rid - $data->{'orgs'}{$rid}{'name'}\n";
 			$replaces .= ($replaces ? ", " : "")."<a href=\"$rid\.html\">$data->{'orgs'}{$rid}{'name'}</a>";
 		}
-		$body .= "$indent<p>Replaced: $replaces.</p>";
+		$body .= "$indent<p>Replaced $replaces.</p>";
 	}
 
 
