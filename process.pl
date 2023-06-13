@@ -480,6 +480,7 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 					$file = $1;
 					if($file =~ /jquery/){ $jquery++; }
 				}
+				if(!$file){ $file = "Page"; }
 				$u = $details->{'weight'}{'details'}{'items'}[$j]{'url'};
 				if(!$doneimages{$u} && $details->{'weight'}{'details'}{'items'}[$j]{'totalBytes'} > $large){
 					if(!$duplicates{$u}){
