@@ -525,6 +525,33 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 				$body .= "$indent\t\t</div>\n";
 			}
 		}
+		
+		if($details->{'third-party'}){
+			$thirdparties = 0;
+			$list = "";
+			$note = "";
+			for($j = 0; $j < @{$details->{'third-party'}{'details'}{'items'}}; $j++){
+				$weight = $details->{'third-party'}{'details'}{'items'}[$j]{'transferSize'};
+				if($weight > $large){
+					$list .= "$indent\t\t\t\t<li>".$details->{'third-party'}{'details'}{'items'}[$j]{'entity'}." uses ".niceSize($details->{'third-party'}{'details'}{'items'}[$j]{'transferSize'})."</li>";
+					$thirdparties++;
+					if($details->{'third-party'}{'details'}{'items'}[$j]{'entity'} =~ /Twitter/i){
+						$note .= " If you use the Twitter widget to load a timeline it may be loading as many as 100 of your recent tweets which may contain lots of images. Try setting '<a href=\"https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview\">data-tweet-limit</a>' to the most recent 3.";
+					}
+				}
+			}
+			if($list){
+				$body .= "$indent\t\t<div class=\"tip\">\n";
+				$body .= "$indent\t\t\t<h4>Tip: Limit third-party code</h4>\n";
+				$body .= "$indent\t\t\t<p>Here are the largest sources of third-party code:</p>\n";
+				$body .= "$indent\t\t\t<ol>\n";
+				$body .= $list;
+				$body .= "$indent\t\t\t</ol>\n";
+				$body .= "$indent\t\t\t<p>Third-party code can significantly impact load performance. Limit the number of redundant third-party providers and try to load third-party code after your page has primarily finished loading.</p>\n";
+				if($note){ $body .= "$indent\t\t\t<p>$note</p>\n"; }
+				$body .= "$indent\t\t</div>\n";
+			}
+		}
 
 		$body .= "$indent\t</div>\n";
 		$body .= "$indent\t<div>\n";
@@ -599,6 +626,9 @@ sub getDetails {
 		}
 		if($json->{'lighthouseResult'}{'audits'}{'total-byte-weight'}{'details'}){
 			$rtn->{'weight'} = $json->{'lighthouseResult'}{'audits'}{'total-byte-weight'};
+		}
+		if($json->{'lighthouseResult'}{'audits'}{'third-party-summary'}{'details'}){
+			$rtn->{'third-party'} = $json->{'lighthouseResult'}{'audits'}{'third-party-summary'};
 		}
 	}
 	return $rtn;	

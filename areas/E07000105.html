@@ -12,7 +12,7 @@
 	<meta name="twitter:site" content="@ODILeeds">
 	<meta name="twitter:url" property="og:url" content="https://open-innovations.github.io/council-website-emissions/areas/E07000105">
 	<meta name="twitter:title" property="og:title" content="Ashford Borough Council website emissions">
-	<meta name="twitter:description" property="og:description" content="The Ashford Borough Council homepage produces 0.78g of CO2 emissions per visit (as of 2023-07-11).">
+	<meta name="twitter:description" property="og:description" content="The Ashford Borough Council homepage produces 0.42g of CO2 emissions per visit (as of 2023-08-08).">
 	<meta name="twitter:image" property="og:image" content="https://open-innovations.org/resources/images/logos/oi-square-5.png">
 </head>
 <body class="b1-bg">
@@ -39,6 +39,7 @@
 						<p><strong>Time to load:</strong> 0.7 seconds</p>
 						<table>
 							<tr><th>Date checked</th><th class="cen">CO2 / grams</th><th class="cen">Page size</th><th class="cen"><a href="https://www.thegreenwebfoundation.org/directory/">Energy</a></th></tr>
+							<tr><td>2023-08-08</td><td class="cen">0.42</td><td class="cen" data="1662030">1.7MB</td><td class="cen ">GRID?</td></tr>
 							<tr><td>2023-07-11</td><td class="cen">0.78</td><td class="cen" data="3083513">3.1MB</td><td class="cen ">GRID?</td></tr>
 							<tr><td>2023-06-13</td><td class="cen">0.44</td><td class="cen" data="1740616">1.7MB</td><td class="cen ">GRID?</td></tr>
 							<tr><td>2023-05-02</td><td class="cen">0.84</td><td class="cen" data="3353278">3.4MB</td><td class="cen ">GRID?</td></tr>
@@ -70,12 +71,12 @@
 						<div class="tip">
 							<h4>Tip: Optimise images</h4>
 							<ol>
-								<li><a href="https://www.ashford.gov.uk/media/x4gnuv2b/traffic-on-a-motorway-tile.png">traffic-on-a-motorwa...</a> is 1.5MB</li>
 								<li><a href="https://www.ashford.gov.uk/images/logos/logo_LoveAshford_120.png">logo_LoveAshford_120...</a> is 292kB</li>
-								<li><a href="https://www.ashford.gov.uk/media/dfsffnq1/newshub-tile-victoria-park-extravaganza.jpg">newshub-tile-victori...</a> is 119kB</li>
+								<li><a href="https://www.ashford.gov.uk/media/ni4b3gaw/newshub-tile-food-shop.jpg">newshub-tile-food-sh...</a> is 106kB</li>
+								<li><a href="https://www.ashford.gov.uk/media/pwup45d5/newshub-tile-fire-safety.jpg">newshub-tile-fire-sa...</a> is 104kB</li>
+								<li><a href="https://www.ashford.gov.uk/media/gcjnhner/newshub-tile-dino-trail.jpg">newshub-tile-dino-tr...</a> is 90kB</li>
+								<li><a href="https://www.ashford.gov.uk/media/ur4fat2j/newshub-tile-housing-repairs.jpg">newshub-tile-housing...</a> is 88kB</li>
 								<li><a href="https://www.ashford.gov.uk/images/logos/aspire_landscape_management_WO.png">aspire_landscape_man...</a> is 79kB</li>
-								<li><a href="https://www.ashford.gov.uk/media/rcjff4qb/newshub-tile-tc-summer-seating.jpg">newshub-tile-tc-summ...</a> is 77kB</li>
-								<li><a href="https://www.ashford.gov.uk/media/dmvjppl5/newshub-tile-ashford-food-and-drink-festival.jpg">newshub-tile-ashford...</a> is 76kB</li>
 							</ol>
 							<p>First, check that images are appropriately sized - you most likely don't need a 6000x4000 pixel image straight from a digital camera. In Windows, the Photos software will let you quickly shrink huge images and will give you an improvement.</p>
 							<p>Next you could try using <a href="https://tinyjpg.com/">tinyjpg.com</a> (JPG image) or <a href="https://tinypng.com/">tinypng.com</a> (PNG image) to further optimise your image. This will strip out metadata that may be taking up lots of space.</p>
@@ -85,10 +86,17 @@
 							<p>Aside from images, here are the biggest resources:</p>
 							<ol>
 								<li><a href="https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js">cookieControl-9.x.min.js</a> is 94kB</li>
-								<li><a href="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_US.KeeC3zR5myk.O/d=1/exm=el_conf/ed=1/rs=AN8SPfo2RQz47LfkDQox_LrutNPyIXylFA/m=el_main">m=el_main</a> is 78kB</li>
+								<li><a href="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_US.48DFWA_OfG0.O/d=1/exm=el_conf/ed=1/rs=AN8SPfrlV-7Yy5hYYHdQ1mg7Sl8jRRtb2g/m=el_main">m=el_main</a> is 78kB</li>
 								<li><a href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js">jquery-ui.min.js</a> is 53kB</li>
 								<li><a href="https://www.ashford.gov.uk/">Page</a> is 46kB</li>
 							</ol>
+						</div>
+						<div class="tip">
+							<h4>Tip: Limit third-party code</h4>
+							<p>Here are the largest sources of third-party code:</p>
+							<ol>
+								<li>Civic uses 95kB</li>								<li>Other Google APIs/SDKs uses 112kB</li>								<li>Google CDN uses 65kB</li>								<li>Bootstrap CDN uses 51kB</li>								<li>Microsoft Hosted Libs uses 51kB</li>							</ol>
+							<p>Third-party code can significantly impact load performance. Limit the number of redundant third-party providers and try to load third-party code after your page has primarily finished loading.</p>
 						</div>
 					</div>
 					<div>

@@ -12,7 +12,7 @@
 	<meta name="twitter:site" content="@ODILeeds">
 	<meta name="twitter:url" property="og:url" content="https://open-innovations.github.io/council-website-emissions/areas/E06000012">
 	<meta name="twitter:title" property="og:title" content="North East Lincolnshire Council website emissions">
-	<meta name="twitter:description" property="og:description" content="The North East Lincolnshire Council homepage produces 1.78g of CO2 emissions per visit (as of 2023-07-11).">
+	<meta name="twitter:description" property="og:description" content="The North East Lincolnshire Council homepage produces 1.39g of CO2 emissions per visit (as of 2023-08-08).">
 	<meta name="twitter:image" property="og:image" content="https://open-innovations.org/resources/images/logos/oi-square-5.png">
 </head>
 <body class="b1-bg">
@@ -36,9 +36,10 @@
 					<li>
 					<div>
 						<p><strong>URL:</strong> <a href="https://www.nelincs.gov.uk/">https://www.nelincs.gov.uk/</a></p>
-						<p><strong>Time to load:</strong> 5.6 seconds</p>
+						<p><strong>Time to load:</strong> 1.5 seconds</p>
 						<table>
 							<tr><th>Date checked</th><th class="cen">CO2 / grams</th><th class="cen">Page size</th><th class="cen"><a href="https://www.thegreenwebfoundation.org/directory/">Energy</a></th></tr>
+							<tr><td>2023-08-08</td><td class="cen">1.39</td><td class="cen" data="5509348">5.5MB</td><td class="cen ">GRID?</td></tr>
 							<tr><td>2023-07-11</td><td class="cen">1.78</td><td class="cen" data="7058377">7.1MB</td><td class="cen ">GRID?</td></tr>
 							<tr><td>2023-06-13</td><td class="cen">1.82</td><td class="cen" data="7212470">7.2MB</td><td class="cen ">GRID?</td></tr>
 							<tr><td>2023-05-02</td><td class="cen">1.39</td><td class="cen" data="5510884">5.5MB</td><td class="cen ">GRID?</td></tr>
@@ -71,7 +72,6 @@
 							<p>We estimate potential to save at least 97kB* by optimising images:</p>
 							<ol>
 								<li><a href="https://www.nelincs.gov.uk/assets/themes/NELC2020/inc/assets/img/grass.jpg">grass.jpg</a> is 623kB and could be 97kB smaller</li>
-								<li><a href="https://www.nelincs.gov.uk/assets/themes/NELC2020/inc/assets/img/logo.png">logo.png</a> is 40kB</li>
 							</ol>
 							<p>First, check that images are appropriately sized - you most likely don't need a 6000x4000 pixel image straight from a digital camera. In Windows, the Photos software will let you quickly shrink huge images and will give you an improvement.</p>
 							<p>Next you could try using <a href="https://tinyjpg.com/">tinyjpg.com</a> (JPG image) or <a href="https://tinypng.com/">tinypng.com</a> (PNG image) to further optimise your image. This will strip out metadata that may be taking up lots of space.</p>
@@ -80,16 +80,22 @@
 							<h4>Tip: Large files</h4>
 							<p>Aside from images, here are the biggest resources:</p>
 							<ol>
-								<li><a href="https://www.nelincs.gov.uk/assets/themes/NELC2020/inc/assets/js/all.min.js?ver=9857139434ddacf2634d594fa398ce32">all.min.js?ver=9857139434ddacf...</a> is 5.8MB</li>
-								<li><a href="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js">jquery.dataTables.js</a> is 114kB</li>
+								<li><a href="https://www.nelincs.gov.uk/assets/themes/NELC2020/inc/assets/js/all.min.js?ver=9857139434ddacf2634d594fa398ce32">all.min.js?ver=9857139434ddacf...</a> is 2.0MB &times;2</li>
+								<li><a href="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js">jquery.dataTables.js</a> is 114kB &times;2</li>
+								<li><a href="https://www.googletagmanager.com/gtag/js?id=G-59RFLCE67B">js?id=G-59RFLCE67B</a> is 90kB &times;2</li>
 								<li><a href="https://use.fontawesome.com/releases/v5.14.0/webfonts/fa-solid-900.woff2">fa-solid-900.woff2</a> is 81kB</li>
 								<li><a href="https://use.fontawesome.com/releases/v5.14.0/webfonts/fa-brands-400.woff2">fa-brands-400.woff2</a> is 78kB</li>
-								<li><a href="https://www.googletagmanager.com/gtag/js?id=G-59RFLCE67B">js?id=G-59RFLCE67B</a> is 72kB</li>
-								<li><a href="https://www.nelincs.gov.uk/">Page</a> is 71kB</li>
-								<li><a href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js">bootstrap.min.js</a> is 64kB</li>
-								<li><a href="https://www.nelincs.gov.uk/wp-includes/js/jquery/jquery.min.js?ver=3.6.4">jquery.min.js?ver=3.6.4</a> is 31kB</li>
+								<li><a href="https://www.nelincs.gov.uk/">Page</a> is 72kB</li>
 							</ol>
+							<p>There are 3 duplicate resources included on the page.</p>
 							<p>The page uses 2 fonts which require 159kB. Could system fonts be used instead?</p>
+						</div>
+						<div class="tip">
+							<h4>Tip: Limit third-party code</h4>
+							<p>Here are the largest sources of third-party code:</p>
+							<ol>
+								<li>Cookiebot uses 91kB</li>								<li>datatables.net uses 231kB</li>								<li>FontAwesome CDN uses 193kB</li>								<li>Google Tag Manager uses 180kB</li>								<li>JSDelivr CDN uses 78kB</li>								<li>jQuery CDN uses 50kB</li>							</ol>
+							<p>Third-party code can significantly impact load performance. Limit the number of redundant third-party providers and try to load third-party code after your page has primarily finished loading.</p>
 						</div>
 					</div>
 					<div>
