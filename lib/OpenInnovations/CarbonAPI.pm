@@ -58,8 +58,9 @@ sub new {
 		if($file){
 			$self->{'db'} = $self->{'raw'}.$file;
 		}else{
-			print "Warning: Please download and gunzip a green energy SQLite file from https://admin.thegreenwebfoundation.org/admin/green-urls and save it in $self->{'raw'}\n";
-			exit;
+			#print "Warning: Please download and gunzip a green energy SQLite file from https://admin.thegreenwebfoundation.org/admin/green-urls and save it in $self->{'raw'}\n";
+			# Now at https://datasets.thegreenwebfoundation.org/daily_snapshot/greendomain#export as CSV stream
+			#exit;
 		}
 	}
 
@@ -153,24 +154,27 @@ sub makeEntry {
 		@items = @{$json->{'lighthouseResult'}{'audits'}{'network-requests'}{'details'}{'items'}};
 		$n = @items;
 	}
-	
-	for($i = 0; $i < @items; $i++){
-		if($items[$i]{'transferSize'} == 0){
-			print "\tWARNING: No transferSize for item $i ($items[$i]{'url'})\n";
-			$items[$i]{'transferSize'} = checkCompressedDownloadSize($items[$i]{'url'});
-		}
-	}
 
 	# If google page speed api didnt work
 	if($n == 0){ return {'downloaded'=>$download,'url'=>$url}; }
 
 	$results{'pagespeedapi'} = $json;
 
-	# Calc the transfer size
-	$bytesTransfered = calculateTransferedBytes(@items);
-	# It appears sometimes the sum misses the first item?
-	if($json->{'lighthouseResult'}{'audits'}{'total-byte-weight'}{'numericValue'} > $bytesTransfered){
+	if($json->{'lighthouseResult'}{'audits'}{'total-byte-weight'}{'numericValue'} > 0){
+
 		$bytesTransfered = $json->{'lighthouseResult'}{'audits'}{'total-byte-weight'}{'numericValue'};
+
+	}else{
+
+		for($i = 0; $i < @items; $i++){
+			if($items[$i]{'transferSize'} == 0){
+				#print "\tWARNING: No transferSize for item $i ($items[$i]{'url'})\n";
+				$items[$i]{'transferSize'} = checkCompressedDownloadSize($items[$i]{'url'});
+			}
+		}
+
+		# Calc the transfer size
+		$bytesTransfered = calculateTransferedBytes(@items);
 	}
 
 	# Calculate the statistics as we need the co2 emissions
@@ -213,20 +217,24 @@ sub checkCompressedDownloadSize {
 	my ($url) = $_[0];
 	my ($str,@rtn,$size);
 	$size = 0;
-	print "\tChecking compressed transfer for $url...";
+	#print "\tChecking compressed transfer for $url...";
 	$size = `curl -L --compressed -so /dev/null "$url" -w '%{size_download}'`;
-	print " $size bytes\n";
+	#print " $size bytes\n";
 	return $size;
 }
 
 sub getImages {
 	my ($self, @items) = @_;
-	my ($i,$b,@im);
+	my ($i,$b,@im,$dt);
 	$b = 0;
 	for($i = 0; $i < @items; $i++){
 		if($items[$i]{'resourceType'} && $items[$i]{'resourceType'} eq "Image" && $items[$i]{'transferSize'}){
 			$b += $items[$i]{'transferSize'};
-			push(@im,{'url'=>$items[$i]{'url'},'bytes'=>$items[$i]{'transferSize'}+0,'time'=>int($items[$i]{'endTime'}-$items[$i]{'startTime'})});
+			$dt = 0;
+			if(defined $items[$i]{'endTime'} && defined $items[$i]{'startTime'}){
+				$dt = int($items[$i]{'endTime'}-$items[$i]{'startTime'});
+			}
+			push(@im,{'url'=>$items[$i]{'url'},'bytes'=>$items[$i]{'transferSize'}+0,'time'=>$dt});
 		}
 	}
 	return {'i'=>\@im,'bytes'=>$b};
