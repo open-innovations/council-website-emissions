@@ -1,12 +1,14 @@
 package OpenInnovations::CarbonAPI;
 
 # Port of https://gitlab.com/wholegrain/carbon-api-2-0/-/blob/master/includes/carbonapi.php
+# Version 3.2
+#   - Bug fix for transferredBytes sometimes missing first item
 # Version 3.1
 #   - Add backup check when transferSize is 0 in lighthouseResult
 # Version 3.0
 #   - Update calculations to CarbonAPI v3
 # Uses v3 figures from the CarbonAPI at https://sustainablewebdesign.org/calculating-digital-emissions/
-# Last updated: 2022-11-01
+# Last updated: 2023-08-17
 
 use strict;
 use warnings;
@@ -166,6 +168,10 @@ sub makeEntry {
 
 	# Calc the transfer size
 	$bytesTransfered = calculateTransferedBytes(@items);
+	# It appears sometimes the sum misses the first item?
+	if($json->{'lighthouseResult'}{'audits'}{'total-byte-weight'}{'numericValue'} > $bytesTransfered){
+		$bytesTransfered = $json->{'lighthouseResult'}{'audits'}{'total-byte-weight'}{'numericValue'};
+	}
 
 	# Calculate the statistics as we need the co2 emissions
 	$statistics = $self->getStatistics($bytesTransfered);
@@ -193,7 +199,7 @@ sub makeEntry {
 # -----------------------------------------------------------------------------------------------------------------
 sub calculateTransferedBytes {
 	my ($self, @items) = @_;
-	my ($carry,$i,$url);
+	my ($carry,$i);
 	$carry = 0;
 	for($i = 0; $i < @items; $i++){
 		if($items[$i]{'transferSize'}){
@@ -220,7 +226,7 @@ sub getImages {
 	for($i = 0; $i < @items; $i++){
 		if($items[$i]{'resourceType'} && $items[$i]{'resourceType'} eq "Image" && $items[$i]{'transferSize'}){
 			$b += $items[$i]{'transferSize'};
-			push(@im,{'url'=>$items[$i]{'url'},'bytes'=>$items[$i]{'transferSize'}+0,'time'=>($items[$i]{'endTime'}-$items[$i]{'startTime'})});
+			push(@im,{'url'=>$items[$i]{'url'},'bytes'=>$items[$i]{'transferSize'}+0,'time'=>int($items[$i]{'endTime'}-$items[$i]{'startTime'})});
 		}
 	}
 	return {'i'=>\@im,'bytes'=>$b};
