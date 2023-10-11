@@ -7,6 +7,8 @@ use Data::Dumper;
 use POSIX qw(strftime);
 use OpenInnovations::CarbonAPI;
 
+require "lib.pl";
+
 %config;
 
 if(-e ".config"){
@@ -144,9 +146,9 @@ if($mostrecent =~ /^([0-9]{4})\-([0-9]{2})/){
 		}
 	}
 	$n = @{$values->{'co2'}{'yearago'}};
-	print "Based on ".$n." entries, since last year\n";
-	print "\t- the median CO2 has changed from ".median(@{$values->{'co2'}{'yearago'}})."g to ".median(@{$values->{'co2'}{'now'}})."g\n";
-	print "\t- the median homepage size has changed from ".sprintf("%0.1f",median(@{$values->{'size'}{'yearago'}})/1e6)."MB to ".sprintf("%0.1f",median(@{$values->{'size'}{'now'}})/1e6)."MB\n";
+	msg("Based on <yellow>".$n."<none> entries, since last year\n");
+	msg("\t- the median CO2 has changed from <yellow>".median(@{$values->{'co2'}{'yearago'}})."g<none> to <yellow>".median(@{$values->{'co2'}{'now'}})."g<none>\n");
+	msg("\t- the median homepage size has changed from <yellow>".sprintf("%0.1f",median(@{$values->{'size'}{'yearago'}})/1e6)."MB<none> to <yellow>".sprintf("%0.1f",median(@{$values->{'size'}{'now'}})/1e6)."MB<none>\n");
 }
 
 
@@ -346,7 +348,7 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 		$replaces = "";
 		for($r = 0; $r < @rids; $r++){
 			$rid = $rids[$r];
-			print "$id ($data->{'orgs'}{$id}{'name'}) => $rid - $data->{'orgs'}{$rid}{'name'}\n";
+			msg("<yellow>$id<none> ($data->{'orgs'}{$id}{'name'}) => <yellow>$rid<none> - $data->{'orgs'}{$rid}{'name'}\n");
 			$replaces .= ($replaces ? ", " : "")."<a href=\"$rid\.html\">$data->{'orgs'}{$rid}{'name'}</a>";
 		}
 		$body .= "$indent<p>Replaced $replaces.</p>";
@@ -575,18 +577,18 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 	close(FILE);
 }
 
-print "Biggest files:\n";
+msg("Biggest files:\n");
 @big = reverse(sort{ $biggestfiles{$a}{'bytes'} <=> $biggestfiles{$b}{'bytes'} }(keys(%biggestfiles)));
 for($i = 0; $i < @big; $i++){
 	if($biggestfiles{$big[$i]}{'bytes'} > 5e6){
-		print "  ".($i+1).". ".niceSize($biggestfiles{$big[$i]}{'bytes'})." - $biggestfiles{$big[$i]}{'id'} - $big[$i]\n";
+		msg("  <green>".($i+1)."<none>. <yellow>".niceSize($biggestfiles{$big[$i]}{'bytes'})."<none> - <yellow>$biggestfiles{$big[$i]}{'id'}<none> - <cyan>$big[$i]<none>\n");
 	}
 }
-print "Yearly image savings of ".niceSize($fullsavings*$monthlyvisits*12)." (".sprintf("%0.1f",($co2savings*$monthlyvisits*12)/1e3)."kg CO2) if $monthlyvisits visitors per month\n";
-print "jQuery usage: $jqueryorg/$tot orgs.\n";
-print "Cookie settings:\n";
+msg("Yearly image savings of <yellow>".niceSize($fullsavings*$monthlyvisits*12)."<none> (<green>".sprintf("%0.1f",($co2savings*$monthlyvisits*12)/1e3)."kg<none> CO2) if $monthlyvisits visitors per month\n");
+msg("jQuery usage: <yellow>$jqueryorg/$tot<none> orgs.\n");
+msg("Cookie settings:\n");
 for $src (reverse(sort{$cookie{$a}{'total'} <=> $cookie{$b}{'total'}}(keys(%cookie)))){
-	print "\t$src: $cookie{$src}{'total'}\n";
+	msg("\t<cyan>$src<none>: $cookie{$src}{'total'}\n");
 }
 
 sub niceSize {

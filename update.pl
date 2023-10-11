@@ -8,6 +8,8 @@ use Data::Dumper;
 use POSIX qw(strftime);
 use MIME::Base64;
 
+require "lib.pl";
+
 $delay = 100;
 if($ENV{'CC_GPSAPI_KEY'}){ $delay = 10; }
 
@@ -24,10 +26,9 @@ if(-e ".config"){
 		$config{$k} = $v;
 	}
 }else{
-	print "No .config file.\n";
+	error("No .config file.\n");
 	exit;
 }
-
 
 
 # Read in the existing data
@@ -48,7 +49,7 @@ $today = strftime('%Y-%m-%d',gmtime());
 $id = $ARGV[0];
 
 if($id && !$data->{'orgs'}{$id}){
-	print "Error: $id does not appear to exist in the dataset.\n";
+	error("<yellow>$id<none> does not appear to exist in the dataset.\n");
 	exit;
 }
 # Process the org(s)
@@ -62,7 +63,7 @@ processOrgs($id);
 sub processOrgs {
 	my $str = $_[0];
 	my (@ids,$ago,$n,$i);
-	print "Processing orgs...\n";
+	msg("Processing orgs...\n");
 
 	if($str){
 		@ids = split(/;/,$str);
@@ -74,15 +75,15 @@ sub processOrgs {
 
 	$n = @ids;
 	if($n==1){
-		print "$ids[0]\n";
+		msg("<yellow>$ids[0]<none>\n");
 		$dl = processOrg($ids[0],$ago);
 	}else{
 		for($i = 0; $i < @ids; $i++){
 			if($data->{'orgs'}{$ids[$i]}{'active'}){
-				print "$ids[$i]\n";
+				msg("<yellow>$ids[$i]<none>\n");
 				$dl = processOrg($ids[$i],$ago);
 				if($dl){
-					print "\tsleeping for $delay seconds...\n";
+					msg("\tsleeping for <yellow>$delay<none> seconds...\n");
 					sleep $delay;
 				}
 			}
@@ -95,7 +96,7 @@ sub processOrg {
 	my $id = $_[0];
 	my $ago = $_[1];
 
-	print "Process Org $id ($ago)\n";
+	msg("Process Org <yellow>$id<none> (<green>$ago<none> days ago)\n");
 	my (@urls,$u,$url,$recent,@dates,$lastco,$i,$days,$entry,$dl,$details,$handle,$image_decoded);
 
 	@urls = keys(%{$data->{'orgs'}{$id}{'urls'}});
@@ -120,23 +121,23 @@ sub processOrg {
 			$entry = $carbon->makeEntry($url);
 			if($entry->{'co2'}){
 				$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$today} = {'CO2'=>($entry->{'co2'} ? sprintf("%0.2f",$entry->{'co2'})+0 : $entry->{'co2'}),'bytes'=>($entry->{'bytes'}),'imagebytes'=>($entry->{'images'}{'bytes'}),'green'=>($entry->{'green'})};
-				print "$id:\n";
-				print "\t$url\n";
-				print "\t$recent - ".$days." days ago\n";
-				print "\tco2 = ".sprintf("%0.2f",$entry->{'co2'})."\n";
-				print "\tbytes = $entry->{'bytes'}\n";
-				print "\tbytes (images) = $entry->{'images'}->{'bytes'}\n";
+				msg("<yellow>$id:<none>\n");
+				msg("\t<cyan>$url<none>\n");
+				msg("\t$recent - <yellow>".$days."<none> days ago\n");
+				msg("\tco2 = <yellow>".sprintf("%0.2f",$entry->{'co2'})."<none>\n");
+				msg("\tbytes = <yellow>$entry->{'bytes'}<none>\n");
+				msg("\tbytes (images) = <yellow>$entry->{'images'}->{'bytes'}<none>\n");
 				saveIndex($data);
 				print `perl process.pl`;
 			}else{
-				print "$id:\n";
-				print "\tNo CO2 data\n";
+				msg("$id:\n");
+				msg("\tNo CO2 data\n");
 			}
 			if($entry->{'downloaded'}){
 				$dl = 1;
 			}
 		}
-		print "$days = $recent $today = $ago\n";
+		#msg("$days = $recent $today = $ago\n");
 
 		# Get the lighthouse details
 		$details = getDetails($url);
@@ -148,7 +149,7 @@ sub processOrg {
 			binmode $handle;
 			print $handle $image_decoded;
 			close ($handle);
-			print "Processing image $id\n";
+			msg("Processing image <yellow>$id<none>\n");
 			`convert $config{'Directory'}$id.jpg -quality 60 -define webp:lossless=true $config{'Directory'}$id.webp`;
 			`rm $config{'Directory'}$id.jpg`;
 		}
