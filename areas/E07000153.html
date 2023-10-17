@@ -36,9 +36,10 @@
 					<li>
 					<div>
 						<p><strong>URL:</strong> <a href="https://www.kettering.gov.uk/">https://www.kettering.gov.uk/</a></p>
-						<p><strong>Time to load:</strong> 0.8 seconds</p>
+						<p><strong>Time to load:</strong> 0.9 seconds</p>
 						<table>
 							<tr><th>Date checked</th><th class="cen">CO2 / grams</th><th class="cen">Page size</th><th class="cen"><a href="https://www.thegreenwebfoundation.org/directory/">Energy</a></th></tr>
+							<tr><td>2023-10-17</td><td class="cen">0.18</td><td class="cen" data="719399">719kB</td><td class="cen ">GRID?</td></tr>
 							<tr><td>2021-05-26</td><td class="cen">0.37</td><td class="cen" data="621215">621kB</td><td class="cen ">GRID?</td></tr>
 							<tr><td>2021-03-10</td><td class="cen">0.37</td><td class="cen" data=""></td><td class="cen ">GRID?</td></tr>
 						</table>
@@ -52,10 +53,19 @@
 							<p>Next you could try using <a href="https://tinyjpg.com/">tinyjpg.com</a> (JPG image) or <a href="https://tinypng.com/">tinypng.com</a> (PNG image) to further optimise your image. This will strip out metadata that may be taking up lots of space.</p>
 							<p class="small">*This is an estimate from Google PageSpeed and you may get much better results than this in practice.</p>						</div>
 						<div class="tip">
+							<h4>Tip: Large files</h4>
+							<p>Aside from images, here are the biggest resources:</p>
+							<ol>
+								<li><a href="https://www.googletagmanager.com/gtag/js?id=G-9EGRTNF53H&l=dataLayer&cx=c">js?id=G-9EGRTNF53H&l=dataLayer...</a> is 85kB</li>
+								<li><a href="https://www.googletagmanager.com/gtag/js?id=UA-115095052-1">js?id=UA-115095052-1</a> is 51kB</li>
+								<li><a href="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">jquery.min.js</a> is 35kB</li>
+							</ol>
+						</div>
+						<div class="tip">
 							<h4>Tip: Limit third-party code</h4>
 							<p>Here are the largest sources of third-party code:</p>
 							<ol>
-								<li>HASH(0x561e9576b5a0) uses 45kB</li>								<li>HASH(0x561e9584f540) uses 37kB</li>								<li>HASH(0x561e95eeb508) uses 35kB</li>							</ol>
+								<li>Google Tag Manager uses 136kB</li>								<li>Google Fonts uses 47kB</li>								<li>Google CDN uses 35kB</li>							</ol>
 							<p>Third-party code can significantly impact load performance. Limit the number of redundant third-party providers and try to load third-party code after your page has primarily finished loading.</p>
 						</div>
 					</div>

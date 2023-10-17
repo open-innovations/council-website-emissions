@@ -535,10 +535,22 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 			for($j = 0; $j < @{$details->{'third-party'}{'details'}{'items'}}; $j++){
 				$weight = $details->{'third-party'}{'details'}{'items'}[$j]{'transferSize'};
 				if($weight > $large){
-					$list .= "$indent\t\t\t\t<li>".$details->{'third-party'}{'details'}{'items'}[$j]{'entity'}." uses ".niceSize($details->{'third-party'}{'details'}{'items'}[$j]{'transferSize'})."</li>";
-					$thirdparties++;
-					if($details->{'third-party'}{'details'}{'items'}[$j]{'entity'} =~ /Twitter/i){
-						$note .= " If you use the Twitter widget to load a timeline it may be loading as many as 100 of your recent tweets which may contain lots of images. Try setting '<a href=\"https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview\">data-tweet-limit</a>' to the most recent 3.";
+					$thirdname = "";
+					if(ref($details->{'third-party'}{'details'}{'items'}[$j]{'entity'}) eq "HASH"){
+						$thirdname = $details->{'third-party'}{'details'}{'items'}[$j]{'entity'}{'text'};
+					}else{
+						$thirdname = $details->{'third-party'}{'details'}{'items'}[$j]{'entity'};
+					}
+					if($thirdname){
+						$list .= "$indent\t\t\t\t<li>".$details->{'third-party'}{'details'}{'items'}[$j]{'entity'}." uses ".niceSize($details->{'third-party'}{'details'}{'items'}[$j]{'transferSize'})."</li>";
+						$thirdparties++;
+						if($details->{'third-party'}{'details'}{'items'}[$j]{'entity'} =~ /Twitter/i){
+							$note .= " If you use the Twitter widget to load a timeline it may be loading as many as 100 of your recent tweets which may contain lots of images. Try setting '<a href=\"https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview\">data-tweet-limit</a>' to the most recent 3.";
+						}
+					}else{
+						error("Unexpected value for third party entity.\n");
+						print Dumper $details->{'third-party'}{'details'}{'items'}[$j]{'entity'};
+						exit;
 					}
 				}
 			}

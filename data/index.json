@@ -8,7 +8,8 @@
 				"http://www.strabanedc.org.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 1.84, "ref": "https://www.websitecarbon.com/website/strabanedc-org-uk/" },
-						"2021-05-27": { "CO2": 1.83, "bytes": 3042390, "green": 0, "imagebytes": 2020536 }
+						"2021-05-27": { "CO2": 1.83, "bytes": 3042390, "green": 0, "imagebytes": 2020536 },
+						"2023-10-17": { "CO2": 0.74, "bytes": 2947478, "green": 0, "imagebytes": 1727831 }
 					}
 				}
 			}
@@ -1055,7 +1056,8 @@
 				"http://www.bournemouth.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.51, "ref": "https://www.websitecarbon.com/website/bournemouth-gov-uk/" },
-						"2021-05-26": { "CO2": 0.51, "bytes": 846662, "green": 0, "imagebytes": 457052 }
+						"2021-05-26": { "CO2": 0.51, "bytes": 846662, "green": 0, "imagebytes": 457052 },
+						"2023-10-17": { "CO2": 1.27, "bytes": 5035733, "green": 0, "imagebytes": 4576811 }
 					}
 				}
 			}
@@ -2453,7 +2455,8 @@
 				"http://www.wycombe.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.48, "ref": "https://www.websitecarbon.com/website/wycombe-gov-uk/" },
-						"2021-05-27": { "CO2": 0.38, "bytes": 635271, "green": 0, "imagebytes": 353584 }
+						"2021-05-27": { "CO2": 0.38, "bytes": 635271, "green": 0, "imagebytes": 353584 },
+						"2023-10-17": { "CO2": 0.18, "bytes": 713720, "green": 0, "imagebytes": 401163 }
 					}
 				}
 			}
@@ -3559,7 +3562,8 @@
 				"http://www.dorsetforyou.com/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.84, "ref": "https://www.websitecarbon.com/website/dorsetforyou-com/" },
-						"2021-05-27": { "CO2": 0.77, "bytes": 1281810, "green": 0, "imagebytes": 384070 }
+						"2021-05-27": { "CO2": 0.77, "bytes": 1281810, "green": 0, "imagebytes": 384070 },
+						"2023-10-17": { "CO2": 0.43, "bytes": 1702621, "green": 0, "imagebytes": 71853 }
 					}
 				}
 			}
@@ -6919,7 +6923,8 @@
 				"https://www.corby.gov.uk/": {
 					"values": {
 						"2021-05-19": { "CO2": 0.62, "ref": "https://www.websitecarbon.com/website/corby-gov-uk/" },
-						"2021-05-27": { "CO2": 0.72, "bytes": 1192190, "green": 0, "imagebytes": 752405 }
+						"2021-05-27": { "CO2": 0.72, "bytes": 1192190, "green": 0, "imagebytes": 752405 },
+						"2023-10-17": { "CO2": 0.09, "bytes": 342969, "green": 0, "imagebytes": 75931 }
 					}
 				}
 			}
@@ -6945,7 +6950,8 @@
 				"https://www.east-northamptonshire.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 1.91, "ref": "https://www.websitecarbon.com/website/east-northamptonshire-gov-uk/" },
-						"2021-05-26": { "CO2": 0.31, "bytes": 509063, "green": 0, "imagebytes": 169258 }
+						"2021-05-26": { "CO2": 0.31, "bytes": 509063, "green": 0, "imagebytes": 169258 },
+						"2023-10-17": { "CO2": 0.12, "bytes": 463359, "green": 0, "imagebytes": 119876 }
 					}
 				}
 			}
@@ -6958,7 +6964,8 @@
 				"https://www.kettering.gov.uk/": {
 					"values": {
 						"2021-03-10": { "CO2": 0.37, "ref": "https://www.websitecarbon.com/website/kettering-gov-uk/" },
-						"2021-05-26": { "CO2": 0.37, "bytes": 621215, "green": 0, "imagebytes": 398319 }
+						"2021-05-26": { "CO2": 0.37, "bytes": 621215, "green": 0, "imagebytes": 398319 },
+						"2023-10-17": { "CO2": 0.18, "bytes": 719399, "green": 0, "imagebytes": 398319 }
 					}
 				}
 			}
@@ -6971,7 +6978,8 @@
 				"https://www.northampton.gov.uk/": {
 					"values": {
 						"2021-03-11": { "CO2": 5.98, "ref": "https://www.websitecarbon.com/website/northampton-gov-uk/" },
-						"2021-05-27": { "CO2": 5.42, "bytes": 9922951, "green": 1, "imagebytes": 9586488 }
+						"2021-05-27": { "CO2": 5.42, "bytes": 9922951, "green": 1, "imagebytes": 9586488 },
+						"2023-10-17": { "CO2": 2.13, "bytes": 9777895, "green": 1, "imagebytes": 9195996 }
 					}
 				}
 			}
@@ -6997,7 +7005,8 @@
 				"http://www.wellingborough.gov.uk/": {
 					"values": {
 						"2021-03-04": { "CO2": 0.44, "ref": "https://www.websitecarbon.com/website/wellingborough-gov-uk/" },
-						"2021-05-27": { "CO2": 0.21, "bytes": 377119, "green": 1, "imagebytes": 92459 }
+						"2021-05-27": { "CO2": 0.21, "bytes": 377119, "green": 1, "imagebytes": 92459 },
+						"2023-10-17": { "CO2": 0.08, "bytes": 368413, "green": 1, "imagebytes": 46106 }
 					}
 				}
 			}
@@ -13658,7 +13667,8 @@
 						"2023-07-11": { "CO2": 0.88, "bytes": 3506849, "green": 0, "imagebytes": 2757855 },
 						"2023-08-08": { "CO2": 0.63, "bytes": 2506045, "green": 0, "imagebytes": 1708185 },
 						"2023-09-19": { "CO2": 0.41, "bytes": 1641353, "green": 0, "imagebytes": 879108 },
-						"2023-10-11": { "CO2": 2.7, "bytes": 10738894, "green": 0, "imagebytes": 8534628 }
+						"2023-10-11": { "CO2": 2.7, "bytes": 10738894, "green": 0, "imagebytes": 8534628 },
+						"2023-10-17": { "CO2": 1, "bytes": 3981889, "green": 0, "imagebytes": 1780357 }
 					}
 				}
 			}
