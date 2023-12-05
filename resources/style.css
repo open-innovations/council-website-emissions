@@ -169,6 +169,9 @@ figcaption {
 	text-align: center;
 }
 
+.ratings { margin-top: 1em; }
+.ratings li { margin-bottom: 1px; }
+.ratings li > div { padding-left: 0.25em; font-weight: bold; display: inline-block; }
 .rating { font-weight: bold; }
 .rate-aplus { background: #00ffbd; color: black; }
 .rate-a { background: #19ff94; color: black; }

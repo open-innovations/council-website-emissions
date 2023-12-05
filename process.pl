@@ -52,6 +52,8 @@ close(FILE);
 $data = JSON::XS->new->utf8->decode(join("",@lines));
 
 %org;
+$ratings = {'A+'=>0,'A'=>0,'B'=>0,'C'=>0,'D'=>0,'E'=>0,'F'=>0};
+
 $avco2 = 0.5;	# Previously 1.76 in v2
 $monthlyvisits = 10000;
 $mostrecent = "2000-00-00";
@@ -245,6 +247,7 @@ for($i = 0; $i < $tot; $i++){
 			$rcls = "rate-f";
 		}
 	}
+	$ratings->{$rating}++;
 	$tr = "$idt\t<tr><td class=\"cen\">$rank</td><td><a href=\"$odir$id.html\">".$org{$id}{'name'}.($org{$id}{'url'} ? "</a>":"")."</td><td class=\"cen\">$id</td><td class=\"cen\">".($org{$id}{'link'} ? "<a href=\"$org{$id}{'link'}\">":"").($org{$id}{'CO2'} ? sprintf("%0.2f",$org{$id}{'CO2'}) : "?").($org{$id}{'link'} ? "</a>":"")."</td><td class=\"cen rating $rcls\">$rating</td><td class=\"cen\">".sprintf("%0.1f",$org{$id}{'bytes'}/1e6)."</td><td class=\"cen\">$org{$id}{'date'}</td></tr>\n";
 	$tr2 = "$idt\t<tr><td><a href=\"$odir$id.html\">".$org{$id}{'name'}.($org{$id}{'url'} ? "</a>":"")."</td><td class=\"cen\">".($org{$id}{'CO2'} ? sprintf("%0.2f",$org{$id}{'CO2'}) : "?")."</td><td class=\"cen rating $rcls\">$rating</td></tr>\n";
 	$table .= $tr;
@@ -272,6 +275,21 @@ $table .= "$idt</table>\n";
 $tablebest .= "$idt</table>\n";
 $tableworst .= "$idt</table>\n";
 
+
+$ratingnmax = 0;
+foreach $rating (keys(%{$ratings})){
+	if($ratings->{$rating} > $ratingnmax){ $ratingnmax = $ratings->{$rating}; }
+}
+$tablerate = "<ul class=\"ratings\">";
+$tablerate .= "<li><div style=\"width:".sprintf("%0.1f",90*$ratings->{'A+'}/$ratingnmax)."%\" class=\"rate-aplus\">A+</div> $ratings->{'A+'}</li>";
+$tablerate .= "<li><div style=\"width:".sprintf("%0.1f",90*$ratings->{'A'}/$ratingnmax)."%\" class=\"rate-a\">A</div> $ratings->{'A'}</li>";
+$tablerate .= "<li><div style=\"width:".sprintf("%0.1f",90*$ratings->{'B'}/$ratingnmax)."%\" class=\"rate-b\">B</div> $ratings->{'B'}</li>";
+$tablerate .= "<li><div style=\"width:".sprintf("%0.1f",90*$ratings->{'C'}/$ratingnmax)."%\" class=\"rate-c\">C</div> $ratings->{'C'}</li>";
+$tablerate .= "<li><div style=\"width:".sprintf("%0.1f",90*$ratings->{'D'}/$ratingnmax)."%\" class=\"rate-d\">D</div> $ratings->{'D'}</li>";
+$tablerate .= "<li><div style=\"width:".sprintf("%0.1f",90*$ratings->{'E'}/$ratingnmax)."%\" class=\"rate-e\">E</div> $ratings->{'E'}</li>";
+$tablerate .= "<li><div style=\"width:".sprintf("%0.1f",90*$ratings->{'F'}/$ratingnmax)."%\" class=\"rate-f\">F</div> $ratings->{'F'}</li>";
+$tablerate .= "</ul>";
+print "$ratingnmax\n";
 print "nn = $nn\n";
 $av /= $nn;
 
@@ -301,6 +319,7 @@ $str =~ s/(<\!-- Start best -->).*(<\!-- End best -->)/$1$tablebest$2/;
 $str =~ s/(<\!-- Start worst -->).*(<\!-- End worst -->)/$1$tableworst$2/;
 $str =~ s/(<\!-- Start table -->).*(<\!-- End table -->)/$1$table$2/;
 $str =~ s/(<\!-- Start results -->).*(<\!-- End results -->)/$1$results$2/;
+$str =~ s/(<\!-- Start ratings -->).*(<\!-- End ratings -->)/$1$tablerate$2/;
 # Replace our temporary newlines
 $str =~ s/=NEWLINE=/\n/g;
 
@@ -310,6 +329,7 @@ print FILE $str;
 close(FILE);
 
 
+print Dumper $ratings;
 
 
 # Read the template
