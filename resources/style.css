@@ -134,14 +134,15 @@ section { padding: 2em 0; }
 table { width: 100%; margin: 1em 0; }
 table th { background: #ddd; color: black; }
 table td, table th { border: 1px solid #222; padding: 0.25em 0.5em; color: black; }
-table tr:hover td { background: rgba(249, 188, 38,0.4); }
+table tr:hover td { background: rgba(249, 188, 38,0.4); color: black; }
 td.num { text-align: center; }
 .sorted-dn::after { content: "▼"; }
 .sorted-up::after { content: "▲"; }
 header a, header a:visited { color: inherit; }
 .cen { text-align: center; }
 table td a { display: block; color: inherit; }
-table.top td:last-child { width: 20%; }
+table.top td:nth-child(2n) { width: 20%; }
+table.top td:last-child { width: 10%; }
 table.top-best th { background-color: #1DD3A7; color: black; }
 table.top-worst th { background-color: #F9BC26; color: black; }
 
@@ -168,6 +169,14 @@ figcaption {
 	text-align: center;
 }
 
+.rating { font-weight: bold; }
+.rate-aplus { background: #00ffbd; color: black; }
+.rate-a { background: #19ff94; color: black; }
+.rate-b { background: #47ff44; color: black; }
+.rate-c { background: #6fff00; color: black; }
+.rate-d { background: #f9ff00; color: black; }
+.rate-e { background: #ffa800; color: black; }
+.rate-f { background: #ff0000; color: white; }
 @media only screen and (max-width: 1080px) {
 	ul.grid { grid-template-columns: repeat(1, 1fr); }
 	.doublepadded { padding: 1em; }

@@ -186,9 +186,9 @@ if($str =~ /<time datetime="([^\"]*)">([^\<]*)<\/time>/){
 @order = reverse(sort{$org{$a}{'CO2'} <=> $org{$b}{'CO2'} || $org{$a}{'name'} cmp $org{$b}{'name'}}(keys(%org)));
 
 $idt = "				";
-$table = "\n$idt<table class=\"table-sort\">\n$idt\t<tr><th>Rank</th><th>$type</th><th>$config{'Code'}</th><th>CO2 (g)</th><th>MB</th><th>Updated</th></tr>\n";
-$tablebest = "\n$idt<table class=\"top top-best\">\n$idt\t<tr><th>$type</th><th>CO2 (g)</th></tr>\n";
-$tableworst = "\n$idt<table class=\"top top-worst\">\n$idt\t<tr><th>$type</th><th>CO2 (g)</th></tr>\n";
+$table = "\n$idt<table class=\"table-sort\">\n$idt\t<tr><th>Rank</th><th>$type</th><th>$config{'Code'}</th><th>CO2 (g)</th><th>Rating</th><th>MB</th><th>Updated</th></tr>\n";
+$tablebest = "\n$idt<table class=\"top top-best\">\n$idt\t<tr><th>$type</th><th>CO2 (g)</th><th><a href=\"https://www.websitecarbon.com/introducing-the-website-carbon-rating-system/\">Rating</a></th></tr>\n";
+$tableworst = "\n$idt<table class=\"top top-worst\">\n$idt\t<tr><th>$type</th><th>CO2 (g)</th><th><a href=\"https://www.websitecarbon.com/introducing-the-website-carbon-rating-system/\">Rating</a></th></tr>\n";
 $rank = 1;
 $av = 0;
 $tot = @order;
@@ -218,11 +218,35 @@ for($i = 0; $i < $tot; $i++){
 	if($i==$half){
 		$median = $org{$id}{'CO2'};
 	}
+	$rating = "?";
 	if(!$org{$id}{'CO2'}){
 		$missing++;
+	}else{
+		if($org{$id}{'CO2'} <= 0.095){
+			$rating = "A+";
+			$rcls = "rate-aplus";
+		}elsif($org{$id}{'CO2'} > 0.095 && $org{$id}{'CO2'} <= 0.186){
+			$rating = "A";
+			$rcls = "rate-a";
+		}elsif($org{$id}{'CO2'} > 0.186 && $org{$id}{'CO2'} <= 0.341){
+			$rating = "B";
+			$rcls = "rate-b";
+		}elsif($org{$id}{'CO2'} > 0.341 && $org{$id}{'CO2'} <= 0.493){
+			$rating = "C";
+			$rcls = "rate-c";
+		}elsif($org{$id}{'CO2'} > 0.493 && $org{$id}{'CO2'} <= 0.656){
+			$rating = "D";
+			$rcls = "rate-d";
+		}elsif($org{$id}{'CO2'} > 0.656 && $org{$id}{'CO2'} <= 0.846){
+			$rating = "E";
+			$rcls = "rate-e";
+		}elsif($org{$id}{'CO2'} > 0.846){
+			$rating = "F";
+			$rcls = "rate-f";
+		}
 	}
-	$tr = "$idt\t<tr><td class=\"cen\">$rank</td><td><a href=\"$odir$id.html\">".$org{$id}{'name'}.($org{$id}{'url'} ? "</a>":"")."</td><td class=\"cen\">$id</td><td class=\"cen\">".($org{$id}{'link'} ? "<a href=\"$org{$id}{'link'}\">":"").($org{$id}{'CO2'} ? sprintf("%0.2f",$org{$id}{'CO2'}) : "?").($org{$id}{'link'} ? "</a>":"")."</td><td class=\"cen\">".sprintf("%0.1f",$org{$id}{'bytes'}/1e6)."</td><td class=\"cen\">$org{$id}{'date'}</td></tr>\n";
-	$tr2 = "$idt\t<tr><td><a href=\"$odir$id.html\">".$org{$id}{'name'}.($org{$id}{'url'} ? "</a>":"")."</td><td class=\"cen\">".($org{$id}{'CO2'} ? sprintf("%0.2f",$org{$id}{'CO2'}) : "?")."</td></tr>\n";
+	$tr = "$idt\t<tr><td class=\"cen\">$rank</td><td><a href=\"$odir$id.html\">".$org{$id}{'name'}.($org{$id}{'url'} ? "</a>":"")."</td><td class=\"cen\">$id</td><td class=\"cen\">".($org{$id}{'link'} ? "<a href=\"$org{$id}{'link'}\">":"").($org{$id}{'CO2'} ? sprintf("%0.2f",$org{$id}{'CO2'}) : "?").($org{$id}{'link'} ? "</a>":"")."</td><td class=\"cen rating $rcls\">$rating</td><td class=\"cen\">".sprintf("%0.1f",$org{$id}{'bytes'}/1e6)."</td><td class=\"cen\">$org{$id}{'date'}</td></tr>\n";
+	$tr2 = "$idt\t<tr><td><a href=\"$odir$id.html\">".$org{$id}{'name'}.($org{$id}{'url'} ? "</a>":"")."</td><td class=\"cen\">".($org{$id}{'CO2'} ? sprintf("%0.2f",$org{$id}{'CO2'}) : "?")."</td><td class=\"cen rating $rcls\">$rating</td></tr>\n";
 	$table .= $tr;
 	if($org{$id}{'CO2'} > 0){
 		$n = @worst;
