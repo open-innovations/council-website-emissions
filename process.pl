@@ -329,8 +329,6 @@ print FILE $str;
 close(FILE);
 
 
-print Dumper $ratings;
-
 
 # Read the template
 open(FILE,$odir."template.html");
