@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 # Website CO2 emissions wrapper v 1.2.1
 
+use utf8;
 use lib "lib/";
 use OpenInnovations::CarbonAPI;
 use JSON::XS;

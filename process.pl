@@ -1,11 +1,13 @@
 #!/usr/bin/perl
 # Website CO2 emissions calculator v 1.1.2
 
+use utf8;
 use lib "lib/";
 use JSON::XS;
 use Data::Dumper;
 use POSIX qw(strftime);
 use OpenInnovations::CarbonAPI;
+use open qw( :std :encoding(UTF-8) );
 
 require "lib.pl";
 
@@ -626,7 +628,7 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 	$txt =~ s/\{\{ NAME \}\}/$data->{'orgs'}{$id}{'name'}/g;
 	$txt =~ s/\{\{ BODY \}\}/$body/g;
 
-	open(FILE,">","$odir$id.html");
+	open(FILE,">",$odir.$id.".html");
 	print FILE $txt;
 	close(FILE);
 }
