@@ -226,28 +226,7 @@ for($i = 0; $i < $tot; $i++){
 	if(!$org{$id}{'CO2'}){
 		$missing++;
 	}else{
-		if($org{$id}{'CO2'} <= 0.095){
-			$rating = "A+";
-			$rcls = "rate-aplus";
-		}elsif($org{$id}{'CO2'} > 0.095 && $org{$id}{'CO2'} <= 0.186){
-			$rating = "A";
-			$rcls = "rate-a";
-		}elsif($org{$id}{'CO2'} > 0.186 && $org{$id}{'CO2'} <= 0.341){
-			$rating = "B";
-			$rcls = "rate-b";
-		}elsif($org{$id}{'CO2'} > 0.341 && $org{$id}{'CO2'} <= 0.493){
-			$rating = "C";
-			$rcls = "rate-c";
-		}elsif($org{$id}{'CO2'} > 0.493 && $org{$id}{'CO2'} <= 0.656){
-			$rating = "D";
-			$rcls = "rate-d";
-		}elsif($org{$id}{'CO2'} > 0.656 && $org{$id}{'CO2'} <= 0.846){
-			$rating = "E";
-			$rcls = "rate-e";
-		}elsif($org{$id}{'CO2'} > 0.846){
-			$rating = "F";
-			$rcls = "rate-f";
-		}
+		($rating,$rcls) = getRating($org{$id}{'CO2'});
 	}
 	$ratings->{$rating}++;
 	$tr = "$idt\t<tr><td class=\"cen\">$rank</td><td><a href=\"$odir$id.html\">".$org{$id}{'name'}.($org{$id}{'url'} ? "</a>":"")."</td><td class=\"cen\">$id</td><td class=\"cen\">".($org{$id}{'link'} ? "<a href=\"$org{$id}{'link'}\">":"").($org{$id}{'CO2'} ? sprintf("%0.2f",$org{$id}{'CO2'}) : "?").($org{$id}{'link'} ? "</a>":"")."</td><td class=\"cen rating $rcls\">$rating</td><td class=\"cen\">".sprintf("%0.1f",$org{$id}{'bytes'}/1e6)."</td><td class=\"cen\">$org{$id}{'date'}</td></tr>\n";
@@ -424,10 +403,11 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 		if($details->{'first-contentful-paint'}){
 			$body .= "$indent\t\t<p><strong>Time to load:</strong> ".sprintf("%0.1f",($details->{'first-contentful-paint'}{'numericValue'}/1000))." seconds</p>\n";
 		}
-		$body .= "$indent\t\t<table>\n$indent\t\t\t<tr><th>Date checked</th><th class=\"cen\">CO2 / grams</th><th class=\"cen\">Page size</th><th class=\"cen\"><a href=\"https://www.thegreenwebfoundation.org/directory/\">Energy</a></th></tr>\n";
+		$body .= "$indent\t\t<table>\n$indent\t\t\t<tr><th>Date checked</th><th class=\"cen\">CO2 / grams</th><th class=\"cen\">Rating</th><th class=\"cen\">Page size</th><th class=\"cen\"><a href=\"https://www.thegreenwebfoundation.org/directory/\">Energy</a></th></tr>\n";
 		@dates = reverse(sort(keys(%{$data->{'orgs'}{$id}{'urls'}{$url}{'values'}})));
 		for($d = 0; $d < @dates; $d++){
-			$body .= "$indent\t\t\t<tr><td>$dates[$d]</td><td class=\"cen\">".sprintf("%0.2f",$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'CO2'})."</td><td class=\"cen\" data=\"$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'bytes'}\">".niceSize($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'bytes'})."</td><td class=\"cen ".($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'green'} ? "c5-bg":"")."\">".($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'green'} ? "GREEN":"GRID?")."</td></tr>\n";
+			($rating,$rcls) = getRating($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'CO2'});
+			$body .= "$indent\t\t\t<tr><td>$dates[$d]</td><td class=\"cen\">".sprintf("%0.2f",$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'CO2'})."</td><td class=\"cen rating $rcls\">$rating</td><td class=\"cen\" data=\"$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'bytes'}\">".niceSize($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'bytes'})."</td><td class=\"cen ".($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'green'} ? "c5-bg":"")."\">".($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'green'} ? "GREEN":"GRID?")."</td></tr>\n";
 		}
 		$body .= "$indent\t\t</table>\n";
 
@@ -660,6 +640,34 @@ sub niceSize {
 	return $b." bytes";
 }
 
+sub getRating {
+	my $co = $_[0];
+	my ($rating,$rcls);
+	if($co <= 0.095){
+		$rating = "A+";
+		$rcls = "rate-aplus";
+	}elsif($co > 0.095 && $co <= 0.186){
+		$rating = "A";
+		$rcls = "rate-a";
+	}elsif($co > 0.186 && $co <= 0.341){
+		$rating = "B";
+		$rcls = "rate-b";
+	}elsif($co > 0.341 && $co <= 0.493){
+		$rating = "C";
+		$rcls = "rate-c";
+	}elsif($co > 0.493 && $co <= 0.656){
+		$rating = "D";
+		$rcls = "rate-d";
+	}elsif($co > 0.656 && $co <= 0.846){
+		$rating = "E";
+		$rcls = "rate-e";
+	}elsif($co > 0.846){
+		$rating = "F";
+		$rcls = "rate-f";
+	}
+	return ($rating,$rcls);
+}
+
 sub getDetails {
 	my $url = $_[0];
 	my $safeurl = $carbon->getSafeURL($url);
@@ -671,7 +679,7 @@ sub getDetails {
 		close(FILE);
 		$str = join("",@lines);
 		if(!$str){ $str = "{}"; }
-		$json = JSON::XS->new->utf8->decode($str);
+		$json = JSON::XS->new->decode($str);
 		$rtn->{'file'} = 1;
 		if($json->{'lighthouseResult'}{'audits'}{'first-contentful-paint'}){
 			$rtn->{'first-contentful-paint'} = $json->{'lighthouseResult'}{'audits'}{'first-contentful-paint'};

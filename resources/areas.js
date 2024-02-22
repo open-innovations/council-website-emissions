@@ -74,7 +74,7 @@
 						'tooltip': function(d,opt){ return d.data.label+':\n'+d.data.y.toFixed(2)+' grams of CO2'; }
 					}),
 					'size': new Graph(document.getElementById('graph-size'),tr,{
-						'column': 2,
+						'column': 3,
 						'scale': 1e-6,
 						'title': 'Size / MB',
 						'tooltip': function(d,opt){ return d.data.label+':\n'+d.data.y.toFixed(1)+'MB'; }
