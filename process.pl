@@ -223,7 +223,7 @@ for($i = 0; $i < $tot; $i++){
 		$median = $org{$id}{'CO2'};
 	}
 	$rating = "?";
-	if(!$org{$id}{'CO2'}){
+	if(!defined($org{$id}{'CO2'})){
 		$missing++;
 	}else{
 		($rating,$rcls) = getRating($org{$id}{'CO2'});
@@ -403,11 +403,19 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 		if($details->{'first-contentful-paint'}){
 			$body .= "$indent\t\t<p><strong>Time to load:</strong> ".sprintf("%0.1f",($details->{'first-contentful-paint'}{'numericValue'}/1000))." seconds</p>\n";
 		}
+		if(defined($data->{'orgs'}{$id}{'blocked'})){
+			$body .= "<p class=\"warning padded\">Note that as of $data->{'orgs'}{$id}{'blocked'} this council is blocking our tool from measuring their page.</p>";
+		}
 		$body .= "$indent\t\t<table>\n$indent\t\t\t<tr><th>Date checked</th><th class=\"cen\">CO2 / grams</th><th class=\"cen\">Rating</th><th class=\"cen\">Page size</th><th class=\"cen\"><a href=\"https://www.thegreenwebfoundation.org/directory/\">Energy</a></th></tr>\n";
 		@dates = reverse(sort(keys(%{$data->{'orgs'}{$id}{'urls'}{$url}{'values'}})));
 		for($d = 0; $d < @dates; $d++){
-			($rating,$rcls) = getRating($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'CO2'});
-			$body .= "$indent\t\t\t<tr><td>$dates[$d]</td><td class=\"cen\">".sprintf("%0.2f",$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'CO2'})."</td><td class=\"cen rating $rcls\">$rating</td><td class=\"cen\" data=\"$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'bytes'}\">".niceSize($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'bytes'})."</td><td class=\"cen ".($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'green'} ? "c5-bg":"")."\">".($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'green'} ? "GREEN":"GRID?")."</td></tr>\n";
+			if(defined($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'CO2'})){
+				($rating,$rcls) = getRating($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'CO2'});
+			}else{
+				$rating = "";
+				$rcls = "";
+			}
+			$body .= "$indent\t\t\t<tr><td>$dates[$d]</td><td class=\"cen\">".(defined($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'CO2'}) ? sprintf("%0.2f",$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'CO2'}) : "BLOCKED")."</td><td class=\"cen rating $rcls\">$rating</td><td class=\"cen\" data=\"$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'bytes'}\">".niceSize($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'bytes'})."</td><td class=\"cen ".($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'green'} ? "c5-bg":"")."\">".($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'green'} ? "GREEN":"GRID?")."</td></tr>\n";
 		}
 		$body .= "$indent\t\t</table>\n";
 

@@ -119,9 +119,28 @@ sub processOrg {
 		}
 		$days = daysBetween($recent,$today);
 		if($days > ($ago||14)){
-			$entry = $carbon->makeEntry($url);
-			if($entry->{'co2'}){
-				$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$today} = {'CO2'=>($entry->{'co2'} ? sprintf("%0.2f",$entry->{'co2'})+0 : $entry->{'co2'}),'bytes'=>($entry->{'bytes'}),'imagebytes'=>($entry->{'images'}{'bytes'}),'green'=>($entry->{'green'})};
+			if(defined($data->{'orgs'}{$id}{'blocked'})){
+				$entry = {'blocked'=>1};
+			}else{
+				$entry = $carbon->makeEntry($url);
+			}
+			if(defined($entry->{'co2'}) || $entry->{'blocked'}){
+				$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$today} = {};
+				if(defined($entry->{'co2'})){
+					$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$today}{'CO2'} = ($entry->{'co2'} ? sprintf("%0.2f",$entry->{'co2'})+0 : $entry->{'co2'});
+				}
+				if(defined($entry->{'bytes'})){
+					$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$today}{'bytes'} = ($entry->{'bytes'});
+				}
+				if(defined($entry->{'images'}{'bytes'})){
+					$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$today}{'imagebytes'} = ($entry->{'images'}{'bytes'});
+				}
+				if(defined($entry->{'green'})){
+					$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$today}{'green'} = ($entry->{'green'});
+				}
+				if(defined($data->{'orgs'}{$id}{'blocked'})){
+					$data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$today}{'blocked'} = 1;
+				}
 				msg("<yellow>$id:<none>\n");
 				msg("\t<cyan>$url<none>\n");
 				msg("\t$recent - <yellow>".$days."<none> days ago\n");
