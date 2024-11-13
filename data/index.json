@@ -10639,7 +10639,8 @@
 						"2024-08-07": { "CO2": 3.54, "bytes": 14056763, "green": 0, "imagebytes": 12553115 },
 						"2024-09-26": { "CO2": 2.02, "bytes": 8011521, "green": 0, "imagebytes": 6428779 },
 						"2024-10-16": { "CO2": 2.24, "bytes": 8886998, "green": 0, "imagebytes": 7106361 },
-						"2024-11-07": { "CO2": 4.84, "bytes": 19223798, "green": 0, "imagebytes": 17526607 }
+						"2024-11-07": { "CO2": 4.84, "bytes": 19223798, "green": 0, "imagebytes": 17526607 },
+						"2024-11-13": { "CO2": 0.83, "bytes": 3304893, "green": 0, "imagebytes": 1607629 }
 					}
 				}
 			}
@@ -12812,7 +12813,7 @@
 			"active": true,
 			"name": "Salford City Council",
 			"urls": {
-				"http://www.salford.gov.uk/": {
+				"https://www.salford.gov.uk/": {
 					"values": {
 						"2021-03-09": { "CO2": 0.27, "ref": "https://www.websitecarbon.com/website/salford-gov-uk/" },
 						"2021-05-27": { "CO2": 0.27, "bytes": 446561, "green": 0, "imagebytes": 179441 },

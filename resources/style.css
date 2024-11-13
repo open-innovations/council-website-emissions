@@ -180,6 +180,9 @@ figcaption {
 .rate-d { background: #f9ff00; color: black; }
 .rate-e { background: #ffa800; color: black; }
 .rate-f { background: #ff0000; color: white; }
+
+.blocked { color: #721c24; background-color: #f8d7da; }
+
 @media only screen and (max-width: 1080px) {
 	ul.grid { grid-template-columns: repeat(1, 1fr); }
 	.doublepadded { padding: 1em; }
