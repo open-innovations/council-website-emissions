@@ -2,7 +2,9 @@
 table-sort-js
 Author: Lee Wannacott
 Licence: MIT License Copyright (c) 2021 Lee Wannacott 
-Modified by Stuart Lowe 25th May 2021 to sort by textContent rather than innerHTML
+Modified by Stuart Lowe:
+  * 2025-01-07: keep row classes
+  * 2021-05-25: sort by textContent rather than innerHTML
 	
 GitHub Repository: https://github.com/LeeWannacott/table-sort-js
 npm package: https://www.npmjs.com/package/table-sort-js
@@ -22,6 +24,7 @@ Instructions:
 function tableSortJs() {
 	const columnData = [];
 	const dictOfColumnIndexAndTableRow = {};
+	const rowClasses = {};
 	for (let sortableTable of document.getElementsByTagName("table")) {
 		if (sortableTable.classList.contains("table-sort")) {
 			if (sortableTable.getElementsByTagName("thead").length === 0) {
@@ -71,6 +74,7 @@ function tableSortJs() {
 					function getTableDataOnClick() {
 						const tableRows = tableBody.querySelectorAll("tr");
 						for(let [i, tr] of tableRows.entries()) {
+							rowClasses[i] = tr.getAttribute('class');
 							if(
 								getText(tr,columnIndex) !== ""
 							){
@@ -133,8 +137,12 @@ function tableSortJs() {
 					function returnSortedTable() {
 						const tableRows = tableBody.querySelectorAll("tr");
 						for (let [i, tr] of tableRows.entries()) {
+							let m = columnData[i].match(/(.*)\#(.*)/);
+							let j = parseInt(m[2]);
 							tr.innerHTML =
 								dictOfColumnIndexAndTableRow[columnData[i]];
+							// Update row class with old class
+							tr.setAttribute('class',rowClasses[j]||"");
 						}
 						columnData.length = 0;
 					}
