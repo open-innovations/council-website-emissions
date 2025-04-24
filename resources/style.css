@@ -166,8 +166,13 @@ table.top-worst th { background-color: #F9BC26; color: black; }
 }
 .grid.top li:hover {
 	transform: scale(1.025);
+}
+.grid.top li a:hover, .grid.top li a:focus {
 	background: #000;
 	border-color: #000;
+}
+.grid.top li a:focus img {
+	transform: scale(1.025);
 }
 .grid.top li .about {
 	padding: 1rem;
