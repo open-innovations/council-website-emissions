@@ -151,6 +151,7 @@ table.top-worst th { background-color: #F9BC26; color: black; }
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 1rem;
 }
+.grid.top + h2 { margin-top: 2rem; }
 .grid.top li {
 	border: 1px solid #444;
 	border-radius: 1rem;
