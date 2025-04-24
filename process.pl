@@ -192,8 +192,8 @@ if($str =~ /<time datetime="([^\"]*)">([^\<]*)<\/time>/){
 $idt = "				";
 $table = "\n$idt<table class=\"table-sort\">\n$idt\t<thead><tr><th>Rank</th><th>$type</th><th>$config{'Code'}</th><th>CO2 (g)</th><th>Rating</th><th>MB</th><th>Updated</th><th>Note</th></tr></thead>\n";
 #$tablebest = "\n$idt<table class=\"top top-best\">\n$idt\t<thead><tr><th>$type</th><th>CO2 (g)</th><th><a href=\"https://www.websitecarbon.com/introducing-the-website-carbon-rating-system/\">Rating</a></th></tr></thead>\n";
-$tablebest = "\n$idt<ul class=\"grid top top-best\">\n";
-$tableworst = "\n$idt<ul class=\"grid top top-worst\">\n";
+$tablebest = "\n$idt<h3>Top $config{'Top'} homepages for emissions</h3>\n$idt<ul class=\"grid top top-best\">\n";
+$tableworst = "\n$idt<h3>Worst $config{'Top'} homepages for emissions</h3>\n$idt<ul class=\"grid top top-worst\">\n";
 $rank = 1;
 $av = 0;
 $tot = @order;
@@ -237,7 +237,7 @@ for($i = 0; $i < $tot; $i++){
 	$tr = "$idt\t<tr".($org{$id}{'blocked'} ? " class=\"blocked\"":"")."><td class=\"cen\">$rank</td><td><a href=\"$odir$id.html\">".$org{$id}{'name'}.($org{$id}{'url'} ? "</a>":"")."</td><td class=\"cen\">$id</td><td class=\"cen\">".($org{$id}{'link'} ? "<a href=\"$org{$id}{'link'}\">":"").($org{$id}{'CO2'} ? sprintf("%0.2f",$org{$id}{'CO2'}) : "?").($org{$id}{'link'} ? "</a>":"")."</td><td class=\"cen rating $rcls\">$rating</td><td class=\"cen\">".sprintf("%0.1f",$org{$id}{'bytes'}/1e6)."</td><td class=\"cen\">$org{$id}{'date'}</td><td>".($org{$id}{'blocked'} ? "BLOCKED":"")."</td></tr>\n";
 	$table .= $tr;
 	if(!$org{$id}{'blocked'}){
-		$tr2 = "$idt\t<li><a href=\"$odir$id.html\"><img src=\"$odir$id.webp\" /><div class=\"about\"><div class=\"title\">".$org{$id}{'name'}."</div><div class=\"url\">".$url."</div><div class=\"rating $rcls\">$rating</div></div></a></li>\n";
+		$tr2 = "$idt\t<li><a href=\"$odir$id.html\"><img src=\"$odir$id.webp\" /><div class=\"about\"><div class=\"title\">".$org{$id}{'name'}."</div><div class=\"rating $rcls\">$rating</div></div></a></li>\n";
 		if($org{$id}{'CO2'} > 0){
 			$n = @worst;
 			if($n < $config{'Top'}){
@@ -291,7 +291,7 @@ $results = "The average emissions from a $type homepage are <strong class=\"bold
 if($missing > 0){
 	$results .= " We were unable to calculate emissions for <strong class=\"bold\">$missing out of $tot</strong> ".$typeplural." possibly due to their sites blocking automated requests.";
 }
-$results .= " The top and bottom 10 websites are given here with the <a href=\"#full-list\">full list below</a>.";
+$results .= " See the <a href=\"#full-list\">full list below</a>.";
 
 $results = "\n$idt<p>$results</p>\n";
 
