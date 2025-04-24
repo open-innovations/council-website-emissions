@@ -190,9 +190,10 @@ if($str =~ /<time datetime="([^\"]*)">([^\<]*)<\/time>/){
 @order = reverse(sort{$org{$a}{'CO2'} <=> $org{$b}{'CO2'} || $org{$a}{'name'} cmp $org{$b}{'name'}}(keys(%org)));
 
 $idt = "				";
-$table = "\n$idt<table class=\"table-sort\">\n$idt\t<tr><th>Rank</th><th>$type</th><th>$config{'Code'}</th><th>CO2 (g)</th><th>Rating</th><th>MB</th><th>Updated</th><th>Note</th></tr>\n";
-$tablebest = "\n$idt<table class=\"top top-best\">\n$idt\t<tr><th>$type</th><th>CO2 (g)</th><th><a href=\"https://www.websitecarbon.com/introducing-the-website-carbon-rating-system/\">Rating</a></th></tr>\n";
-$tableworst = "\n$idt<table class=\"top top-worst\">\n$idt\t<tr><th>$type</th><th>CO2 (g)</th><th><a href=\"https://www.websitecarbon.com/introducing-the-website-carbon-rating-system/\">Rating</a></th></tr>\n";
+$table = "\n$idt<table class=\"table-sort\">\n$idt\t<thead><tr><th>Rank</th><th>$type</th><th>$config{'Code'}</th><th>CO2 (g)</th><th>Rating</th><th>MB</th><th>Updated</th><th>Note</th></tr></thead>\n";
+#$tablebest = "\n$idt<table class=\"top top-best\">\n$idt\t<thead><tr><th>$type</th><th>CO2 (g)</th><th><a href=\"https://www.websitecarbon.com/introducing-the-website-carbon-rating-system/\">Rating</a></th></tr></thead>\n";
+$tablebest = "\n$idt<ul class=\"grid top top-best\">\n";
+$tableworst = "\n$idt<ul class=\"grid top top-worst\">\n";
 $rank = 1;
 $av = 0;
 $tot = @order;
@@ -229,17 +230,21 @@ for($i = 0; $i < $tot; $i++){
 		($rating,$rcls) = getRating($org{$id}{'CO2'});
 	}
 	$ratings->{$rating}++;
+	$url = $org{$id}{'url'};
+	$url =~ s/^https?:\/\///g;
+	$url =~ s/^www\.//g;
+	$url =~ s/\/$//g;
 	$tr = "$idt\t<tr".($org{$id}{'blocked'} ? " class=\"blocked\"":"")."><td class=\"cen\">$rank</td><td><a href=\"$odir$id.html\">".$org{$id}{'name'}.($org{$id}{'url'} ? "</a>":"")."</td><td class=\"cen\">$id</td><td class=\"cen\">".($org{$id}{'link'} ? "<a href=\"$org{$id}{'link'}\">":"").($org{$id}{'CO2'} ? sprintf("%0.2f",$org{$id}{'CO2'}) : "?").($org{$id}{'link'} ? "</a>":"")."</td><td class=\"cen rating $rcls\">$rating</td><td class=\"cen\">".sprintf("%0.1f",$org{$id}{'bytes'}/1e6)."</td><td class=\"cen\">$org{$id}{'date'}</td><td>".($org{$id}{'blocked'} ? "BLOCKED":"")."</td></tr>\n";
-	$tr2 = "$idt\t<tr><td><a href=\"$odir$id.html\">".$org{$id}{'name'}.($org{$id}{'url'} ? "</a>":"")."</td><td class=\"cen\">".($org{$id}{'CO2'} ? sprintf("%0.2f",$org{$id}{'CO2'}) : "?")."</td><td class=\"cen rating $rcls\">$rating</td></tr>\n";
+	$tr2 = "$idt\t<li><a href=\"$odir$id.html\"><img src=\"$odir$id.webp\" /><div class=\"about\"><div class=\"title\">".$org{$id}{'name'}."</div><div class=\"url\">".$url."</div><div class=\"rating $rcls\">$rating</div></div></a></li>\n";
 	$table .= $tr;
 	if($org{$id}{'CO2'} > 0){
 		$n = @worst;
-		if($n < 10){
+		if($n < $config{'Top'}){
 			push(@worst,$tr2);
 		}
 		push(@best,$tr2);
 		$n = @best;
-		if($n > 10){
+		if($n > $config{'Top'}){
 			shift(@best);
 		}
 	}
@@ -253,8 +258,8 @@ for($i = 0; $i < @worst; $i++){
 	$tableworst .= $worst[$i];
 }
 $table .= "$idt</table>\n";
-$tablebest .= "$idt</table>\n";
-$tableworst .= "$idt</table>\n";
+$tablebest .= "$idt</ul>\n";
+$tableworst .= "$idt</ul>\n";
 
 
 $ratingnmax = 0;
@@ -406,7 +411,7 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 		if(defined($data->{'orgs'}{$id}{'blocked'})){
 			$body .= "<p class=\"warning padded\">Note that as of $data->{'orgs'}{$id}{'blocked'} this council is blocking our tool from measuring their page.</p>";
 		}
-		$body .= "$indent\t\t<table>\n$indent\t\t\t<tr><th>Date checked</th><th class=\"cen\">CO2 / grams</th><th class=\"cen\">Rating</th><th class=\"cen\">Page size</th><th class=\"cen\"><a href=\"https://www.thegreenwebfoundation.org/directory/\">Energy</a></th></tr>\n";
+		$body .= "$indent\t\t<table>\n$indent\t\t\t<thead><tr><th>Date checked</th><th class=\"cen\">CO2 / grams</th><th class=\"cen\">Rating</th><th class=\"cen\">Page size</th><th class=\"cen\"><a href=\"https://www.thegreenwebfoundation.org/directory/\">Energy</a></th></tr></thead>\n";
 		@dates = reverse(sort(keys(%{$data->{'orgs'}{$id}{'urls'}{$url}{'values'}})));
 		for($d = 0; $d < @dates; $d++){
 			if(defined($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'CO2'})){

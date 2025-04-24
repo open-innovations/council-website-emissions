@@ -83,7 +83,7 @@ header a { line-height: 0; }
 .msg { text-align:center; padding: 0.5em; }
 #main { padding: 1em; }
 
-.holder { position: relative; width: 800px; max-width: 100%; margin: auto; }
+.holder { position: relative; width: 1080px; max-width: 100%; margin: auto; }
 button, .button { margin-top: 0.25em; border: 0px; font-size: 1em; background-color: #efefef; color: black; text-decoration: none!important; display: inline-block; padding: 0.5em 1em; cursor: pointer; }
 a.button:hover, button:hover, button:focus, a.button:focus { background-color: #333333!important; color: #efefef!important; }
 .b1-bg { background-color: #000000; color: white!important; }
@@ -131,9 +131,10 @@ section { padding: 2em 0; }
 .grid a *:last-child { margin-bottom: 0; }
 .grid a:focus { outline: 4px solid #2254F4; }
 
-table { width: 100%; margin: 1em 0; }
-table th { background: #ddd; color: black; }
-table td, table th { border: 1px solid #222; padding: 0.25em 0.5em; color: black; }
+table { width: 100%; margin: 1em 0; position: relative;  border-collapse: separate; }
+table thead { position: sticky; top: 0; background: white; margin-bottom: 2px; }
+table th { font-family: Poppins; }
+table td, table th { border-bottom: 1px solid #222; padding: 0.25em 0.5em; color: black; }
 table tr:hover td { background: rgba(249, 188, 38,0.4); color: black; }
 td.num { text-align: center; }
 .sorted-dn::after { content: "▼"; }
@@ -145,6 +146,53 @@ table.top td:nth-child(2n) { width: 20%; }
 table.top td:last-child { width: 10%; }
 table.top-best th { background-color: #1DD3A7; color: black; }
 table.top-worst th { background-color: #F9BC26; color: black; }
+.grid.top {
+	margin-block: 1rem;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+}
+.grid.top li {
+	border: 1px solid #444;
+	border-radius: 1rem;
+	overflow: hidden;
+	background: #444;
+	color: white;
+}
+.grid.top li a {
+	padding: 0;
+	color: inherit;
+	line-height: 0;
+}
+.grid.top li:hover {
+	transform: scale(1.025);
+	background: #000;
+}
+.grid.top li .about {
+	padding: 1rem;
+	padding-right: 3rem;
+	position: relative;
+	line-height: 1.4rem;
+}
+.grid.top li .about .title, .grid.top li .about .url {
+	display: block;
+	max-width: calc(100%);
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	line-height: 1.4rem;
+}
+.grid.top .rating {
+	position: absolute;
+	right: 1rem;
+	top: 0;
+	border-radius: 4px;
+	aspect-ratio: 1/1;
+	display: block;
+	height: 2.25em;
+	line-height: 2.25em;
+	text-align: center;
+	transform: translate3d(0,-50%,0);
+}
 
 .tabs { grid-gap: 1px; }
 .tabs .tab { background: #ddd; }
