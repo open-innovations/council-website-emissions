@@ -1283,7 +1283,8 @@
 						"2025-01-07": { "CO2": 0.49, "bytes": 1965221, "green": 0, "imagebytes": 1448137 },
 						"2025-02-11": { "CO2": 4.11, "bytes": 16308904, "green": 0, "imagebytes": 15788557 },
 						"2025-03-05": { "CO2": 4.11, "bytes": 16317260, "green": 0, "imagebytes": 15788557 },
-						"2025-04-23": { "CO2": 3.62, "bytes": 14373854, "green": 0, "imagebytes": 13840862 }
+						"2025-04-23": { "CO2": 3.62, "bytes": 14373854, "green": 0, "imagebytes": 13840862 },
+						"2025-04-24": { "CO2": 0.29, "bytes": 1146049, "green": 0, "imagebytes": 613198 }
 					}
 				}
 			}
@@ -7653,7 +7654,8 @@
 						"2025-01-07": { "CO2": 0.52, "bytes": 2054598, "green": 0, "imagebytes": 1645327 },
 						"2025-02-11": { "CO2": 0.82, "bytes": 3269380, "green": 0, "imagebytes": 2859685 },
 						"2025-03-05": { "CO2": 0.43, "bytes": 1706975, "green": 0, "imagebytes": 1297199 },
-						"2025-04-23": { "CO2": 4.04, "bytes": 16039849, "green": 0, "imagebytes": 15629619 }
+						"2025-04-23": { "CO2": 4.04, "bytes": 16039849, "green": 0, "imagebytes": 15629619 },
+						"2025-04-24": { "CO2": 0.32, "bytes": 1263965, "green": 0, "imagebytes": 853393 }
 					}
 				}
 			}
@@ -14195,6 +14197,7 @@
 		},
 		"E08000010": {
 			"active": true,
+			"blocked": "2025-04-23",
 			"name": "Wigan Metropolitan Borough Council",
 			"urls": {
 				"http://www.wigan.gov.uk/": {
@@ -14245,7 +14248,7 @@
 						"2025-01-07": { "CO2": 0.29, "bytes": 1153476, "green": 0, "imagebytes": 130362 },
 						"2025-02-11": { "CO2": 0.29, "bytes": 1155800, "green": 0, "imagebytes": 130360 },
 						"2025-03-05": { "CO2": 0.33, "bytes": 1304883, "green": 0, "imagebytes": 130360 },
-						"2025-04-23": { "CO2": 0, "bytes": 762, "green": 0, "imagebytes": 0 }
+						"2025-04-23": { "blocked": 1 }
 					}
 				}
 			}
