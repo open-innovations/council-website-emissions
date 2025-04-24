@@ -235,20 +235,22 @@ for($i = 0; $i < $tot; $i++){
 	$url =~ s/^www\.//g;
 	$url =~ s/\/$//g;
 	$tr = "$idt\t<tr".($org{$id}{'blocked'} ? " class=\"blocked\"":"")."><td class=\"cen\">$rank</td><td><a href=\"$odir$id.html\">".$org{$id}{'name'}.($org{$id}{'url'} ? "</a>":"")."</td><td class=\"cen\">$id</td><td class=\"cen\">".($org{$id}{'link'} ? "<a href=\"$org{$id}{'link'}\">":"").($org{$id}{'CO2'} ? sprintf("%0.2f",$org{$id}{'CO2'}) : "?").($org{$id}{'link'} ? "</a>":"")."</td><td class=\"cen rating $rcls\">$rating</td><td class=\"cen\">".sprintf("%0.1f",$org{$id}{'bytes'}/1e6)."</td><td class=\"cen\">$org{$id}{'date'}</td><td>".($org{$id}{'blocked'} ? "BLOCKED":"")."</td></tr>\n";
-	$tr2 = "$idt\t<li><a href=\"$odir$id.html\"><img src=\"$odir$id.webp\" /><div class=\"about\"><div class=\"title\">".$org{$id}{'name'}."</div><div class=\"url\">".$url."</div><div class=\"rating $rcls\">$rating</div></div></a></li>\n";
 	$table .= $tr;
-	if($org{$id}{'CO2'} > 0){
-		$n = @worst;
-		if($n < $config{'Top'}){
-			push(@worst,$tr2);
+	if(!$org{$id}{'blocked'}){
+		$tr2 = "$idt\t<li><a href=\"$odir$id.html\"><img src=\"$odir$id.webp\" /><div class=\"about\"><div class=\"title\">".$org{$id}{'name'}."</div><div class=\"url\">".$url."</div><div class=\"rating $rcls\">$rating</div></div></a></li>\n";
+		if($org{$id}{'CO2'} > 0){
+			$n = @worst;
+			if($n < $config{'Top'}){
+				push(@worst,$tr2);
+			}
+			push(@best,$tr2);
+			$n = @best;
+			if($n > $config{'Top'}){
+				shift(@best);
+			}
 		}
-		push(@best,$tr2);
-		$n = @best;
-		if($n > $config{'Top'}){
-			shift(@best);
-		}
+		$lastco2 = $org{$id}{'CO2'};
 	}
-	$lastco2 = $org{$id}{'CO2'};
 }
 @best = reverse(@best);
 for($i = 0; $i < @best; $i++){
