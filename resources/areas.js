@@ -65,7 +65,7 @@
 				tabbed.classList.add('panes');
 				tabbed.classList.add('tabbed');
 				t.insertAdjacentElement('beforebegin', tabbed);
-				tabbed.innerHTML = '<div class="pane"><span class="tab-title">CO2 estimate</span><div class="graph" id="graph-carbon"></div><div class="warning" style="padding:0.25em 0.5em;line-height: 1em;"><span class="small">Note: from 1st November 2022 we adopted <a href=\"https://sustainablewebdesign.org/calculating-digital-emissions/\">version 3 of the methodology for estimating CO2 emissions</a>. This will tend to lower CO2 estimates for a given size.</span></div></div><div class="pane"><span class="tab-title">Page size</span><div class="graph" id="graph-size"></div></div>';
+				tabbed.innerHTML = '<div class="pane"><span class="tab-title">CO2 estimate</span><div class="graph" id="graph-carbon"></div><div class="warning" style="padding:0.25em 0.5em;line-height: 1em;"><span class="small">Note: we used version 2 of the methodology for estimating CO2 emissions until November 2022, <a href=\"https://sustainablewebdesign.org/calculating-digital-emissions/\">version 3</a> until August 2025, and will be using <a href=\"https://sustainablewebdesign.org/estimating-digital-emissions/\">version 4</a> from September 2025. CO2 estimates have reduced with each update to the methodology because the internet appears to be operating more efficiently over time.</span></div></div><div class="pane"><span class="tab-title">Page size</span><div class="graph" id="graph-size"></div></div>';
 
 				graphs = {
 					'carbon': new Graph(document.getElementById('graph-carbon'),tr,{

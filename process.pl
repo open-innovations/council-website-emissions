@@ -655,7 +655,45 @@ sub niceSize {
 	return $b." bytes";
 }
 
+
+# https://www.websitecarbon.com/introducing-the-website-carbon-rating-system/
+# Rating	Grams CO2e per pageview
+# A + 	0.040
+# A	0.079
+# B	0.145
+# C	0.209
+# D	0.278
+# E	0.359
+# F 	≥ 0.360
 sub getRating {
+	my $co = $_[0];
+	my ($rating,$rcls);
+	if($co <= 0.04){
+		$rating = "A+";
+		$rcls = "rate-aplus";
+	}elsif($co > 0.04 && $co <= 0.079){
+		$rating = "A";
+		$rcls = "rate-a";
+	}elsif($co > 0.079 && $co <= 0.145){
+		$rating = "B";
+		$rcls = "rate-b";
+	}elsif($co > 0.145 && $co <= 0.209){
+		$rating = "C";
+		$rcls = "rate-c";
+	}elsif($co > 0.209 && $co <= 0.278){
+		$rating = "D";
+		$rcls = "rate-d";
+	}elsif($co > 0.278 && $co < 0.36){
+		$rating = "E";
+		$rcls = "rate-e";
+	}elsif($co >= 0.360){
+		$rating = "F";
+		$rcls = "rate-f";
+	}
+	return ($rating,$rcls);
+}
+
+sub getRatingV3 {
 	my $co = $_[0];
 	my ($rating,$rcls);
 	if($co <= 0.095){

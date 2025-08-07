@@ -1,11 +1,6 @@
 package OpenInnovations::CarbonAPI;
 
-# Last updated: 2025-08-07
-#
-# Originally a port of https://gitlab.com/wholegrain/carbon-api-2-0/-/blob/master/includes/carbonapi.php
-#
-# Version 4.0
-#   - Update calculations to Sustainable Web Design Model v4 https://sustainablewebdesign.org/estimating-digital-emissions/
+# Port of https://gitlab.com/wholegrain/carbon-api-2-0/-/blob/master/includes/carbonapi.php
 # Version 3.2
 #   - Bug fix for transferredBytes sometimes missing first item
 # Version 3.1
@@ -13,6 +8,7 @@ package OpenInnovations::CarbonAPI;
 # Version 3.0
 #   - Update calculations to CarbonAPI v3
 # Uses v3 figures from the CarbonAPI at https://sustainablewebdesign.org/calculating-digital-emissions/
+# Last updated: 2023-08-17
 
 use strict;
 use warnings;
@@ -20,6 +16,18 @@ use Data::Dumper;
 use URI::Split qw/ uri_split /;
 use JSON::XS;
 use POSIX qw(strftime);
+
+my $KWG_PER_GB = 0.81; # 1.805 in v2
+my $RETURNING_VISITOR_PERCENTAGE = 0.75;	# same as v2
+my $FIRST_TIME_VIEWING_PERCENTAGE = 0.25;	# same as v2
+my $PERCENTAGE_OF_DATA_LOADED_ON_SUBSEQUENT_LOAD = 0.02;	# same as v2
+my $CARBON_PER_KWG_GRID = 442;	# 475 in v2
+my $CARBON_PER_KWG_RENEWABLE = 50;	# 33.4 in v2
+my $PERCENTAGE_OF_ENERGY_IN_DATACENTER = 0.15;	# 0.1008 in v2
+my $PERCENTAGE_OF_ENERGY_IN_TRANSMISSION_AND_END_USER = 0.85;	# 0.8992 in v2
+my $CO2_GRAMS_TO_LITRES = 0.5562;
+
+
 
 sub new {
 	my ($class, %args) = @_;
@@ -124,6 +132,8 @@ sub makeEntry {
 		$download = 1;
 	}
 
+
+
 	if($download){
 		#print "Downloading $results{'pagespeedapi'}{'url'} ...\n";
 		$str = `curl -s "$results{'pagespeedapi'}{'url'}"`;
@@ -167,8 +177,11 @@ sub makeEntry {
 		$bytesTransfered = calculateTransferedBytes(@items);
 	}
 
-	# Calculate the co2 emissions
-	$co2 = $self->getStatistics($bytesTransfered,$results{'greenweb'}{'green'});
+	# Calculate the statistics as we need the co2 emissions
+	$statistics = $self->getStatistics($bytesTransfered);
+
+	# pull the co2 relative to the energy
+	$co2 = ($results{'greenweb'}{'green'} ? $statistics->{'co2'}{'renewable'}{'grams'} : $statistics->{'co2'}{'grid'}{'grams'});
 
 	%images = %{$self->getImages(@items)};
 	return {
@@ -180,7 +193,8 @@ sub makeEntry {
 		'co2'       => $co2
 	};
 }
-
+	
+	
 
 # -----------------------------------------------------------------------------------------------------------------
 # -----------------------------------------------------------------------------------------------------------------
@@ -226,53 +240,55 @@ sub getImages {
 	return {'i'=>\@im,'bytes'=>$b};
 }
 
-# Calculate total CO2 here and correct for green energy
 sub getStatistics {
-	my ($self, $bytes, $green) = @_;
-	
-	my $DataTransferredGB = $bytes/1e9;
+	my ($self, $bytes) = @_;
 
+	my $bytesAdjusted = $self->adjustDataTransfer($bytes);
+	my $energy = $self->energyConsumption($bytesAdjusted);
+	my $co2Grid = $self->getCo2Grid($energy);
+	my $co2Renewable = $self->getCo2Renewable($energy);
 
-	# Estimated emissions (gCO2e/GB) = Operational emissions + Embodied emissions
-	# or
-	# Average Emissions per Page View (gCO2e) = 
-	#	([(OPDC × (1 - Green Hosting Factor) + EMDC) + (OPN + EMN) + (OPUD + EMUD)] × New Visitor Ratio)
-	#	+
-	#	([(OPDC × (1 - Green Hosting Factor) + EMDC) + (OPN + EMN) + (OPUD + EMUD)] × Return Visitor Ratio × (1 - Data Cache Ratio))
-
-	my $GridCarbonIntensity = 494; # grams CO2e/kWh - global average grid intensity of 494 grams CO2e/kWh which is pulled from the CO2 intensity dataset for "World" of Ember’s Data Explorer
-
-	# The final values we obtain for operational energy intensity are:
-	my $EnergyIntensity = {
-		'DataCentres'=> 0.055, # kWh/GB
-		'Network'=> 0.059, # kWh/GB
-		'UserDevices'=> 0.080 # kWh/GB
+	return {
+		'adjustedBytes' => $bytesAdjusted,
+		'energy' => $energy,
+		'co2' => {
+			'grid' => {
+				'grams' => $co2Grid,
+				'litres'=> $self->co2ToLitres($co2Grid)
+			},
+			'renewable' => {
+				'grams' => $co2Renewable,
+				'litres' => $self->co2ToLitres($co2Renewable)
+			}
+		}
 	};
-	
-	# The final values we obtain for embodied emissions are:
-	my $EmbodiedEmissions = {
-		'DataCentres'=> 0.012, # kWh/GB
-    	'Network'=> 0.013, # kWh/GB
-		'UserDevices'=> 0.081 # kWh/GB
-	};
-
-	# Operational emissions for segment  (gCO2e/GB) = Data transfer (GB) × Energy intensity (kWh/GB) × Grid carbon intensity (gCO2e/kWh)
-	my $GreenHostingFactor = ($green ? 1 : 0);	# The portion of hosting services powered by renewable or zero-carbon energy, between 0 and 1
-	
-	my $OPDC = $DataTransferredGB * $EnergyIntensity->{'DataCentres'} * $GridCarbonIntensity;	# Operational Emissions Data Centers
-	my $OPN = $DataTransferredGB * $EnergyIntensity->{'Network'} * $GridCarbonIntensity;	# Operational Emissions Networks
-	my $OPUD = $DataTransferredGB * $EnergyIntensity->{'UserDevices'} * $GridCarbonIntensity; # Operational Emissions User Devices
-	my $EMDC = $DataTransferredGB * $EmbodiedEmissions->{'DataCentres'} * $GridCarbonIntensity;	# Embodied Emissions Data Centers
-	my $EMN = $DataTransferredGB * $EmbodiedEmissions->{'Network'} * $GridCarbonIntensity; # Embodied Emissions Networks
-	my $EMUD = $DataTransferredGB * $EmbodiedEmissions->{'UserDevices'} * $GridCarbonIntensity; # Embodied Emissions User Devices
-	my $NewVisitorRatio = 0.9; # The portion of first time visitors to a web page, between 0 and 1 (v2 figure was 0.25 but examples at https://developers.thegreenwebfoundation.org/co2js/methods/ use 0.9)
-	my $ReturnVisitorRatio = 1-$NewVisitorRatio; # The portion of returning visitors to a web page, between 0 and 1
-	my $DataCacheRatio = 0.25; # The portion of data that is loaded from cache for returning visitors, between 0 and 1. Guesstimate based on WebsiteCarbon giving 0.33g for Leeds City Council's 2258038 bytes
-
-	my $co2 = (($OPDC * (1-$GreenHostingFactor) + $EMDC) + ($OPN + $EMN) + ($OPUD + $EMUD));
-	
-	return ($co2 * $NewVisitorRatio) + ($co2 * $ReturnVisitorRatio * (1-$DataCacheRatio));
 }
+
+sub adjustDataTransfer {
+	my ($self, $val) = @_;
+	return ($val * $RETURNING_VISITOR_PERCENTAGE) + ($PERCENTAGE_OF_DATA_LOADED_ON_SUBSEQUENT_LOAD * $val * $FIRST_TIME_VIEWING_PERCENTAGE);
+}
+
+sub energyConsumption {
+	my ($self, $bytes) = @_;
+	return $bytes * ($KWG_PER_GB / 1073741824);
+}
+
+sub getCo2Grid {
+	my ($self, $energy) = @_;
+	return $energy * $CARBON_PER_KWG_GRID;
+}
+
+sub getCo2Renewable {
+	my ($self, $energy) = @_;
+	return (($energy * $PERCENTAGE_OF_ENERGY_IN_DATACENTER) * $CARBON_PER_KWG_RENEWABLE) + (($energy * $PERCENTAGE_OF_ENERGY_IN_TRANSMISSION_AND_END_USER) * $CARBON_PER_KWG_GRID);
+}
+
+sub co2ToLitres {
+	my ($self, $co2) = @_;
+	return $co2 * $CO2_GRAMS_TO_LITRES;
+}
+
 
 
 
