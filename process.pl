@@ -190,7 +190,7 @@ if($str =~ /<time datetime="([^\"]*)">([^\<]*)<\/time>/){
 @order = reverse(sort{$org{$a}{'CO2'} <=> $org{$b}{'CO2'} || $org{$a}{'name'} cmp $org{$b}{'name'}}(keys(%org)));
 
 $idt = "				";
-$table = "\n$idt<table class=\"table-sort\">\n$idt\t<thead><tr><th>Rank</th><th>$type</th><th>$config{'Code'}</th><th>CO2 (g)</th><th><a href=\"rating.html\">Rating</a></th><th>MB</th><th>Updated</th><th>Note</th></tr></thead>\n";
+$table = "\n$idt<table class=\"table-sort\">\n$idt\t<thead><tr><th>Rank</th><th>$type</th><th>$config{'Code'}</th><th>CO2 (g)</th><th><a href=\"#ratings\">Rating</a></th><th>MB</th><th>Updated</th><th>Note</th></tr></thead>\n";
 #$tablebest = "\n$idt<table class=\"top top-best\">\n$idt\t<thead><tr><th>$type</th><th>CO2 (g)</th><th><a href=\"https://www.websitecarbon.com/introducing-the-website-carbon-rating-system/\">Rating</a></th></tr></thead>\n";
 $tablebest = "\n$idt<h2>Best $config{'Top'} homepages for emissions</h2>\n$idt<ul class=\"grid top top-best\">\n";
 $tableworst = "\n$idt<h2>Worst $config{'Top'} homepages for emissions</h2>\n$idt<ul class=\"grid top top-worst\">\n";
