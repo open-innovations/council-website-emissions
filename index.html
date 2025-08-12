@@ -13,7 +13,7 @@
 	<meta name="description" content="How are council websites impacting the planet? You may not think of websites as sources of carbon emissions but they are.">
 	<meta property="og:image" content="https://open-innovations.org/resources/images/logos/oi-square-5.png">
 	<style>
-	footer table td { background: white; }
+	.ratings { margin-bottom: 1rem; }
 	</style>
 </head>
 <body class="b1-bg">
@@ -61,7 +61,35 @@
 
 				<section id="ratings">
 					<h2>Ratings</h2>
-					<p>We use the <a href="#ratings">Digital Carbon Rating Scale</a> which rates websites on a scale from A+ to F. This is the distribution of ratings across local/combined authorities.</p>
+					<p>We use the <a href="https://sustainablewebdesign.org/digital-carbon-ratings/">Digital Carbon Rating Scale</a> which rates websites on a scale from <span class="rating rate-aplus">A+</span> to <span class="rating rate-f">F</span>. As the methodology for estimating web page emissions updates over time, the thresholds for these ratings also changes. That is because internet technologies can become more efficient over time and that lowers the impact of similarly sized pages. We show the ratings as they were at a given date.</p>
+
+					<h3>Rating thresholds from 12th August 2025</h3>
+					<table>
+					<thead><tr><th>Rating</th><th>Grams CO2e per pageview</th></tr></thead>
+					<tbody>
+						<tr><td class="rate-aplus">A+</td><td>&le; 0.040</td></tr>
+						<tr><td class="rate-a">A</td><td>&le; 0.079</td></tr>
+						<tr><td class="rate-b">B</td><td>&le; 0.145</td></tr>
+						<tr><td class="rate-c">C</td><td>&le; 0.209</td></tr>
+						<tr><td class="rate-d">D</td><td>&le; 0.278</td></tr>
+						<tr><td class="rate-e">E</td><td>&lt; 0.359</td></tr>
+						<tr><td class="rate-f">F</td><td>&ge; 0.360</td></tr>
+					</tbody>
+					</table>
+					<h3>Rating thresholds before 12th August 2025</h3>
+					<table>
+					<thead><tr><th>Rating</th><th>Grams CO2e per pageview</th></tr></thead>
+					<tbody>
+						<tr><td class="rate-aplus">A+</td><td>&le; 0.095</td></tr>
+						<tr><td class="rate-a">A</td><td>&le; 0.186</td></tr>
+						<tr><td class="rate-b">B</td><td>&le; 0.341</td></tr>
+						<tr><td class="rate-c">C</td><td>&le; 0.493</td></tr>
+						<tr><td class="rate-d">D</td><td>&le; 0.656</td></tr>
+						<tr><td class="rate-e">E</td><td>&le; 0.846</td></tr>
+						<tr><td class="rate-f">F</td><td>&gt; 0.846</td></tr>
+					</tbody>
+					</table>
+					<p>This is the distribution of ratings across local/combined authorities.</p>
 <!-- Start ratings --><ul class="ratings"><li><div style="width:1.6%" class="rate-aplus">A+</div> 2</li><li><div style="width:19.4%" class="rate-a">A</div> 25</li><li><div style="width:59.7%" class="rate-b">B</div> 77</li><li><div style="width:62.1%" class="rate-c">C</div> 80</li><li><div style="width:38.8%" class="rate-d">D</div> 50</li><li><div style="width:31.8%" class="rate-e">E</div> 41</li><li><div style="width:90.0%" class="rate-f">F</div> 116</li></ul><!-- End ratings -->
 
 				</section>
@@ -500,36 +528,6 @@
 			<h2 id="notes">Notes</h2>
 			<p>We compiled Local Authorities and County Councils from the <a href="https://www.local.gov.uk/our-support/guidance-and-resources/communications-support/digital-councils/social-media/go-further/a-z-councils-online">Local Government Association</a> (England &amp; Wales), <a href="https://www.cosla.gov.uk/councils">COSLA</a> (Scotland), and via manual searches for Northern Ireland. We have updated broken links. For Welsh council websites with a language-selection splash page, the Welsh language version of the home page has been chosen as the URL to test.</p>
 			<p id="blocking">As of November 2024 some local authorities have started geo-blocking based on IP address. The result of this is that some of these local authorities are now inaccessible to our tool (because they are inaccessible to <a href="https://pagespeed.web.dev/">PageSpeed Insights</a>). Their values will have to remain on the last real measurement.</p>
-
-			<h2 id="ratings">Ratings</h2>
-			<p>The ratings we show (<span class="rating rate-f">F</span> to <span class="rating rate-aplus">A+</span>) are based on those <a href="https://www.websitecarbon.com/introducing-the-website-carbon-rating-system/">defined by Website Carbon</a> and <a href="https://sustainablewebdesign.org/digital-carbon-ratings/">Sustainable Web Design</a>. As the methodology for estimating web page emissions updates over time, the thresholds for these ratings also changes. That is because internet technologies can become more efficient over time and that lowers the impact of similarly sized pages. We show the ratings as they were at a given date.</p>
-
-			<h3>Rating thresholds from 12th August 2025</h3>
-			<table>
-			<thead><tr><th>Rating</th><th>Grams CO2e per pageview</th></tr></thead>
-			<tbody>
-				<tr><td class="rate-aplus">A+</td><td>&le; 0.040</td></tr>
-				<tr><td class="rate-a">A</td><td>&le; 0.079</td></tr>
-				<tr><td class="rate-b">B</td><td>&le; 0.145</td></tr>
-				<tr><td class="rate-c">C</td><td>&le; 0.209</td></tr>
-				<tr><td class="rate-d">D</td><td>&le; 0.278</td></tr>
-				<tr><td class="rate-e">E</td><td>&lt; 0.359</td></tr>
-				<tr><td class="rate-f">F</td><td>&ge; 0.360</td></tr>
-			</tbody>
-			</table>
-			<h3>Rating thresholds before 12th August 2025</h3>
-			<table>
-			<thead><tr><th>Rating</th><th>Grams CO2e per pageview</th></tr></thead>
-			<tbody>
-				<tr><td class="rate-aplus">A+</td><td>&le; 0.095</td></tr>
-				<tr><td class="rate-a">A</td><td>&le; 0.186</td></tr>
-				<tr><td class="rate-b">B</td><td>&le; 0.341</td></tr>
-				<tr><td class="rate-c">C</td><td>&le; 0.493</td></tr>
-				<tr><td class="rate-d">D</td><td>&le; 0.656</td></tr>
-				<tr><td class="rate-e">E</td><td>&le; 0.846</td></tr>
-				<tr><td class="rate-f">F</td><td>&gt; 0.846</td></tr>
-			</tbody>
-			</table>
 
 			<h2>Credits</h2>
 			<p>Visualisation &copy; 2021 <a href="https://open-innovations.org/">Open Innovations</a>. Code released under an MIT license. <a href="https://github.com/open-innovations/council-website-emissions/">Source on Github</a>.</p>
