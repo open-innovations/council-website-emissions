@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8" />
+	<link rel="icon" href="resources/oi-square-5.svg" />
+	<title>Homepage emission ratings</title>
+	<link rel="StyleSheet" href="resources/style.css" type="text/css" />
+	<meta name="twitter:url" property="og:url" content="https://open-innovations.github.io/council-website-emissions/">
+	<meta name="twitter:title" property="og:title" content="Homepage emissions: UK Councils">
+	<meta name="twitter:description" property="og:description" content="How are council websites impacting the planet? You may not think of websites as sources of carbon emissions but they are.">
+	<meta name="description" content="How are council websites impacting the planet? You may not think of websites as sources of carbon emissions but they are.">
+	<style>
+	.rating { padding: 3px; }
+	</style>
+</head>
+<body class="b1-bg">
+
+	<header>
+		<div class="b1-bg padded">
+			<div class="holder" style="text-align:center;">
+				<a href="https://open-innovations.org/"><img src="https://open-innovations.org/resources/images/logos/oi-square-5.svg" width="100px" height="100px" style="margin-bottom:1em;" /></a>
+				<h1>Homepage emission ratings</h1>
+			</div>
+		</div>
+	</header>
+
+	<div class="b6-bg">
+		<div class="tallpadded padded">
+			<div class="holder">
+				<p>The ratings we show (<span class="rating rate-f">F</span> to <span class="rating rate-aplus">A+</span>) are based on those <a href="https://www.websitecarbon.com/introducing-the-website-carbon-rating-system/">defined by Website Carbon</a> and <a href="https://sustainablewebdesign.org/digital-carbon-ratings/">Sustainable Web Design</a>. As the methodology for estimating web page emissions updates over time, the thresholds for these ratings also changes. That is because internet technologies can become more efficient over time and that lowers the impact of similarly sized pages. We show the ratings as they were at a given date.</p>
+
+				<h2>Rating thresholds from 12th August 2025</h2>
+				<table>
+				<thead><tr><th>Rating</th><th>Grams CO2e per pageview</th></tr></thead>
+				<tbody>
+					<tr><td class="rate-aplus">A+</td><td>&le; 0.040</td></tr>
+					<tr><td class="rate-a">A</td><td>&le; 0.079</td></tr>
+					<tr><td class="rate-b">B</td><td>&le; 0.145</td></tr>
+					<tr><td class="rate-c">C</td><td>&le; 0.209</td></tr>
+					<tr><td class="rate-d">D</td><td>&le; 0.278</td></tr>
+					<tr><td class="rate-e">E</td><td>&lt; 0.359</td></tr>
+					<tr><td class="rate-f">F</td><td>&ge; 0.360</td></tr>
+				</tbody>
+				</table>
+				<h2 style="margin-top:4rem;">Rating thresholds before 12th August 2025</h2>
+				<table>
+				<thead><tr><th>Rating</th><th>Grams CO2e per pageview</th></tr></thead>
+				<tbody>
+					<tr><td class="rate-aplus">A+</td><td>&le; 0.095</td></tr>
+					<tr><td class="rate-a">A</td><td>&le; 0.186</td></tr>
+					<tr><td class="rate-b">B</td><td>&le; 0.341</td></tr>
+					<tr><td class="rate-c">C</td><td>&le; 0.493</td></tr>
+					<tr><td class="rate-d">D</td><td>&le; 0.656</td></tr>
+					<tr><td class="rate-e">E</td><td>&le; 0.846</td></tr>
+					<tr><td class="rate-f">F</td><td>&gt; 0.846</td></tr>
+				</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<footer class="b1-bg">
+		<div class="holder tallpadded">
+			<h2 id="notes">Notes</h2>
+			<p>We compiled Local Authorities and County Councils from the <a href="https://www.local.gov.uk/our-support/guidance-and-resources/communications-support/digital-councils/social-media/go-further/a-z-councils-online">Local Government Association</a> (England &amp; Wales), <a href="https://www.cosla.gov.uk/councils">COSLA</a> (Scotland), and via manual searches for Northern Ireland. We have updated broken links. For Welsh council websites with a language-selection splash page, the Welsh language version of the home page has been chosen as the URL to test.</p>
+			<p id="blocking">As of November 2024 some local authorities have started geo-blocking based on IP address. The result of this is that some of these local authorities are now inaccessible to our tool (because they are inaccessible to <a href="https://pagespeed.web.dev/">PageSpeed Insights</a>). Their values will have to remain on the last real measurement.</p>
+
+			<h2>Credits</h2>
+			<p>Visualisation &copy; 2021 <a href="https://odileeds.org/">ODI Leeds</a>. Code released under an MIT license. <a href="https://github.com/open-innovations/council-website-emissions/">Source on Github</a>.</p>
+			<p>Emissions data calculated using <a href="https://www.websitecarbon.com/">Website Carbon Calculator</a> <a href="https://gitlab.com/wholegrain/carbon-api-2-0">code</a> created by <a href="https://www.wholegraindigital.com/">Wholegrain Digital</a> (MIT Licence).</p>
+		</div>
+	</footer>
+	<script>
+	function ready(fn){
+		if(document.readyState != 'loading') fn();
+		else document.addEventListener('DOMContentLoaded', fn);
+	};
+	ready(function(){
+		search = document.getElementById('search');
+		function limitTable(v){
+			tr = document.getElementById('full-list').querySelectorAll('tr');
+			v = v.toLowerCase();
+			for(r = 1; r < tr.length; r++) tr[r].style.display = (tr[r].textContent.toLowerCase().indexOf(v)>=0) ? '' : 'none';
+		}
+		search.addEventListener('keyup',function(e){ limitTable(e.target.value); });
+		limitTable(search.value);
+	});
+	</script>
+
+	<script src="https://open-innovations.org/resources/oi.log.js"></script>
+	<script>
+	OI.log.setup({'id':'odileeds','target':['odileeds.github.io','open-innovations.github.io']}).add('action=view');
+	</script>
+
+
+</body>
+</html>

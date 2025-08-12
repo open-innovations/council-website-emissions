@@ -190,7 +190,7 @@ if($str =~ /<time datetime="([^\"]*)">([^\<]*)<\/time>/){
 @order = reverse(sort{$org{$a}{'CO2'} <=> $org{$b}{'CO2'} || $org{$a}{'name'} cmp $org{$b}{'name'}}(keys(%org)));
 
 $idt = "				";
-$table = "\n$idt<table class=\"table-sort\">\n$idt\t<thead><tr><th>Rank</th><th>$type</th><th>$config{'Code'}</th><th>CO2 (g)</th><th>Rating</th><th>MB</th><th>Updated</th><th>Note</th></tr></thead>\n";
+$table = "\n$idt<table class=\"table-sort\">\n$idt\t<thead><tr><th>Rank</th><th>$type</th><th>$config{'Code'}</th><th>CO2 (g)</th><th><a href=\"rating.html\">Rating</a></th><th>MB</th><th>Updated</th><th>Note</th></tr></thead>\n";
 #$tablebest = "\n$idt<table class=\"top top-best\">\n$idt\t<thead><tr><th>$type</th><th>CO2 (g)</th><th><a href=\"https://www.websitecarbon.com/introducing-the-website-carbon-rating-system/\">Rating</a></th></tr></thead>\n";
 $tablebest = "\n$idt<h2>Best $config{'Top'} homepages for emissions</h2>\n$idt<ul class=\"grid top top-best\">\n";
 $tableworst = "\n$idt<h2>Worst $config{'Top'} homepages for emissions</h2>\n$idt<ul class=\"grid top top-worst\">\n";
@@ -227,7 +227,7 @@ for($i = 0; $i < $tot; $i++){
 	if(!defined($org{$id}{'CO2'})){
 		$missing++;
 	}else{
-		($rating,$rcls) = getRating($org{$id}{'CO2'});
+		($rating,$rcls) = getRating($org{$id}{'CO2'},$org{$id}{'date'});
 	}
 	$ratings->{$rating}++;
 	$url = $org{$id}{'url'};
@@ -413,11 +413,11 @@ for $id (sort{$data->{'orgs'}{$a}{'name'} cmp $data->{'orgs'}{$b}{'name'}}(keys(
 		if(defined($data->{'orgs'}{$id}{'blocked'})){
 			$body .= "<p class=\"warning padded\">Note that as of $data->{'orgs'}{$id}{'blocked'} this council is blocking our tool from measuring their page.</p>";
 		}
-		$body .= "$indent\t\t<table>\n$indent\t\t\t<thead><tr><th>Date checked</th><th class=\"cen\">CO2 / grams</th><th class=\"cen\">Rating</th><th class=\"cen\">Page size</th><th class=\"cen\"><a href=\"https://www.thegreenwebfoundation.org/directory/\">Energy</a></th></tr></thead>\n";
+		$body .= "$indent\t\t<table>\n$indent\t\t\t<thead><tr><th>Date checked</th><th class=\"cen\">CO2 / grams</th><th class=\"cen\"><a href=\"../index.html#ratings\">Rating</a></th><th class=\"cen\">Page size</th><th class=\"cen\"><a href=\"https://www.thegreenwebfoundation.org/directory/\">Energy</a></th></tr></thead>\n";
 		@dates = reverse(sort(keys(%{$data->{'orgs'}{$id}{'urls'}{$url}{'values'}})));
 		for($d = 0; $d < @dates; $d++){
 			if(defined($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'CO2'})){
-				($rating,$rcls) = getRating($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'CO2'});
+				($rating,$rcls) = getRating($data->{'orgs'}{$id}{'urls'}{$url}{'values'}{$dates[$d]}{'CO2'},$dates[$d]);
 			}else{
 				$rating = "";
 				$rcls = "";
@@ -666,7 +666,10 @@ sub niceSize {
 # E	0.359
 # F 	≥ 0.360
 sub getRating {
-	my $co = $_[0];
+	my ($co,$date) = @_;
+	if(defined($date) && $date le "2025-08-12"){
+		return getRatingV3($co);
+	}
 	my ($rating,$rcls);
 	if($co <= 0.04){
 		$rating = "A+";
