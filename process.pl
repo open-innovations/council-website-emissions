@@ -56,7 +56,7 @@ $data = JSON::XS->new->utf8->decode(join("",@lines));
 %org;
 $ratings = {'A+'=>0,'A'=>0,'B'=>0,'C'=>0,'D'=>0,'E'=>0,'F'=>0};
 
-$avco2 = 0.5;	# Previously 1.76 in v2
+$avco2 = 0.36;	# Previously 1.76 in v2 and 0.5 in v3
 $monthlyvisits = 10000;
 $mostrecent = "2000-00-00";
 
