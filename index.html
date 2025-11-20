@@ -107,24 +107,28 @@
 
 				<section id="better">
 					<h2>How can a council do better?</h2>
-					<p>Don't despair! The worst offenders usually have some very easy things they can do to dramatically reduce their CO2 emissions that most likely don't need the IT department to get involved. The first thing to do is check the file sizes of images you use on the front page. Often there will be a large header image, images in a carousel, or images associated with news items. These are most likely added through a content management system which doesn't optimise the image.<p>
+					<p>Don't despair! The worst offenders usually have some very easy things they can do to dramatically reduce their CO2 emissions that most likely don't need the IT department to get involved.</p>
+					<details>
+						<summary>Tips to reduce your website carbon</summary>
+						<p>The first thing to do is check the file sizes of images you use on the front page. Often there will be a large header image, images in a carousel, or images associated with news items. These are most likely added through a content management system which doesn't optimise the image.<p>
 					
-					<p>Let's find the largest images on a council website. Firstly we'll open our browser's Developer Tools. In Firefox/Chrome/Edge you can usually press <code>F12</code> to do this (or find it in the browser menu). Once you have Developer Tools open select the "Network" view and then visit the website. As the page loads it should give you a view similar to below.</p>
-					<figure>
-						<img src="resources/tools.png" alt="Screenshot of developer tools showing the largest images on the page." />
-						<figcaption>Watford Borough Council's largest webpage assests as on 11th March 2021. Credit ODI Leeds</figcaption>
-					</figure>
-					<p>In this example from March 2021 we have sorted the view by size of file by clicking on the "Size" column heading. We can immediately see that the page totals 32MB with 30.5MB of that due to images. In fact, 22MB comes from just two images! The reason these two are so large is because they have been added in their full, original, resolutions (6571x2850 px and 5392x3595 px) - despite the fact most people's monitors are much narrower than this - and with no optimisation. If we save and open <a href="https://www.watford.gov.uk/images/Luther_and_Mayor_1.jpg">Luther_and_Mayor_1.jpg</a> with the Photos software on Windows we can shrink it to "Large: Best for viewing" which is still a massive 2449x1633 pixels in size. This immediately takes us down to 596kB but we can do better. Using <a href="https://tinyjpg.com/">tinyjpg.com</a> (there is also <a href="https://tinypng.com/">tinypng.com</a>) we can shrink that further to 383kB - 29 times smaller than the original! We could use the same method to shrink the other 11MB image to 322kB. Just optimising those two images would reduce the page size from 32MB to about 10MB. And optimising the other large images would probably get the page down to under 3MB.</p>
-					
-					<p>When we originally tested the <a href="https://www.hambleton.gov.uk/">Hambleton District Council website</a> it was producing over 11g of CO2 per visit and was 3rd worst. We suggested that they optimise three of their images - which they did within 5 minutes - and they reduced their carbon emissions to 1.03g of CO2 taking themselves from 3rd to 177th in terms of highest emissions! So some simple, quick, things can make a huge difference.</p>
-					<p>Images are one area that can be tackled by those who update a website day-to-day. Aside from images, the other common source of emissions is Javascript/CSS. This will most likely require the council Web Team/IT to remove unnecessary or duplicated libraries and is likely a bigger ask. Do large Javascript frameworks need to be included on every page if it could be done in a few lines of vanilla Javascript?</p>
-					
-					<p>For more tips, Wholegrain Digital have <a href="https://www.wholegraindigital.com/blog/website-energy-efficiency/">17 ways you can make your website more efficient</a> and we have a similar <a href="https://odileeds.org/blog/2020-04-29-website-carbon-emissions">blog post from the #PlanetData2 event in 2020</a>.</p>
+						<p>Let's find the largest images on a council website. Firstly we'll open our browser's Developer Tools. In Firefox/Chrome/Edge you can usually press <code>F12</code> to do this (or find it in the browser menu). Once you have Developer Tools open select the "Network" view and then visit the website. As the page loads it should give you a view similar to below.</p>
+						<figure>
+							<img src="resources/tools.png" alt="Screenshot of developer tools showing the largest images on the page." />
+							<figcaption>Watford Borough Council's largest webpage assests as on 11th March 2021. Credit ODI Leeds</figcaption>
+						</figure>
+						<p>In this example from March 2021 we have sorted the view by size of file by clicking on the "Size" column heading. We can immediately see that the page totals 32MB with 30.5MB of that due to images. In fact, 22MB comes from just two images! The reason these two are so large is because they have been added in their full, original, resolutions (6571x2850 px and 5392x3595 px) - despite the fact most people's monitors are much narrower than this - and with no optimisation. If we save and open <a href="https://www.watford.gov.uk/images/Luther_and_Mayor_1.jpg">Luther_and_Mayor_1.jpg</a> with the Photos software on Windows we can shrink it to "Large: Best for viewing" which is still a massive 2449x1633 pixels in size. This immediately takes us down to 596kB but we can do better. Using <a href="https://tinyjpg.com/">tinyjpg.com</a> (there is also <a href="https://tinypng.com/">tinypng.com</a>) we can shrink that further to 383kB - 29 times smaller than the original! We could use the same method to shrink the other 11MB image to 322kB. Just optimising those two images would reduce the page size from 32MB to about 10MB. And optimising the other large images would probably get the page down to under 3MB.</p>
+						
+						<p>When we originally tested the <a href="https://www.hambleton.gov.uk/">Hambleton District Council website</a> it was producing over 11g of CO2 per visit and was 3rd worst. We suggested that they optimise three of their images - which they did within 5 minutes - and they reduced their carbon emissions to 1.03g of CO2 taking themselves from 3rd to 177th in terms of highest emissions! So some simple, quick, things can make a huge difference.</p>
+						<p>Images are one area that can be tackled by those who update a website day-to-day. Aside from images, the other common source of emissions is Javascript/CSS. This will most likely require the council Web Team/IT to remove unnecessary or duplicated libraries and is likely a bigger ask. Do large Javascript frameworks need to be included on every page if it could be done in a few lines of vanilla Javascript?</p>
+						
+						<p>For more tips, Wholegrain Digital have <a href="https://www.wholegraindigital.com/blog/website-energy-efficiency/">17 ways you can make your website more efficient</a> and we have a similar <a href="https://odileeds.org/blog/2020-04-29-website-carbon-emissions">blog post from the #PlanetData2 event in 2020</a>.</p>
+					</details>
 				</section>
 
 				<section id="full-list">
 					<h2>The full list</h2>
-					<p>Here is the full list of councils with their CO2 emissions but you can also get this as a <a href="data/index.csv">CSV file</a> or <a href="data/index.json">all the data as JSON</a>. Note that council websites often change with new featured items and this can affect their CO2 emissions so this table is a snapshot. As of October 2024 some councils have started blocking this tool from assessing their websites.</p>
+					<p>Here is the full list of councils with their CO2 emissions. Note that council websites often change with new featured items and this can affect their CO2 emissions so this table is a snapshot. Some councils now block us from assessing their websites.</p>
 					<input type="text" id="search" placeholder="Start typing to search table..." style="width: 300px;max-width:100%;font-size:1em;line-height:2em;padding: 0 0.25em;" />
 <!-- Start table -->
 				<table class="table-sort">
@@ -522,7 +526,7 @@
 					<tr><td class="cen">389</td><td><a href="areas/E10000016.html">Kent County Council</a></td><td class="cen">E10000016</td><td class="cen">0.04</td><td class="cen rating rate-aplus">A+</td><td class="cen">0.2</td><td class="cen">2025-11-19</td><td></td></tr>
 				</table>
 <!-- End table -->
-					<p>Where the CO2 emissions are given as "?" no result could be found using the Website Carbon Calculator.</p>
+					<p>Where the CO2 emissions are given as "?" no result could be found using the Website Carbon Calculator. You can also get this as a <a href="data/index.csv">CSV file</a> or <a href="data/index.json">all the data as JSON</a>.</p>
 				</section>
 			</div>
 		</div>
@@ -532,7 +536,7 @@
 		<div class="holder tallpadded">
 			<h2 id="notes">Notes</h2>
 			<p>We compiled Local Authorities and County Councils from the <a href="https://www.local.gov.uk/our-support/guidance-and-resources/communications-support/digital-councils/social-media/go-further/a-z-councils-online">Local Government Association</a> (England &amp; Wales), <a href="https://www.cosla.gov.uk/councils">COSLA</a> (Scotland), and via manual searches for Northern Ireland. We have updated broken links. For Welsh council websites with a language-selection splash page, the Welsh language version of the home page has been chosen as the URL to test.</p>
-			<p id="blocking">As of November 2024 some local authorities have started geo-blocking based on IP address. The result of this is that some of these local authorities are now inaccessible to our tool (because they are inaccessible to <a href="https://pagespeed.web.dev/">PageSpeed Insights</a>). Their values will have to remain on the last real measurement.</p>
+			<p id="blocking">As of October 2024 some local authorities have started geo-blocking based on IP address. The result of this is that some of these local authorities are now inaccessible to our tool (because they are inaccessible to <a href="https://pagespeed.web.dev/">PageSpeed Insights</a>). Their values will have to remain on the last real measurement.</p>
 
 			<h2>Credits</h2>
 			<p>Visualisation &copy; 2021 <a href="https://open-innovations.org/">Open Innovations</a>. Code released under an MIT license. <a href="https://github.com/open-innovations/council-website-emissions/">Source on Github</a>.</p>
