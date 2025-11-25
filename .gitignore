@@ -1,1 +1,4 @@
+areas/palettes/
 data/raw/
+data/*.geojson
+data/palettes.html

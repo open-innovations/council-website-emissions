@@ -3497,6 +3497,7 @@
 		"E06000059": {
 			"active": true,
 			"name": "Dorset Council",
+			"blocked": "2025-11-19",
 			"urls": {
 				"https://www.dorsetcouncil.gov.uk/": {
 					"values": {
@@ -3552,7 +3553,7 @@
 						"2025-08-07": { "CO2": 0.68, "bytes": 2705762, "green": 0, "imagebytes": 1392317 },
 						"2025-09-04": { "CO2": 0.48, "bytes": 3307057, "green": 0, "imagebytes": 1988462 },
 						"2025-10-14": { "CO2": 0.46, "bytes": 3153926, "green": 0, "imagebytes": 1801701 },
-						"2025-11-19": { "CO2": 0.05, "bytes": 331318, "green": 0, "imagebytes": 7183 }
+						"2025-11-19": { "blocked": true }
 					}
 				}
 			}
@@ -5263,6 +5264,7 @@
 		},
 		"E07000044": {
 			"active": true,
+			"blocked": "2025-11-19",
 			"name": "South Hams District Council",
 			"urls": {
 				"http://www.southhams.gov.uk/": {
@@ -5319,7 +5321,7 @@
 						"2025-08-07": { "CO2": 0.5, "bytes": 2002135, "green": 0, "imagebytes": 559566 },
 						"2025-09-04": { "CO2": 0.28, "bytes": 1963708, "green": 0, "imagebytes": 562135 },
 						"2025-10-14": { "CO2": 0.27, "bytes": 1888109, "green": 0, "imagebytes": 575261 },
-						"2025-11-19": { "CO2": 0.09, "bytes": 626069, "green": 0, "imagebytes": 0 }
+						"2025-11-19": { "blocked": 0 }
 					}
 				}
 			}
@@ -5453,6 +5455,7 @@
 		},
 		"E07000047": {
 			"active": true,
+			"blocked": "2025-11-19",
 			"name": "West Devon Borough Council",
 			"urls": {
 				"http://www.westdevon.gov.uk/": {
@@ -5509,7 +5512,7 @@
 						"2025-08-07": { "CO2": 0.56, "bytes": 2217337, "green": 0, "imagebytes": 775917 },
 						"2025-09-04": { "CO2": 0.31, "bytes": 2151569, "green": 0, "imagebytes": 756133 },
 						"2025-10-15": { "CO2": 0.31, "bytes": 2168734, "green": 0, "imagebytes": 848546 },
-						"2025-11-19": { "CO2": 0.09, "bytes": 627937, "green": 0, "imagebytes": 0 }
+						"2025-11-19": { "blocked": true }
 					}
 				}
 			}
